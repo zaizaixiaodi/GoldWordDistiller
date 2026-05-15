@@ -4,6 +4,83 @@
 
 ---
 
+## [2026-05-15 23:20] Phase 1.2 — TikHub 接口联调完成
+
+### 完成内容
+
+- **搜索接口调通**：`GET /api/v1/xiaohongshu/app_v2/search_notes`，关键词"副业"，按热度排序，返回 20 条
+- **笔记详情接口调通**：`GET /api/v1/xiaohongshu/app_v2/get_image_note_detail`（图文）和 `get_video_note_detail`（视频），可获取完整正文 + 分享链接
+- **热榜接口调通**：`GET /api/v1/xiaohongshu/web_v2/fetch_hot_list`，返回 9 条热榜
+- **创建 `goldword/harvester.py`**：实现 `RawPost` dataclass + `search_notes()` + `fetch_note_detail()` + `search_with_detail()` + `fetch_hotlist()`
+- **飞书热贴库建好字段**：post_id, title, desc, url, author, note_type, like/collect/comment/share_count, search_keyword, source, harvested_at（共 13 个字段）
+- **测试数据写入飞书**：20 条"副业"搜索结果（前 5 条含完整正文和链接）已写入热贴库 `tblg2nOd7LvMZCKC`
+
+### 踩坑记录
+
+#### 坑 1：搜索端点不对
+
+- **现象**：`web_v2/fetch_search_notes` 返回 404
+- **原因**：PRD 里写的是 web_v2，但实际 TikHub 推荐用 `app_v2/search_notes`，参数名也从 `keywords` 变为 `keyword`
+- **解决**：改用 `app_v2/search_notes`
+
+#### 坑 2：笔记详情端点 404
+
+- **现象**：`app_v2/get_mixed_note_detail` 和 `web_v2/fetch_one_note` 都返回 404
+- **原因**：不确定，可能是端点路径问题或需要额外参数
+- **解决**：改用 `get_image_note_detail`（对图文和视频都有效），数据结构是 `data.data[0].note_list[0]`
+
+#### 坑 3：详情接口偶发超时
+
+- **现象**：连续调 10 条详情时，第 5-6 条容易超时（30s）
+- **解决**：调用量大时需逐条 try-except，跳过失败的；后续可增大 timeout 到 60s 或加 retry
+
+#### 坑 4：视频笔记无链接
+
+- **现象**：视频笔记的详情接口不返回 `share_info.link`，且部分视频笔记 `note_list` 为空
+- **原因**：视频笔记的内容在视频里，API 不一定返回文字详情
+- **解决**：所有笔记的链接统一用 `https://www.xiaohongshu.com/explore/{note_id}` 拼接，不依赖详情接口的 share_info。只对图文笔记调详情接口拿完整正文，视频笔记跳过（省 API 费用）
+
+#### 坑 5：表创建时默认空行
+
+- **现象**：第一次写入数据后，飞书表前 5 行为空行，数据从第 6 行开始
+- **原因**：新建表时飞书自动插入了几行空记录
+- **解决**：写入前先清空表
+
+### 费用记录
+
+- 搜索接口：~$0.01/次（20 条结果）
+- 笔记详情接口：~$0.02/次（每条笔记）
+- 热榜接口：~$0.01/次
+- 本次联调总花费：约 $0.47（含多次调试 + 最终写入 20 条）
+
+### 搜索策略确认（与用户讨论后）
+
+- **前期（数据积累）**：时间不限，按点赞排序，每词 1 页 ~20 条，图文笔记补详情
+- **后期（稳定运行）**：一周内，每词 top 10，可尝试收藏排序
+- 视频笔记只保留摘要 + 拼接链接，不浪费详情 API
+
+### 字段映射（实际 API 字段 → RawPost 字段）
+
+| RawPost 字段 | 搜索接口来源 | 详情接口来源 |
+|-------------|-------------|-------------|
+| post_id | `note.id` | `note_list[0].id` |
+| title | `note.title` | `note_list[0].title` |
+| desc | `note.abstract_show`（摘要） | `note_list[0].desc`（完整正文） |
+| url | 搜索结果无链接 | `note_list[0].share_info.link` |
+| author | `note.user.nickname` | `note_list[0].user.nickname` |
+| note_type | `note.type` | 同 |
+| like_count | `note.liked_count` | `note_list[0].liked_count` |
+| collect_count | `note.collected_count` | `note_list[0].collected_count` |
+| comment_count | `note.comments_count` | `note_list[0].comments_count` |
+| share_count | `note.shared_count` | `note_list[0].share_info` 中无此字段 |
+
+### 下一步
+
+- 用户去飞书检验写入的数据
+- 1.3 飞书读写封装
+
+---
+
 ## [2026-05-15 22:30] Phase 0 — 飞书连接调通 + 环境变量就位
 
 ### 完成内容
