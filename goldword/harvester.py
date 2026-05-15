@@ -88,12 +88,18 @@ def search_notes(
         note = item.get("note", {})
         if not note.get("id"):
             continue
+        note_id = note["id"]
+        xsec_token = note.get("xsec_token", "")
+        url = f"https://www.xiaohongshu.com/explore/{note_id}"
+        if xsec_token:
+            url += f"?xsec_token={xsec_token}&xsec_source=pc_search"
+
         posts.append(
             RawPost(
-                post_id=note["id"],
+                post_id=note_id,
                 title=note.get("title", ""),
                 desc=note.get("abstract_show", ""),
-                url=f"https://www.xiaohongshu.com/explore/{note['id']}",
+                url=url,
                 author=note.get("user", {}).get("nickname", ""),
                 note_type=note.get("type", "normal"),
                 like_count=note.get("liked_count", 0),
