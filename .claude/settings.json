@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(pip:*)",
+      "Bash(pip3:*)",
+      "Bash(git:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(mkdir:*)",
+      "Bash(cd:*)",
+      "Bash(lark-cli:*)",
+      "Bash(MSYS_NO_PATHCONV=1:*)",
+      "Bash(npx:*)",
+      "Read(./**)",
+      "Write(./**)",
+      "Edit(./**)"
+    ]
+  }
+}
