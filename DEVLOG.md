@@ -46,6 +46,13 @@
 - **原因**：新建表时飞书自动插入了几行空记录
 - **解决**：写入前先清空表
 
+#### 坑 6：链接缺 xsec_token 导致"帖子不存在"
+
+- **现象**：用 `https://www.xiaohongshu.com/explore/{note_id}` 拼接的链接在浏览器中打开显示"帖子不存在"
+- **原因**：小红书需要 `xsec_token` 参数才能访问帖子页，裸链接会被拦截
+- **解决**：搜索接口返回的 `note.xsec_token` 字段里就有 token，直接拼到 URL：`/explore/{id}?xsec_token=xxx&xsec_source=pc_search`。零成本，不需要额外调 API
+- **已重写飞书数据**：清掉旧数据，20 条全部用带 xsec_token 的链接重新写入
+
 ### 费用记录
 
 - 搜索接口：~$0.01/次（20 条结果）
