@@ -291,44 +291,26 @@
 
 ### 2.1 金词提取（按 8 功能位 + 标题/封面分开 + vibe_score）
 
-**目标**：实现 `distiller.py`，输入"一批已识图热贴"，输出"结构化金词 + 候选句式"双路结果。
+**目标**：Claude 直接读取飞书热贴数据，按 `prompts/distill.md` 做蒸馏分析，提取金词+句式写入飞书。
+
+**核心思路**：蒸馏是"读内容→理解→打标"，正是 Claude 强项。不写 `distiller.py`，改为 Claude 直接从飞书读帖子，思考分析后通过 `feishu.py` 写结果。
 
 **前置**：1.4 完成（飞书热贴库已有真实数据，含封面文案输出结果）。
 
 **步骤**：
-1. 在 `prompts/distill.md` 写蒸馏 prompt，输入是一组帖子的（标题 + 封面文案 + 完整正文 + 互动数据），输出按 **PRD v2 §7.2** 的双路 JSON 结构：
-   - `gold_words[]`：每项含 `word / aliases / category / source_field / vibe_score / frequency / related_post_ids / vibe_reason`
-     - `category` 必须是 8 个功能位之一：`who / when / pain / do / twist / number / feel / picture`
-     - `source_field` 是 `title / cover / both`
-     - `vibe_score` 是 0-10 整数，反常识/隐喻/情绪类天然高分
-   - `patterns[]`：每项含 `skeleton / category / examples / from_post_ids`
-2. **标题路与封面路分别走一次 prompt**，输入字段不同：
-   - 标题路：标题 + 完整正文（语境用）
-   - 封面路：封面文案输出结果（独立处理）
-   - 合并去重时按 word 聚合，若两路都出现则 `source_field=both`
-3. 实现 `goldword/distiller.py`：
-   - `distill(posts: list[dict]) -> DistillResult`（含 `gold_words` 和 `patterns` 两个列表）
-   - 内部并行调用 `_distill_titles()` 和 `_distill_covers()` 后合并
-   - 按 PRD v2 §7.1 第四步筛选：`vibe_score ≥ 4`、频次 ≥ 2 或互动高于中位数、新鲜度
-4. 在 `harvester.harvest_all()` 末尾调 distill，先 dump 到 `scripts/samples/candidate_words.json` 和 `scripts/samples/candidate_patterns.json` 供人审。
+1. 写 `prompts/distill.md` 蒸馏 prompt 模板，定义 8 功能位、vibe_score 规则、输出 JSON 结构
+2. `/harvest` 采集完成后，Claude 读取热贴库最新一批（标题+正文+封面文案+互动数据）
+3. 标题路+封面路分别过一遍，按 8 功能位打标，输出 `gold_words[]` + `patterns[]`
+4. 人对结果做一次快速评审（确认分类合理、vibe 不飘）
+5. 通过 `feishu.batch_insert_words()` / `feishu.insert_pattern()` 写入金词库和句式库
 
 **DoD**：
-- `python -m goldword.distiller --from-feishu` 能读飞书最近一批热贴并输出双路 JSON
-- 人审 candidate_words.json，确认 ≥ 50% 候选词"看起来像金词"且 `category` 标注合理
-- candidate_patterns.json 至少抓到 2 个真实句式骨架
-- prompt 里包含 8 功能位的定义、典型例子、与停用词表
+- `/harvest` 跑完后，Claude 能独立完成一批帖子的蒸馏
+- 金词库新增 ≥ 10 个候选词，category 标注正确，vibe_score 分布合理
+- 句式库至少 2 个新骨架被识别
+- 人审 ≥ 50% 候选词"看起来像金词"
 
-**产物文件**：`prompts/distill.md`、`goldword/distiller.py`、`scripts/samples/candidate_words.json`、`scripts/samples/candidate_patterns.json`
-
-**风险**：
-- 第一版分类的边界判断（情绪 vs 反常识、隐喻 vs 行动）会模糊，prompt 里必须给出对比例子
-- 标题路和封面路如果用同一个 prompt，可能会把封面"硬钩子"的偏好带到标题，要拆两套子 prompt
-- LLM 输出 JSON 不合法时需 try-except + 重试
-
-**v2 新增 DoD**：
-- 输出包含 8 个 category 中至少 4 类有命中（避免全堆在 number/who 上）
-- `vibe_score` 分布合理（不全是 8-10）
-- 周报元认知反思区会持续校验该 prompt 质量
+**产物文件**：`prompts/distill.md`
 
 ---
 

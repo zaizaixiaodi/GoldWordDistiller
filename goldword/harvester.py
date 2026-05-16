@@ -294,8 +294,8 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
         domain = cfg["domain_word"]
         print(f"\n[harvest] 搜索: {keyword} (领域: {domain})")
 
-        posts = search_with_detail(keyword, max_detail=5, detail_types={"normal"})
-        result.api_calls += 1 + min(len(posts), 5)
+        posts = search_with_detail(keyword, max_detail=15, detail_types={"normal"})
+        result.api_calls += 1 + min(len(posts), 15)
 
         new_count = 0
         for p in posts:
