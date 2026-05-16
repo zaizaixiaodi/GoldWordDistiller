@@ -4,6 +4,70 @@
 
 ---
 
+## [2026-05-16 23:00] Phase 1.3 — 飞书四表建好 + feishu.py 封装 + CRUD 联调
+
+### 完成内容
+
+- **句式库表新建**（`tbl7iu3g51uFw1Ci`）：skeleton/category/examples/frequency/first_seen/last_seen/trend/recommended_categories/user_note 共 9 字段
+- **金词库字段补全**：v2 ★ 字段 category/source_field/vibe_score/suggested_patterns + domain/trend/status/source/related_posts/aliases/used_in 等 15 字段
+- **配置表字段建立**：domain_word/search_keyword/is_active/priority/note
+- **热贴库补 domain 字段**：单选（搞钱/职场/个人成长/AI应用/自媒体方法论）
+- **`goldword/feishu.py` 双通道封装**：
+  - 写入走 `lark-cli api` (shell=True / cmd.exe)，已验证 POST batch_create / PUT record 正常
+  - 读取走 `lark-cli base +record-list` (bash -c)，解析 tabular JSON 输出
+  - 覆盖热贴库/金词库/句式库/配置表 CRUD + 识图轮询 `wait_for_cover_text`
+- **`scripts/probe_feishu.py`**：四表 insert/query/update 全通过（11/11）
+
+### 关键踩坑
+
+1. **`lark-cli base` 子命令需要 `+` 前缀**：`+record-list` 非 `record-list`；`--data` 只对 raw API 有效，base 命令用 `--json`
+2. **`lark-cli api` GET/搜索端点权限不足**：99991679 Permission denied，但 POST/PUT 写入正常。读取改用 `bash -c` + `lark-cli base +record-list`
+3. **`lark-cli base +record-list --format json` 输出 tabular**：需 `fields` + `record_id_list` + `data`（值二维数组）拼回 record dict
+4. **Windows `shell=True` 用 cmd.exe**：`shlex.quote` 单引号不兼容 cmd.exe，改用拼字符串
+5. **飞书 URL 字段格式**：必须 `{"link":"...","text":"..."}`，空字符串会导致 1254068 URLFieldConvFail
+6. **表字段名必须一字不差**：`cover_url` 不在热贴库（封面是附件字段"封面"），需 pop 掉
+
+### 产物文件
+
+- `goldword/feishu.py`（241 行）
+- `scripts/probe_feishu.py`
+- `CLAUDE.md`（飞书集成更新到四张表）
+- `.env` / `.env.example` / `config.py`（加 PATTERNS_TABLE_ID）
+
+---
+
+## [2026-05-17 00:30] Phase 1.4 — 端到端采集管道（/harvest）跑通
+
+### 完成内容
+
+- **配置表录入测试数据**：搞钱→副业(P1)+自由职业(P2)、AI应用→AI(P3)
+- **`config.py` 加 `load_search_config()`**：从飞书读取 active 配置，按 priority 排序
+- **`harvester.py` 加 `HarvestResult` + `harvest_all()`**：
+  - 读配置 → 去重（按 post_id 查飞书已有）→ 遍历搜索词 → 补详情 → 拉热榜 → 批量写飞书
+  - `--dry-run` 模式只打印计划
+  - 连接重试（WinError 10054 自动 2 次重试）+ 详情获取逐条 try-except
+- **实际采集跑通**：3 个搜索词 → 60 条搜索 + 20 条热榜 → 去重 43 条 → 写入 37 条，共 19 次 API 调用
+- **`/harvest` 命令注册**（`.claude/commands/harvest.md`）
+
+### 关键踩坑
+
+1. **空 URL → URLFieldConvFail**：热榜记录无链接，需传 `None` 而非空字符串
+2. **`cover_url` 字段不存在热贴库**：`to_dict()` 含 cover_url 但表里没有对应字段，需 pop 掉
+3. **TikHub 连接中断（WinError 10054）**：connection reset，加 `requests.ConnectionError` 捕获 + 重试
+4. **详情 API 间隔太短触发限流**：0.5s → 0.8s，加 try-except 跳过单个失败
+
+### 费用
+
+- 本次采集：搜索 3 次($0.01) + 详情 15 次($0.02) + 热榜 1 次($0.01) ≈ $0.34
+- 前几次踩坑调测额外消耗 ~$1.20
+
+### 热贴库现状
+
+- 已有 ~105 条记录（副业+自由职业+AI），含封面附件
+- 豆包识图等待验证（Phase 1.4 只收数据，不蒸馏）
+
+---
+
 ## [2026-05-16 16:30] Phase 1.3-pre — PRD/DEVPLAN/CLAUDE 升级到 v2
 
 ### 完成内容

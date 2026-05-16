@@ -196,6 +196,11 @@ def insert_config(domain_word: str, search_keyword: str, is_active: bool = True,
     return records[0]["record_id"] if records else ""
 
 
+def delete_config(record_id: str) -> None:
+    """删除配置表一条记录。"""
+    _api("DELETE", _base_path(FEISHU_CONFIG_TABLE_ID, f"/records/{record_id}"))
+
+
 # ── 识图轮询 ──────────────────────────────────────────────────────────
 
 def wait_for_cover_text(

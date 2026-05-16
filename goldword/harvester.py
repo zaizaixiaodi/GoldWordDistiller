@@ -38,7 +38,7 @@ class RawPost:
             "post_id": self.post_id,
             "title": self.title,
             "desc": self.desc,
-            "url": self.url,
+            "url": {"link": self.url, "text": self.title[:50] or self.url[:50]} if self.url else None,
             "author": self.author,
             "note_type": self.note_type,
             "like_count": self.like_count,
@@ -52,12 +52,22 @@ class RawPost:
         }
 
 
-def _api_get(path: str, params: dict | None = None, timeout: int = 30) -> dict | None:
-    resp = requests.get(f"{BASE}{path}", headers=HEADERS, params=params, timeout=timeout)
-    if resp.status_code != 200:
-        print(f"  [TikHub] {path} → HTTP {resp.status_code}: {resp.text[:200]}")
-        return None
-    return resp.json()
+def _api_get(path: str, params: dict | None = None, timeout: int = 30, retries: int = 2) -> dict | None:
+    for attempt in range(retries + 1):
+        try:
+            resp = requests.get(f"{BASE}{path}", headers=HEADERS, params=params, timeout=timeout)
+            if resp.status_code != 200:
+                print(f"  [TikHub] {path} → HTTP {resp.status_code}: {resp.text[:200]}")
+                return None
+            return resp.json()
+        except (requests.ConnectionError, requests.Timeout) as e:
+            if attempt < retries:
+                wait = (attempt + 1) * 2
+                print(f"  [TikHub] 连接错误 ({e}), {wait}s 后重试...")
+                time.sleep(wait)
+            else:
+                print(f"  [TikHub] 连接失败, 已重试{retries}次: {e}")
+                return None
 
 
 # ── 搜索 ─────────────────────────────────────────────────────────────────
@@ -214,13 +224,124 @@ def search_with_detail(
             break
         if post.note_type not in detail_types:
             continue
-        fetch_note_detail(post)
+        try:
+            fetch_note_detail(post)
+        except Exception as e:
+            print(f"  [harvester] 获取详情失败 {post.post_id}: {e}")
         count += 1
-        time.sleep(0.5)
+        time.sleep(0.8)  # 增加间隔避免触发限流
     return posts
 
 
-# ── CLI 入口 ──────────────────────────────────────────────────────────────
+# ── 端到端采集管道 ───────────────────────────────────────────────────────
+
+@dataclass
+class HarvestResult:
+    """一次 /harvest 的结果汇总。"""
+
+    total_searched: int = 0
+    total_hotlist: int = 0
+    total_inserted: int = 0
+    total_duplicates: int = 0
+    api_calls: int = 0
+    cover_parsed: int = 0
+    cover_failed: int = 0
+    keywords_used: list[str] = field(default_factory=list)
+
+
+def harvest_all(dry_run: bool = False) -> HarvestResult:
+    """端到端采集：读配置 → 遍历搜索词 → 去重 → 写热贴库。
+
+    不蒸馏，只沉淀数据。dry_run=True 时只打印计划不实际执行。
+    """
+    from goldword.config import load_search_config
+    from goldword.feishu import batch_insert_posts, query_posts
+
+    result = HarvestResult()
+
+    # 1. 读配置
+    configs = load_search_config()
+    if not configs:
+        print("[harvest] 配置表无活跃搜索词，退出。")
+        return result
+
+    result.keywords_used = [c["search_keyword"] for c in configs]
+
+    if dry_run:
+        print("[harvest --dry-run] 计划执行的搜索：")
+        for c in configs:
+            print(f"  {c['domain_word']} → {c['search_keyword']} (优先级 {c['priority']})")
+        est_api = len(configs)  # 每个 keyword 1 次搜索
+        est_detail = sum(min(20, 20) for _ in configs)  # 每词最多 20 次详情
+        print(f"\n  预估 API 调用: 搜索 {est_api} 次 + 详情最多 {est_detail} 次")
+        return result
+
+    # 2. 去重：获取热贴库已有 post_id
+    print("[harvest] 读取已有热贴去重表 ...")
+    existing_posts = query_posts(limit=500)
+    existing_ids = set()
+    for rec in existing_posts:
+        pid = rec.get("fields", {}).get("post_id", "")
+        if pid:
+            existing_ids.add(pid)
+    print(f"  已有 {len(existing_ids)} 条记录，跳过重复")
+
+    # 3. 遍历搜索词
+    all_new_posts: list[dict] = []
+
+    for cfg in configs:
+        keyword = cfg["search_keyword"]
+        domain = cfg["domain_word"]
+        print(f"\n[harvest] 搜索: {keyword} (领域: {domain})")
+
+        posts = search_with_detail(keyword, max_detail=5, detail_types={"normal"})
+        result.api_calls += 1 + min(len(posts), 5)
+
+        new_count = 0
+        for p in posts:
+            if p.post_id in existing_ids:
+                result.total_duplicates += 1
+                continue
+            record = p.to_dict()
+            # 飞书表字段名映射：cover_url 不走飞书（封面是附件字段）
+            record.pop("cover_url", None)
+            record["domain"] = domain
+            all_new_posts.append(record)
+            existing_ids.add(p.post_id)
+            new_count += 1
+        result.total_searched += len(posts)
+        print(f"  搜到 {len(posts)} 条，新增 {new_count} 条")
+
+    # 4. 热榜
+    print("\n[harvest] 拉取热榜 ...")
+    hot_posts = fetch_hotlist()
+    result.api_calls += 1
+    new_hot = 0
+    for p in hot_posts:
+        if p.post_id in existing_ids:
+            result.total_duplicates += 1
+            continue
+        record = p.to_dict()
+        record.pop("cover_url", None)
+        all_new_posts.append(record)
+        existing_ids.add(p.post_id)
+        new_hot += 1
+    result.total_hotlist = len(hot_posts)
+    print(f"  热榜 {len(hot_posts)} 条，新增 {new_hot} 条")
+
+    # 5. 批量写入飞书（每批最多 10 条）
+    if all_new_posts:
+        print(f"\n[harvest] 写入飞书热贴库 ({len(all_new_posts)} 条) ...")
+        batch_size = 10
+        for i in range(0, len(all_new_posts), batch_size):
+            batch = all_new_posts[i : i + batch_size]
+            ids = batch_insert_posts(batch)
+            result.total_inserted += len(ids)
+            print(f"  批次 {i // batch_size + 1}: 写入 {len(ids)} 条")
+    else:
+        print("\n[harvest] 无新数据需要写入")
+
+    return result
 
 if __name__ == "__main__":
     import sys
