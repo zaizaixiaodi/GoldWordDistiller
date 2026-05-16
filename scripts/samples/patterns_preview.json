@@ -1,0 +1,404 @@
+[
+  {
+    "skeleton": "X 的 Y 种 Z",
+    "category": "清单",
+    "examples": [
+      "36种可以躺赢的收入",
+      "钱生钱的36个野路子"
+    ],
+    "from_post_ids": [
+      "recvjHJKJQCoW5",
+      "recvjHJKJQBlRO"
+    ]
+  },
+  {
+    "skeleton": "X 后的 Y，请用这 Z 种 W 狠狠搞",
+    "category": "召唤",
+    "examples": [
+      "高考后的暑假🔥请用这8种技能狠狠搞"
+    ],
+    "from_post_ids": [
+      "recvjHJKJQHtTe"
+    ]
+  },
+  {
+    "skeleton": "X 岁，Y 过的 Z 种 W 总结",
+    "category": "代入",
+    "examples": [
+      "24岁，折腾过的17种副业总结"
+    ],
+    "from_post_ids": [
+      "recvjHJKJQaQjU"
+    ]
+  },
+  {
+    "skeleton": "靠 X 起号成功，Y 也能做 Z",
+    "category": "对比",
+    "examples": [
+      "靠一块地毯起号成功,普通人也能做自媒体!"
+    ],
+    "from_post_ids": [
+      "recvjHJKJQo3Fp"
+    ]
+  },
+  {
+    "skeleton": "X 经验分享（Y 版）",
+    "category": "代入",
+    "examples": [
+      "副业经验分享（喂饭版🍚）"
+    ],
+    "from_post_ids": [
+      "recvjHJKJQ3myt"
+    ]
+  },
+  {
+    "skeleton": "X 下班后狠下心来死磕这 Y 种 Z",
+    "category": "召唤",
+    "examples": [
+      "女生下班后狠下心来死磕这10种技能✊"
+    ],
+    "from_post_ids": [
+      "recvjLqjZZ900G"
+    ]
+  },
+  {
+    "skeleton": "X 搞钱必看！Y 的 Z 个野路子",
+    "category": "召唤",
+    "examples": [
+      "普通人搞钱必看！钱生钱的36个野路子"
+    ],
+    "from_post_ids": [
+      "recvjHJKJQBlRO"
+    ]
+  },
+  {
+    "skeleton": "上班 X！Y 赚 Z！",
+    "category": "对比",
+    "examples": [
+      "上班有点闲！摸鱼赚点钱！"
+    ],
+    "from_post_ids": [
+      "recvjHJKJQjL94"
+    ]
+  },
+  {
+    "skeleton": "X+Y+Z 做视频，真的王炸组合",
+    "category": "对比",
+    "examples": [
+      "DeepSeek+即梦+剪映做视频，真的王炸组合"
+    ],
+    "from_post_ids": [
+      "recvjKweR8QujU"
+    ]
+  },
+  {
+    "skeleton": "如果你 X 又不敢 Y，也许这就是 Z",
+    "category": "悬念",
+    "examples": [
+      "如果你不开心又不敢裸辞，也许这就是转机……"
+    ],
+    "from_post_ids": [
+      "recvjLqjZZ8bmj"
+    ]
+  },
+  {
+    "skeleton": "适合 X 搞钱的 Y 大副业，闷声搞",
+    "category": "召唤",
+    "examples": [
+      "适合女生搞钱的6大副业，闷声搞"
+    ],
+    "from_post_ids": [
+      "recvjLqjZZQI0q"
+    ]
+  },
+  {
+    "skeleton": "《X 指南 Y.Z》W 怎么无痛搞钱有存款",
+    "category": "清单",
+    "examples": [
+      "《女高指南83.0》学生党怎么无痛搞钱有存款"
+    ],
+    "from_post_ids": [
+      "recvjLqjZZQutP"
+    ]
+  },
+  {
+    "skeleton": "X 信息差｜Y 个 Z 副业平台（新手🉑️",
+    "category": "清单",
+    "examples": [
+      "搞💰信息差｜16个线上英语副业平台（新手🉑️"
+    ],
+    "from_post_ids": [
+      "recvjLqjZZ8cDC"
+    ]
+  },
+  {
+    "skeleton": "人生建议：尽早 X 自己能 Y 的 Z",
+    "category": "召唤",
+    "examples": [
+      "人生建议：尽早盘一下自己能卖钱的技能"
+    ],
+    "from_post_ids": [
+      "recvjLqksP6bxZ"
+    ]
+  },
+  {
+    "skeleton": "X 人一天 Y 份工，副业才是 Z 的救赎",
+    "category": "对比",
+    "examples": [
+      "外企人一天2份工，副业才是普通女孩的救赎！"
+    ],
+    "from_post_ids": [
+      "recvjLqksP9Qtu"
+    ]
+  },
+  {
+    "skeleton": "想要一个全是 X 的 Y",
+    "category": "互动",
+    "examples": [
+      "想要一个全是长期自由职业者的评论区"
+    ],
+    "from_post_ids": [
+      "recvjLqksP4LCl"
+    ]
+  },
+  {
+    "skeleton": "X 种 Y，总有适合的",
+    "category": "清单",
+    "examples": [
+      "100种职业，🔥🔥🔥总有适合的"
+    ],
+    "from_post_ids": [
+      "recvjLqksP97z6"
+    ]
+  },
+  {
+    "skeleton": "非常适合 X 的 Y，纯经验分享",
+    "category": "代入",
+    "examples": [
+      "非常适合社恐的自由职业🔥纯经验分享"
+    ],
+    "from_post_ids": [
+      "recvjLqksPDR5w"
+    ]
+  },
+  {
+    "skeleton": "普通 X Y 步开启 Z（A👉🏻B/月版）",
+    "category": "对比",
+    "examples": [
+      "普通女生5步开启自由职业（5k👉🏻10w/月版）"
+    ],
+    "from_post_ids": [
+      "recvjLqkVxp9Gq"
+    ]
+  },
+  {
+    "skeleton": "X 退学去 Y 后，Y 教会我的那些人和事",
+    "category": "悬念",
+    "examples": [
+      "复旦退学去摆摊后，摆摊教会我的那些人和事"
+    ],
+    "from_post_ids": [
+      "recvjLqkVxTPuQ"
+    ]
+  },
+  {
+    "skeleton": "如果你 X 了，请开始做以下 Y 个准备",
+    "category": "召唤",
+    "examples": [
+      "如果你不想上班了，请开始做以下7个准备"
+    ],
+    "from_post_ids": [
+      "recvjLqkVxZSXe"
+    ]
+  },
+  {
+    "skeleton": "真心建议所有 X 都去 Y",
+    "category": "召唤",
+    "examples": [
+      "真心建议所有女生都去探索自由职业。"
+    ],
+    "from_post_ids": [
+      "recvjLqkVxCQGr"
+    ]
+  },
+  {
+    "skeleton": "X 岁 X 辞亲身验证的不上班 Y 活法！！",
+    "category": "代入",
+    "examples": [
+      "23岁辞职亲身验证的不上班赚钱活法！！"
+    ],
+    "from_post_ids": [
+      "recvjLqkVxVDRE"
+    ]
+  },
+  {
+    "skeleton": "因为 X，所以我要 Y",
+    "category": "递进",
+    "examples": [
+      "因为不想上班，所以我要拼命写小说。"
+    ],
+    "from_post_ids": [
+      "recvjLqkVxD2L3"
+    ]
+  },
+  {
+    "skeleton": "原来这就是 X 和 Y 的区别！",
+    "category": "对比",
+    "examples": [
+      "原来这就是自由职业和上班的区别！"
+    ],
+    "from_post_ids": [
+      "recvjLqlkcmU9q"
+    ]
+  },
+  {
+    "skeleton": "不上班也有 X，Y 个 Z 助力逆袭~",
+    "category": "清单",
+    "examples": [
+      "不上班也有活路，9个小外快助力逆袭~"
+    ],
+    "from_post_ids": [
+      "recvjLqlkc8wF1"
+    ]
+  },
+  {
+    "skeleton": "学会这些 X，轻松替你 Y",
+    "category": "承诺",
+    "examples": [
+      "学会这些AI工具，轻松替你上班"
+    ],
+    "from_post_ids": [
+      "recvjLqlkcvkK0"
+    ]
+  },
+  {
+    "skeleton": "X 零基础 Y 教程！",
+    "category": "承诺",
+    "examples": [
+      "Claude Code 零基础终极教程！"
+    ],
+    "from_post_ids": [
+      "recvjLqlkcj6D4"
+    ]
+  },
+  {
+    "skeleton": "一个人，怎么自学 X？",
+    "category": "悬念",
+    "examples": [
+      "一个人，怎么自学人工智能？"
+    ],
+    "from_post_ids": [
+      "recvjLqlJdvsBt"
+    ]
+  },
+  {
+    "skeleton": "X 岁，裸辞不上班 Y 年，我都干了啥",
+    "category": "代入",
+    "examples": [
+      "29岁，裸辞不上班5年，我都干了啥"
+    ],
+    "from_post_ids": [
+      "recvjLr03tcecw"
+    ]
+  },
+  {
+    "skeleton": "把 X 交给 Y，轻松 Z 又 W",
+    "category": "承诺",
+    "examples": [
+      "把你的脑子交给AI，轻松快乐又节能"
+    ],
+    "from_post_ids": [
+      "recvjLr03tF34T"
+    ]
+  },
+  {
+    "skeleton": "妹子，已经 X 了还不 Y，你还打算 Z 吗",
+    "category": "反问",
+    "examples": [
+      "妹子，已经五月了还不学，你还打算考吗❓"
+    ],
+    "from_post_ids": [
+      "recvjLr03tTz0c"
+    ]
+  },
+  {
+    "skeleton": "一个很变态，但能 X 赚到 Y 的方法",
+    "category": "悬念",
+    "examples": [
+      "一个很变态，但能写小说赚到💰的方法"
+    ],
+    "from_post_ids": [
+      "recvjLqZCTQBSr"
+    ]
+  },
+  {
+    "skeleton": "发现 X 最快的方式：把 Y 陌生化",
+    "category": "递进",
+    "examples": [
+      "发现自媒体起号最快的方式：把内容陌生化"
+    ],
+    "from_post_ids": [
+      "recvjLqZCTh9bZ"
+    ]
+  },
+  {
+    "skeleton": "很多人的人生 X，是从 Y 开始的",
+    "category": "递进",
+    "examples": [
+      "很多人的人生转机，是从不上班开始的。"
+    ],
+    "from_post_ids": [
+      "recvjLqZCTlhMq"
+    ]
+  },
+  {
+    "skeleton": "普通人如何搭建 X 的 Y",
+    "category": "清单",
+    "examples": [
+      "普通人如何搭建100w的小生意"
+    ],
+    "from_post_ids": [
+      "recvjLqZCTPVT3"
+    ]
+  },
+  {
+    "skeleton": "对 X 说这 Y 句话你可以成为 Z",
+    "category": "承诺",
+    "examples": [
+      "对AI说这四句话你可以成为任何领域的神"
+    ],
+    "from_post_ids": [
+      "recvjLr03tQsai"
+    ]
+  },
+  {
+    "skeleton": "X 已超 Y 倍",
+    "category": "对比",
+    "examples": [
+      "兴趣收入已超主业2倍"
+    ],
+    "from_post_ids": [
+      "recvjHJKJQS0Bc"
+    ]
+  },
+  {
+    "skeleton": "X 才是 Y 的救赎",
+    "category": "递进",
+    "examples": [
+      "副业才是普通女孩的救赎！"
+    ],
+    "from_post_ids": [
+      "recvjLqksP9Qtu"
+    ]
+  },
+  {
+    "skeleton": "X 不工作直接做 Y 可以嘛",
+    "category": "反问",
+    "examples": [
+      "毕业不工作直接做自由职业可以嘛"
+    ],
+    "from_post_ids": [
+      "recvjLr03tY6Yw"
+    ]
+  }
+]

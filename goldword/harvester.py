@@ -361,6 +361,7 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
         print(f"\n[harvest] 本地备份: {_backup_file} ({len(all_new_posts)} 条)")
 
     # 6. 批量写入飞书（每批最多 10 条）
+    cover_tasks: list[tuple[str, str]] = []  # (record_id, cover_url)
     if all_new_posts:
         print(f"[harvest] 写入飞书热贴库 ({len(all_new_posts)} 条) ...")
         batch_size = 10

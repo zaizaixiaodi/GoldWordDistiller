@@ -4,6 +4,86 @@
 
 ---
 
+## [2026-05-17 15:00] Phase 2.2 — tracker.py 趋势追踪实现
+
+### 完成内容
+
+- **创建 `goldword/tracker.py`**：金词 + 句式双路趋势追踪
+  - `track_words(candidates)` → 比对飞书历史，精确/别名/子串三级匹配，输出 trend 标签
+  - `track_patterns(candidates)` → skeleton 精确匹配，合并 examples
+  - `upsert_words(tracked)` / `upsert_patterns(tracked)` → 新词 insert / 已有 update
+  - `refresh_trends()` → 批次间衰减：上升→平稳
+- **修复 `feishu.py` 的 `_list_records`**：`["bash", "-c", cmd]` → `shell=True`（Windows 兼容）
+- **新增 `_unwrap()` 辅助函数**：飞书 single-select 字段返回 list（如 `['twist']`），需取首元素
+- **测试验证**：179 条金词索引、15 条句式索引、update/insert/upsert 全通过
+
+### 踩坑记录
+
+#### 坑 1：Python subprocess 找不到 bash
+
+- **现象**：`_list_records` 用 `subprocess.run(["bash", "-c", cmd])` 报 `FileNotFoundError`
+- **原因**：Python subprocess 的 PATH 不含 Git Bash 的 bin 目录。Bash 工具（Claude Code 内置）运行在 Git Bash 环境中，但 Python 启动的子进程没有同样的 PATH
+- **解决**：改用 `subprocess.run(cmd, shell=True, capture_output=True)`。`shell=True` 在 Windows 上用 cmd.exe，`lark-cli base +record-list` 命令在 cmd.exe 下正常工作
+- **影响文件**：`goldword/feishu.py` 的 `_list_records` 函数
+
+#### 坑 2：飞书 single-select 字段返回 list
+
+- **现象**：`fields.get("category")` 返回 `['twist']` 而非 `'twist'`
+- **原因**：lark-cli `base +record-list --format json` 的 tabular 输出中，单选/多选字段都是数组格式
+- **解决**：tracker.py 新增 `_unwrap(val)` 辅助函数：如果值是长度 1 的 list，取第一个元素；否则原样返回。所有读取飞书数据的地方都经过 `_unwrap`
+
+#### 坑 3：lark-cli DELETE 在 Git Bash 下需 MSYS_NO_PATHCONV=1
+
+- **现象**：`lark-cli api DELETE "/open-apis/..."` 返回 404
+- **原因**：Git Bash 自动把 `/open-apis/` 路径转换为 Git 安装目录下的路径（如 `C:/Program Files/Git/open-apis/`）
+- **解决**：加 `MSYS_NO_PATHCONV=1` 环境变量，或改用 PowerShell 执行
+
+#### 坑 4：Python 全路径 + PYTHONPATH
+
+- **现象**：`python` 命令找不到，`import goldword` 报 ModuleNotFoundError
+- **解决**：
+  - Python 全路径：`C:\Users\Administrator\AppData\Local\Python\bin\python.exe`
+  - PYTHONPATH：`PYTHONPATH="D:\AI Agent\金词挖掘机"`
+  - 或者写 `sys.path.insert(0, "D:/AI Agent/金词挖掘机")` 到脚本头部
+
+### 关键决策
+
+- 匹配策略：精确 → 别名 → 双向子串（同 category 内），避免跨类误判
+- 趋势标签：新词/新句式（首次）、上升（frequency+1），平稳和下降由 `refresh_trends()` 处理
+- tracker 不自动调用 distill，而是接收蒸馏结果。Claude（或未来 skill化后）负责蒸馏→调用 tracker→upsert
+
+### 产物文件
+
+- `goldword/tracker.py`（新增）
+- `goldword/feishu.py`（修复 `_list_records`）
+- `scripts/test_tracker.py`、`scripts/test_tracker_upsert.py`（测试脚本）
+- `CLAUDE.md` §6.5 新增 Windows 踩坑速查
+
+### ⚠️ feishu.py 遗留问题（待 Opus 修复）
+
+审计发现 `goldword/feishu.py` 仍有以下隐患，需要一次性在源头修干净：
+
+#### 隐患 1：single-select 字段返回 list 未在源头处理
+
+- **现状**：`_list_records` 返回的 fields 中，single-select 值是 `['twist']` 而非 `'twist'`。目前只有 `tracker.py` 的 `_unwrap()` 处理了，其他消费者（harvester、reporter 等）都没处理，遇到就会崩
+- **应修**：在 `_list_records` 的解析循环里统一 unwrap——如果值是长度 1 的 list 且内容是字符串/数字，取首元素。这样所有上层调用者自动拿到干净数据，tracker.py 的 `_unwrap` 可以移除或保留为兼容层
+
+#### 隐患 2：无分页，超 limit 静默丢数据
+
+- **现状**：`_list_records` 接受 `limit` 和 `offset` 参数，但 `query_words(limit=500)` 等调用方从不翻页。金词库现 179 条还好，但超过 500 条后查询结果会静默截断
+- **应修**：`_list_records` 内部循环翻页直到取完所有数据，或者 `query_*` 函数自动分页。lark-cli 的 tabular 输出里应该有 `has_more` 或 `total` 字段可以判断
+
+#### 隐患 3：`import platform` 死代码
+
+- **现状**：第 10 行 `import platform` 是之前修复时加的，但实际没用到
+- **应修**：删掉
+
+#### 修复优先级
+
+隐患 1（unwrap）和隐患 2（分页）都是"现在能跑、未来必崩"的类型。建议在下一次会话由 Opus 一次性修掉 `_list_records`，修完后重跑 `scripts/test_tracker.py` 验证。
+
+---
+
 ## [2026-05-17 01:30] Phase 1.4+++ — 封面图本地备份 + 回填上传
 
 ### 完成内容

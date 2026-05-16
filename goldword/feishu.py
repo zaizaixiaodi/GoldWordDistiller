@@ -1,12 +1,13 @@
 """飞书多维表薄封装层 — 基于 lark-cli。
 
 提供热贴库、金词库、句式库、配置表的 CRUD 和识图轮询，以及封面图下载+上传。
-读取走 lark-cli base +record-list（bash -c），写入走 lark-cli api（shell=True）。
+读取走 lark-cli base +record-list（shell=True），写入走 lark-cli api（shell=True）。
 """
 
 from __future__ import annotations
 
 import json
+import platform
 import subprocess
 import time
 from pathlib import Path
@@ -55,7 +56,7 @@ def _base_path(table_id: str, suffix: str = "") -> str:
 
 
 def _list_records(table_id: str, limit: int = 100, offset: int = 0) -> list[dict]:
-    """读取操作：lark-cli base +record-list via bash -c。
+    """读取操作：lark-cli base +record-list via shell=True。
 
     解析 tabular JSON 输出为 [{record_id, fields: {name: value}}] 列表。
     """
@@ -66,7 +67,7 @@ def _list_records(table_id: str, limit: int = 100, offset: int = 0) -> list[dict
         f"--as user --format json "
         f"--limit {limit} --offset {offset}"
     )
-    r = subprocess.run(["bash", "-c", cmd], capture_output=True)
+    r = subprocess.run(cmd, shell=True, capture_output=True)
     out = r.stdout.decode("utf-8", errors="replace")
     if r.returncode != 0:
         err = r.stderr.decode("utf-8", errors="replace")

@@ -153,3 +153,34 @@ goldword-distiller/
 - lark-cli（飞书集成）
 - Claude LLM（蒸馏分析，agent 自身能力，无需额外 API）
 - 飞书豆包多模态（封面识图，由飞书侧自动触发）
+
+---
+
+## 6.5 Windows 开发踩坑速查
+
+> **本节是 DEVLOG 踩坑记录的浓缩版。遇到问题先查这里，再查 DEVLOG。**
+
+### Python 路径与模块
+
+- **Python 全路径**：`C:\Users\Administrator\AppData\Local\Python\bin\python.exe`（`python` 命令不可用）
+- **PYTHONPATH**：运行脚本时需 `PYTHONPATH="D:\AI Agent\金词挖掘机"`，或在脚本头部加 `sys.path.insert(0, "D:/AI Agent/金词挖掘机")`
+- **Bash 工具 vs Python subprocess**：Claude Code 的 Bash 工具运行在 Git Bash 中（PATH 含 Git/bin），但 Python `subprocess` 不继承这个 PATH。所以 `bash -c` 在 Bash 工具里能跑，但在 Python subprocess 里找不到 bash
+
+### lark-cli 调用
+
+- **写入**（`_api`）：`subprocess.run(cmd, shell=True)` → cmd.exe 执行，已验证可写
+- **读取**（`_list_records`）：同样用 `shell=True`（不要用 `["bash", "-c", cmd]`，Windows 找不到 bash）
+- **Git Bash 路径转换**：`lark-cli api DELETE/GET "/open-apis/..."` 在 Git Bash 下路径被篡改，需 `MSYS_NO_PATHCONV=1`。PowerShell 无此问题
+- **`--data @file` 和 `--file`**：必须用相对路径（相对 cwd），且 cwd 不能含中文。代码中用纯 ASCII 临时目录 `%TEMP%\feishu_cli`
+- **中文编码**：`subprocess.run(text=True)` 用 GBK 解码会报错，统一用 `capture_output=True` + `.decode('utf-8', errors='replace')`
+
+### 飞书数据格式
+
+- **single-select 字段**：lark-cli `base +record-list --format json` 的 tabular 输出中，单选字段返回数组（如 `['twist']`），不是字符串。用 `_unwrap(val)` 取首元素
+- **date 字段**：传 Unix 时间戳毫秒数（`int(datetime.now().timestamp() * 1000)`），不要传字符串
+- **URL 字段**：格式必须是 `{"link": "url", "text": "显示文本"}`，空字符串会导致 URLFieldConvFail
+- **附件字段**：创建时不要设 `allowed_edit_modes`，保持默认（manual=true）
+
+### PowerShell here-string 注意
+
+- PowerShell `-c @"..."@` 里的 f-string 如果包含 `w['fields']` 这种方括号，会被解析错误。解决办法：先赋值给变量，再在 f-string 中用变量

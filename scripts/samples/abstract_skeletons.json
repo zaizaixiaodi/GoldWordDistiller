@@ -1,0 +1,150 @@
+[
+  {
+    "skeleton": "清单罗列句：A 的 N 种 B",
+    "category": "清单",
+    "examples": [
+      "36种可以躺赢的收入",
+      "钱生钱的36个野路子",
+      "下班2小时可以做的7种副业",
+      "5个小收入妙招",
+      "100种自由职业分析"
+    ],
+    "recommended_categories": ["number", "do", "picture"]
+  },
+  {
+    "skeleton": "对比逆袭句：从A状态到B状态",
+    "category": "对比",
+    "examples": [
+      "从月薪2k到存下上海首付",
+      "普通女生5步开启自由职业（5k→10w/月版）",
+      "从0到第一个100w"
+    ],
+    "recommended_categories": ["number", "who", "do"]
+  },
+  {
+    "skeleton": "认知反转句：A 才是真正的 B",
+    "category": "对比",
+    "examples": [
+      "副业才是普通女孩的救赎",
+      "很多人的人生转机，是从不上班开始的",
+      "很多人没意识到FIRE最大的问题不是钱"
+    ],
+    "recommended_categories": ["twist", "pain", "who"]
+  },
+  {
+    "skeleton": "触发爆发句：一旦A，B就藏不住",
+    "category": "召唤",
+    "examples": [
+      "女生一旦开窍，黑马属性藏不住",
+      "女生下班后狠下心来死磕这10种技能"
+    ],
+    "recommended_categories": ["who", "do", "feel"]
+  },
+  {
+    "skeleton": "命令号召句：请/一定要A",
+    "category": "召唤",
+    "examples": [
+      "未来三年普通人一定要小心",
+      "真心建议所有女生都去探索自由职业",
+      "人生建议：尽早盘一下自己能卖钱的技能"
+    ],
+    "recommended_categories": ["who", "when", "do"]
+  },
+  {
+    "skeleton": "假设悬念句：如果你A，也许这就是B",
+    "category": "悬念",
+    "examples": [
+      "如果你不开心又不敢裸辞，也许这就是转机",
+      "如果你不想上班了，请开始做以下7个准备"
+    ],
+    "recommended_categories": ["pain", "who", "do"]
+  },
+  {
+    "skeleton": "反差猎奇句：一个很A的B",
+    "category": "悬念",
+    "examples": [
+      "一个很变态，但能写小说赚到钱的方法",
+      "发现自媒体起号最快的方式：把内容陌生化"
+    ],
+    "recommended_categories": ["twist", "do", "picture"]
+  },
+  {
+    "skeleton": "顿悟递进句：A是从B开始的",
+    "category": "递进",
+    "examples": [
+      "很多人的人生转机，是从不上班开始的",
+      "原来搞钱可以这么玄学",
+      "原来这就是自由职业和上班的区别"
+    ],
+    "recommended_categories": ["twist", "picture", "pain"]
+  },
+  {
+    "skeleton": "捷径承诺句：学会/用A，就能B",
+    "category": "承诺",
+    "examples": [
+      "学会这些AI工具，轻松替你上班",
+      "对AI说这四句话你可以成为任何领域的神",
+      "DeepSeek+即梦+剪映做视频，真的王炸组合"
+    ],
+    "recommended_categories": ["do", "number", "picture"]
+  },
+  {
+    "skeleton": "人生叙事句：A岁的我，B",
+    "category": "代入",
+    "examples": [
+      "24岁，折腾过的17种副业总结",
+      "29岁，裸辞不上班5年，我都干了啥",
+      "23岁辞职亲身验证的不上班赚钱活法",
+      "44岁摆摊还债，相信一切都还来得及"
+    ],
+    "recommended_categories": ["who", "number", "do"]
+  },
+  {
+    "skeleton": "疑问代入句：A怎么B？",
+    "category": "代入",
+    "examples": [
+      "一个人怎么自学人工智能？",
+      "在校大学生怎么能挣个零花钱？",
+      "普通人如何搭建100w的小生意"
+    ],
+    "recommended_categories": ["who", "pain", "number"]
+  },
+  {
+    "skeleton": "质疑反问句：A真的能B吗？",
+    "category": "反问",
+    "examples": [
+      "AI搞钱做副业，听说能轻松月入过万？",
+      "千万不要用AI软件去算命！"
+    ],
+    "recommended_categories": ["twist", "number", "feel"]
+  },
+  {
+    "skeleton": "揭秘悬念句：A背后是B",
+    "category": "悬念",
+    "examples": [
+      "我做了个AI软件，背后是3个真人在疯狂打字",
+      "很适合社恐的自由职业，纯经验分享"
+    ],
+    "recommended_categories": ["twist", "picture", "who"]
+  },
+  {
+    "skeleton": "平民承诺句：A也能B",
+    "category": "承诺",
+    "examples": [
+      "靠一块地毯起号成功，普通人也能做自媒体",
+      "普通人也能翻身",
+      "不上班也有活路，9个小外快助力逆袭"
+    ],
+    "recommended_categories": ["who", "do", "picture"]
+  },
+  {
+    "skeleton": "人群定制句：A的人，用B的方式C",
+    "category": "递进",
+    "examples": [
+      "低能量的人，要用低耗能的方式赚钱",
+      "无背景无学历，凭商业逻辑逆天改命",
+      "信息生态位决定一个人的财富天花板"
+    ],
+    "recommended_categories": ["who", "picture", "do"]
+  }
+]

@@ -1,0 +1,1586 @@
+{
+  "gold_words": [
+    {
+      "word": "心酸",
+      "aliases": ["心酸再也不想"],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQSE4j"],
+      "vibe_reason": "直接情绪词，引发共情共鸣"
+    },
+    {
+      "word": "新手",
+      "aliases": ["新手兼职"],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 4,
+      "related_post_ids": ["recvjHJKJQy2pC", "recvjLqjZZdSNg", "recvjLqjZZ8cDC", "recvjLqjZZ8cDC"],
+      "vibe_reason": "高频身份标签，精准锁定入门人群"
+    },
+    {
+      "word": "躺赢",
+      "aliases": ["可以躺赢"],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQCoW5"],
+      "vibe_reason": "反常识钩子，躺+赢形成强反差"
+    },
+    {
+      "word": "36种",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 2,
+      "related_post_ids": ["recvjHJKJQCoW5", "recvjHJKJQBlRO"],
+      "vibe_reason": "具体量化锚，制造丰富感"
+    },
+    {
+      "word": "高考后",
+      "aliases": ["高考后的暑假"],
+      "category": "when",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQHtTe"],
+      "vibe_reason": "时间场景锚点，精准切中学生假期"
+    },
+    {
+      "word": "狠狠搞",
+      "aliases": ["狠狠搞钱"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 2,
+      "related_post_ids": ["recvjHJKJQHtTe", "recvjLqjZZ900G"],
+      "vibe_reason": "命令式+力度副词，行动召唤感极强"
+    },
+    {
+      "word": "8种技能",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQHtTe"],
+      "vibe_reason": "量化锚+技能组合，信息量明确"
+    },
+    {
+      "word": "搞钱",
+      "aliases": ["搞💰", "搞钱app"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 8,
+      "related_post_ids": ["recvjHJKJQnuPM", "recvjHJKJQX6CP", "recvjHJKJQBlRO", "recvjLqjZZQI0q", "recvjLqksPrp09", "recvjLqZenavKq", "recvjLqZenhlfl", "recvjLqlkc8wF1"],
+      "vibe_reason": "高频行动词，口语化强，自媒体搞钱赛道核心词"
+    },
+    {
+      "word": "24岁",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQaQjU"],
+      "vibe_reason": "年龄身份标签，制造代入感"
+    },
+    {
+      "word": "17种副业",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQaQjU"],
+      "vibe_reason": "具体数字+副业组合，信息密度高"
+    },
+    {
+      "word": "折腾",
+      "aliases": ["折腾过的"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQaQjU"],
+      "vibe_reason": "口语化动词，暗示经历丰富"
+    },
+    {
+      "word": "地毯起号",
+      "aliases": ["靠一块地毯起号"],
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQo3Fp"],
+      "vibe_reason": "极致具象隐喻，一块地毯=起号，画面感爆棚"
+    },
+    {
+      "word": "普通人",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 5,
+      "related_post_ids": ["recvjHJKJQo3Fp", "recvjHJKJQBlRO", "recvjLqZenx6p9", "recvjLqZenavKq", "recvjLqkVxp9Gq"],
+      "vibe_reason": "高频身份标签，降低门槛感"
+    },
+    {
+      "word": "摆摊",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 3,
+      "related_post_ids": ["recvjHJKJQea4y", "recvjHJKJQ3tXt", "recvjLqkVxTPuQ"],
+      "vibe_reason": "具象行动词，低门槛副业联想"
+    },
+    {
+      "word": "大学生",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 3,
+      "related_post_ids": ["recvjHJKJQ9Igv", "recvjLqksPknuj", "recvjLqZenbmA8"],
+      "vibe_reason": "核心受众身份标签"
+    },
+    {
+      "word": "喂饭版",
+      "aliases": ["喂饭版🍚"],
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQ3myt"],
+      "vibe_reason": "隐喻极致，喂饭=手把手教，画面感强"
+    },
+    {
+      "word": "三本应届",
+      "aliases": ["三本应届毕业"],
+      "category": "who",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQ3myt"],
+      "vibe_reason": "低学历+应届身份，反差逆袭叙事钩子"
+    },
+    {
+      "word": "3个月赚15w",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 10,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQ3myt"],
+      "vibe_reason": "数字+时间+赚的反常识组合，但离职增加反转"
+    },
+    {
+      "word": "但离职",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQ3myt"],
+      "vibe_reason": "赚了还离职，反转钩子"
+    },
+    {
+      "word": "学生党",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 3,
+      "related_post_ids": ["recvjHJKJQX6CP", "recvjLqjZZQutP", "recvjHJKJQHtTe"],
+      "vibe_reason": "高频受众身份标签"
+    },
+    {
+      "word": "经济独立",
+      "aliases": [],
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 2,
+      "related_post_ids": ["recvjHJKJQX6CP", "recvjLqZenbmA8"],
+      "vibe_reason": "核心痛点/欲望词"
+    },
+    {
+      "word": "狠狠奖励",
+      "aliases": ["狠狠奖励了我"],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQZqwn"],
+      "vibe_reason": "力度副词+奖励，情感冲击强"
+    },
+    {
+      "word": "熬过苦",
+      "aliases": ["熬过"],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQZqwn"],
+      "vibe_reason": "痛苦熬过的情绪共鸣"
+    },
+    {
+      "word": "兴趣收入",
+      "aliases": ["兴趣收入已超主业"],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQS0Bc"],
+      "vibe_reason": "兴趣>主业收入，反常识"
+    },
+    {
+      "word": "2倍",
+      "aliases": ["超主业2倍"],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQS0Bc"],
+      "vibe_reason": "倍数量化锚"
+    },
+    {
+      "word": "下班后",
+      "aliases": ["下班做副业"],
+      "category": "when",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 2,
+      "related_post_ids": ["recvjHJKJQzbzk", "recvjLqjZZ900G"],
+      "vibe_reason": "时间场景锚，上班族共情点"
+    },
+    {
+      "word": "赚外国人钱",
+      "aliases": ["赚外国人💰"],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQzbzk"],
+      "vibe_reason": "跨境赚差，信息差制造好奇心"
+    },
+    {
+      "word": "6个方式",
+      "aliases": ["6个方式"],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 4,
+      "frequency": 2,
+      "related_post_ids": ["recvjHJKJQzbzk", "recvjLqjZZQI0q"],
+      "vibe_reason": "数字清单锚"
+    },
+    {
+      "word": "钱生钱",
+      "aliases": [],
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 9,
+      "frequency": 2,
+      "related_post_ids": ["recvjHJKJQBlRO", "recvjHJKJQBlRO"],
+      "vibe_reason": "经典隐喻，钱能生钱，画面生动"
+    },
+    {
+      "word": "野路子",
+      "aliases": [],
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 2,
+      "related_post_ids": ["recvjHJKJQBlRO", "recvjLqZenX3R8"],
+      "vibe_reason": "口语隐喻，非正规但有效"
+    },
+    {
+      "word": "必看",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQBlRO"],
+      "vibe_reason": "命令式行动召唤"
+    },
+    {
+      "word": "摸鱼",
+      "aliases": ["摸鱼赚点钱"],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQjL94"],
+      "vibe_reason": "网络热词，上班摸鱼+赚钱的反差感"
+    },
+    {
+      "word": "月薪6k存款10w",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQ2GdF"],
+      "vibe_reason": "低薪高存反差，数字对比冲击"
+    },
+    {
+      "word": "副业新思路",
+      "aliases": ["新思路"],
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 4,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQ2GdF"],
+      "vibe_reason": "痛点词+新意暗示"
+    },
+    {
+      "word": "第7天",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQ3tXt"],
+      "vibe_reason": "天数锚，真实记录感"
+    },
+    {
+      "word": "轻创",
+      "aliases": ["轻创业"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQhoTU"],
+      "vibe_reason": "轻量+创业组合，降低启动门槛"
+    },
+    {
+      "word": "零食带货",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQhoTU"],
+      "vibe_reason": "具体行动，场景明确"
+    },
+    {
+      "word": "王炸",
+      "aliases": ["王炸组合"],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjKweR8QujU"],
+      "vibe_reason": "极致情绪词，扑克牌隐喻，炸裂感"
+    },
+    {
+      "word": "沉浸式",
+      "aliases": [],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjKwfpNftCe"],
+      "vibe_reason": "体验式关键词，代入感强"
+    },
+    {
+      "word": "卡皮巴拉",
+      "aliases": [],
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjKwfpNftCe"],
+      "vibe_reason": "热门IP形象隐喻，情绪稳定象征"
+    },
+    {
+      "word": "打工日记",
+      "aliases": [],
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjKwfpNftCe"],
+      "vibe_reason": "日常记录感，拉近距离"
+    },
+    {
+      "word": "裸辞",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 3,
+      "related_post_ids": ["recvjLqjZZ8bmj", "recvjLqlkc8wF1", "recvjLr03tcecw"],
+      "vibe_reason": "高风险行动词，勇气+决绝感"
+    },
+    {
+      "word": "转机",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZ8bmj"],
+      "vibe_reason": "转折暗示，悬念钩子"
+    },
+    {
+      "word": "闷声搞",
+      "aliases": ["闷声发大财"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZQI0q"],
+      "vibe_reason": "低调+搞钱组合，秘密感+行动力"
+    },
+    {
+      "word": "女生",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 4,
+      "frequency": 6,
+      "related_post_ids": ["recvjLqjZZQI0q", "recvjLqjZZ900G", "recvjLqkVxp9Gq", "recvjLqkVxVDRE", "recvjLqksP9Qtu", "recvjLqkVxCQGr"],
+      "vibe_reason": "高频受众身份标签"
+    },
+    {
+      "word": "6大副业",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZQI0q"],
+      "vibe_reason": "数量+副业组合"
+    },
+    {
+      "word": "狠下心",
+      "aliases": ["狠下心来"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZ900G"],
+      "vibe_reason": "决心感强，命令式力度"
+    },
+    {
+      "word": "死磕",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 2,
+      "related_post_ids": ["recvjLqjZZ900G", "recvjLqkVxp9Gq"],
+      "vibe_reason": "极致行动词，咬定不放的力度"
+    },
+    {
+      "word": "10种技能",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZ900G"],
+      "vibe_reason": "数量锚+技能组合"
+    },
+    {
+      "word": "女高",
+      "aliases": ["女高指南"],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZQutP"],
+      "vibe_reason": "高中女生身份，细分精准"
+    },
+    {
+      "word": "无痛搞钱",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZQutP"],
+      "vibe_reason": "无痛+搞钱，极致反常识"
+    },
+    {
+      "word": "信息差",
+      "aliases": ["搞💰信息差"],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZ8cDC"],
+      "vibe_reason": "信息不对称暗示，认知优势感"
+    },
+    {
+      "word": "16个",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZ8cDC"],
+      "vibe_reason": "数量锚"
+    },
+    {
+      "word": "太牛了",
+      "aliases": ["太牛了！！！"],
+      "category": "feel",
+      "source_field": "cover",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZWWy7"],
+      "vibe_reason": "惊叹情绪词"
+    },
+    {
+      "word": "2w月薪",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPHmXv"],
+      "vibe_reason": "薪资量化锚"
+    },
+    {
+      "word": "实在话",
+      "aliases": ["说点实在话"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPHmXv"],
+      "vibe_reason": "真诚暗示，降低防备"
+    },
+    {
+      "word": "女大",
+      "aliases": ["女大搞钱"],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPrp09"],
+      "vibe_reason": "女大学生缩写，圈层黑话"
+    },
+    {
+      "word": "N份工作",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPrp09"],
+      "vibe_reason": "模糊数字锚，暗示多"
+    },
+    {
+      "word": "人生建议",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksP6bxZ"],
+      "vibe_reason": "权威感+建议，号召力"
+    },
+    {
+      "word": "卖钱的技能",
+      "aliases": ["能卖钱的技能"],
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksP6bxZ"],
+      "vibe_reason": "技能变现欲望，直击痛点"
+    },
+    {
+      "word": "外企人",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksP9Qtu"],
+      "vibe_reason": "职场身份标签"
+    },
+    {
+      "word": "一天2份工",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksP9Qtu"],
+      "vibe_reason": "数字+工作组合，勤奋感"
+    },
+    {
+      "word": "救赎",
+      "aliases": ["普通女孩的救赎"],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksP9Qtu"],
+      "vibe_reason": "情感强度词，转折救赎叙事"
+    },
+    {
+      "word": "真的很缺钱",
+      "aliases": ["缺钱"],
+      "category": "pain",
+      "source_field": "cover",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPknuj"],
+      "vibe_reason": "直击痛点，共情力强"
+    },
+    {
+      "word": "日结",
+      "aliases": [],
+      "category": "pain",
+      "source_field": "cover",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPknuj"],
+      "vibe_reason": "即时回报需求"
+    },
+    {
+      "word": "5个小收入",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 4,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPtVvb"],
+      "vibe_reason": "数字锚+小收入降低预期"
+    },
+    {
+      "word": "妙招",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPtVvb"],
+      "vibe_reason": "巧妙方法暗示"
+    },
+    {
+      "word": "自由职业",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 9,
+      "related_post_ids": ["recvjLqksP4LCl", "recvjLqksPZTVr", "recvjLqkVxp9Gq", "recvjLqkVxOQz8", "recvjLqkVxCQGr", "recvjLqlkcmU9q", "recvjLqlkc4UOZ", "recvjLqZCTMYo3", "recvjLqlkczrTQ"],
+      "vibe_reason": "高频职业身份标签"
+    },
+    {
+      "word": "长期",
+      "aliases": [],
+      "category": "when",
+      "source_field": "title",
+      "vibe_score": 4,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksP4LCl"],
+      "vibe_reason": "时间锚，暗示可持续"
+    },
+    {
+      "word": "评论区",
+      "aliases": ["全是...的评论区"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksP4LCl"],
+      "vibe_reason": "互动召唤，UGC钩子"
+    },
+    {
+      "word": "100种",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 2,
+      "related_post_ids": ["recvjLqksP97z6", "recvjLqkVxm0yB"],
+      "vibe_reason": "大数字锚，丰富感极强"
+    },
+    {
+      "word": "社恐",
+      "aliases": ["社恐人"],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPDR5w"],
+      "vibe_reason": "性格身份标签，精准人群"
+    },
+    {
+      "word": "纯经验",
+      "aliases": ["纯经验分享"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPDR5w"],
+      "vibe_reason": "真诚+干货暗示"
+    },
+    {
+      "word": "2026新趋势",
+      "aliases": [],
+      "category": "when",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPZTVr"],
+      "vibe_reason": "时间+趋势锚"
+    },
+    {
+      "word": "5步",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxp9Gq"],
+      "vibe_reason": "步骤数锚，降低难度感"
+    },
+    {
+      "word": "5k到10w",
+      "aliases": ["5k👉🏻10w"],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxp9Gq"],
+      "vibe_reason": "从5k到10w/月的数字跃迁，极致反差"
+    },
+    {
+      "word": "值钱技能",
+      "aliases": ["值钱技能"],
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxp9Gq"],
+      "vibe_reason": "技能变现欲望"
+    },
+    {
+      "word": "复旦退学",
+      "aliases": ["复旦退学去摆摊"],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 10,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxTPuQ"],
+      "vibe_reason": "名校+退学+摆摊，三重反转"
+    },
+    {
+      "word": "不上班",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 4,
+      "related_post_ids": ["recvjLqkVxm0yB", "recvjLqkVxVDRE", "recvjLqlkc8wF1", "recvjLqkVxD2L3"],
+      "vibe_reason": "上班对立面，反常识生活方式"
+    },
+    {
+      "word": "饿不着",
+      "aliases": [],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxm0yB"],
+      "vibe_reason": "口语化安全感表达"
+    },
+    {
+      "word": "7个准备",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxZSXe"],
+      "vibe_reason": "数字锚+行动清单"
+    },
+    {
+      "word": "不想上班",
+      "aliases": [],
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 2,
+      "related_post_ids": ["recvjLqkVxZSXe", "recvjLqkVxD2L3"],
+      "vibe_reason": "核心痛点直白表达"
+    },
+    {
+      "word": "真心建议",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 2,
+      "related_post_ids": ["recvjLqkVxCQGr", "recvjLqZCTn22b"],
+      "vibe_reason": "真诚+建议组合，号召力"
+    },
+    {
+      "word": "探索",
+      "aliases": ["都去探索"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 4,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxCQGr"],
+      "vibe_reason": "行动召唤词"
+    },
+    {
+      "word": "23岁",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxVDRE"],
+      "vibe_reason": "年龄身份锚"
+    },
+    {
+      "word": "亲身验证",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxVDRE"],
+      "vibe_reason": "真实感背书"
+    },
+    {
+      "word": "赚钱活法",
+      "aliases": ["不上班赚钱活法"],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxVDRE"],
+      "vibe_reason": "赚钱+活法组合，生活方式卖点"
+    },
+    {
+      "word": "拼命",
+      "aliases": ["拼命写小说"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqkVxD2L3"],
+      "vibe_reason": "极致力度行动词"
+    },
+    {
+      "word": "9个小外快",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlkc8wF1"],
+      "vibe_reason": "数字+外快组合"
+    },
+    {
+      "word": "逆袭",
+      "aliases": ["助力逆袭"],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlkc8wF1"],
+      "vibe_reason": "翻盘情绪词"
+    },
+    {
+      "word": "大四",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlkc4UOZ"],
+      "vibe_reason": "学业阶段身份锚"
+    },
+    {
+      "word": "好爽",
+      "aliases": [],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlkc4UOZ"],
+      "vibe_reason": "口语化极致正情绪"
+    },
+    {
+      "word": "王炸组合",
+      "aliases": [],
+      "category": "picture",
+      "source_field": "cover",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjKweR8QujU"],
+      "vibe_reason": "扑克牌隐喻，极致组合"
+    },
+    {
+      "word": "赚钱渠道",
+      "aliases": ["赚钱渠道和方法"],
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 4,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZenBbOE"],
+      "vibe_reason": "直白痛点需求"
+    },
+    {
+      "word": "翻身",
+      "aliases": ["也能翻身"],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZenx6p9"],
+      "vibe_reason": "逆袭翻盘情绪"
+    },
+    {
+      "word": "月入过万",
+      "aliases": ["轻松月入过万"],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZenh6fQ"],
+      "vibe_reason": "收入量化锚+暗示"
+    },
+    {
+      "word": "长脑子了",
+      "aliases": [],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZenmyux"],
+      "vibe_reason": "网络热梗，开窍感"
+    },
+    {
+      "word": "在办公室搞副业",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZenmyux"],
+      "vibe_reason": "上班+搞副业场景冲突，反常识"
+    },
+    {
+      "word": "很变态",
+      "aliases": ["一个很变态但"],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCTQBSr"],
+      "vibe_reason": "极端用词制造好奇，反常识前缀"
+    },
+    {
+      "word": "内容陌生化",
+      "aliases": ["把内容陌生化"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCTh9bZ"],
+      "vibe_reason": "方法论钩子，新概念吸引"
+    },
+    {
+      "word": "起号最快",
+      "aliases": ["起号最快的方式"],
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCTh9bZ"],
+      "vibe_reason": "速度+效果痛点"
+    },
+    {
+      "word": "偷偷用",
+      "aliases": ["这么多人偷偷用"],
+      "category": "feel",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCTh9bZ"],
+      "vibe_reason": "秘密感+从众心理"
+    },
+    {
+      "word": "好狡猾",
+      "aliases": [],
+      "category": "feel",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCTh9bZ"],
+      "vibe_reason": "口语化评价，引发好奇"
+    },
+    {
+      "word": "超级个体",
+      "aliases": ["超级个体时代"],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCTZA7K"],
+      "vibe_reason": "新概念身份标签，未来感"
+    },
+    {
+      "word": "100w",
+      "aliases": ["100w的小生意"],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCTPVT3"],
+      "vibe_reason": "百万量化锚"
+    },
+    {
+      "word": "小生意",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCTPVT3"],
+      "vibe_reason": "降低创业门槛"
+    },
+    {
+      "word": "不上班开始了",
+      "aliases": ["从不上班开始的"],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCTlhMq"],
+      "vibe_reason": "人生转机=不上班，反转叙事"
+    },
+    {
+      "word": "强女思维",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCT81R6"],
+      "vibe_reason": "强女身份标签，独立力量感"
+    },
+    {
+      "word": "爱好变事业",
+      "aliases": ["爱好也能变成事业"],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCT81R6"],
+      "vibe_reason": "兴趣>事业，反常识"
+    },
+    {
+      "word": "居家办公",
+      "aliases": [],
+      "category": "when",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCT4XTM"],
+      "vibe_reason": "工作场景锚"
+    },
+    {
+      "word": "尽早",
+      "aliases": ["一定要尽早"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqZCTn22b"],
+      "vibe_reason": "紧迫感行动召唤"
+    },
+    {
+      "word": "替你上班",
+      "aliases": ["轻松替你上班"],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlkcvkK0"],
+      "vibe_reason": "AI替代上班，反常识+解放感"
+    },
+    {
+      "word": "零基础",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlkcj6D4"],
+      "vibe_reason": "入门身份标签，降低门槛"
+    },
+    {
+      "word": "终极教程",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlkcj6D4"],
+      "vibe_reason": "终极暗示唯一性和权威性"
+    },
+    {
+      "word": "诡异",
+      "aliases": ["太诡异了"],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlJdXadz"],
+      "vibe_reason": "恐怖好奇情绪钩子"
+    },
+    {
+      "word": "半夜",
+      "aliases": [],
+      "category": "when",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlJdXadz"],
+      "vibe_reason": "时间锚，恐怖氛围"
+    },
+    {
+      "word": "做噩梦",
+      "aliases": [],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlJdXadz"],
+      "vibe_reason": "恐惧情绪词"
+    },
+    {
+      "word": "自学",
+      "aliases": ["怎么自学"],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqlJdvsBt"],
+      "vibe_reason": "行动词，自我提升"
+    },
+    {
+      "word": "一个人",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 2,
+      "related_post_ids": ["recvjHJKJQhoTU", "recvjLqlJdvsBt"],
+      "vibe_reason": "独立个体身份锚"
+    },
+    {
+      "word": "29岁",
+      "aliases": [],
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLr03tcecw"],
+      "vibe_reason": "年龄锚"
+    },
+    {
+      "word": "5年",
+      "aliases": ["不上班5年"],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLr03tcecw"],
+      "vibe_reason": "时长锚+不上班组合"
+    },
+    {
+      "word": "毕业不工作",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLr03tY6Yw"],
+      "vibe_reason": "毕业+不工作反常识"
+    },
+    {
+      "word": "把脑子交给AI",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjLr03tF34T"],
+      "vibe_reason": "放弃思考给AI，极致反常识+轻松感"
+    },
+    {
+      "word": "轻松快乐又节能",
+      "aliases": [],
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLr03tF34T"],
+      "vibe_reason": "三连正情绪词"
+    },
+    {
+      "word": "五月了还不学",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLr03tTz0c"],
+      "vibe_reason": "紧迫感+反问式召唤"
+    },
+    {
+      "word": "四句话",
+      "aliases": [],
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjLr03tQsai"],
+      "vibe_reason": "极少量化锚"
+    },
+    {
+      "word": "成为任何领域的神",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjLr03tQsai"],
+      "vibe_reason": "四句话封神，极致反常识"
+    },
+    {
+      "word": "掏心窝子",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjLr03trQ74"],
+      "vibe_reason": "真诚极致表达"
+    },
+    {
+      "word": "20w+",
+      "aliases": ["收入20w+"],
+      "category": "number",
+      "source_field": "cover",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQaQjU"],
+      "vibe_reason": "收入量化锚"
+    },
+    {
+      "word": "五大类副业",
+      "aliases": [],
+      "category": "number",
+      "source_field": "cover",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjHJKJQaQjU"],
+      "vibe_reason": "分类+数字锚"
+    },
+    {
+      "word": "学校不教",
+      "aliases": [],
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZQutP"],
+      "vibe_reason": "体制外知识暗示，信息差钩子"
+    },
+    {
+      "word": "闷声发大财",
+      "aliases": [],
+      "category": "do",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqjZZQutP"],
+      "vibe_reason": "低调搞钱行动召唤"
+    },
+    {
+      "word": "喂饭版",
+      "aliases": [],
+      "category": "picture",
+      "source_field": "cover",
+      "vibe_score": 9,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksP9Qtu"],
+      "vibe_reason": "gap期养活自己的喂饭教程，极致隐喻"
+    },
+    {
+      "word": "女大搞钱指南",
+      "aliases": [],
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjLqksPrp09"],
+      "vibe_reason": "女大学生搞钱，身份+行动组合"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "X 的 Y 种 Z",
+      "category": "清单",
+      "examples": ["36种可以躺赢的收入", "钱生钱的36个野路子"],
+      "from_post_ids": ["recvjHJKJQCoW5", "recvjHJKJQBlRO"]
+    },
+    {
+      "skeleton": "X 后的 Y，请用这 Z 种 W 狠狠搞",
+      "category": "召唤",
+      "examples": ["高考后的暑假🔥请用这8种技能狠狠搞"],
+      "from_post_ids": ["recvjHJKJQHtTe"]
+    },
+    {
+      "skeleton": "X 岁，Y 过的 Z 种 W 总结",
+      "category": "代入",
+      "examples": ["24岁，折腾过的17种副业总结"],
+      "from_post_ids": ["recvjHJKJQaQjU"]
+    },
+    {
+      "skeleton": "靠 X 起号成功，Y 也能做 Z",
+      "category": "对比",
+      "examples": ["靠一块地毯起号成功,普通人也能做自媒体!"],
+      "from_post_ids": ["recvjHJKJQo3Fp"]
+    },
+    {
+      "skeleton": "X 经验分享（Y 版）",
+      "category": "代入",
+      "examples": ["副业经验分享（喂饭版🍚）"],
+      "from_post_ids": ["recvjHJKJQ3myt"]
+    },
+    {
+      "skeleton": "X 下班后狠下心来死磕这 Y 种 Z",
+      "category": "召唤",
+      "examples": ["女生下班后狠下心来死磕这10种技能✊"],
+      "from_post_ids": ["recvjLqjZZ900G"]
+    },
+    {
+      "skeleton": "X 搞钱必看！Y 的 Z 个野路子",
+      "category": "召唤",
+      "examples": ["普通人搞钱必看！钱生钱的36个野路子"],
+      "from_post_ids": ["recvjHJKJQBlRO"]
+    },
+    {
+      "skeleton": "上班 X！Y 赚 Z！",
+      "category": "对比",
+      "examples": ["上班有点闲！摸鱼赚点钱！"],
+      "from_post_ids": ["recvjHJKJQjL94"]
+    },
+    {
+      "skeleton": "X+Y+Z 做视频，真的王炸组合",
+      "category": "对比",
+      "examples": ["DeepSeek+即梦+剪映做视频，真的王炸组合"],
+      "from_post_ids": ["recvjKweR8QujU"]
+    },
+    {
+      "skeleton": "如果你 X 又不敢 Y，也许这就是 Z",
+      "category": "悬念",
+      "examples": ["如果你不开心又不敢裸辞，也许这就是转机……"],
+      "from_post_ids": ["recvjLqjZZ8bmj"]
+    },
+    {
+      "skeleton": "适合 X 搞钱的 Y 大副业，闷声搞",
+      "category": "召唤",
+      "examples": ["适合女生搞钱的6大副业，闷声搞"],
+      "from_post_ids": ["recvjLqjZZQI0q"]
+    },
+    {
+      "skeleton": "《X 指南 Y.Z》W 怎么无痛搞钱有存款",
+      "category": "清单",
+      "examples": ["《女高指南83.0》学生党怎么无痛搞钱有存款"],
+      "from_post_ids": ["recvjLqjZZQutP"]
+    },
+    {
+      "skeleton": "X 信息差｜Y 个 Z 副业平台（新手🉑️",
+      "category": "清单",
+      "examples": ["搞💰信息差｜16个线上英语副业平台（新手🉑️"],
+      "from_post_ids": ["recvjLqjZZ8cDC"]
+    },
+    {
+      "skeleton": "人生建议：尽早 X 自己能 Y 的 Z",
+      "category": "召唤",
+      "examples": ["人生建议：尽早盘一下自己能卖钱的技能"],
+      "from_post_ids": ["recvjLqksP6bxZ"]
+    },
+    {
+      "skeleton": "X 人一天 Y 份工，副业才是 Z 的救赎",
+      "category": "对比",
+      "examples": ["外企人一天2份工，副业才是普通女孩的救赎！"],
+      "from_post_ids": ["recvjLqksP9Qtu"]
+    },
+    {
+      "skeleton": "想要一个全是 X 的 Y",
+      "category": "互动",
+      "examples": ["想要一个全是长期自由职业者的评论区"],
+      "from_post_ids": ["recvjLqksP4LCl"]
+    },
+    {
+      "skeleton": "X 种 Y，总有适合的",
+      "category": "清单",
+      "examples": ["100种职业，🔥🔥🔥总有适合的"],
+      "from_post_ids": ["recvjLqksP97z6"]
+    },
+    {
+      "skeleton": "非常适合 X 的 Y，纯经验分享",
+      "category": "代入",
+      "examples": ["非常适合社恐的自由职业🔥纯经验分享"],
+      "from_post_ids": ["recvjLqksPDR5w"]
+    },
+    {
+      "skeleton": "普通 X Y 步开启 Z（A👉🏻B/月版）",
+      "category": "对比",
+      "examples": ["普通女生5步开启自由职业（5k👉🏻10w/月版）"],
+      "from_post_ids": ["recvjLqkVxp9Gq"]
+    },
+    {
+      "skeleton": "X 退学去 Y 后，Y 教会我的那些人和事",
+      "category": "悬念",
+      "examples": ["复旦退学去摆摊后，摆摊教会我的那些人和事"],
+      "from_post_ids": ["recvjLqkVxTPuQ"]
+    },
+    {
+      "skeleton": "如果你 X 了，请开始做以下 Y 个准备",
+      "category": "召唤",
+      "examples": ["如果你不想上班了，请开始做以下7个准备"],
+      "from_post_ids": ["recvjLqkVxZSXe"]
+    },
+    {
+      "skeleton": "真心建议所有 X 都去 Y",
+      "category": "召唤",
+      "examples": ["真心建议所有女生都去探索自由职业。"],
+      "from_post_ids": ["recvjLqkVxCQGr"]
+    },
+    {
+      "skeleton": "X 岁 X 辞亲身验证的不上班 Y 活法！！",
+      "category": "代入",
+      "examples": ["23岁辞职亲身验证的不上班赚钱活法！！"],
+      "from_post_ids": ["recvjLqkVxVDRE"]
+    },
+    {
+      "skeleton": "因为 X，所以我要 Y",
+      "category": "递进",
+      "examples": ["因为不想上班，所以我要拼命写小说。"],
+      "from_post_ids": ["recvjLqkVxD2L3"]
+    },
+    {
+      "skeleton": "原来这就是 X 和 Y 的区别！",
+      "category": "对比",
+      "examples": ["原来这就是自由职业和上班的区别！"],
+      "from_post_ids": ["recvjLqlkcmU9q"]
+    },
+    {
+      "skeleton": "不上班也有 X，Y 个 Z 助力逆袭~",
+      "category": "清单",
+      "examples": ["不上班也有活路，9个小外快助力逆袭~"],
+      "from_post_ids": ["recvjLqlkc8wF1"]
+    },
+    {
+      "skeleton": "学会这些 X，轻松替你 Y",
+      "category": "承诺",
+      "examples": ["学会这些AI工具，轻松替你上班"],
+      "from_post_ids": ["recvjLqlkcvkK0"]
+    },
+    {
+      "skeleton": "X 零基础 Y 教程！",
+      "category": "承诺",
+      "examples": ["Claude Code 零基础终极教程！"],
+      "from_post_ids": ["recvjLqlkcj6D4"]
+    },
+    {
+      "skeleton": "一个人，怎么自学 X？",
+      "category": "悬念",
+      "examples": ["一个人，怎么自学人工智能？"],
+      "from_post_ids": ["recvjLqlJdvsBt"]
+    },
+    {
+      "skeleton": "X 岁，裸辞不上班 Y 年，我都干了啥",
+      "category": "代入",
+      "examples": ["29岁，裸辞不上班5年，我都干了啥"],
+      "from_post_ids": ["recvjLr03tcecw"]
+    },
+    {
+      "skeleton": "把 X 交给 Y，轻松 Z 又 W",
+      "category": "承诺",
+      "examples": ["把你的脑子交给AI，轻松快乐又节能"],
+      "from_post_ids": ["recvjLr03tF34T"]
+    },
+    {
+      "skeleton": "妹子，已经 X 了还不 Y，你还打算 Z 吗",
+      "category": "反问",
+      "examples": ["妹子，已经五月了还不学，你还打算考吗❓"],
+      "from_post_ids": ["recvjLr03tTz0c"]
+    },
+    {
+      "skeleton": "一个很变态，但能 X 赚到 Y 的方法",
+      "category": "悬念",
+      "examples": ["一个很变态，但能写小说赚到💰的方法"],
+      "from_post_ids": ["recvjLqZCTQBSr"]
+    },
+    {
+      "skeleton": "发现 X 最快的方式：把 Y 陌生化",
+      "category": "递进",
+      "examples": ["发现自媒体起号最快的方式：把内容陌生化"],
+      "from_post_ids": ["recvjLqZCTh9bZ"]
+    },
+    {
+      "skeleton": "很多人的人生 X，是从 Y 开始的",
+      "category": "递进",
+      "examples": ["很多人的人生转机，是从不上班开始的。"],
+      "from_post_ids": ["recvjLqZCTlhMq"]
+    },
+    {
+      "skeleton": "普通人如何搭建 X 的 Y",
+      "category": "清单",
+      "examples": ["普通人如何搭建100w的小生意"],
+      "from_post_ids": ["recvjLqZCTPVT3"]
+    },
+    {
+      "skeleton": "对 X 说这 Y 句话你可以成为 Z",
+      "category": "承诺",
+      "examples": ["对AI说这四句话你可以成为任何领域的神"],
+      "from_post_ids": ["recvjLr03tQsai"]
+    },
+    {
+      "skeleton": "X 已超 Y 倍",
+      "category": "对比",
+      "examples": ["兴趣收入已超主业2倍"],
+      "from_post_ids": ["recvjHJKJQS0Bc"]
+    },
+    {
+      "skeleton": "X 才是 Y 的救赎",
+      "category": "递进",
+      "examples": ["副业才是普通女孩的救赎！"],
+      "from_post_ids": ["recvjLqksP9Qtu"]
+    },
+    {
+      "skeleton": "X 不工作直接做 Y 可以嘛",
+      "category": "反问",
+      "examples": ["毕业不工作直接做自由职业可以嘛"],
+      "from_post_ids": ["recvjLr03tY6Yw"]
+    }
+  ]
+}
