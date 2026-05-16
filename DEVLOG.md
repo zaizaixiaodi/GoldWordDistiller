@@ -4,6 +4,25 @@
 
 ---
 
+## [2026-05-16 22:20] Phase 2.3 — 简报 + 周报 + /feed + /add
+
+### 完成内容
+
+- `goldword/reporter.py`：`generate_brief()` 实时简报（飞书读最近新词/句式 + vibe 排序 + 趋势提示）+ `generate_weekly_report()` 七节周报模板（数据概览 / 功能位分布 / TOP 金词 / 新句式 / 趋势变化 / 选题建议占位 / 元认知反思），自动保存到 `workspace/reports/`
+- `goldword/feeder.py`：`feed_url()`（小红书走 TikHub API + 短链解析、通用走 requests）、`feed_text()`、`feed_file()` 三个入口，返回统一 dict 供蒸馏
+- 命令文件：`.claude/commands/{report,feed,add}.md`，三个 slash command 均可独立调用
+- `prompts/observations.md`：业务规范回写文档空模板（功能位观察 / 高互动组合 / prompt 迭代 / 停用词 / 待回测问题）
+
+### 验证结果
+
+- 简报：读取飞书 180 条金词、15 条句式，新词 Top 10 + 新句式 5 条正确输出
+- 周报：七节结构完整，按功能位分布表正确统计（do 35 / twist 29 / number 30 等），保存到 `workspace/reports/weekly_2026-W20.md`
+- feeder：文本模式 + 文件模式均通过
+
+### 问题与解决
+
+- reporter.py line 254 中文引号 `""` 与 Python 双引号冲突导致 SyntaxError → 改为单引号定界
+
 ## [2026-05-17 16:00] Phase 2.2 收尾 — feishu.py 隐患修复 + 目录重组
 
 ### 完成内容
