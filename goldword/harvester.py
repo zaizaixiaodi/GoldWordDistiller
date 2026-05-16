@@ -28,6 +28,7 @@ class RawPost:
     collect_count: int
     comment_count: int
     share_count: int
+    cover_url: str = ""  # 封面/缩略图
     search_keyword: str = ""
     source: str = "search"  # search / hotlist
     harvested_at: str = field(default_factory=lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
@@ -44,6 +45,7 @@ class RawPost:
             "collect_count": self.collect_count,
             "comment_count": self.comment_count,
             "share_count": self.share_count,
+            "cover_url": self.cover_url,
             "search_keyword": self.search_keyword,
             "source": self.source,
             "harvested_at": self.harvested_at,
@@ -94,6 +96,17 @@ def search_notes(
         if xsec_token:
             url += f"?xsec_token={xsec_token}&xsec_source=pc_search"
 
+        # 封面图：统一用 images_list[cover_index]，视频的 video_info_v2.image.thumbnail
+        # 是自动截取的视频帧（/frame/ 路径），不是博主上传的封面
+        cover_url = ""
+        images_list = note.get("images_list", [])
+        cover_idx = note.get("cover_image_index", 0)
+        if images_list and cover_idx < len(images_list):
+            cover_url = (
+                images_list[cover_idx].get("url_size_large", "")
+                or images_list[cover_idx].get("url", "")
+            )
+
         posts.append(
             RawPost(
                 post_id=note_id,
@@ -106,6 +119,7 @@ def search_notes(
                 collect_count=note.get("collected_count", 0),
                 comment_count=note.get("comments_count", 0),
                 share_count=note.get("shared_count", 0),
+                cover_url=cover_url,
                 search_keyword=keyword,
                 source="search",
             )

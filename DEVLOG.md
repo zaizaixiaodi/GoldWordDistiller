@@ -4,6 +4,136 @@
 
 ---
 
+## [2026-05-16 11:30] Phase 1.2++ — 视频封面修正 + AI 联调测试
+
+### 完成内容
+
+- **发现并修正视频封面提取逻辑**：`video_info_v2.image.thumbnail` 是小红书自动截取的视频帧（URL 含 `/frame/`），不是博主上传的封面。正确封面统一在 `images_list[cover_image_index]`，和图文笔记完全一致
+- **修正 `harvester.py` 和 `upload_covers.py`**：去掉 video 分支，统一用 `images_list` 取封面
+- **验证修正效果**：对 post `6a01f9f90000000008032f4b`（视频"副业经验分享喂饭版"）用 `images_list[0].original`（5000px 原图）重新下载上传，确认封面正确
+- **AI 关键词联调测试**：搜索 "AI" top 3 视频，完整写入飞书热贴库（含封面附件、URL、互动数据等全部字段）
+
+### 踩坑记录
+
+#### 坑 1：视频封面是视频帧截图，不是博主上传的封面
+
+- **现象**：视频帖子的封面图看起来像"时间点截图拼在一起的图片"
+- **原因**：之前代码对 video 类型取 `video_info_v2.image.thumbnail`，这个字段是小红书自动从视频截取的帧（URL 路径含 `/frame/110/0/`），不是博主上传的封面
+- **正确做法**：视频帖子也有 `images_list`，博主上传的封面就在 `images_list[cover_image_index]`，和图文笔记完全一致
+- **修正**：删除 video 分支，统一用 `images_list` 取封面
+  ```
+  # 旧逻辑（错误）
+  if note.get("type") == "video":
+      cover_url = note["video_info_v2"]["image"]["thumbnail"]  # 视频帧截图
+  
+  # 新逻辑（正确）
+  images_list = note.get("images_list", [])
+  cover_idx = note.get("cover_image_index", 0)
+  cover_url = images_list[cover_idx].url_size_large  # 博主上传的封面
+  ```
+
+#### 坑 2：飞书附件字段 `allowed_edit_modes` 阻止 API 上传
+
+- **现象**：更新记录返回 1254027 `UploadAttachNotAllowed`
+- **原因**：旧"封面"字段 `allowed_edit_modes.manual=false`，只允许手机扫码上传
+- **解决**：删除旧字段 `fld83jGdX6`，重建新字段 `fld3h2c2Pw`（默认允许所有上传方式）
+
+#### 坑 3：飞书 URL 字段格式
+
+- **现象**：创建记录时包含 url 字段返回 1254068 `URLFieldConvFail`
+- **原因**：飞书 URL 字段（type 15）通过 lark-cli 创建时不接受纯字符串，需要 `{"link": "url", "text": "显示文本"}` 格式
+- **解决**：先创建记录（不含 url），再单独更新 url 字段
+
+#### 坑 4：Windows subprocess 中文编码
+
+- **现象**：Python `subprocess.run(text=True)` 用 GBK 解码 lark-cli 输出，遇到 emoji（❤️😈）报 `UnicodeDecodeError`
+- **解决**：改用 `capture_output=True`（返回 bytes）+ `output.decode('utf-8', errors='replace')`
+
+#### 坑 5：视频详情 API 数据结构与图文不同
+
+- **现象**：`get_video_note_detail` 返回的数据取不到 `images_list`
+- **原因**：图文详情是 `data.data[0].note_list[0]`（有 note_list 包裹），视频详情是 `data.data[0]` 直接就是笔记数据（无 note_list 包裹）
+- **解决**：视频详情直接从 `data.data[0]` 取字段
+
+### 联调测试结果
+
+搜索关键词 "AI"，按热度排序，取 top 3 视频：
+
+| 帖子 | 点赞 | 收藏 | 封面 |
+|------|------|------|------|
+| DeepSeek+即梦+剪映做视频，真的王炸组合 | 58,326 | 81,317 | 130 KB |
+| 沉浸式IP 爆款卡皮巴拉的打工日记！ | 57,750 | 15,776 | 315 KB |
+| 红色是毁灭❤️😈 蓝色是冷漠 | 45,693 | 12,396 | 302 KB |
+
+3 条全部成功写入飞书热贴库（post_id、标题、正文、URL、作者、互动数据、搜索关键词、采集时间、封面附件）。
+
+### 下一步
+
+- Phase 1.3 飞书读写封装（统一解决 URL 字段格式、视频详情数据结构差异等问题）
+
+---
+
+## [2026-05-16 10:50] Phase 1.2+ — 封面图采集 + 飞书附件上传
+
+### 完成内容
+
+- **封面 URL 提取**：在 `harvester.py` 的 `RawPost` 中新增 `cover_url` 字段，搜索接口零成本获取
+  - 图文笔记：`images_list[cover_image_index].url_size_large`（1440px）
+  - 视频笔记：`video_info_v2.image.thumbnail`（最高 5000px）
+- **封面图下载**：`scripts/upload_covers.py` 搜索 TikHub → 匹配飞书记录 → 下载到 `scripts/covers/`
+- **飞书附件上传**：`scripts/covers/batch_upload_larkcli.py` 通过 lark-cli UAT 批量上传封面图到飞书多维表附件字段
+- **最终结果**：6/20 条热帖成功挂载封面图附件（其余 14 条因 TikHub 搜索结果不确定未匹配）
+
+### 踩坑记录
+
+#### 坑 1：Drive 上传 API 参数名
+
+- **现象**：`upload_all` 返回 1061002 `params error`
+- **原因**：参数名是 `file_name`，不是 `filename`。飞书 API 文档明确写的 `file_name`
+- **解决**：改 data dict key
+
+#### 坑 2：tenant_access_token 无 Drive 权限
+
+- **现象**：修好参数名后返回 1061004 `forbidden`
+- **原因**：应用的 tenant token 只有 `bitable:app` 权限，Drive 媒体上传需要 `drive:file:upload` scope
+- **解决**：改用 lark-cli 的 user_access_token（有 `drive:file:upload` scope），通过 Python subprocess 调用 `lark-cli api`
+
+#### 坑 3：附件字段 allowed_edit_modes 阻止 API 上传
+
+- **现象**：写入 file_token 时返回 1254027 `UploadAttachNotAllowed`
+- **原因**：旧"封面"字段 `allowed_edit_modes.manual=false`，只允许手机扫码上传，不允许 API 写入
+- **解决**：删除旧字段，重新创建 `type=17` 附件字段（默认允许所有上传方式）。新字段 ID：`fld3h2c2Pw`
+
+#### 坑 4：Windows 中文路径 + lark-cli 路径限制
+
+- **现象**：Python subprocess 调 lark-cli 时中文路径（`金词挖掘机`）被编码为乱码（`閲戣瘝鎸栨帢鏈篭`）
+- **原因**：Windows 子进程编码 + lark-cli 要求 `--data` 和 `--file` 必须是相对于 cwd 的相对路径
+- **解决**：在 `%TEMP%\feishu_upload` 目录（纯 ASCII 路径）执行 lark-cli，JSON 文件和图片都复制到该目录后用相对路径引用
+
+### 可沉淀为 Skill 的流程
+
+> 飞书多维表附件上传（用户原话："以后考虑沉淀 skill"）
+
+核心流程：
+1. 上传文件到 Drive：`lark-cli api POST /open-apis/drive/v1/medias/upload_all --as user --data @req.json --file file=cover.jpg`
+   - `parent_type: "bitable_image"`（图片）或 `"bitable_file"`（文件）
+   - `parent_node: <bitable_app_token>`
+   - 返回 `file_token`
+2. 更新记录：`lark-cli api PUT /open-apis/bitable/v1/apps/{app}/tables/{table}/records/{record} --as user --data @update.json`
+   - `fields: {"字段名": [{"file_token": "xxx"}]}`
+3. 注意事项：
+   - 附件字段创建时不要设置 `allowed_edit_modes`，保持默认（manual=true）
+   - lark-cli 的 `--data @file` 和 `--file` 必须用相对路径（相对 cwd）
+   - Windows 环境用纯 ASCII 临时目录执行 lark-cli，避免中文路径编码问题
+   - lark-cli 在 Git Bash 下有 `/open-apis/` 路径转换问题，需用 PowerShell 或加 `MSYS_NO_PATHCONV=1`
+
+### 下一步
+
+- 考虑多页搜索或按 post_id 精确查询来补全剩余 14 条封面
+- Phase 1.3 飞书读写封装
+
+---
+
 ## [2026-05-15 23:20] Phase 1.2 — TikHub 接口联调完成
 
 ### 完成内容
