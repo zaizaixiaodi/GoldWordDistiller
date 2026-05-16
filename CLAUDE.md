@@ -118,10 +118,10 @@ goldword-distiller/
 - **应用**：`cli_aa8d9918c778dbb4`（用户自建「金词」应用）
 - **Bitable app_token**：`Z5DubZ9DMaPkgDsbMWScnrgknSz`（嵌在 Wiki 中，**非** URL 中的 wiki token）
 - **四张表**：
-  - 热贴库 `tblg2nOd7LvMZCKC`（已建，含封面附件 + 封面文案输出结果）
-  - 金词库 `tblqAKnCwubtFS0y`（v2 待补字段：`category` / `source_field` / `vibe_score` / `suggested_patterns`）
-  - 配置表 `tbl7nJSXfjTkreFM`（已建空表）
-  - 句式库 `<待建>`（v2 新增，Phase 1.3 收尾建表）
+  - 热贴库 `tblg2nOd7LvMZCKC`（含封面附件 + 封面文案输出结果）
+  - 金词库 `tblqAKnCwubtFS0y`（v2 字段已补全：category / source_field / vibe_score / suggested_patterns / domain / trend / status 等 16 字段）
+  - 配置表 `tbl7nJSXfjTkreFM`（domain_word / search_keyword / is_active / priority / note）
+  - 句式库 `tbl7iu3g51uFw1Ci`（v2 新增：skeleton / category / examples / frequency / trend / recommended_categories 等 9 字段）
 - **封面识图**：飞书侧已配置豆包多模态识图字段，对附件 OCR + 语义识别后回填到"封面文案输出结果"字段，agent 侧只需轮询等待
 - **Windows 注意**：Git Bash 下使用 lark-cli raw API 需加 `MSYS_NO_PATHCONV=1`（详见 DEVLOG 2026-05-15 踩坑）
 

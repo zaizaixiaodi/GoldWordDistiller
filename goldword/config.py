@@ -17,6 +17,7 @@ FEISHU_BITABLE_APP_TOKEN: str = os.getenv("FEISHU_BITABLE_APP_TOKEN", "")
 FEISHU_HOTPOSTS_TABLE_ID: str = os.getenv("FEISHU_HOTPOSTS_TABLE_ID", "")
 FEISHU_GOLDWORDS_TABLE_ID: str = os.getenv("FEISHU_GOLDWORDS_TABLE_ID", "")
 FEISHU_CONFIG_TABLE_ID: str = os.getenv("FEISHU_CONFIG_TABLE_ID", "")
+FEISHU_PATTERNS_TABLE_ID: str = os.getenv("FEISHU_PATTERNS_TABLE_ID", "")
 
 # 飞书自建应用（备用，供 Python 直接调 API 时使用）
 FEISHU_APP_ID: str = os.getenv("FEISHU_APP_ID", "")
