@@ -21,3 +21,8 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Phase 1.2++ 封面上传过程产物（临时下载图 + 请求体 JSON，不入版本库）
+scripts/covers/*.webp
+scripts/covers/*.json
+scripts/samples/batch_create.json

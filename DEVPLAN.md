@@ -1,10 +1,13 @@
-# 金词蒸馏器 / GoldWord Distiller — DEVPLAN v1
+# 金词蒸馏器 / GoldWord Distiller — DEVPLAN v2
 
 > **本文件的定位**：把 PRD 拆解成"AI 可以独立执行 + 用户可以肉眼验收"的开发任务清单。每个任务都有明确的 DoD（Definition of Done），后续 AI 接手时按本文件顺序推进即可，无需重新通读 PRD 再做规划。
 >
 > **配套文件**：
-> - 需求源头：[`项目需求和参考/金词蒸馏器_PRD_v1.md`](项目需求和参考/金词蒸馏器_PRD_v1.md)
-> - 开发流水账：`DEVLOG.md`（每次 `/done` 追加，本文件创建后由 Phase 1.1 生成）
+> - 需求源头：[`项目需求和参考/金词蒸馏器_PRD_v2.md`](项目需求和参考/金词蒸馏器_PRD_v2.md) ← 当前以 v2 为准
+> - 历史版本：[`项目需求和参考/金词蒸馏器_PRD_v1.md`](项目需求和参考/金词蒸馏器_PRD_v1.md)（已废弃，仅供溯源）
+> - 开发流水账：`DEVLOG.md`（每次 `/done` 追加）
+>
+> **v1 → v2 影响范围**：Phase 1.1/1.2 已完成不受影响；Phase 1.3 末尾追加"建句式库表 + 金词库新字段"；Phase 2.1 蒸馏 prompt 拆 title/cover + 按功能位打标；Phase 2.3 简报升级为周报（含元认知反思 + 业务规范回写）；Phase 3 加入"必填位/加分位回测"与"第 9 类工具/IP 回测"专项。
 
 ---
 
@@ -36,8 +39,8 @@
 ## 1. 状态总览（每次 /done 后更新）
 
 **当前阶段**：Phase 1 — 管道打通（MVP）
-**当前任务**：1.3 飞书多维表搭建与读写封装
-**最近一次更新**：2026-05-15 23:20（Phase 1.2 TikHub 联调完成）
+**当前任务**：1.3 飞书多维表搭建与读写封装（追加 v2 字段 + 句式库表）
+**最近一次更新**：2026-05-16 16:30（Phase 1.3-pre：PRD/DEVPLAN/CLAUDE 三件套升级到 v2，代码侧未动）
 
 ### Phase 0：准备工作（用户侧）
 - [x] 0.1 收集环境变量与外部账号
@@ -46,18 +49,18 @@
 ### Phase 1：管道打通（MVP）
 - [x] 1.1 项目脚手架与开发工作流
 - [x] 1.2 TikHub 接口联调（search + hotlist）
-- [ ] 1.3 飞书多维表搭建与读写封装
+- [ ] 1.3 飞书多维表搭建与读写封装（**v2 追加**：金词库新字段 + 句式库表）
 - [ ] 1.4 端到端采集管道（/harvest）
 
-### Phase 2：蒸馏能力
-- [ ] 2.1 金词提取（高频词 + 语义聚类）
-- [ ] 2.2 趋势追踪（tracker.py）
-- [ ] 2.3 简报与手动入口（/feed、/add、/report）
+### Phase 2：蒸馏能力（v2 重写）
+- [ ] 2.1 金词提取（按 8 功能位 + 标题/封面分开 + vibe_score）
+- [ ] 2.2 趋势追踪（tracker.py，金词 + 句式双路）
+- [ ] 2.3 简报 + 周报（含元认知反思 + 业务规范回写）+ /feed + /add
 
 ### Phase 3：体验打磨
 - [ ] 3.1 定时任务（cron + /schedule）
-- [ ] 3.2 管理命令（/list、/config）
-- [ ] 3.3 飞书深度集成调优
+- [ ] 3.2 管理命令（/list、/config、/patterns）
+- [ ] 3.3 飞书深度集成调优 + **v2 专项回测**（必填/加分位分级、第 9 类工具/IP）
 
 ---
 
@@ -205,12 +208,12 @@
 
 **A. 飞书侧建表**（通过 `lark-cli base` 命令）：
 1. 确认多维表是否已存在。如不存在，用 `lark-cli base` 命令或引导用户在飞书 UI 新建。
-2. 确认三张表（热贴库、金词库、配置表）是否已创建。如未创建：
-   - 可通过 `lark-cli base` + `lark-base` skill 按 PRD §3.1 / §3.2 / §3.3 的字段表创建
-   - 也可引导用户在飞书 UI 手动创建，然后记下每张表的 `table_id`
-3. 引导用户在飞书多维表上配置"链接深度解析"工具（PRD §9 待定事项 2 提到）：
-   - ⚠️ 需要用户确认该工具的具体名称、触发方式、解析结果回填到哪几列
-   - 把确认结果写到 CLAUDE.md 的"飞书集成"小节
+2. 确认四张表是否已创建（v2 新增句式库）：
+   - 热贴库：已建，按 PRD v2 §6.1 已含封面附件 + 封面文案输出结果字段 ✅
+   - 金词库：已建空表，需按 **PRD v2 §6.2** 补建字段，特别是 v2 新增的 ★ 字段：`category`、`source_field`、`vibe_score`、`suggested_patterns`（关联句式库）
+   - 配置表：已建空表，按 PRD v2 §6.4（同 v1 §3.3）建字段
+   - 句式库（v2 新增）：按 PRD v2 §5.3 创建
+3. 用户已确认飞书豆包识图工具运转正常（成本可接受，已在用），结果回填到"封面文案输出结果"字段。此项不再阻塞。
 
 **B. 代码侧**（薄封装）：
 4. 实现 `goldword/feishu.py`，作为对 `lark-cli base` 命令的业务逻辑封装层，至少包含：
@@ -218,20 +221,22 @@
    - `batch_insert_posts(records: list[dict]) -> list[str]`
    - `query_posts(filter: dict) -> list[dict]`
    - `update_post(record_id: str, fields: dict) -> None`
-   - 金词库对应方法同上：`insert_word` / `update_word` / `query_words`
-   - **解析等待轮询** `wait_for_parse(record_ids: list[str], initial_wait=90, retry_interval=30, max_retries=3) -> dict`：
-     - 先 sleep 90s
-     - 然后循环最多 3 次，每次用 `lark-cli base` 查询 `parse_status`，全部为"已解析"则返回数据
-     - 超时则返回部分解析数据 + 失败列表
-5. 写一个最小测试 `scripts/probe_feishu.py`：写入 1 条假数据 → 等 5 秒 → 读出来 → 更新 → 删除。
+   - 金词库对应方法同上：`insert_word` / `update_word` / `query_words`（v2：支持按 `category` / `source_field` 过滤）
+   - **句式库**（v2 新增）方法：`insert_pattern` / `update_pattern` / `query_patterns`
+   - **识图等待轮询** `wait_for_cover_text(record_ids: list[str], initial_wait=90, retry_interval=30, max_retries=3) -> dict`：
+     - 轮询飞书"封面文案输出结果"字段是否非空
+     - 超时则返回部分识图数据 + 失败列表
+5. 写一个最小测试 `scripts/probe_feishu.py`：写入 1 条假数据 → 等 5 秒 → 读出来 → 更新 → 删除（覆盖热贴库 + 金词库 + 句式库 三表）。
 
 **DoD**：
-- `lark-cli base` 命令能正常读写目标多维表（先 `--dry-run` 确认，再实际执行）
-- `scripts/probe_feishu.py` 跑通，飞书后台能看到操作痕迹
+- `lark-cli base` 命令能正常读写四张目标多维表（先 `--dry-run` 确认，再实际执行）
+- 金词库已含 v2 ★ 新字段（category / source_field / vibe_score / suggested_patterns）
+- 句式库已建（v2 新增）
+- `scripts/probe_feishu.py` 跑通，飞书后台能看到三张表的操作痕迹
 - `goldword/feishu.py` 的关键方法都有 docstring
-- CLAUDE.md 的"飞书集成"小节已经写清楚：三张表的 table_id 来源、解析工具如何触发、解析结果回填哪几列
+- CLAUDE.md 的"飞书集成"小节已更新到 4 张表
 
-**产物文件**：`goldword/feishu.py`、`scripts/probe_feishu.py`、CLAUDE.md（更新）
+**产物文件**：`goldword/feishu.py`、`scripts/probe_feishu.py`、CLAUDE.md（更新到 4 张表）
 
 **优势**（相比手写 API 封装）：
 - auth 管理（token 缓存、刷新）由 `lark-cli` 内置，不需要在 `feishu.py` 里处理
@@ -284,93 +289,132 @@
 
 > Phase 2 的目标：把 Phase 1 沉淀的原始数据真正"蒸"成金词。这一阶段结束时，金词库里应该自动出现一批带"新词/上升/平稳/下降"标签的金词，并能产出 PRD §4.2 那样的简报。
 
-### 2.1 金词提取（高频词 + 语义聚类）
+### 2.1 金词提取（按 8 功能位 + 标题/封面分开 + vibe_score）
 
-**目标**：实现 `distiller.py`，输入"一批已解析热贴"，输出"候选金词列表"。
+**目标**：实现 `distiller.py`，输入"一批已识图热贴"，输出"结构化金词 + 候选句式"双路结果。
 
-**前置**：1.4 完成（飞书热贴库里已有真实解析数据）。
+**前置**：1.4 完成（飞书热贴库已有真实数据，含封面文案输出结果）。
 
 **步骤**：
-1. 在 `prompts/distill.md` 写一版蒸馏 prompt，输入是一组帖子的（标题 + 封面文字 + 完整文案 + 互动数据），输出是 JSON 格式的候选金词列表，每个候选词包含：
-   - `word`：主词（最有画面感的表述）
-   - `aliases`：同义变体
-   - `frequency`：在本批次出现的频次
-   - `related_post_ids`：关联帖子 ID
-   - `vibe`：画面感/力量感/反差感的简短描述
-2. 实现 `goldword/distiller.py`：
-   - `distill(posts: list[dict]) -> list[CandidateWord]`：
-     - 预处理：拼接所有帖子的文本
-     - 调 Claude（agent 本身的能力，不用额外 API）按 `prompts/distill.md` 分析
-     - 过滤 PRD §4.1 的筛选条件（频次 ≥3、互动数据高于中位数、画面感、新鲜度）
-3. 在 `harvester.py` 的 `harvest_all()` 末尾调 distill，但**先不写金词库**（写金词库是 2.2 的事），先 dump 到 `scripts/samples/candidate_words.json` 供肉眼审。
+1. 在 `prompts/distill.md` 写蒸馏 prompt，输入是一组帖子的（标题 + 封面文案 + 完整正文 + 互动数据），输出按 **PRD v2 §7.2** 的双路 JSON 结构：
+   - `gold_words[]`：每项含 `word / aliases / category / source_field / vibe_score / frequency / related_post_ids / vibe_reason`
+     - `category` 必须是 8 个功能位之一：`who / when / pain / do / twist / number / feel / picture`
+     - `source_field` 是 `title / cover / both`
+     - `vibe_score` 是 0-10 整数，反常识/隐喻/情绪类天然高分
+   - `patterns[]`：每项含 `skeleton / category / examples / from_post_ids`
+2. **标题路与封面路分别走一次 prompt**，输入字段不同：
+   - 标题路：标题 + 完整正文（语境用）
+   - 封面路：封面文案输出结果（独立处理）
+   - 合并去重时按 word 聚合，若两路都出现则 `source_field=both`
+3. 实现 `goldword/distiller.py`：
+   - `distill(posts: list[dict]) -> DistillResult`（含 `gold_words` 和 `patterns` 两个列表）
+   - 内部并行调用 `_distill_titles()` 和 `_distill_covers()` 后合并
+   - 按 PRD v2 §7.1 第四步筛选：`vibe_score ≥ 4`、频次 ≥ 2 或互动高于中位数、新鲜度
+4. 在 `harvester.harvest_all()` 末尾调 distill，先 dump 到 `scripts/samples/candidate_words.json` 和 `scripts/samples/candidate_patterns.json` 供人审。
 
 **DoD**：
-- `python -m goldword.distiller --from-feishu` 能读飞书最近一批热贴并输出候选金词 JSON
-- 用户肉眼审 candidate_words.json，确认至少 50% 候选词"看起来像金词"（不是通用停用词）
-- prompt 里的停用词表已经覆盖 PRD §4.1 提到的"绝绝子/yyds/姐妹们"等
+- `python -m goldword.distiller --from-feishu` 能读飞书最近一批热贴并输出双路 JSON
+- 人审 candidate_words.json，确认 ≥ 50% 候选词"看起来像金词"且 `category` 标注合理
+- candidate_patterns.json 至少抓到 2 个真实句式骨架
+- prompt 里包含 8 功能位的定义、典型例子、与停用词表
 
-**产物文件**：`prompts/distill.md`、`goldword/distiller.py`、`scripts/samples/candidate_words.json`
+**产物文件**：`prompts/distill.md`、`goldword/distiller.py`、`scripts/samples/candidate_words.json`、`scripts/samples/candidate_patterns.json`
 
 **风险**：
-- 第一版蒸馏质量大概率不行，需要 2-3 轮 prompt 迭代。⚠️ 不要追求一步到位，先跑通管道，迭代放在 3.3。
-- LLM 输出的 JSON 可能不合法，需要 try-except + 重试逻辑。
+- 第一版分类的边界判断（情绪 vs 反常识、隐喻 vs 行动）会模糊，prompt 里必须给出对比例子
+- 标题路和封面路如果用同一个 prompt，可能会把封面"硬钩子"的偏好带到标题，要拆两套子 prompt
+- LLM 输出 JSON 不合法时需 try-except + 重试
+
+**v2 新增 DoD**：
+- 输出包含 8 个 category 中至少 4 类有命中（避免全堆在 number/who 上）
+- `vibe_score` 分布合理（不全是 8-10）
+- 周报元认知反思区会持续校验该 prompt 质量
 
 ---
 
-### 2.2 趋势追踪（tracker.py）
+### 2.2 趋势追踪（tracker.py，金词 + 句式双路）
 
-**目标**：实现 `tracker.py`，把 2.1 产出的候选金词与金词库历史数据比对，打上趋势标签后写回金词库。
+**目标**：实现 `tracker.py`，把 2.1 产出的候选金词 + 候选句式与历史数据比对，打趋势标签后写回飞书。
 
 **前置**：2.1 完成。
 
 **步骤**：
 1. 实现 `goldword/tracker.py`：
-   - `compare_with_history(candidates: list[CandidateWord]) -> list[TrackedWord]`：
-     - 对每个候选词查金词库（按 `word` + `aliases` 模糊匹配）
-     - 按 PRD §4.1 第四步规则打标签：新词 / 上升 / 平稳 / 下降
+   - `track_words(candidates: list[CandidateWord]) -> list[TrackedWord]`：
+     - 对每个候选词查金词库（按 `word` + `aliases` 模糊匹配，**v2 同 category 内才比对**避免跨类误判）
+     - 按 PRD v2 §7.1 第五步规则打标签：新词 / 上升 / 平稳 / 下降
      - 计算 first_seen、last_seen、frequency 变化
-2. 实现 `tracker.upsert_to_feishu(words: list[TrackedWord])`：
-   - 新词 → insert，状态=待审
-   - 已有词 → update（更新 frequency、last_seen、trend）
-   - 关联热贴 → 写入 `related_posts` 字段
-3. 在 `harvester.harvest_all()` 中把 distill + tracker 串起来：搜索 → 写热贴 → 等解析 → distill → tracker → 写金词库。
-4. 跑一次完整 `/harvest`，飞书金词库里应该自动出现新词。
+   - `track_patterns(candidates: list[CandidatePattern]) -> list[TrackedPattern]`：
+     - 句式骨架按 `skeleton` 字符串归一化后比对
+     - 同样产出新句式 / 上升 / 平稳 / 下降
+2. 实现 `tracker.upsert_to_feishu(...)`：
+   - 金词：新词 → insert（状态=待审），已有 → update（frequency、last_seen、trend）
+   - 句式：同上
+   - `suggested_patterns` 字段：根据金词的 category 推荐句式骨架（如 number + do 类金词常配"承诺型"句式）
+3. 在 `harvester.harvest_all()` 中把 distill + tracker 串起来：搜索 → 写热贴 → 等识图 → distill（双路）→ tracker（双路）→ 写金词库 + 句式库。
+4. 跑一次完整 `/harvest`，飞书金词库 + 句式库都应自动出现新条目。
 
 **DoD**：
-- `/harvest` 跑完后，飞书金词库新增至少 5 个候选词，状态=待审
-- 连续跑 2 次 `/harvest`（中间换搜索词），第二次能看到至少 1 个词的 trend 从"新词"变为"上升"或"平稳"
+- `/harvest` 跑完后，飞书金词库新增 ≥ 5 个候选词，状态=待审，且 category 字段已正确填入
+- 飞书句式库新增 ≥ 1 个候选句式
+- 连续跑 2 次 `/harvest`（中间换搜索词），第二次至少 1 个词的 trend 从"新词"→"上升/平稳"
 
 **产物文件**：`goldword/tracker.py`、`goldword/harvester.py`（串联调整）
 
 **风险**：
-- 模糊匹配的阈值需要调（用编辑距离？子串匹配？语义相似度？）。先用最简单的：完全相等或互为子串。
-- "下降"标签需要从历史读取"上次出现但本次消失"的词，逻辑稍复杂，注意只比对同一领域内的词。
+- 模糊匹配的阈值需要调（编辑距离 / 子串 / 语义相似度）。先用最简单的：同 category 内完全相等或互为子串
+- 句式骨架的归一化（"不是 X，是 Y" vs "不是 A，是 B"）需要做变量位识别
 
 ---
 
-### 2.3 简报与手动入口（/feed、/add、/report）
+### 2.3 简报 + 周报（含元认知反思）+ /feed + /add
 
-**目标**：把 PRD §2.2、§2.4、§4.2 三个面向用户的功能实现，让博主真正能用起来。
+**目标**：实现 PRD v2 §8 的实时简报 + 周报双形态，覆盖 §3.2 他山之石、§3.4 真人甄选两个手动入口。
 
 **前置**：2.2 完成。
 
 **步骤**：
-1. 实现 `goldword/reporter.py`，按 PRD §4.2 的格式生成简报（CLI 文本输出）。
-2. 创建 `.claude/commands/report.md`：调 reporter，输出最近一期简报。
-3. 在 `harvester.harvest_all()` 末尾自动调 reporter。
-4. 实现 `goldword/feeder.py`（PRD §2.2 他山之石）：
-   - `feed_url(url: str)`：调 TikHub 提取分享链接 → 拉详情 → 走 distill → 写金词库（source=他山之石）
-   - `feed_text(text: str, domain: str | None)`：纯文本直接走 distill
-   - `feed_file(path: str)`：读文件后走 feed_text
-5. 创建 `.claude/commands/feed.md`，支持 `/feed <url>`、`/feed --text`、`/feed --file <path>`。
-6. 创建 `.claude/commands/add.md`，实现 PRD §2.4 的语法 `/add "<金词>" --domain "<领域>" --note "<备注>"`，写入金词库时 source=人工精选，status=已采纳（跳过"待审"）。
+
+**A. 实时简报**（每次 /harvest 末尾自动产出）：
+1. 实现 `goldword/reporter.py` 的 `generate_brief(harvest_result) -> str`，按 PRD v2 §8.1 的格式输出 CLI 文本：
+   - 采集数据概览
+   - 新金词 Top N（按 vibe_score 排序，标 `[category|source_field|vibe=N]`）
+   - 新句式 Top N
+   - 升温/下降趋势提示
+
+**B. 周报**（v2 核心增量）：
+2. 实现 `reporter.generate_weekly_report(week: str) -> str`，按 PRD v2 §8.2 的 7 节模板生成 Markdown：
+   - 数据概览
+   - 金词层次分布（按 8 个功能位的环比表）
+   - TOP 金词推荐（标题用 / 封面用 分开列）
+   - 新句式发现
+   - 趋势变化
+   - 选题建议（基于"高 vibe 金词 + 升温句式"组合自动生成 5 个候选标题/封面）
+   - ⭐ **元认知反思**：功能位模型是否需要调整、prompt 漏检/误检、飞书识图质量、分词与停用词策略、待回测开放问题
+3. 周报写入飞书（建议在 docx 或周报专表，本 phase 先输出到本地 `reports/weekly_YYYY-WNN.md`）
+4. 创建 `prompts/observations.md`（业务规范回写文档）：人审周报后将"已验证的判断"沉淀到这里，下次蒸馏 prompt 引用，形成闭环
+
+**C. 命令注册**：
+5. 创建 `.claude/commands/report.md`：
+   - 无参 → 本次简报
+   - `--weekly` → 本周周报
+   - `--weekly --week 2026-W19` → 指定周
+6. 创建 `.claude/commands/feed.md`，支持 `/feed <url>`、`/feed --text`、`/feed --file <path>`
+7. 实现 `goldword/feeder.py`（PRD v2 §3.2 他山之石）：
+   - `feed_url(url: str)`、`feed_text(text: str, domain: str | None)`、`feed_file(path: str)`
+   - 走相同 distill 流程，source=他山之石
+8. 创建 `.claude/commands/add.md`，实现 PRD v2 §3.4 的新语法：
+   - `/add "<金词>" --field title|cover --category <功能位> --domain <领域> --note "<备注>"`
+   - 不指定 `--category` 时由 agent 推断
 
 **DoD**：
-- `/report` 能产出一份格式正确的简报
-- `/feed <小红书链接>` 能成功喂入一篇外部素材
-- `/add "测试金词" --domain "搞钱" --note "调试"` 能在飞书金词库看到新行
+- `/report` 输出一份格式正确的本次简报，含 category 标签
+- `/report --weekly` 输出一份 7 节完整周报，元认知反思区有内容（即使是占位提示）
+- `/feed <小红书链接>` 能成功喂入一篇外部素材，金词带 category
+- `/add "测试金词" --field title --category twist --domain 搞钱` 能在飞书金词库看到新行，字段完整
+- `prompts/observations.md` 已创建（首版可以是空模板）
 
-**产物文件**：`goldword/reporter.py`、`goldword/feeder.py`、`.claude/commands/{report,feed,add}.md`
+**产物文件**：`goldword/reporter.py`、`goldword/feeder.py`、`.claude/commands/{report,feed,add}.md`、`prompts/observations.md`、`reports/weekly_*.md`
 
 ---
 
@@ -394,34 +438,54 @@
 
 ---
 
-### 3.2 管理命令（/list、/config）
+### 3.2 管理命令（/list、/config、/patterns）
 
-**目标**：实现 PRD §5 中"查看与管理"分类下的命令。
+**目标**：实现 PRD v2 §9 中"查看与管理 + 句式库"分类下的命令。
 
 **前置**：Phase 2 完成。
 
 **步骤**：
-1. `/list`：默认最近 2 周的金词，支持 `--trend up/down/stable/new`、`--status pending/adopted/used/stale`、`--domain <领域>`。
-2. `/config`：查看/编辑领域词和搜索词（直接调飞书 API 改配置表，或本地编辑后同步飞书）。
-3. `/sync`：手动触发飞书同步（在哪些场景需要单独同步？要和用户确认。如果 /harvest 已经端到端跑通，这个命令可能多余。）
+1. `/list`：默认最近 2 周的金词，v2 支持额外过滤：
+   - `--trend up/down/stable/new`
+   - `--status pending/adopted/used/stale`
+   - `--domain <领域>`
+   - **`--category <功能位>`**（v2 新增）
+   - **`--field title|cover`**（v2 新增）
+   - **`--min-vibe <N>`**（v2 新增，按 vibe_score 阈值）
+2. `/patterns`（v2 新增）：浏览/管理句式库
+   - 无参 → 列出所有句式按 trend 分组
+   - `--add "<骨架>" --category 对比` → 手动添加句式
+3. `/config`：查看/编辑领域词和搜索词
+4. `/sync`：手动触发飞书同步（如果 /harvest 已端到端跑通，可能多余，按需保留）
 
-**DoD**：用户 `/list --trend up` 能看到当前上升趋势的金词列表。
+**DoD**：
+- `/list --category twist --min-vibe 6` 能看到反常识类高 vibe 金词
+- `/list --field cover` 只看封面金词
+- `/patterns` 能列出当前句式库
 
 ---
 
-### 3.3 飞书深度集成调优
+### 3.3 飞书深度集成调优 + v2 专项回测
 
-**目标**：把 Phase 1 / 2 中遇到的体验问题集中收尾。
+**目标**：把 Phase 1 / 2 中遇到的体验问题集中收尾，并完成 PRD v2 列出的"待回测"专项。
 
-**前置**：实际使用一周以上，DEVLOG 里有积累的反馈。
+**前置**：实际使用一周以上，DEVLOG / observations.md 里有积累的反馈，金词库累计 ≥ 200 条多赛道数据。
 
 **步骤**：
-1. 调蒸馏 prompt（参考 DEVLOG 里记录的"漏检"和"误检"案例）。
-2. 校准飞书解析等待策略（如果发现常常超时，改成异步回收策略）。
-3. 调金词筛选阈值（频次门槛、互动数据中位数权重）。
-4. 优化 CLI 输出格式（简报的视觉表达）。
+1. 调蒸馏 prompt（参考 DEVLOG 与周报元认知区记录的"漏检"和"误检"案例）。
+2. 校准飞书识图等待策略（如果发现常常超时，改成异步回收策略）。
+3. 调金词筛选阈值（vibe_score 门槛、频次门槛、互动数据中位数权重）。
+4. 优化 CLI 输出格式（简报/周报的视觉表达）。
+5. **v2 专项回测 1：必填位 vs 加分位 vs 辅助位分级**
+   - 用 ≥ 200 条多赛道数据统计每个 category 的出现率
+   - 决定是否将分级固化进 prompt（"必填位无命中时强制补"vs"加分位有命中时优先入库"）
+6. **v2 专项回测 2：第 9 类"工具/IP 名"**
+   - 收集所有被打上 `picture` 但实际是工具/IP 名的金词样本
+   - 决定是否新增第 9 类 `tool_ip`，并补充 prompt 与表结构
 
-**DoD**：用户主观评价"现在产出的金词清单一半以上都直接能用"。
+**DoD**：
+- 用户主观评价"现在产出的金词清单一半以上都直接能用"
+- 两个专项回测有结论，结论同步进 PRD v2.1（或写入 observations.md）
 
 ---
 
@@ -455,19 +519,19 @@ Agent 的 `wait_for_parse` 轮询条件：`parse_status in ("已解析", "解析
 - **想重跑蒸馏但不重新采集**：`python -m goldword.distiller --from-feishu --since <日期>`
 - **想清掉一次错误的采集**：在飞书 UI 里筛选 `harvest_date=<今天>` 然后手动删除（agent 不主动删数据）
 
-### 6.4 PRD 待定事项与本计划的对应
+### 6.4 PRD v2 待定事项与本计划的对应
 
-PRD §9 的 7 项待定事项对应到本计划的处理位置：
+PRD v2 §11 的 7 项待定事项对应到本计划的处理位置：
 
-| PRD §9 项 | 在 DEVPLAN 哪里处理 |
-|-----------|---------------------|
-| 1. 飞书应用权限 | 0.1 |
-| 2. 飞书解析工具 | 1.3 步骤 A2 |
-| 3. 解析时序校准 | 1.4 风险点 + 3.3 |
-| 4. Git 仓库地址 | 0.2 |
-| 5. TikHub 字段确认 | 1.2 步骤 3 |
-| 6. 播客 ASR | 不在 v1 范围，记在 PRD §9 即可 |
-| 7. 蒸馏 prompt 迭代 | 2.1 + 3.3 |
+| PRD v2 §11 项 | 在 DEVPLAN 哪里处理 |
+|---------------|---------------------|
+| 1. 必填位 vs 加分位 vs 辅助位分级 | 2.1 + 3.3 专项回测 1 |
+| 2. 第 9 类"工具/IP 名" | 3.3 专项回测 2 |
+| 3. 蒸馏 prompt 迭代 | 2.1 首版 + 3.3 持续调优 + 周报闭环 |
+| 4. 飞书豆包识图成功率基线 | 1.3 收尾确认 |
+| 5. 句式库初始骨架命中率 | 2.2 跑通后观察 |
+| 6. 周报元认知反思的人审回写机制（observations.md）| 2.3 创建空模板 + 3.3 持续填充 |
+| 7. 播客 ASR | 不在 v2 范围 |
 
 ---
 
@@ -475,3 +539,11 @@ PRD §9 的 7 项待定事项对应到本计划的处理位置：
 
 - 2026-05-15：DEVPLAN v1 创建，对齐 PRD v1.1。
 - 2026-05-15：DEVPLAN v1.1 — 飞书集成方案从"手写 `lark-oapi` 封装"升级为"基于 `lark-cli`（v1.0.32）的薄封装层"。影响范围：§0.1（环境变量减少，增加 lark-cli 认证步骤）、§1.3（飞书搭建与封装方案重写）。
+- 2026-05-16：DEVPLAN v2 — 对齐 PRD v2.0。影响范围：
+  - §1.3 末尾追加"建句式库表 + 金词库 v2 新字段（category / source_field / vibe_score / suggested_patterns）"
+  - §2.1 蒸馏 prompt 拆 title/cover 双路 + 按 8 功能位打标 + vibe_score
+  - §2.2 趋势追踪扩展到金词 + 句式双路
+  - §2.3 简报升级为"实时简报 + 周报（含元认知反思 + observations.md 业务规范回写）"
+  - §3.2 管理命令新增 /patterns + /list 的 category/field/min-vibe 过滤
+  - §3.3 新增 v2 专项回测（必填/加分位分级、第 9 类工具/IP）
+  - §6.4 待定事项映射表更新到 PRD v2 §11
