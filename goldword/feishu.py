@@ -7,7 +7,6 @@
 from __future__ import annotations
 
 import json
-import platform
 import subprocess
 import time
 from pathlib import Path
@@ -55,39 +54,64 @@ def _base_path(table_id: str, suffix: str = "") -> str:
     return f"/open-apis/bitable/v1/apps/{FEISHU_BITABLE_APP_TOKEN}/tables/{table_id}{suffix}"
 
 
-def _list_records(table_id: str, limit: int = 100, offset: int = 0) -> list[dict]:
-    """读取操作：lark-cli base +record-list via shell=True。
+def _unwrap_scalar_list(val: Any) -> Any:
+    """飞书 single-select 字段在 tabular 输出中是 ['twist'] 而非 'twist'。
 
-    解析 tabular JSON 输出为 [{record_id, fields: {name: value}}] 列表。
+    对长度 1 且元素为标量的 list 取首元素；附件 / 关联字段（list of dict）保留原样。
     """
-    cmd = (
-        f"lark-cli base +record-list "
-        f"--base-token {FEISHU_BITABLE_APP_TOKEN} "
-        f"--table-id {table_id} "
-        f"--as user --format json "
-        f"--limit {limit} --offset {offset}"
-    )
-    r = subprocess.run(cmd, shell=True, capture_output=True)
-    out = r.stdout.decode("utf-8", errors="replace")
-    if r.returncode != 0:
-        err = r.stderr.decode("utf-8", errors="replace")
-        raise RuntimeError(f"lark-cli base +record-list failed: {err[:200]} | {out[:200]}")
-    resp = json.loads(out)
-    body = resp.get("data", {})
-    field_names = body.get("fields", [])
-    record_ids = body.get("record_id_list", [])
-    rows = body.get("data", [])
+    if isinstance(val, list) and len(val) == 1 and isinstance(val[0], (str, int, float, bool)):
+        return val[0]
+    return val
 
-    records = []
-    for i, row in enumerate(rows):
-        fields = {}
-        for j, val in enumerate(row):
-            if j < len(field_names) and val is not None:
-                fields[field_names[j]] = val
-        records.append({
-            "record_id": record_ids[i] if i < len(record_ids) else "",
-            "fields": fields,
-        })
+
+def _list_records(table_id: str, limit: int = 500, page_size: int = 100) -> list[dict]:
+    """读取记录，自动分页直到取完或达到 limit。
+
+    Args:
+        limit: 最多读取的条数（默认 500，向后兼容）。要取所有数据传一个足够大的值。
+        page_size: 单次请求的页大小，飞书最大支持 500，默认 100 保守。
+
+    Returns:
+        [{record_id, fields: {name: value}}]，single-select 字段已在源头 unwrap 为标量。
+    """
+    records: list[dict] = []
+    offset = 0
+    while len(records) < limit:
+        remaining = limit - len(records)
+        req_size = min(page_size, remaining)
+        cmd = (
+            f"lark-cli base +record-list "
+            f"--base-token {FEISHU_BITABLE_APP_TOKEN} "
+            f"--table-id {table_id} "
+            f"--as user --format json "
+            f"--limit {req_size} --offset {offset}"
+        )
+        r = subprocess.run(cmd, shell=True, capture_output=True)
+        out = r.stdout.decode("utf-8", errors="replace")
+        if r.returncode != 0:
+            err = r.stderr.decode("utf-8", errors="replace")
+            raise RuntimeError(f"lark-cli base +record-list failed: {err[:200]} | {out[:200]}")
+        resp = json.loads(out)
+        body = resp.get("data", {})
+        field_names = body.get("fields", [])
+        record_ids = body.get("record_id_list", [])
+        rows = body.get("data", [])
+        has_more = body.get("has_more", False)
+
+        for i, row in enumerate(rows):
+            fields = {}
+            for j, val in enumerate(row):
+                if j < len(field_names) and val is not None:
+                    fields[field_names[j]] = _unwrap_scalar_list(val)
+            records.append({
+                "record_id": record_ids[i] if i < len(record_ids) else "",
+                "fields": fields,
+            })
+
+        if not has_more or not rows:
+            break
+        offset += len(rows)
+
     return records
 
 
