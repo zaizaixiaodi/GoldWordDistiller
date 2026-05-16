@@ -1,0 +1,499 @@
+{
+  "code": 200,
+  "request_id": "67965215-6015-4409-9dce-8d6d7aa91ab7",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:51:24",
+  "time_stamp": 1778946684,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/67965215-6015-4409-9dce-8d6d7aa91ab7?sign=372bc3715ab5e366abe0c1e2baf37d0ae4fa5f8a3d632ec33ae23fb06f1c6b12",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "6856bf4a0000000013011314"
+  },
+  "data": {
+    "code": 0,
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "Beijing",
+            "user": {
+              "red_official_verified": false,
+              "id": "6191d3a6000000001000de23",
+              "fstatus": "none",
+              "userid": "6191d3a6000000001000de23",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo315i62q1o1e005ochqej41nh3lpeb9eg?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "nickname": "大王的职场课",
+              "red_id": "9404758868",
+              "name": "大王的职场课"
+            },
+            "id": "6856bf4a0000000013011314",
+            "liked": false,
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "has_related_goods": false,
+            "comments_count": 17,
+            "last_update_time": 0,
+            "collected": false,
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 9307,
+            "head_tags": [],
+            "title": "体制内新人试用期转正述职报告（参考版）",
+            "share_info": {
+              "content": "一、亮眼开篇模板（直接套用）​ 模板：“20XX 年 XX 月，我通过全省gwy招录考试，正式加入 XX 单位。在这充实",
+              "show_wechat_tag": false,
+              "title": "体制内新人试用期转正述职报告（参考版",
+              "image": "http://sns-img-qc.xhscdn.com/spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg?imageView2/2/w/360/format/jpg/q/75",
+              "is_star": false,
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "guide_audited": true,
+              "link": "https://www.xiaohongshu.com/discovery/item/6856bf4a0000000013011314?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBlIp3F2mduCy2vu5Y9aNHOXemEVuUV1IYo6qXXax3QCg=&author_share=1",
+              "block_private_msg": false,
+              "wechat_share_desc": "@大王的职场课's note\n1532 Shares"
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "606bf9160000000001002129",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=606bf916e927d400010dfcee&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "初入职场的我们"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5f856e9e0000000001007675",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5f856e9eda91540001d7400b&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "name": "打工人",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5cd7d963000000000f018b70",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5cd7d9636849230001aae7af&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "name": "职场干货",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5c0b2348b6fef90001496421",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c0b2348a6a3c40001f1b3e1&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "学习日常"
+              },
+              {
+                "record_count": 0,
+                "id": "5be599d2bdc8eb0001d5ca73",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5be599d280b72a0001510b81&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "职场日常"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "614331c90000000001009163",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=614331c9595d030001610316&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "公务员转正",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "61c04cf80000000001006433",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=61c04cf8355a4c000131ce46&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "述职报告",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "5c3eadc1000000000d03ff1a",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c3eadc1caaf8300014ea98f&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "name": "工作总结",
+                "current_score": 0
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "606bf9160000000001002129",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/606bf916e927d400010dfcee?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "初入职场的我们"
+              }
+            ],
+            "desc": "一、亮眼开篇模板（直接套用）​\n模板：“20XX 年 XX 月，我通过全省gwy招录考试，正式加入 XX 单位。在这充实的一年里，得益于组织的悉心培养与同事的热情帮助，我实现了从‘职场新人’到能独立承担工作的蜕变。现将个人履职情况详细汇报如下：”​\n二、高分正文框架（四部分拆解）​\n（一）政治素养与思想建设​\n理论学习：深入学习党的二十大及三中全会精神，始终秉持 “以人民为中心” 的发展理念，积极参与政治理论学习。​\n主题教育：全年参与 “不忘初心、牢记使命” 等主题教育活动 XX 次，撰写学习心得 XX 篇，不断强化自身责任意识。​\n廉洁自律：严格遵守《廉洁自律准则》，工作中严守纪律红线，保持零违纪、零投诉记录，树立良好公仆形象。​\n（二）业务实绩与工作成果（数据量化）​\n文字岗位示例：全年累计起草各类文件 XX 篇，撰写并报送工作信息 XX 条，其中 X 篇被省级刊物收录刊发。​\n其他岗位可参考：围绕岗位职责，用数据呈现工作成果，如完成 XX 项专项任务、服务群众 XX 人次、推动 XX 项目落地等。​\n（三）自我反思与不足剖析（真诚务实）​\n创新能力：在 XX 工作中，对智能化、信息化手段运用不足，未来需加强新技术学习，优化工作流程。​\n实践转化：理论联系实际的能力有待提升，调研工作不够深入，后续将增加基层走访频次，提高调研质量。​\n（四）未来工作计划与目标​\n工作标准：以 “嘴勤问需求、手勤抓落实、脚勤跑一线” 的 “三勤” 标准严格要求自己，确保工作高效推进。​\n个人成长：努力成为精通政策的 “活字典”、心系群众的 “贴心人”，持续提升履职能力。​\n三、避坑指南（避免踩雷）​\n忌流水账：重点突出 3 - 4 项关键业绩，避免罗列琐碎工作，聚焦核心成果。​\n忌空泛表述：用具体案例、数据支撑观点，减少抽象口号，增强汇报说服力。​\n忌推诿责任：分析不足时，需同步提出可行的改进方案，体现积极解决问题的态度。​\n\t\n﻿#初入职场的我们[话题]#﻿ ﻿#打工人[话题]#﻿ ﻿#职场干货[话题]#﻿ ﻿#学习日常[话题]#﻿ ﻿#职场日常[话题]#﻿ ﻿#公务员转正[话题]#﻿ ﻿体制内干货﻿ ﻿#述职报告[话题]#﻿ ﻿#工作总结[话题]#﻿ ﻿体制内新人﻿",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "enable_brand_lottery": false,
+            "use_water_color": false,
+            "in_censor": false,
+            "mini_program_info": {
+              "title": "@大王的职场课 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/6856bf4a0000000013011314?xsec_source=app_share&xsec_token=CBlIp3F2mduCy2vu5Y9aNHOXemEVuUV1IYo6qXXax3QCg=",
+              "thumb": "http://sns-img-qc.xhscdn.com/spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@大王的职场课 发了一篇笔记，快点来看吧！",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D6856bf4a0000000013011314%26type%3Dnormal%26xsec_token%3DCBlIp3F2mduCy2vu5Y9aNHOXemEVuUV1IYo6qXXax3QCg%3D",
+              "user_name": "gh_52be748ce5b7",
+              "desc": "一、亮眼开篇模板（直接套用）​ 模板：“20XX 年 XX 月，我通过全省gwy招录考试，正式加入 XX 单位。在这充实"
+            },
+            "api_upgrade": -1,
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": false,
+            "red_envelope_note": false,
+            "shared_count": 1532,
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg",
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=c2b3ec0034beac18375cee77cdf33f81&t=6a08927b&src=A",
+                "scale_to_large": 4,
+                "width": 1587,
+                "url": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c2b3ec0034beac18375cee77cdf33f81&t=6a08927b&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c2b3ec0034beac18375cee77cdf33f81&t=6a08927b&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c2b3ec0034beac18375cee77cdf33f81&t=6a08927b&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c2b3ec0034beac18375cee77cdf33f81&t=6a08927b&src=A"
+                },
+                "longitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=c2b3ec0034beac18375cee77cdf33f81&t=6a08927b&src=A",
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1587,
+                  "size": 0,
+                  "height": 2245
+                },
+                "height": 2245,
+                "trace_id": "spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg",
+                "text_intention": 0
+              },
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs0g5ochqej41nh3i8vl94o?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=f69e9a8aec5fb2cd3b63f10f83aac17c&t=6a08927b&src=A",
+                "fileid": "spectrum/1040g0k031j0cv9uugs0g5ochqej41nh3i8vl94o",
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs0g5ochqej41nh3i8vl94o?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=f69e9a8aec5fb2cd3b63f10f83aac17c&t=6a08927b&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs0g5ochqej41nh3i8vl94o?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=f69e9a8aec5fb2cd3b63f10f83aac17c&t=6a08927b&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs0g5ochqej41nh3i8vl94o?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=f69e9a8aec5fb2cd3b63f10f83aac17c&t=6a08927b&src=A"
+                },
+                "original": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs0g5ochqej41nh3i8vl94o?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=f69e9a8aec5fb2cd3b63f10f83aac17c&t=6a08927b&src=A",
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs0g5ochqej41nh3i8vl94o?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=f69e9a8aec5fb2cd3b63f10f83aac17c&t=6a08927b&src=A",
+                "longitude": 0,
+                "width": 1587,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 2245,
+                "trace_id": "spectrum/1040g0k031j0cv9uugs0g5ochqej41nh3i8vl94o",
+                "text_intention": 0
+              },
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs105ochqej41nh3jqtp7m0?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=49bd5236e1ccfc7a4f1e70773ab2b453&t=6a08927b&src=A",
+                "fileid": "spectrum/1040g0k031j0cv9uugs105ochqej41nh3jqtp7m0",
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs105ochqej41nh3jqtp7m0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=49bd5236e1ccfc7a4f1e70773ab2b453&t=6a08927b&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs105ochqej41nh3jqtp7m0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=49bd5236e1ccfc7a4f1e70773ab2b453&t=6a08927b&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs105ochqej41nh3jqtp7m0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=49bd5236e1ccfc7a4f1e70773ab2b453&t=6a08927b&src=A"
+                },
+                "original": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs105ochqej41nh3jqtp7m0?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=49bd5236e1ccfc7a4f1e70773ab2b453&t=6a08927b&src=A",
+                "latitude": 0,
+                "width": 1587,
+                "url": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs105ochqej41nh3jqtp7m0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=49bd5236e1ccfc7a4f1e70773ab2b453&t=6a08927b&src=A",
+                "longitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 2245,
+                "trace_id": "spectrum/1040g0k031j0cv9uugs105ochqej41nh3jqtp7m0",
+                "text_intention": 0
+              },
+              {
+                "fileid": "spectrum/1040g0k031j0cv9uugs1g5ochqej41nh3qcmh7f0",
+                "url_size_large": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs1g5ochqej41nh3qcmh7f0?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=7ab68829f3504d6a63ea81aba27bbd3f&t=6a08927b&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs1g5ochqej41nh3qcmh7f0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7ab68829f3504d6a63ea81aba27bbd3f&t=6a08927b&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs1g5ochqej41nh3qcmh7f0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7ab68829f3504d6a63ea81aba27bbd3f&t=6a08927b&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs1g5ochqej41nh3qcmh7f0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7ab68829f3504d6a63ea81aba27bbd3f&t=6a08927b&src=A"
+                },
+                "url": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs1g5ochqej41nh3qcmh7f0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7ab68829f3504d6a63ea81aba27bbd3f&t=6a08927b&src=A",
+                "original": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs1g5ochqej41nh3qcmh7f0?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=7ab68829f3504d6a63ea81aba27bbd3f&t=6a08927b&src=A",
+                "width": 1587,
+                "longitude": 0,
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 2245,
+                "text_intention": 0,
+                "trace_id": "spectrum/1040g0k031j0cv9uugs1g5ochqej41nh3qcmh7f0"
+              },
+              {
+                "fileid": "spectrum/1040g0k031j0cv9uugs205ochqej41nh36p9c2ag",
+                "url_size_large": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs205ochqej41nh36p9c2ag?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=b56693a03d89ece9db251b4500360ef5&t=6a08927b&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "longitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs205ochqej41nh36p9c2ag?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=b56693a03d89ece9db251b4500360ef5&t=6a08927b&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs205ochqej41nh36p9c2ag?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b56693a03d89ece9db251b4500360ef5&t=6a08927b&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs205ochqej41nh36p9c2ag?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b56693a03d89ece9db251b4500360ef5&t=6a08927b&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs205ochqej41nh36p9c2ag?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b56693a03d89ece9db251b4500360ef5&t=6a08927b&src=A"
+                },
+                "latitude": 0,
+                "width": 1587,
+                "url": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031j0cv9uugs205ochqej41nh36p9c2ag?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b56693a03d89ece9db251b4500360ef5&t=6a08927b&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 2245,
+                "text_intention": 2,
+                "trace_id": "spectrum/1040g0k031j0cv9uugs205ochqej41nh36p9c2ag",
+                "url_trans": "https://sns-translate-i10.rednotecdn.com/cloudrender-translate/1c5d4115-9db6-4b08-850f-aa8403bb876d.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=060a16b29423d3ab25909a2e7159c752&t=6a08927b&src=A",
+                "file_id_trans": "cloudrender-translate/1c5d4115-9db6-4b08-850f-aa8403bb876d.jpg"
+              }
+            ],
+            "may_have_red_packet": false,
+            "comment_prompt_config": {
+              "placeholder_long": "Share your thoughts...",
+              "placeholder_short": "Say something...",
+              "forbidden_cmt_type": 0
+            },
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "view_count": 0,
+            "cooperate_binds": [],
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": true
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1750515530,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false,
+              "is_star": false,
+              "block_private_msg": false
+            },
+            "collected_count": 12273,
+            "note_text_press_options": [],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "title": "@大王的职场课 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/6856bf4a0000000013011314?xsec_source=app_share&xsec_token=CBlIp3F2mduCy2vu5Y9aNHOXemEVuUV1IYo6qXXax3QCg=",
+              "thumb": "http://sns-img-qc.xhscdn.com/spectrum/1040g0k031j0cv9uugs005ochqej41nh3mbvjvcg?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@大王的职场课 发了一篇超赞的笔记，快点来看！",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=6856bf4a0000000013011314&type=normal&xsec_token=CBlIp3F2mduCy2vu5Y9aNHOXemEVuUV1IYo6qXXax3QCg=",
+              "desc": "一、亮眼开篇模板（直接套用）​ 模板：“20XX 年 XX 月，我通过全省gwy招录考试，正式加入 XX 单位。在这充实"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"6191d3a6000000001000de23\",\"author_name\":\"大王的职场课\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "red_official_verified": false,
+          "id": "6191d3a6000000001000de23",
+          "fstatus": "none",
+          "userid": "6191d3a6000000001000de23",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo315i62q1o1e005ochqej41nh3lpeb9eg?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "nickname": "大王的职场课",
+          "red_id": "9404758868",
+          "name": "大王的职场课"
+        }
+      }
+    ],
+    "msg": "成功"
+  }
+}

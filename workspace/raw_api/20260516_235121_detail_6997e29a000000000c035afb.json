@@ -1,0 +1,1997 @@
+{
+  "code": 200,
+  "request_id": "b995165d-59c0-41fe-b7fb-4be1e40f3934",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:51:21",
+  "time_stamp": 1778946681,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_video_note_detail_api_v1_xiaohongshu_app_v2_get_video_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/b995165d-59c0-41fe-b7fb-4be1e40f3934?sign=27edecf1018202e71b5ec394c00257d4b1f72f419ef4a364d1f069d260bcb8c0",
+  "router": "/api/v1/xiaohongshu/app_v2/get_video_note_detail",
+  "params": {
+    "note_id": "6997e29a000000000c035afb"
+  },
+  "data": {
+    "success": true,
+    "data": [
+      {
+        "ip_location": "Shanghai",
+        "user": {
+          "id": "5661026fb8ce1a19e0c20c9c",
+          "red_official_verified": false,
+          "fstatus": "none",
+          "userid": "5661026fb8ce1a19e0c20c9c",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31l6pj4hoj07043me5k16u34s2rbindo?imageView2/2/w/120/format/jpg",
+          "image_size_large": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31l6pj4hoj07043me5k16u34s2rbindo?imageView2/2/w/540/format/jpg",
+          "followed": false,
+          "red_id": "494995502",
+          "preload_posted": false,
+          "name": "会说话的豆腐",
+          "nickname": "会说话的豆腐"
+        },
+        "id": "6997e29a000000000c035afb",
+        "feedback_info": {
+          "dislike_status": 0
+        },
+        "last_update_time": 0,
+        "has_related_goods": false,
+        "comments_count": 308,
+        "collected": false,
+        "liked": false,
+        "auto_slide_down": 0,
+        "foot_tags": [],
+        "share_code_flag": 0,
+        "regenerate_bit_map": 0,
+        "related_goods_num": 0,
+        "lazy_load_mode": 0,
+        "liked_count": 10049,
+        "title": "向上汇报的关键，根本不在于你讲什么",
+        "share_info": {
+          "content": "#个人成长  #上班  #职场为人处世  #我的职场新人设  #职场语言艺术 #职场实用主义  #职场干货  #好好接话",
+          "show_wechat_tag": false,
+          "title": "向上汇报的关键，根本不在于你讲什么",
+          "image": "http://sns-img-hw.xhscdn.com/spectrum/1040g0k031sq0bt875a0043me5k16u34sm5c2gm8?imageView2/2/w/360/format/jpg/q/75",
+          "link": "https://www.xiaohongshu.com/discovery/item/6997e29a000000000c035afb?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBFrAgFeCQsolj3815PlFFRYMUMekL5Tznd-fPkBkYgWE=&author_share=1",
+          "guide_audited": true,
+          "wechat_share_desc": "@会说话的豆腐's note\n1882 Shares",
+          "is_star": false,
+          "block_private_msg": false,
+          "function_entries": [
+            {
+              "type": "video_download"
+            },
+            {
+              "type": "generate_image"
+            },
+            {
+              "type": "quote_note"
+            },
+            {
+              "type": "copy_link"
+            },
+            {
+              "type": "heat_for_author"
+            },
+            {
+              "type": "small_window"
+            },
+            {
+              "type": "play_setting",
+              "options": [
+                "auto_small_window",
+                "video_mute_play"
+              ]
+            },
+            {
+              "type": "video_speed"
+            },
+            {
+              "type": "dislike"
+            },
+            {
+              "type": "report"
+            },
+            {
+              "type": "video_feedback"
+            }
+          ]
+        },
+        "note_statement": {
+          "origin_info": {
+            "origin_link": "https://fe.xiaohongshu.com/ditto/vincent/11a968bc7d524612a67f24dc46fac6c7?naviHidden=yes&fullscreen=true&source=xhsfabu",
+            "origin_text": "Originality declared"
+          }
+        },
+        "sticky": false,
+        "seeded_count": 0,
+        "need_next_step": false,
+        "content_trans_info": {
+          "strategy": 9
+        },
+        "hash_tag": [
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "5c5f6833000000001c01f33d",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c5f68335606b50001f223eb&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "current_score": 0,
+            "name": "个人成长"
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "5be38e812a9bce000135320b",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5be38e81695ea90001e57065&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "name": "上班",
+            "current_score": 0
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "61bff4860000000001008fa1",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=61bff4863794410001d4db11&page_source=note_feed.click_new_big",
+            "record_unit": "",
+            "type": "topic",
+            "name": "职场为人处世",
+            "current_score": 0
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "65042c43000000000e000f75",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=65042c449810110001cfc8b6&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "current_score": 0,
+            "name": "我的职场新人设"
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "64aae782000000002501230d",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=64aae7824572790001089789&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "name": "职场语言艺术",
+            "current_score": 0
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "6683cee1000000000301bc7e",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=6683cee1c6d87c00017d1c47&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "current_score": 0,
+            "name": "职场实用主义"
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "5cd7d963000000000f018b70",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5cd7d9636849230001aae7af&page_source=note_feed.click_new_big",
+            "record_unit": "",
+            "type": "topic",
+            "current_score": 0,
+            "name": "职场干货"
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "5c3daf3b000000000f020628",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c3daf3b3fb7f6000191ab62&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "current_score": 0,
+            "name": "好好接话"
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "689f130b00000000180110b1",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=689f130b0184000000000003&page_source=note_feed.click_new_big",
+            "record_unit": "",
+            "type": "topic",
+            "current_score": 0,
+            "name": "这个dirtywork要上到什么时候"
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "5e93b39e0000000001001744",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5e93b39e39e4f300014000ea&page_source=note_feed.click_new_big",
+            "record_unit": "",
+            "type": "topic",
+            "current_score": 0,
+            "name": "社招"
+          }
+        ],
+        "text_language_code": "zh-Hans",
+        "video_info_v2": {
+          "capa": {
+            "is_user_select": false,
+            "is_upload": false,
+            "frame_ts": 0,
+            "duration": 219
+          },
+          "consumer": {
+            "can_super_resolution": false
+          },
+          "image": {
+            "thumbnail": "https://sns-i11.rednotecdn.com/frame/110/0/01e997e12d2fd1860010000000019c794ed65f_0.webp?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=V_ORG&sign=e460ed023937c31d0914060a1cdefb48&t=6a089277&src=A",
+            "thumbnail_dim": "https://sns-i11.rednotecdn.com/frame/110/0/01e997e12d2fd1860010000000019c794ed65f_0.webp?imageView2/2/w/720/h/720/format/webp&ap=1&sc=V_SPRT&sign=e460ed023937c31d0914060a1cdefb48&t=6a089277&src=A",
+            "first_frame": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031sq0bt875a0043me5k16u34sm5c2gm8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=V_PRV&sign=81054ad1621dfab8164a0848f4bf7d5f&t=6a089277&src=A"
+          },
+          "media": {
+            "user_level": 0,
+            "audio_stream": {},
+            "video": {
+              "drm_type": 0,
+              "bbox": {
+                "ocr_v3": [
+                  {
+                    "y": 2592,
+                    "w": 1702,
+                    "x": 223,
+                    "h": 469
+                  }
+                ],
+                "ocr_v4": [
+                  {
+                    "y": 0,
+                    "w": 0,
+                    "x": 0,
+                    "h": 0
+                  }
+                ],
+                "ocr_v5": [
+                  {
+                    "y": 0,
+                    "w": 0,
+                    "x": 0,
+                    "h": 0
+                  }
+                ],
+                "ocr_v2": [
+                  {
+                    "y": 2176,
+                    "w": 1702,
+                    "x": 223,
+                    "h": 885
+                  }
+                ]
+              },
+              "subtitles": {
+                "en-US": [
+                  {
+                    "language": "en-US",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e997e12d2fd186010370039c794d6ebc_12.srt?sign=cf66548cea6ad8a46aab3bd0b1e5823d&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  },
+                  {
+                    "language": "en-US",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e997e12d2fd186010370039e243eeee8_502.srt?sign=cc653cb4c77e9396dee1e8674a4583dd&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  }
+                ],
+                "zh-CN": [
+                  {
+                    "language": "zh-CN",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e997e12d2fd186010370039c794d6b58_11.srt?sign=ad1ce1baf19f1a292c761de3a26947dc&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  }
+                ],
+                "source": [
+                  {
+                    "language": "zh-CN",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e997e12d2fd186010370039c794d6a65_1.srt?sign=ecd477e7c950248e2f276ca776d6fecd&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  }
+                ]
+              },
+              "biz_id": "281923451192826619",
+              "width": 2160,
+              "opaque1": {
+                "insertSubtitleLanguages": "[\"zh-CN\"]",
+                "domestic": "0",
+                "isSupportSubtitle": "true",
+                "amend_mobile": "40",
+                "videoLanguage": "[\"zh-CN\"]",
+                "audioLevInfo": "{\"audio_quality_level\":\"E\",\"mos_overall\":3.8829,\"version\":\"3.0\"}",
+                "audioClsInfo": "{\"music_ratio\":0.9752051003864853,\"freesound_ratio\":0.0014585232385664392,\"speech_ratio\":0.9999999954421148}",
+                "loudnorm": "{\"lra\":2.2,\"htp\":0.66,\"hldn\":-8.88,\"ldn\":-9.01,\"thr\":-19.05}",
+                "hasHumanVoice": "true"
+              },
+              "hdr_type": 0,
+              "biz_name": 110,
+              "height": 3840,
+              "duration": 220,
+              "md5": "255b2782cb4ad8f19bfdbee1b65fcb70",
+              "stream_types": [
+                258,
+                178,
+                179,
+                180
+              ],
+              "bound": [
+                {
+                  "y": 0,
+                  "w": 0,
+                  "x": 0,
+                  "h": 0
+                }
+              ]
+            },
+            "stream": {
+              "h265": [
+                {
+                  "audio_bitrate": 128045,
+                  "stream_type": 178,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/1/110/178/01e997e12d2fd186010370019c79f9ccc6_178.mp4",
+                  "weight": 62,
+                  "volume": 0,
+                  "video_duration": 219400,
+                  "duration": 219452,
+                  "vmaf": -1,
+                  "psnr": 41.209999084472656,
+                  "video_codec": "hevc",
+                  "audio_channels": 2,
+                  "default_stream": 1,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/1/110/178/01e997e12d2fd186010370019c79f9ccc6_178.mp4"
+                  ],
+                  "video_bitrate": 470008,
+                  "fps": 60,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 16764377,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "R265_MP4_720P_178_IOS",
+                  "height": 1280,
+                  "width": 720,
+                  "audio_duration": 219451,
+                  "quality_type": "HD",
+                  "avg_bitrate": 611135,
+                  "hdr_type": 0,
+                  "ssim": 0
+                },
+                {
+                  "audio_bitrate": 128045,
+                  "stream_type": 179,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/1/110/179/01e997e12d2fd186010370019c79f20b74_179.mp4",
+                  "weight": 73,
+                  "volume": 0,
+                  "video_duration": 219400,
+                  "duration": 219452,
+                  "vmaf": -1,
+                  "psnr": 41.80099868774414,
+                  "video_codec": "hevc",
+                  "audio_channels": 2,
+                  "default_stream": 0,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/1/110/179/01e997e12d2fd186010370019c79f20b74_179.mp4"
+                  ],
+                  "video_bitrate": 724399,
+                  "fps": 60,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 23741043,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "R265_MP4_1080P_179_IOS_mid",
+                  "height": 1920,
+                  "width": 1080,
+                  "audio_duration": 219451,
+                  "quality_type": "FHD",
+                  "avg_bitrate": 865466,
+                  "hdr_type": 0,
+                  "ssim": 0
+                },
+                {
+                  "audio_bitrate": 128045,
+                  "stream_type": 180,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/1/110/180/01e997e12d2fd186010370019c79f24e17_180.mp4",
+                  "weight": 78,
+                  "volume": 0,
+                  "video_duration": 219400,
+                  "duration": 219452,
+                  "vmaf": -1,
+                  "psnr": 42.54600143432617,
+                  "video_codec": "hevc",
+                  "audio_channels": 2,
+                  "default_stream": 0,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/1/110/180/01e997e12d2fd186010370019c79f24e17_180.mp4"
+                  ],
+                  "video_bitrate": 836363,
+                  "fps": 60,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 26811672,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "R265_MP4_1080P_180_IOS_high",
+                  "height": 1920,
+                  "width": 1080,
+                  "audio_duration": 219451,
+                  "quality_type": "FHD",
+                  "avg_bitrate": 977404,
+                  "hdr_type": 0,
+                  "ssim": 0
+                }
+              ],
+              "h266": [],
+              "h264": [
+                {
+                  "audio_bitrate": 56043,
+                  "stream_type": 258,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/79/110/258/01e997e12d2fd1864f0370019c794f4435_258.mp4",
+                  "weight": 59,
+                  "volume": 0,
+                  "video_duration": 219433,
+                  "duration": 219452,
+                  "vmaf": -1,
+                  "psnr": 0,
+                  "video_codec": "h264",
+                  "audio_channels": 2,
+                  "default_stream": 0,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/79/110/258/01e997e12d2fd1864f0370019c794f4435_258.mp4"
+                  ],
+                  "video_bitrate": 1598045,
+                  "fps": 30,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 45552492,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "X264_MP4",
+                  "height": 1280,
+                  "width": 720,
+                  "audio_duration": 219451,
+                  "quality_type": "HD",
+                  "avg_bitrate": 1660590,
+                  "hdr_type": 0,
+                  "ssim": 0
+                }
+              ],
+              "av1": []
+            },
+            "video_id": "137808256993055110"
+          }
+        },
+        "type": "video",
+        "topics": [
+          {
+            "style": 0,
+            "id": "5c5f6833000000001c01f33d",
+            "activity_online": false,
+            "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+            "link": "xhsdiscover://topic/v2/5c5f68335606b50001f223eb?page_source=note_feed.click_new_big",
+            "business_type": 0,
+            "discuss_num": 0,
+            "name": "个人成长"
+          }
+        ],
+        "desc": "向上汇报的关键，根本不在于你讲什么\n#个人成长[话题]#  #上班[话题]#  #职场为人处世[话题]#  #我的职场新人设[话题]# #职场语言艺术[话题]##职场实用主义[话题]# #职场干货[话题]# #好好接话[话题]##这个dirtywork要上到什么时候[话题]##社招[话题]#",
+        "countdown": 0,
+        "video_preview_type": "full_vertical_screen",
+        "ats": [],
+        "has_no_more": false,
+        "widgets_groups": [
+          [
+            "guos_test",
+            "note_next_step",
+            "second_jump_bar",
+            "note_collection",
+            "cooperate_binds",
+            "rec_next_infos",
+            "video_marks",
+            "product_review",
+            "related_search",
+            "video_goods_cards",
+            "cooperate_comment_component",
+            "ads_goods_cards",
+            "ads_comment_component",
+            "goods_card_v2",
+            "video_recommend_tag",
+            "buyable_goods_card_v2",
+            "cooperate_search_component",
+            "ads_engage_bar",
+            "challenge_card",
+            "cooperate_engage_bar",
+            "pgy_comment_component",
+            "pgy_engage_bar",
+            "related_recommend",
+            "next_note_guide",
+            "widgets_ndb",
+            "pgy_bbc_exp",
+            "brand_max_trailer",
+            "super_activity",
+            "note_nice_guide",
+            "pin_search_highlights",
+            "widgets_enhance",
+            "packed_goods",
+            "packed_buyable_goods",
+            "widgets_ncb",
+            "note_nice_compound",
+            "live_shooting_flag",
+            "widgets_nbb",
+            "poi_declare",
+            "async_group"
+          ],
+          [
+            "guos_test",
+            "vote_stickers",
+            "bullet_comment_lead",
+            "note_search_box",
+            "interact_pk",
+            "interact_vote",
+            "guide_heuristic",
+            "guide_post",
+            "video_foot_bar",
+            "follow_guide",
+            "share_to_msg",
+            "note_share_prompt_v1",
+            "note_share_prompt_v2",
+            "group_share",
+            "share_guide_bubble",
+            "goods_enhance_component",
+            "guide_navigator",
+            "sync_group"
+          ]
+        ],
+        "enable_brand_lottery": false,
+        "api_upgrade": -1,
+        "need_product_review": false,
+        "media_save_config": {
+          "disable_save": false,
+          "disable_weibo_cover": false,
+          "disable_watermark": false
+        },
+        "cny_red_envelope_note": false,
+        "native_voice_info": {
+          "deeplink": "xhsdiscover://post_new_note?guiders=%5B%7B%22page_position%22%3A%22album%22%2C%22content%22%3A%22Select%20and%20tap%20Next%20Step%20to%20add%20the%20music%22%7D%2C%7B%22page_position%22%3A%22take_photo%22%2C%22content%22%3A%22Ready%20to%20add%20the%20music%20in%20your%20notes%22%7D%2C%7B%22page_position%22%3A%22take_video%22%2C%22content%22%3A%22Ready%20to%20add%20the%20music%20in%20your%20notes%22%7D%5D&page=%7B%22page_type%22%3A%22albums%22%7D&attach=%7B%22sound_track%22%3A%7B%22id%22%3A%221146614579656881235%22%7D%7D&source=%7B%22type%22%3A%22leica%22%2C%22extraInfo%22%3A%7B%22track_id%22%3A%226997e29a000000000c035afb%22%2C%22style%22%3A%22ordinary%22%2C%22subType%22%3A%22NNS_TYPE_SOUND_TRACK%22%2C%22page_entrance_type%22%3A%22note_detail%22%2C%22note_feed_type_str%22%3A%22%22%2C%22nns_id%22%3A%221146614579656881235%22%2C%22is_related_notes%22%3Atrue%7D%7D",
+          "disable_panel": true,
+          "url": "http://sns-v8.rednotecdn.com/audio/1/02e997e29c7d0dcc010370039c794d61d4_0.m4a?sign=fed7e43047d2e405af1156578821cef3&t=6a089277",
+          "use_count": 1,
+          "sound_id": "1146614579656881235"
+        },
+        "shared_count": 1882,
+        "images_list": [
+          {
+            "fileid": "spectrum/1040g0k031sq0bt875a0043me5k16u34sm5c2gm8",
+            "index": 0,
+            "url_size_large": "",
+            "scale_to_large": 0,
+            "longitude": 0,
+            "url": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031sq0bt875a0043me5k16u34sm5c2gm8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=V_PRV&sign=81054ad1621dfab8164a0848f4bf7d5f&t=6a089277&src=A",
+            "latitude": 0,
+            "original": "https://sns-i11.rednotecdn.com/spectrum/1040g0k031sq0bt875a0043me5k16u34sm5c2gm8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=V_ORG&sign=81054ad1621dfab8164a0848f4bf7d5f&t=6a089277&src=A",
+            "width": 2527,
+            "need_load_original_image": false,
+            "height": 3370,
+            "trace_id": "spectrum/1040g0k031sq0bt875a0043me5k16u34sm5c2gm8"
+          }
+        ],
+        "may_have_red_packet": false,
+        "comment_prompt_config": {
+          "placeholder_long": "Share your thoughts...",
+          "placeholder_short": "Say something...",
+          "forbidden_cmt_type": 0
+        },
+        "final_feed_item": false,
+        "enable_fls_bridge_cards": false,
+        "model_type": "note",
+        "seeded": false,
+        "hide_button": false,
+        "enable_listen_video": false,
+        "cooperate_binds": [],
+        "view_count": 0,
+        "track_id": "",
+        "function_switch": [
+          {
+            "type": "video_download",
+            "enable": false,
+            "reason": "Download disabled by author"
+          },
+          {
+            "type": "quote_note",
+            "enable": true
+          }
+        ],
+        "source_note": true,
+        "source_item": false,
+        "time": 1771561626,
+        "nice_info": {
+          "display": true,
+          "nice_status": 2
+        },
+        "cursor_score": "",
+        "collected_count": 11283,
+        "downgrade_type": 0,
+        "interaction_info": {
+          "niced": false,
+          "nice_count": 34,
+          "share_count": 1882
+        },
+        "enable_fls_related_cards": false,
+        "privacy": {
+          "type": 0,
+          "show_tips": false,
+          "nick_names": ""
+        },
+        "qq_mini_program_info": {
+          "share_title": "@会说话的豆腐 发了一篇超赞的笔记，快点来看！",
+          "title": "@会说话的豆腐 发了一篇超赞的笔记，快点来看！",
+          "thumb": "http://sns-img-hw.xhscdn.com/spectrum/1040g0k031sq0bt875a0043me5k16u34sm5c2gm8?imageView2/2/w/540/format/jpg/q/75",
+          "webpage_url": "https://www.xiaohongshu.com/discovery/item/6997e29a000000000c035afb?xsec_source=app_share&xsec_token=CBFrAgFeCQsolj3815PlFFRYMUMekL5Tznd-fPkBkYgWE=",
+          "user_name": "gh_66c53d495417",
+          "path": "pages/main/note/index?xsec_source=app_share&id=6997e29a000000000c035afb&type=video&xsec_token=CBFrAgFeCQsolj3815PlFFRYMUMekL5Tznd-fPkBkYgWE=",
+          "desc": "#个人成长  #上班  #职场为人处世  #我的职场新人设  #职场语言艺术 #职场实用主义  #职场干货  #好好接话"
+        },
+        "widgets_context": "{\"video\":true,\"origin_video_key\":\"spectrum/1040g35831spbcqme5e1043me5k16u34s3vs0cm8\",\"flags\":{\"sound_track\":true},\"author_id\":\"5661026fb8ce1a19e0c20c9c\",\"author_name\":\"会说话的豆腐\",\"note_sound_info\":{\"sound_id\":\"1146614579656881235\",\"name\":\"会说话的豆腐的原声\",\"desc\":\"@会说话的豆腐创作的原声\",\"duration\":219451,\"url\":\"http://sns-v8.rednotecdn.com/audio/1/02e997e29c7d0dcc010370039c794d61d4_0.m4a?sign=fed7e43047d2e405af1156578821cef3&t=6a089277\",\"use_count\":1,\"subtitle\":\"会说话的豆...的原声\",\"sound_bg_music_type\":3,\"cover\":\"https://picasso-static.xiaohongshu.com/fe-platform/b598691aefe712c51cbe29af0ddbe732937bc965.png\",\"creator\":\"5661026fb8ce1a19e0c20c9c\"},\"video_duration\":219,\"video_rec_bar_info\":\"\"}"
+      },
+      {
+        "ip_location": "Jiangsu",
+        "user": {
+          "red_official_verified": false,
+          "id": "565850ad03eb841dfb598cf7",
+          "fstatus": "none",
+          "userid": "565850ad03eb841dfb598cf7",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3147ugcgpkq0043aajd8ar37n6c5vbfo?imageView2/2/w/120/format/jpg",
+          "image_size_large": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3147ugcgpkq0043aajd8ar37n6c5vbfo?imageView2/2/w/540/format/jpg",
+          "followed": false,
+          "nickname": "珍波椰去冰",
+          "preload_posted": false,
+          "name": "珍波椰去冰",
+          "red_id": "600540085"
+        },
+        "feedback_info": {
+          "dislike_status": 0
+        },
+        "liked": false,
+        "last_update_time": 0,
+        "id": "69402fb3000000001e00c37f",
+        "has_related_goods": false,
+        "collected": false,
+        "comments_count": 572,
+        "foot_tags": [],
+        "auto_slide_down": 0,
+        "share_code_flag": 0,
+        "lazy_load_mode": 0,
+        "related_goods_num": 0,
+        "regenerate_bit_map": 0,
+        "liked_count": 71706,
+        "biz_map": {
+          "collection_id": "66d74e41b900000000000001"
+        },
+        "title": "独家年终汇报SOP实操版！（框架+话术+内心戏",
+        "share_info": {
+          "content": "㊙️#职场进阶指南  #职场smalltalk  #汇报万能框架  #述职报告  #职场执行力  #工作汇报  @职场薯",
+          "show_wechat_tag": false,
+          "title": "独家年终汇报SOP实操版！（框架+话术+内心戏",
+          "image": "http://sns-img-hw.xhscdn.com/1040g2sg31q4bflbj707043aajd8ar37nr58abh8?imageView2/2/w/360/format/jpg/q/75",
+          "link": "https://www.xiaohongshu.com/discovery/item/69402fb3000000001e00c37f?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBMZxrqGdRzVzqYE7OD8hhS5Br1r9RBYKt_lPCEx9zVbs=&author_share=1",
+          "is_star": false,
+          "function_entries": [
+            {
+              "type": "video_download"
+            },
+            {
+              "type": "generate_image"
+            },
+            {
+              "type": "quote_note"
+            },
+            {
+              "type": "copy_link"
+            },
+            {
+              "type": "heat_for_author"
+            },
+            {
+              "type": "small_window"
+            },
+            {
+              "type": "play_setting",
+              "options": [
+                "auto_small_window",
+                "video_mute_play"
+              ]
+            },
+            {
+              "type": "video_speed"
+            },
+            {
+              "type": "dislike"
+            },
+            {
+              "type": "report"
+            },
+            {
+              "type": "video_feedback"
+            }
+          ],
+          "block_private_msg": false,
+          "guide_audited": true,
+          "wechat_share_desc": "@珍波椰去冰's note\n19.3k Shares"
+        },
+        "note_statement": {
+          "origin_info": {
+            "origin_text": "Originality declared",
+            "origin_link": "https://fe.xiaohongshu.com/ditto/vincent/11a968bc7d524612a67f24dc46fac6c7?naviHidden=yes&fullscreen=true&source=xhsfabu"
+          }
+        },
+        "sticky": true,
+        "seeded_count": 0,
+        "need_next_step": false,
+        "content_trans_info": {
+          "strategy": 9
+        },
+        "hash_tag": [
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "5ce4c313000000000e01585b",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5ce4c3136a0d9e00012ec5a4&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "name": "职场进阶指南",
+            "current_score": 0
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "635797d40000000001001236",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=635797d46fddb00001742807&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "name": "职场smalltalk",
+            "current_score": 0
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "691d43d0000000002502eaba",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=691d43d0025b000000000002&page_source=note_feed.click_new_big",
+            "record_unit": "",
+            "type": "topic",
+            "current_score": 0,
+            "name": "汇报万能框架"
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "61c04cf80000000001006433",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=61c04cf8355a4c000131ce46&page_source=note_feed.click_new_big",
+            "record_unit": "",
+            "type": "topic",
+            "current_score": 0,
+            "name": "述职报告"
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "5ee212980000000001006253",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5ee21298e379080001743bf1&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "name": "职场执行力",
+            "current_score": 0
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "5da57b49000000000103f5f2",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5da57b4961ba6f0001c3d9b0&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "name": "工作汇报",
+            "current_score": 0
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "673320480000000020026adb",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=67332048e75fb30001eb59fb&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "name": "年终述职",
+            "current_score": 0
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "5fe73cf10000000001009e0d",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5fe73cf1477b780001c401b5&page_source=note_feed.click_new_big",
+            "record_unit": "",
+            "type": "topic",
+            "current_score": 0,
+            "name": "年终汇报"
+          }
+        ],
+        "text_language_code": "zh-Hans",
+        "video_info_v2": {
+          "capa": {
+            "is_user_select": false,
+            "is_upload": false,
+            "frame_ts": 0,
+            "duration": 214
+          },
+          "consumer": {
+            "can_super_resolution": false
+          },
+          "image": {
+            "thumbnail": "https://sns-i11.rednotecdn.com/frame/110/0/01e9402fb36417e10010000000019b22bae67a_0.webp?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=V_ORG&sign=3a57484049aaf9763834d3d6b0d87165&t=6a089277&src=A",
+            "thumbnail_dim": "https://sns-i11.rednotecdn.com/frame/110/0/01e9402fb36417e10010000000019b22bae67a_0.webp?imageView2/2/w/720/h/720/format/webp&ap=1&sc=V_SPRT&sign=3a57484049aaf9763834d3d6b0d87165&t=6a089277&src=A",
+            "first_frame": "https://sns-i11.rednotecdn.com/110/0/01e9402fb36417e10010000000019b22ba5ee9_0.jpg?imageView2/2/w/1080/format/jpg&ap=1&sc=V_FRM&sign=3763d50b2347308627e2b10fcc1dcb3a&t=6a089277&src=A"
+          },
+          "media": {
+            "user_level": 0,
+            "audio_stream": {},
+            "video": {
+              "drm_type": 0,
+              "bbox": {
+                "ocr_v3": [
+                  {
+                    "y": 112,
+                    "w": 1016,
+                    "x": 29,
+                    "h": 1376
+                  }
+                ],
+                "ocr_v4": [
+                  {
+                    "y": 109,
+                    "w": 1019,
+                    "x": 23,
+                    "h": 1381
+                  }
+                ],
+                "ocr_v5": [
+                  {
+                    "y": 109,
+                    "w": 1019,
+                    "x": 23,
+                    "h": 1381
+                  }
+                ],
+                "ocr_v2": [
+                  {
+                    "y": 112,
+                    "w": 1016,
+                    "x": 29,
+                    "h": 1376
+                  }
+                ]
+              },
+              "subtitles": {
+                "en-US": [
+                  {
+                    "language": "en-US",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e9402fb36417e1010370039b22baba3c_12.srt?sign=ebbaeeeedf7397f7ac2df7eb6f84c3b1&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  },
+                  {
+                    "language": "en-US",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e9402fb36417e1010370039db988743e_502.srt?sign=1d744b2f36e5093c03e3f5ca2c317fed&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  }
+                ],
+                "zh-CN": [
+                  {
+                    "language": "zh-CN",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e9402fb36417e1010370039b22babaac_11.srt?sign=2798abcd38950ff167fedb5e81ec81d3&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  }
+                ],
+                "source": [
+                  {
+                    "language": "zh-CN",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e9402fb36417e1010370039b22bab5f4_1.srt?sign=2d78b73b36b9a2fbdc4221a55cd07133&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  }
+                ]
+              },
+              "biz_id": "281827025306043263",
+              "width": 1080,
+              "opaque1": {
+                "insertSubtitleLanguages": "[\"zh-CN\"]",
+                "domestic": "0",
+                "isSupportSubtitle": "true",
+                "amend_mobile": "40",
+                "videoLanguage": "[\"zh-CN\"]",
+                "audioLevInfo": "{\"audio_quality_level\":\"G+\",\"mos_overall\":3.4554,\"version\":\"3.0\"}",
+                "audioClsInfo": "{\"music_ratio\":0.5027032042193176,\"freesound_ratio\":0.061661073538119525,\"speech_ratio\":0.9945469752304857}",
+                "loudnorm": "{\"lra\":3.6,\"htp\":-10.74,\"hldn\":-24.58,\"ldn\":-22.78,\"thr\":-32.9}",
+                "hasHumanVoice": "true"
+              },
+              "hdr_type": 0,
+              "biz_name": 110,
+              "height": 1920,
+              "duration": 215,
+              "md5": "058e1ce8a2cda342aa1a72d8e7b0bb9c",
+              "stream_types": [
+                258,
+                178,
+                179,
+                180
+              ],
+              "bound": [
+                {
+                  "y": 109,
+                  "w": 1019,
+                  "x": 23,
+                  "h": 1381
+                }
+              ]
+            },
+            "stream": {
+              "h265": [
+                {
+                  "audio_bitrate": 64037,
+                  "stream_type": 178,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/1/110/178/01e9402fb36417e1010370019b23199c38_178.mp4",
+                  "weight": 62,
+                  "volume": 0,
+                  "video_duration": 214666,
+                  "duration": 214668,
+                  "vmaf": -1,
+                  "psnr": 35.14899826049805,
+                  "video_codec": "hevc",
+                  "audio_channels": 2,
+                  "default_stream": 1,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/1/110/178/01e9402fb36417e1010370019b23199c38_178.mp4"
+                  ],
+                  "video_bitrate": 558328,
+                  "fps": 30,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 16934776,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "R265_MP4_720P_178_IOS",
+                  "height": 1280,
+                  "width": 720,
+                  "audio_duration": 214667,
+                  "quality_type": "HD",
+                  "avg_bitrate": 631105,
+                  "hdr_type": 0,
+                  "ssim": 0
+                },
+                {
+                  "audio_bitrate": 64037,
+                  "stream_type": 179,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/1/110/179/01e9402fb36417e1010370019b23268b91_179.mp4",
+                  "weight": 73,
+                  "volume": 0,
+                  "video_duration": 214666,
+                  "duration": 214668,
+                  "vmaf": -1,
+                  "psnr": 35.965999603271484,
+                  "video_codec": "hevc",
+                  "audio_channels": 2,
+                  "default_stream": 0,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/1/110/179/01e9402fb36417e1010370019b23268b91_179.mp4"
+                  ],
+                  "video_bitrate": 846840,
+                  "fps": 30,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 24676521,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "R265_MP4_1080P_179_IOS_mid",
+                  "height": 1920,
+                  "width": 1080,
+                  "audio_duration": 214667,
+                  "quality_type": "FHD",
+                  "avg_bitrate": 919616,
+                  "hdr_type": 0,
+                  "ssim": 0
+                },
+                {
+                  "audio_bitrate": 64037,
+                  "stream_type": 180,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/1/110/180/01e9402fb36417e1010370019b2325b65c_180.mp4",
+                  "weight": 78,
+                  "volume": 0,
+                  "video_duration": 214666,
+                  "duration": 214668,
+                  "vmaf": -1,
+                  "psnr": 37.43199920654297,
+                  "video_codec": "hevc",
+                  "audio_channels": 2,
+                  "default_stream": 0,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/1/110/180/01e9402fb36417e1010370019b2325b65c_180.mp4"
+                  ],
+                  "video_bitrate": 1174275,
+                  "fps": 30,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 33462682,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "R265_MP4_1080P_180_IOS_high",
+                  "height": 1920,
+                  "width": 1080,
+                  "audio_duration": 214667,
+                  "quality_type": "FHD",
+                  "avg_bitrate": 1247048,
+                  "hdr_type": 0,
+                  "ssim": 0
+                }
+              ],
+              "h266": [],
+              "h264": [
+                {
+                  "audio_bitrate": 56034,
+                  "stream_type": 258,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/1/110/258/01e9402fb36417e1010370019b22bc669d_258.mp4",
+                  "weight": 59,
+                  "volume": 0,
+                  "video_duration": 214666,
+                  "duration": 214668,
+                  "vmaf": -1,
+                  "psnr": 0,
+                  "video_codec": "h264",
+                  "audio_channels": 2,
+                  "default_stream": 0,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/1/110/258/01e9402fb36417e1010370019b22bc669d_258.mp4"
+                  ],
+                  "video_bitrate": 2576995,
+                  "fps": 30,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 70830567,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "X264_MP4",
+                  "height": 1280,
+                  "width": 720,
+                  "audio_duration": 214667,
+                  "quality_type": "HD",
+                  "avg_bitrate": 2639632,
+                  "hdr_type": 0,
+                  "ssim": 0
+                }
+              ],
+              "av1": []
+            },
+            "video_id": "137711837228832737"
+          }
+        },
+        "type": "video",
+        "topics": [
+          {
+            "style": 0,
+            "id": "5ce4c313000000000e01585b",
+            "activity_online": false,
+            "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+            "link": "xhsdiscover://topic/v2/5ce4c3136a0d9e00012ec5a4?page_source=note_feed.click_new_big",
+            "business_type": 0,
+            "discuss_num": 0,
+            "name": "职场进阶指南"
+          }
+        ],
+        "desc": "独家年终汇报SOP实操版！（框架+话术+内心戏\n㊙️#职场进阶指南[话题]# #职场smalltalk[话题]# #汇报万能框架[话题]# #述职报告[话题]# #职场执行力[话题]# #工作汇报[话题]# @职场薯 #年终述职[话题]# #年终汇报[话题]#",
+        "countdown": 0,
+        "ats": [
+          {
+            "red_official_verified": false,
+            "track_duration": 0,
+            "red_official_verify_type": 0,
+            "followed": false,
+            "level": {
+              "image": ""
+            },
+            "id": "65fa8b6d000000000d0264b8",
+            "nickname": "职场薯",
+            "show_red_official_verify_icon": false,
+            "name": "职场薯"
+          }
+        ],
+        "has_no_more": false,
+        "widgets_groups": [
+          [
+            "guos_test",
+            "note_next_step",
+            "second_jump_bar",
+            "note_collection",
+            "cooperate_binds",
+            "rec_next_infos",
+            "video_marks",
+            "product_review",
+            "related_search",
+            "video_goods_cards",
+            "cooperate_comment_component",
+            "ads_goods_cards",
+            "ads_comment_component",
+            "goods_card_v2",
+            "video_recommend_tag",
+            "buyable_goods_card_v2",
+            "cooperate_search_component",
+            "ads_engage_bar",
+            "challenge_card",
+            "cooperate_engage_bar",
+            "pgy_comment_component",
+            "pgy_engage_bar",
+            "related_recommend",
+            "next_note_guide",
+            "widgets_ndb",
+            "pgy_bbc_exp",
+            "brand_max_trailer",
+            "super_activity",
+            "note_nice_guide",
+            "pin_search_highlights",
+            "widgets_enhance",
+            "packed_goods",
+            "packed_buyable_goods",
+            "widgets_ncb",
+            "note_nice_compound",
+            "live_shooting_flag",
+            "widgets_nbb",
+            "poi_declare",
+            "async_group"
+          ],
+          [
+            "guos_test",
+            "vote_stickers",
+            "bullet_comment_lead",
+            "note_search_box",
+            "interact_pk",
+            "interact_vote",
+            "guide_heuristic",
+            "guide_post",
+            "video_foot_bar",
+            "follow_guide",
+            "share_to_msg",
+            "note_share_prompt_v1",
+            "note_share_prompt_v2",
+            "group_share",
+            "share_guide_bubble",
+            "goods_enhance_component",
+            "guide_navigator",
+            "sync_group"
+          ]
+        ],
+        "enable_brand_lottery": false,
+        "api_upgrade": -1,
+        "need_product_review": false,
+        "media_save_config": {
+          "disable_save": false,
+          "disable_watermark": false,
+          "disable_weibo_cover": false
+        },
+        "cny_red_envelope_note": false,
+        "native_voice_info": {
+          "disable_panel": true,
+          "sound_id": "1146518153780136584",
+          "url": "http://sns-v8.rednotecdn.com/audio/1/02e9402fb57dd5ec010370039b22baa758_0.m4a?sign=9c1a43ed21a85e5b2044c6270b300c16&t=6a089277",
+          "use_count": 1,
+          "deeplink": "xhsdiscover://post_new_note?guiders=%5B%7B%22page_position%22%3A%22album%22%2C%22content%22%3A%22Select%20and%20tap%20Next%20Step%20to%20add%20the%20music%22%7D%2C%7B%22page_position%22%3A%22take_photo%22%2C%22content%22%3A%22Ready%20to%20add%20the%20music%20in%20your%20notes%22%7D%2C%7B%22page_position%22%3A%22take_video%22%2C%22content%22%3A%22Ready%20to%20add%20the%20music%20in%20your%20notes%22%7D%5D&page=%7B%22page_type%22%3A%22albums%22%7D&attach=%7B%22sound_track%22%3A%7B%22id%22%3A%221146518153780136584%22%7D%7D&source=%7B%22type%22%3A%22leica%22%2C%22extraInfo%22%3A%7B%22track_id%22%3A%2269402fb3000000001e00c37f%22%2C%22style%22%3A%22ordinary%22%2C%22subType%22%3A%22NNS_TYPE_SOUND_TRACK%22%2C%22page_entrance_type%22%3A%22note_detail%22%2C%22note_feed_type_str%22%3A%22%22%2C%22nns_id%22%3A%221146518153780136584%22%2C%22is_related_notes%22%3Afalse%7D%7D"
+        },
+        "shared_count": 19271,
+        "images_list": [
+          {
+            "fileid": "1040g2sg31q4bflbj707043aajd8ar37nr58abh8",
+            "index": 0,
+            "url_size_large": "",
+            "scale_to_large": 0,
+            "longitude": 0,
+            "url": "https://sns-i11.rednotecdn.com/1040g2sg31q4bflbj707043aajd8ar37nr58abh8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=V_PRV&sign=b17f19b7712f8f28e0b0b29ecc73e98b&t=6a089277&src=A",
+            "latitude": 0,
+            "width": 1080,
+            "original": "https://sns-i11.rednotecdn.com/1040g2sg31q4bflbj707043aajd8ar37nr58abh8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=V_ORG&sign=b17f19b7712f8f28e0b0b29ecc73e98b&t=6a089277&src=A",
+            "need_load_original_image": false,
+            "height": 1440,
+            "trace_id": "1040g2sg31q4bflbj707043aajd8ar37nr58abh8"
+          }
+        ],
+        "comment_prompt_config": {
+          "placeholder_short": "Say something...",
+          "placeholder_long": "Drop a comment...",
+          "forbidden_cmt_type": 0
+        },
+        "may_have_red_packet": false,
+        "final_feed_item": false,
+        "enable_fls_bridge_cards": false,
+        "hide_button": false,
+        "seeded": false,
+        "model_type": "note",
+        "enable_listen_video": false,
+        "view_count": 0,
+        "track_id": "videosfcf_2_69402fb3000000001e00c37f_-1_0_0_2gdji8e5h64jldmdan1hm",
+        "cooperate_binds": [],
+        "function_switch": [
+          {
+            "type": "video_download",
+            "enable": false,
+            "reason": "Download disabled by author"
+          },
+          {
+            "type": "quote_note",
+            "enable": true
+          }
+        ],
+        "source_note": false,
+        "source_item": false,
+        "time": 1765814195,
+        "nice_info": {
+          "display": true,
+          "nice_status": 2
+        },
+        "cursor_score": "1.778946678999E9",
+        "collected_count": 114411,
+        "downgrade_type": 0,
+        "privacy": {
+          "type": 0,
+          "show_tips": false,
+          "nick_names": ""
+        },
+        "enable_fls_related_cards": false,
+        "interaction_info": {
+          "niced": false,
+          "nice_count": 1392,
+          "share_count": 19271
+        },
+        "qq_mini_program_info": {
+          "title": "@珍波椰去冰 发了一篇超赞的笔记，快点来看！",
+          "webpage_url": "https://www.xiaohongshu.com/discovery/item/69402fb3000000001e00c37f?xsec_source=app_share&xsec_token=CBMZxrqGdRzVzqYE7OD8hhS5Br1r9RBYKt_lPCEx9zVbs=",
+          "thumb": "http://sns-img-hw.xhscdn.com/1040g2sg31q4bflbj707043aajd8ar37nr58abh8?imageView2/2/w/540/format/jpg/q/75",
+          "share_title": "@珍波椰去冰 发了一篇超赞的笔记，快点来看！",
+          "user_name": "gh_66c53d495417",
+          "path": "pages/main/note/index?xsec_source=app_share&id=69402fb3000000001e00c37f&type=video&xsec_token=CBMZxrqGdRzVzqYE7OD8hhS5Br1r9RBYKt_lPCEx9zVbs=",
+          "desc": "㊙️#职场进阶指南  #职场smalltalk  #汇报万能框架  #述职报告  #职场执行力  #工作汇报  @职场薯"
+        },
+        "widgets_context": "{\"video\":true,\"origin_video_key\":\"pre_post/1040g0cg31q4bflbin27043aajd8ar37nt35tbv0\",\"flags\":{\"sound_track\":true},\"author_id\":\"565850ad03eb841dfb598cf7\",\"author_name\":\"珍波椰去冰\",\"note_sound_info\":{\"sound_id\":\"1146518153780136584\",\"name\":\"珍波椰去冰的原声\",\"desc\":\"@珍波椰去冰创作的原声\",\"duration\":214645,\"url\":\"http://sns-v8.rednotecdn.com/audio/1/02e9402fb57dd5ec010370039b22baa758_0.m4a?sign=9c1a43ed21a85e5b2044c6270b300c16&t=6a089277\",\"use_count\":1,\"subtitle\":\"珍波椰去冰的原声\",\"sound_bg_music_type\":4,\"cover\":\"https://thirdwx.qlogo.cn/mmopen/vi_32/gBm8T7UhmpCsDS5y7hLDyulI7zJ3yf5QqbVYcvlmVsWuxjX2kGleNFNkkZrlGlNekOhrSGibXth9nyLnA5vQiaLerYPZsDr6r8gWwnzia8nT4Y/132\",\"creator\":\"565850ad03eb841dfb598cf7\"},\"video_duration\":214,\"video_rec_bar_info\":\"{\\\"isNiceNote\\\":0,\\\"followConductVideoTime\\\":\\\"-1\\\",\\\"followConductReason\\\":\\\"\\\",\\\"followConductNoteTime\\\":\\\"-1\\\",\\\"followConductFlag\\\":\\\"false\\\"}\"}"
+      },
+      {
+        "ip_location": "Guangdong",
+        "user": {
+          "id": "68bf78ee000000001a00cd21",
+          "red_official_verified": false,
+          "fstatus": "none",
+          "userid": "68bf78ee000000001a00cd21",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nu6al5pl0505q5vf3n6hj91tuufq2o?imageView2/2/w/120/format/jpg",
+          "image_size_large": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nu6al5pl0505q5vf3n6hj91tuufq2o?imageView2/2/w/540/format/jpg",
+          "followed": false,
+          "red_id": "94366488611",
+          "preload_posted": false,
+          "name": "商业思索者恒",
+          "nickname": "商业思索者恒"
+        },
+        "feedback_info": {
+          "dislike_status": 0
+        },
+        "liked": false,
+        "last_update_time": 0,
+        "id": "6986e56a000000000903af78",
+        "has_related_goods": false,
+        "collected": false,
+        "comments_count": 3,
+        "auto_slide_down": 0,
+        "foot_tags": [],
+        "share_code_flag": 0,
+        "lazy_load_mode": 0,
+        "related_goods_num": 0,
+        "regenerate_bit_map": 0,
+        "liked_count": 1858,
+        "title": "当领导一定要学会给员工开总结会",
+        "share_info": {
+          "content": "#赚钱  #老板思维  #认知  #財富",
+          "show_wechat_tag": false,
+          "title": "当领导一定要学会给员工开总结会",
+          "image": "http://sns-img-hw.xhscdn.com/spectrum/1040g34o31s9dnql55a105q5vf3n6hj91sik3gh8?imageView2/2/w/360/format/jpg/q/75",
+          "is_star": false,
+          "function_entries": [
+            {
+              "type": "video_download"
+            },
+            {
+              "type": "generate_image"
+            },
+            {
+              "type": "quote_note"
+            },
+            {
+              "type": "copy_link"
+            },
+            {
+              "type": "heat_for_author"
+            },
+            {
+              "type": "small_window"
+            },
+            {
+              "type": "play_setting",
+              "options": [
+                "auto_small_window",
+                "video_mute_play"
+              ]
+            },
+            {
+              "type": "video_speed"
+            },
+            {
+              "type": "dislike"
+            },
+            {
+              "type": "report"
+            },
+            {
+              "type": "video_feedback"
+            }
+          ],
+          "guide_audited": true,
+          "wechat_share_desc": "@商业思索者恒's note\n850 Shares",
+          "link": "https://www.xiaohongshu.com/discovery/item/6986e56a000000000903af78?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBWb8g2E6wIy8Z1T9uh-8Cwk-R-FDwlk5D1ySzKoLqJOY=&author_share=1",
+          "block_private_msg": false
+        },
+        "sticky": false,
+        "seeded_count": 0,
+        "need_next_step": false,
+        "content_trans_info": {
+          "strategy": 9
+        },
+        "hash_tag": [
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "5be0478174881c00015598f9",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5be0478129f1000001a19742&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "name": "赚钱",
+            "current_score": 0
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "id": "5ccebe74000000000d03a57c",
+            "tag_hint": "",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5ccebe74ae99ef0001262168&page_source=note_feed.click_new_big",
+            "record_unit": "",
+            "type": "topic",
+            "name": "老板思维",
+            "current_score": 0
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "57957a6fd5945f62b5586ca1",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c1a5c02dfa99e00016c5910&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "current_score": 0,
+            "name": "认知"
+          },
+          {
+            "indicator": "",
+            "record_count": 0,
+            "tag_hint": "",
+            "id": "5d8a2d29000000000103b916",
+            "bizId": "",
+            "record_emoji": "",
+            "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5d8a2d29dab31a0001f21c76&page_source=note_feed.click_new_big",
+            "type": "topic",
+            "record_unit": "",
+            "name": "財富",
+            "current_score": 0
+          }
+        ],
+        "video_info_v2": {
+          "capa": {
+            "is_user_select": false,
+            "is_upload": false,
+            "frame_ts": 0,
+            "duration": 30
+          },
+          "consumer": {
+            "can_super_resolution": false
+          },
+          "image": {
+            "thumbnail": "https://sns-i11.rednotecdn.com/frame/110/0/01e986e56a3769c50010000000019c36f03b4c_0.webp?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=V_ORG&sign=228a9b1ef26caffbee907917febf06b5&t=6a089277&src=A",
+            "thumbnail_dim": "https://sns-i11.rednotecdn.com/frame/110/0/01e986e56a3769c50010000000019c36f03b4c_0.webp?imageView2/2/w/720/h/720/format/webp&ap=1&sc=V_SPRT&sign=228a9b1ef26caffbee907917febf06b5&t=6a089277&src=A",
+            "first_frame": "https://sns-i11.rednotecdn.com/spectrum/1040g34o31s9dnql55a105q5vf3n6hj91sik3gh8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=V_PRV&sign=bf7fbccd17af5668053e3b2ca75df68c&t=6a089277&src=A"
+          },
+          "media": {
+            "user_level": 0,
+            "audio_stream": {},
+            "video": {
+              "drm_type": 0,
+              "bbox": {
+                "ocr_v3": [
+                  {
+                    "y": 416,
+                    "w": 957,
+                    "x": 61,
+                    "h": 256
+                  }
+                ],
+                "ocr_v4": [
+                  {
+                    "y": 0,
+                    "w": 0,
+                    "x": 0,
+                    "h": 0
+                  }
+                ],
+                "ocr_v5": [
+                  {
+                    "y": 0,
+                    "w": 0,
+                    "x": 0,
+                    "h": 0
+                  }
+                ],
+                "ocr_v2": [
+                  {
+                    "y": 154,
+                    "w": 957,
+                    "x": 61,
+                    "h": 1398
+                  }
+                ]
+              },
+              "subtitles": {
+                "en-US": [
+                  {
+                    "language": "en-US",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e986e56a3769c5010370039c36f0420e_12.srt?sign=f629904e4ecf4a7e336196b91b1da5c6&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  }
+                ],
+                "zh-CN": [
+                  {
+                    "language": "zh-CN",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e986e56a3769c5010370039c36f03dde_11.srt?sign=5347ee4dc525ab3322956572b0773150&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  }
+                ],
+                "source": [
+                  {
+                    "language": "zh-CN",
+                    "url": "https://sns-subtitle-s8.rednotecdn.com/subtitle/1/110/1/01e986e56a3769c5010370039c36f03d81_1.srt?sign=b19c7339cbb53302956af17153284780&t=6a0d2fb7",
+                    "type": 0,
+                    "format": 0
+                  }
+                ]
+              },
+              "biz_id": "281904771573985144",
+              "width": 1080,
+              "opaque1": {
+                "insertSubtitleLanguages": "[\"zh-CN\"]",
+                "domestic": "0",
+                "isSupportSubtitle": "true",
+                "amend_mobile": "40",
+                "videoLanguage": "[\"zh-CN\"]",
+                "audioLevInfo": "{\"audio_quality_level\":\"E\",\"mos_overall\":4.1919,\"version\":\"3.0\"}",
+                "audioClsInfo": "{\"music_ratio\":0.929572732657786,\"freesound_ratio\":0.0,\"speech_ratio\":0.9816421568210227}",
+                "loudnorm": "{\"lra\":1.9,\"htp\":0.68,\"hldn\":-11.97,\"ldn\":-11.82,\"thr\":-22.25}",
+                "hasHumanVoice": "true"
+              },
+              "hdr_type": 0,
+              "biz_name": 110,
+              "height": 1920,
+              "duration": 31,
+              "md5": "c4808d351d45cf97ada37facbb187195",
+              "stream_types": [
+                258,
+                178,
+                179,
+                180
+              ],
+              "bound": [
+                {
+                  "y": 0,
+                  "w": 0,
+                  "x": 0,
+                  "h": 0
+                }
+              ]
+            },
+            "stream": {
+              "h265": [
+                {
+                  "audio_bitrate": 128346,
+                  "stream_type": 178,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/1/110/178/01e986e56a3769c5010370019c60f56ecb_178.mp4",
+                  "weight": 62,
+                  "volume": 0,
+                  "video_duration": 30133,
+                  "duration": 30140,
+                  "vmaf": -1,
+                  "psnr": 43.8650016784668,
+                  "video_codec": "hevc",
+                  "audio_channels": 2,
+                  "default_stream": 1,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/1/110/178/01e986e56a3769c5010370019c60f56ecb_178.mp4"
+                  ],
+                  "video_bitrate": 270418,
+                  "fps": 30,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 1536487,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "R265_MP4_720P_178_IOS",
+                  "height": 1280,
+                  "width": 720,
+                  "audio_duration": 30139,
+                  "quality_type": "HD",
+                  "avg_bitrate": 407826,
+                  "hdr_type": 0,
+                  "ssim": 0
+                },
+                {
+                  "audio_bitrate": 128346,
+                  "stream_type": 179,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/1/110/179/01e986e56a3769c5010370019c60f22add_179.mp4",
+                  "weight": 73,
+                  "volume": 0,
+                  "video_duration": 30133,
+                  "duration": 30140,
+                  "vmaf": -1,
+                  "psnr": 43.834999084472656,
+                  "video_codec": "hevc",
+                  "audio_channels": 2,
+                  "default_stream": 0,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/1/110/179/01e986e56a3769c5010370019c60f22add_179.mp4"
+                  ],
+                  "video_bitrate": 364283,
+                  "fps": 30,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 1890046,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "R265_MP4_1080P_179_IOS_mid",
+                  "height": 1920,
+                  "width": 1080,
+                  "audio_duration": 30139,
+                  "quality_type": "FHD",
+                  "avg_bitrate": 501671,
+                  "hdr_type": 0,
+                  "ssim": 0
+                },
+                {
+                  "audio_bitrate": 128346,
+                  "stream_type": 180,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/1/110/180/01e986e56a3769c5010370019c60f2082c_180.mp4",
+                  "weight": 78,
+                  "volume": 0,
+                  "video_duration": 30133,
+                  "duration": 30140,
+                  "vmaf": -1,
+                  "psnr": 44.44499969482422,
+                  "video_codec": "hevc",
+                  "audio_channels": 2,
+                  "default_stream": 0,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/1/110/180/01e986e56a3769c5010370019c60f2082c_180.mp4"
+                  ],
+                  "video_bitrate": 412427,
+                  "fps": 30,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 2071390,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "R265_MP4_1080P_180_IOS_high",
+                  "height": 1920,
+                  "width": 1080,
+                  "audio_duration": 30139,
+                  "quality_type": "FHD",
+                  "avg_bitrate": 549804,
+                  "hdr_type": 0,
+                  "ssim": 0
+                }
+              ],
+              "h266": [],
+              "h264": [
+                {
+                  "audio_bitrate": 56314,
+                  "stream_type": 258,
+                  "master_url": "http://sns-v8.rednotecdn.com/stream/79/110/258/01e986e56a3769c54f0370019c36f057d2_258.mp4",
+                  "weight": 59,
+                  "volume": 0,
+                  "video_duration": 30133,
+                  "duration": 30140,
+                  "vmaf": -1,
+                  "psnr": 0,
+                  "video_codec": "h264",
+                  "audio_channels": 2,
+                  "default_stream": 0,
+                  "backup_urls": [
+                    "http://sns-v10.rednotecdn.com/stream/79/110/258/01e986e56a3769c54f0370019c36f057d2_258.mp4"
+                  ],
+                  "video_bitrate": 684485,
+                  "fps": 30,
+                  "opaque1": {
+                    "didLoudnorm": "false",
+                    "pcdn_302_flag": "false",
+                    "use_pcdn": "0",
+                    "pcdn_supplier": ""
+                  },
+                  "size": 2817139,
+                  "audio_codec": "aac",
+                  "rotate": 0,
+                  "format": "mp4",
+                  "token": "",
+                  "sr": 0,
+                  "stream_desc": "X264_MP4",
+                  "height": 1280,
+                  "width": 720,
+                  "audio_duration": 30139,
+                  "quality_type": "HD",
+                  "avg_bitrate": 747747,
+                  "hdr_type": 0,
+                  "ssim": 0
+                }
+              ],
+              "av1": []
+            },
+            "video_id": "137789583499160005"
+          }
+        },
+        "text_language_code": "zh-Hans",
+        "type": "video",
+        "topics": [
+          {
+            "style": 0,
+            "id": "5be0478174881c00015598f9",
+            "activity_online": false,
+            "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+            "link": "xhsdiscover://topic/v2/5be0478129f1000001a19742?page_source=note_feed.click_new_big",
+            "business_type": 0,
+            "discuss_num": 0,
+            "name": "赚钱"
+          }
+        ],
+        "desc": "当领导一定要学会给员工开总结会\n#赚钱[话题]#  #老板思维[话题]#  #认知[话题]#  #財富[话题]#",
+        "countdown": 0,
+        "video_preview_type": "full_vertical_screen",
+        "ats": [],
+        "has_no_more": false,
+        "widgets_groups": [
+          [
+            "guos_test",
+            "note_next_step",
+            "second_jump_bar",
+            "note_collection",
+            "cooperate_binds",
+            "rec_next_infos",
+            "video_marks",
+            "product_review",
+            "related_search",
+            "video_goods_cards",
+            "cooperate_comment_component",
+            "ads_goods_cards",
+            "ads_comment_component",
+            "goods_card_v2",
+            "video_recommend_tag",
+            "buyable_goods_card_v2",
+            "cooperate_search_component",
+            "ads_engage_bar",
+            "challenge_card",
+            "cooperate_engage_bar",
+            "pgy_comment_component",
+            "pgy_engage_bar",
+            "related_recommend",
+            "next_note_guide",
+            "widgets_ndb",
+            "pgy_bbc_exp",
+            "brand_max_trailer",
+            "super_activity",
+            "note_nice_guide",
+            "pin_search_highlights",
+            "widgets_enhance",
+            "packed_goods",
+            "packed_buyable_goods",
+            "widgets_ncb",
+            "note_nice_compound",
+            "live_shooting_flag",
+            "widgets_nbb",
+            "poi_declare",
+            "async_group"
+          ],
+          [
+            "guos_test",
+            "vote_stickers",
+            "bullet_comment_lead",
+            "note_search_box",
+            "interact_pk",
+            "interact_vote",
+            "guide_heuristic",
+            "guide_post",
+            "video_foot_bar",
+            "follow_guide",
+            "share_to_msg",
+            "note_share_prompt_v1",
+            "note_share_prompt_v2",
+            "group_share",
+            "share_guide_bubble",
+            "goods_enhance_component",
+            "guide_navigator",
+            "sync_group"
+          ]
+        ],
+        "enable_brand_lottery": false,
+        "api_upgrade": -1,
+        "need_product_review": false,
+        "media_save_config": {
+          "disable_save": false,
+          "disable_watermark": false,
+          "disable_weibo_cover": false
+        },
+        "cny_red_envelope_note": false,
+        "native_voice_info": {
+          "disable_panel": true,
+          "sound_id": "1146595900038747794",
+          "url": "http://sns-v8.rednotecdn.com/audio/1/02e986e56c7d605d010370039c36f033ac_0.m4a?sign=2c8a16ccec03f10416603c42d7d78605&t=6a089277",
+          "use_count": 1,
+          "deeplink": "xhsdiscover://post_new_note?guiders=%5B%7B%22page_position%22%3A%22album%22%2C%22content%22%3A%22Select%20and%20tap%20Next%20Step%20to%20add%20the%20music%22%7D%2C%7B%22page_position%22%3A%22take_photo%22%2C%22content%22%3A%22Ready%20to%20add%20the%20music%20in%20your%20notes%22%7D%2C%7B%22page_position%22%3A%22take_video%22%2C%22content%22%3A%22Ready%20to%20add%20the%20music%20in%20your%20notes%22%7D%5D&page=%7B%22page_type%22%3A%22albums%22%7D&attach=%7B%22sound_track%22%3A%7B%22id%22%3A%221146595900038747794%22%7D%7D&source=%7B%22type%22%3A%22leica%22%2C%22extraInfo%22%3A%7B%22track_id%22%3A%226986e56a000000000903af78%22%2C%22style%22%3A%22ordinary%22%2C%22subType%22%3A%22NNS_TYPE_SOUND_TRACK%22%2C%22page_entrance_type%22%3A%22note_detail%22%2C%22note_feed_type_str%22%3A%22%22%2C%22nns_id%22%3A%221146595900038747794%22%2C%22is_related_notes%22%3Afalse%7D%7D"
+        },
+        "shared_count": 850,
+        "images_list": [
+          {
+            "fileid": "spectrum/1040g34o31s9dnql55a105q5vf3n6hj91sik3gh8",
+            "index": 0,
+            "url_size_large": "",
+            "scale_to_large": 0,
+            "longitude": 0,
+            "url": "https://sns-i11.rednotecdn.com/spectrum/1040g34o31s9dnql55a105q5vf3n6hj91sik3gh8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=V_PRV&sign=bf7fbccd17af5668053e3b2ca75df68c&t=6a089277&src=A",
+            "latitude": 0,
+            "width": 1080,
+            "original": "https://sns-i11.rednotecdn.com/spectrum/1040g34o31s9dnql55a105q5vf3n6hj91sik3gh8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=V_ORG&sign=bf7fbccd17af5668053e3b2ca75df68c&t=6a089277&src=A",
+            "need_load_original_image": false,
+            "height": 1920,
+            "trace_id": "spectrum/1040g34o31s9dnql55a105q5vf3n6hj91sik3gh8"
+          }
+        ],
+        "may_have_red_packet": false,
+        "comment_prompt_config": {
+          "placeholder_short": "Say something...",
+          "placeholder_long": "Say something...",
+          "forbidden_cmt_type": 0
+        },
+        "final_feed_item": false,
+        "enable_fls_bridge_cards": false,
+        "model_type": "note",
+        "hide_button": false,
+        "seeded": false,
+        "enable_listen_video": false,
+        "view_count": 0,
+        "track_id": "videosfcf_3_6986e56a000000000903af78_-1_0_0_2gdji8e5h64jldmdan1hm",
+        "cooperate_binds": [],
+        "function_switch": [
+          {
+            "type": "video_download",
+            "enable": true
+          },
+          {
+            "enable": true,
+            "type": "quote_note"
+          }
+        ],
+        "source_note": false,
+        "source_item": false,
+        "time": 1771113660,
+        "nice_info": {
+          "display": true,
+          "nice_status": 2
+        },
+        "cursor_score": "1.7789466789980001E9",
+        "collected_count": 4690,
+        "downgrade_type": 0,
+        "privacy": {
+          "type": 0,
+          "show_tips": false,
+          "nick_names": ""
+        },
+        "enable_fls_related_cards": false,
+        "interaction_info": {
+          "nice_count": 5,
+          "share_count": 850,
+          "niced": false
+        },
+        "qq_mini_program_info": {
+          "share_title": "@商业思索者恒 发了一篇超赞的笔记，快点来看！",
+          "webpage_url": "https://www.xiaohongshu.com/discovery/item/6986e56a000000000903af78?xsec_source=app_share&xsec_token=CBWb8g2E6wIy8Z1T9uh-8Cwk-R-FDwlk5D1ySzKoLqJOY=",
+          "thumb": "http://sns-img-hw.xhscdn.com/spectrum/1040g34o31s9dnql55a105q5vf3n6hj91sik3gh8?imageView2/2/w/540/format/jpg/q/75",
+          "title": "@商业思索者恒 发了一篇超赞的笔记，快点来看！",
+          "user_name": "gh_66c53d495417",
+          "path": "pages/main/note/index?xsec_source=app_share&id=6986e56a000000000903af78&type=video&xsec_token=CBWb8g2E6wIy8Z1T9uh-8Cwk-R-FDwlk5D1ySzKoLqJOY=",
+          "desc": "#赚钱  #老板思维  #认知  #財富"
+        },
+        "widgets_context": "{\"video\":true,\"origin_video_key\":\"spectrum/1040g35031s9dnqf758105q5vf3n6hj91arvneeo\",\"flags\":{\"sound_track\":true},\"author_id\":\"68bf78ee000000001a00cd21\",\"author_name\":\"商业思索者恒\",\"note_sound_info\":{\"sound_id\":\"1146595900038747794\",\"name\":\"商业思索者恒的原声\",\"desc\":\"@商业思索者恒创作的原声\",\"duration\":30139,\"url\":\"http://sns-v8.rednotecdn.com/audio/1/02e986e56c7d605d010370039c36f033ac_0.m4a?sign=2c8a16ccec03f10416603c42d7d78605&t=6a089277\",\"use_count\":1,\"subtitle\":\"商业思索者...的原声\",\"sound_bg_music_type\":3,\"cover\":\"https://picasso-static.xiaohongshu.com/fe-platform/b598691aefe712c51cbe29af0ddbe732937bc965.png\",\"creator\":\"68bf78ee000000001a00cd21\"},\"video_duration\":30,\"video_rec_bar_info\":\"{\\\"isNiceNote\\\":0,\\\"followConductVideoTime\\\":\\\"-1\\\",\\\"followConductReason\\\":\\\"\\\",\\\"followConductNoteTime\\\":\\\"-1\\\",\\\"followConductFlag\\\":\\\"false\\\"}\"}"
+      }
+    ],
+    "code": 0,
+    "msg": "成功"
+  }
+}

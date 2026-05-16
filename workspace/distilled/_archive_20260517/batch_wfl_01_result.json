@@ -1,0 +1,156 @@
+{
+  "_batch_label": "未分类_第1批",
+  "gold_words": [
+    {
+      "word": "心酸再也不想做兼职",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "新手写网文",
+      "aliases": "关于新手兼职写网文",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "36种躺赢的收入",
+      "aliases": "",
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "坚持写作两年世界奖励了我",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "兴趣收入超主业2倍",
+      "aliases": "",
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "赚外国人钱",
+      "aliases": "在家赚外国人钱的6个方式",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "在家轻创",
+      "aliases": "一个人在家轻创",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "零食带货不出镜",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "摸鱼赚点钱",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "月薪6k存款10w",
+      "aliases": "",
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "卡皮巴拉的打工日记",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "瞎jb写",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "未分类"
+    },
+    {
+      "word": "三本应届3个月赚15w但离职",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "未分类"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "X已超主业Y倍",
+      "category": "对比",
+      "examples": [
+        "兴趣收入已超主业2倍"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "关于X的一点建议",
+      "category": "召唤",
+      "examples": [
+        "关于新手兼职写网文的一点建议"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "坚持X两年，世界狠狠奖励了我",
+      "category": "承诺",
+      "examples": [
+        "坚持写作两年，世界狠狠奖励了我"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "X赚Y的N个方式",
+      "category": "清单",
+      "examples": [
+        "在家赚外国人钱的6个方式"
+      ],
+      "from_post_ids": []
+    }
+  ]
+}

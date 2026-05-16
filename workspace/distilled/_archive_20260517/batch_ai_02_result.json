@@ -1,0 +1,202 @@
+{
+  "_batch_label": "AI应用_第2批",
+  "gold_words": [
+    {
+      "word": "太香了",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "躺着上班",
+      "aliases": "带你躺着上班",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "打工偷懒",
+      "aliases": "打工偷懒秘籍",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "工作搭子",
+      "aliases": "我的工作搭子",
+      "category": "picture",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "准时下班",
+      "aliases": "让我准时下班的省命工具",
+      "category": "pain",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 2,
+      "domain": "AI应用"
+    },
+    {
+      "word": "变态神器",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "禁止加班",
+      "aliases": "",
+      "category": "do",
+      "source_field": "cover",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "省命工具",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "AI仇恨挑刺法",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "驯服AI",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "AI搞定IP全案",
+      "aliases": "1个人用AI搞定IP全案",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "效率神器",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 2,
+      "domain": "AI应用"
+    },
+    {
+      "word": "为AI打工",
+      "aliases": "让6个AI为你打工",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "提前3小时下班",
+      "aliases": "",
+      "category": "number",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "PUA大模型",
+      "aliases": "学会偷懒+PUA",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "创意大脑",
+      "aliases": "第二个创意大脑",
+      "category": "picture",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "无限拉高时薪",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "6个AI打工",
+      "aliases": "让6个AI为你打工",
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "让N个AI为你打工",
+      "category": "递进",
+      "examples": [
+        "我只用一个工具让6个AI为我打工"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "X的神器，Y必备",
+      "category": "清单",
+      "examples": [
+        "打工人效率神器",
+        "学霸不告诉你的高效率学习神器"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "XX的人，Y",
+      "category": "递进",
+      "examples": [
+        "劳动人民的智慧，只要思想不滑坡，办法总比困难多"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "不按套路来竟然X",
+      "category": "悬念",
+      "examples": [
+        "万万没想到，不按套路来竟然意外的好用"
+      ],
+      "from_post_ids": []
+    }
+  ]
+}

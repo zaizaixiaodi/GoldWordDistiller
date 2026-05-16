@@ -298,7 +298,7 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
 
     # 2. 去重：获取热贴库已有 post_id
     print("[harvest] 读取已有热贴去重表 ...")
-    existing_posts = query_posts(limit=500)
+    existing_posts = query_posts()
     existing_ids = set()
     for rec in existing_posts:
         pid = rec.get("fields", {}).get("post_id", "")
@@ -422,16 +422,7 @@ def backfill_covers(dry_run: bool = False) -> int:
     )
 
     print("[backfill] 读取热贴库记录 ...")
-    all_records = []
-    offset = 0
-    while True:
-        page = _list_records(FEISHU_HOTPOSTS_TABLE_ID, limit=200, offset=offset)
-        if not page:
-            break
-        all_records.extend(page)
-        offset += 200
-        if len(page) < 200:
-            break
+    all_records = _list_records(FEISHU_HOTPOSTS_TABLE_ID)  # 内部自动翻页拉全量
     print(f"  共 {len(all_records)} 条记录")
     no_cover = {}  # post_id → record_id
     has_cover = 0

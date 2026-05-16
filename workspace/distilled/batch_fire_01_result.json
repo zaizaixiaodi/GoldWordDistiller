@@ -1,0 +1,31 @@
+{
+  "_batch_label": "fire_01",
+  "_batch_meta": {
+    "keyword": "FIRE",
+    "domain": "搞钱",
+    "post_count": 3,
+    "record_ids": ["recvjNHgrwfvBJ", "recvjNHgrw6hv9", "recvjNHgrwp7Y8"],
+    "distilled_at": "2026-05-17",
+    "distilled_by": "Opus 4.7"
+  },
+  "gold_words": [],
+  "patterns": [],
+  "_skipped_posts": [
+    {
+      "record_id": "recvjNHgrwfvBJ",
+      "title": "和好朋友玩玩感情升温小游戏",
+      "reason": "实际内容是火鸡面接力挑战，封面文案'火鸡面接力 / 加料挑战'。与搞钱/FIRE 无关，无金词可提"
+    },
+    {
+      "record_id": "recvjNHgrw6hv9",
+      "title": "街头偶遇芝士蛋包火鸡面🥹竟有炸开的烤肠!!",
+      "reason": "美食探店内容，与搞钱/FIRE 完全无关"
+    },
+    {
+      "record_id": "recvjNHgrwp7Y8",
+      "title": "火鸡面接力第四弹，地域特色版，快来玩！",
+      "reason": "网络挑战梗内容，与搞钱/FIRE 完全无关"
+    }
+  ],
+  "_dev_note": "配置词 'FIRE' 在小红书搜索质量极差 —— 小红书把英文 FIRE 谐音/字符匹配到了'火鸡面'。TOP video 全是火鸡面挑战。建议改配置词为 'FIRE生活' / '财务自由' / '提前退休' 等更精准的中文表达。"
+}

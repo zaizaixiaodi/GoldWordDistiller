@@ -1,0 +1,417 @@
+{
+  "code": 200,
+  "request_id": "2e526e01-85e8-4d04-adef-07d79edddb2e",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:58:54",
+  "time_stamp": 1778947134,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/2e526e01-85e8-4d04-adef-07d79edddb2e?sign=2765c633e8b5c6b0b81636ef349ad2c5997ad84b49d489e30d57d3449ed7b409",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "691fb389000000021e02e385"
+  },
+  "data": {
+    "code": 0,
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "Australia",
+            "user": {
+              "red_official_verified": false,
+              "id": "61fd14080000000010008ffc",
+              "fstatus": "none",
+              "userid": "61fd14080000000010008ffc",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31cpg005mgm0g5oft2g4413vs8ncjq7o?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "red_id": "6974885861",
+              "nickname": "Shie-xxx",
+              "name": "Shie-xxx"
+            },
+            "id": "691fb389000000001e0266bf",
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "liked": false,
+            "comments_count": 3,
+            "last_update_time": 1763685528,
+            "collected": false,
+            "has_related_goods": false,
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 3,
+            "head_tags": [],
+            "title": "纯手搓作业PPT我做成了高级品牌画册",
+            "share_info": {
+              "content": "这段时间Final做Pre，把之前做整合营销方案的工作思路带了进去，突然发现在同学的作业中脱颖而出 想分享一下： Mar",
+              "show_wechat_tag": false,
+              "title": "纯手搓作业PPT我做成了高级品牌画册",
+              "image": "http://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg?imageView2/2/w/360/format/jpg/q/75",
+              "is_star": false,
+              "guide_audited": true,
+              "link": "https://www.xiaohongshu.com/discovery/item/691fb389000000001e0266bf?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBBuRqxqkGZKyqEl6IJX5OMJaLBEAchR0Qxy7Zk12hWas=&author_share=1",
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "wechat_share_desc": "这段时间Final做Pre，把之前做整合营销方案的工作思路带了进去，突然发现在同学的作业中脱颖而出 想分享一下： Mar"
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "id": "5c35323b0000000008000809",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c35323b6f6ca30001312820&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "作品集排版",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "601b5b820000000001001fb4",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=601b5b82a9e8e70001e38502&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "创意ppt",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "5bea7d342e09150001ee1ae1",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5bea7d34227b480001528683&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "ppt",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "61e0f553000000000100b56f",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=61e0f55367a08c0001d03a7d&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "高级感ppt"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "60bdc0010000000001001318",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=60bdc001b14dbb00018ec9ba&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "工作总结PPT",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "607b982c000000000100b8b8",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=607b982c83055100017ea60c&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "作品集封面",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5c1b388b000000000a023290",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c1b388b232fa30001ca51fb&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "品牌策划"
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "5c35323b0000000008000809",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/5c35323b6f6ca30001312820?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "作品集排版"
+              }
+            ],
+            "desc": "这段时间Final做Pre，把之前做整合营销方案的工作思路带了进去，突然发现在同学的作业中脱颖而出\n想分享一下：\nMarketing 类 PPT 其实不需要花里胡哨，\n最重要的是——逻辑清晰＋品牌感稳定。\n我主要做了 5 件事👇\n1️⃣｜用“品牌调性”统一整套风格\nAssembly Label 是极简清冷、自然、质感品牌，所以我用：\n•\t奶油色＋沙漠色为主色\n•\t大面积留白\n•\t极简摄影\n让整套 deck 看起来像品牌画册，而不是学校作业\n2️⃣｜重构内容层级，让信息更“好吸收”\n很多 Presentation 最难的问题不是不好看，而是太乱。我把内容拆解，每一页只说一个核心点，让品牌故事自然流动\n3️⃣｜图表全部重绘（拒绝默认样式）\n我把预算饼图、目标拆解、Media Flowchart 全部重新画过，统一配色和字体，这样排下来的图表不会刺眼，也更像真实品牌提案\n4️⃣｜封面做“品牌情绪照”而不是纯标题\nMarketing PPT 的封面其实非常重要。我用了沙丘摄影做视觉基调，加campaign slogan\n让整套 vibe 更“品牌故事感”，让人一眼记住品牌口号\n5️⃣｜保持一致性：字体、色调、留白、版式\nPPT 高级的关键从来不是素材多，而是“克制”。一致的字体＋一致的边距＋一致的视觉节奏 → 会瞬间高级\n⭐如果你也在做 Presentation / 学术汇报 / Marketing Deck\n不知道怎么统一风格、怎么排版、怎么讲清楚逻辑，可以发我几页截图，我可以帮你看看结构\n#作品集排版[话题]# #创意ppt[话题]# #ppt[话题]# #高级感ppt[话题]# #工作总结PPT[话题]# #作品集封面[话题]# #品牌策划[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "use_water_color": false,
+            "mini_program_info": {
+              "share_title": "@Shie-xxx 发了一篇笔记，快点来看吧！",
+              "title": "@Shie-xxx 发了一篇笔记，快点来看吧！",
+              "thumb": "http://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg?imageView2/2/w/540/format/jpg/q/75",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/691fb389000000001e0266bf?xsec_source=app_share&xsec_token=CBBuRqxqkGZKyqEl6IJX5OMJaLBEAchR0Qxy7Zk12hWas=",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D691fb389000000001e0266bf%26type%3Dnormal%26xsec_token%3DCBBuRqxqkGZKyqEl6IJX5OMJaLBEAchR0Qxy7Zk12hWas%3D",
+              "desc": "这段时间Final做Pre，把之前做整合营销方案的工作思路带了进去，突然发现在同学的作业中脱颖而出 想分享一下： Mar"
+            },
+            "api_upgrade": -1,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%22691fb389000000001e0266bf%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "in_censor": false,
+            "enable_brand_lottery": false,
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 0,
+            "images_list": [
+              {
+                "fileid": "note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg",
+                "url_size_large": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=6007d3367909a95b32f334f3a25b5117&t=6a08943e&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "width": 4284,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=6007d3367909a95b32f334f3a25b5117&t=6a08943e&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=6007d3367909a95b32f334f3a25b5117&t=6a08943e&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=6007d3367909a95b32f334f3a25b5117&t=6a08943e&src=A"
+                },
+                "longitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=6007d3367909a95b32f334f3a25b5117&t=6a08943e&src=A",
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=6007d3367909a95b32f334f3a25b5117&t=6a08943e&src=A",
+                "need_load_original_image": true,
+                "url_8k": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=PAINTER&sign=6007d3367909a95b32f334f3a25b5117&t=6a08943e&src=A",
+                "origin_img": {
+                  "width": 4284,
+                  "size": 0,
+                  "height": 5712
+                },
+                "height": 5712,
+                "trace_id": "note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg",
+                "text_intention": 0
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k831p4kqu262o7g5oft2g4413vsj5n9c0o",
+                "url_size_large": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k831p4kqu262o7g5oft2g4413vsj5n9c0o?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=d42bd73b40d6624e189ff7a46b87f5a2&t=6a08943e&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "longitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k831p4kqu262o7g5oft2g4413vsj5n9c0o?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=d42bd73b40d6624e189ff7a46b87f5a2&t=6a08943e&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k831p4kqu262o7g5oft2g4413vsj5n9c0o?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d42bd73b40d6624e189ff7a46b87f5a2&t=6a08943e&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k831p4kqu262o7g5oft2g4413vsj5n9c0o?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d42bd73b40d6624e189ff7a46b87f5a2&t=6a08943e&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k831p4kqu262o7g5oft2g4413vsj5n9c0o?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d42bd73b40d6624e189ff7a46b87f5a2&t=6a08943e&src=A"
+                },
+                "width": 1414,
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k831p4kqu262o7g5oft2g4413vsj5n9c0o?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d42bd73b40d6624e189ff7a46b87f5a2&t=6a08943e&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1414,
+                  "size": 0,
+                  "height": 2000
+                },
+                "height": 2000,
+                "text_intention": 0,
+                "trace_id": "notes_pre_post/1040g3k831p4kqu262o7g5oft2g4413vsj5n9c0o"
+              }
+            ],
+            "may_have_red_packet": false,
+            "comment_prompt_config": {
+              "placeholder_long": "Drop a comment...",
+              "placeholder_short": "Say something...",
+              "forbidden_cmt_type": 0
+            },
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "view_count": 0,
+            "cooperate_binds": [],
+            "function_switch": [
+              {
+                "enable": true,
+                "type": "image_download"
+              },
+              {
+                "enable": true,
+                "type": "quote_note"
+              }
+            ],
+            "time": 1763685257,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false,
+              "is_star": false,
+              "block_private_msg": false
+            },
+            "collected_count": 2,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "share_title": "@Shie-xxx 发了一篇超赞的笔记，快点来看！",
+              "title": "@Shie-xxx 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/691fb389000000001e0266bf?xsec_source=app_share&xsec_token=CBBuRqxqkGZKyqEl6IJX5OMJaLBEAchR0Qxy7Zk12hWas=",
+              "thumb": "http://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r831p4kqu2cis7g5oft2g4413vs7186rrg?imageView2/2/w/540/format/jpg/q/75",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=691fb389000000001e0266bf&type=normal&xsec_token=CBBuRqxqkGZKyqEl6IJX5OMJaLBEAchR0Qxy7Zk12hWas=",
+              "desc": "这段时间Final做Pre，把之前做整合营销方案的工作思路带了进去，突然发现在同学的作业中脱颖而出 想分享一下： Mar"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"61fd14080000000010008ffc\",\"author_name\":\"Shie-xxx\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "red_official_verified": false,
+          "id": "61fd14080000000010008ffc",
+          "fstatus": "none",
+          "userid": "61fd14080000000010008ffc",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31cpg005mgm0g5oft2g4413vs8ncjq7o?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "red_id": "6974885861",
+          "nickname": "Shie-xxx",
+          "name": "Shie-xxx"
+        }
+      }
+    ],
+    "msg": "成功"
+  }
+}

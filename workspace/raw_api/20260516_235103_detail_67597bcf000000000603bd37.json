@@ -1,0 +1,345 @@
+{
+  "code": 200,
+  "request_id": "29c60383-b29d-4059-bdec-148ac62debb3",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:51:04",
+  "time_stamp": 1778946664,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/29c60383-b29d-4059-bdec-148ac62debb3?sign=9ca8f40b00ef7efaaf75ef4c914f5dfaa5545ad0eb4e289e6d9fc8ce0014cbab",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "67597bcf000000000603bd37"
+  },
+  "data": {
+    "code": 0,
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "Beijing",
+            "user": {
+              "red_official_verified": false,
+              "id": "643f412c000000001400fc9c",
+              "fstatus": "none",
+              "userid": "643f412c000000001400fc9c",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30o17i4plho6g5p1v84m51v4srbbai1o?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "red_id": "5567136071",
+              "nickname": "梓茉职场学姐",
+              "name": "梓茉职场学姐"
+            },
+            "id": "67597bcf000000000603bd37",
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "last_update_time": 0,
+            "has_related_goods": false,
+            "liked": false,
+            "collected": false,
+            "comments_count": 149,
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 15481,
+            "head_tags": [],
+            "title": "当我听下属年终汇报时，我在听什么？",
+            "share_info": {
+              "content": "你好，我是梓茉，一个在职场摸爬滚打多年的职场大姐姐 . 作为一个典型的 INTJ，在职场的前几年，我真的是非常不擅长、也",
+              "show_wechat_tag": false,
+              "title": "当我听下属年终汇报时，我在听什么",
+              "image": "http://sns-img-hw.xhscdn.com/1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo?imageView2/2/w/360/format/jpg/q/75",
+              "link": "https://www.xiaohongshu.com/discovery/item/67597bcf000000000603bd37?app_platform=ios&app_version=9.30.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBnYxSQDCumZJalorCY9GN1ai18ng3mvwblkKyc2UocQ8=&author_share=1",
+              "block_private_msg": false,
+              "wechat_share_desc": "@梓茉职场学姐's note\n2875 Shares",
+              "guide_audited": true,
+              "is_star": false,
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ]
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "id": "641ae3c3000000001803fff4",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=641ae3c3d73f8100018c6d94&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "get职场新知识",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "5cd7d963000000000f018b70",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5cd7d9636849230001aae7af&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "职场干货"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "6193635a0000000001001e37",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=6193635b62abe60001c9f959&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "年终总结汇报"
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "641ae3c3000000001803fff4",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/641ae3c3d73f8100018c6d94?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "get职场新知识"
+              }
+            ],
+            "desc": "你好，我是梓茉，一个在职场摸爬滚打多年的职场大姐姐\n.\n作为一个典型的 INTJ，在职场的前几年，我真的是非常不擅长、也不喜欢做工作汇报\n.\n在几次年终述职评比垫底之后，我不得不正视自己的短板，于是开始系统地学习如何做好职场表达和工作汇报。后来，凭借着一次次清晰、有效的工作汇报，我成功走上了管理岗，成为了一名团队 leader\n.\n从一个不擅长汇报的职场新人，到如今坐在汇报会议桌另一侧的管理者，我逐渐明白：领导在听年终汇报时，真正关心的无非是以下几点（如果你按照这个框架来做，绝对会让你的年终述职更加分！）\n.\n一、基本信息-5%\n如果涉及跨部门、跨团队的场合，简短的自我介绍是非常必要的，毕竟不是所有领导都认识你。\n- 我是谁？\n- 现任岗位是什么？\n- 具体负责哪些核心工作？\n- 这一年是否有职务或工作内容的变化？\n.\n二、工作回顾-30%\n1️⃣年度任务清单及结果\n- 列出全年任务清单：哪些完成了？哪些在跟进中？\n- 数据化结果：完成的用量化指标说明，未完成的用进展和完成度表述。\n2️⃣任务实施内容\n- 列出完成任务过程中具体的工作内容，可以附上图片或其他证据。\n3️⃣总结价值\n- 归纳今年工作的整体贡献，比如对公司带来的直接收益（收入、成本节省等）\nTips:\n这部分是你的核心汇报内容，要 条理清晰，数据支撑，视觉化呈现，让领导一目了然。\n.\n三、亮点总结-35%\n- 目标：项目目标是什么？\n- 成绩：具体达成了什么？用数据和图片证明。\n- 举措：做了哪些关键动作，让项目取得突破性成果？\n- 收获：总结项目带来的直接价值（如形成标准 SOP、节省预算、提升效率等）\nTips:\n挑选 2-3 个能展现核心能力、对公司有直接贡献的亮点案例即可，不要过多\n.\n四、问题分析-10%\n工作中遇到问题是正常的，领导更想看到的是你如何应对。\n- S（情景）：描述项目过程中遇到的真实情况。\n- C（冲突）：指出问题所在，可以从主观和客观两方面分析原因。\n- Q（疑问）：针对这种问题，该怎么办？\n- A（回答）：提出你的解决方案或改进措施。\n.\n五、个人成长-10%\n1. 总结经验：今年的工作让你收获了哪些新能力或见解？\n2. 知识沉淀：有没有形成一些可复制的方法论、SOP 或系统化的工作模式？\n.\n六、明年计划-10%\n1. 明年目标\n2. 实施策略\n3. 资源需求\n.\n马上年底了，这些汇报套路\n都是我和部门小朋友经常说的～\n辛辛苦苦一整年，可别因为不会汇报吃了亏\n\t\n#get职场新知识[话题]# #职场干货[话题]# #年终总结汇报[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "enable_brand_lottery": false,
+            "api_upgrade": -1,
+            "in_censor": false,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%2267597bcf000000000603bd37%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "use_water_color": false,
+            "mini_program_info": {
+              "title": "@梓茉职场学姐 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/67597bcf000000000603bd37?xsec_source=app_share&xsec_token=CBnYxSQDCumZJalorCY9GN1ai18ng3mvwblkKyc2UocQ8=",
+              "thumb": "http://sns-img-hw.xhscdn.com/1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@梓茉职场学姐 发了一篇笔记，快点来看吧！",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D67597bcf000000000603bd37%26type%3Dnormal%26xsec_token%3DCBnYxSQDCumZJalorCY9GN1ai18ng3mvwblkKyc2UocQ8%3D",
+              "desc": "你好，我是梓茉，一个在职场摸爬滚打多年的职场大姐姐 . 作为一个典型的 INTJ，在职场的前几年，我真的是非常不擅长、也"
+            },
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 2875,
+            "images_list": [
+              {
+                "fileid": "1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=400ecec1e53d50bdb9ce94efd4a4c0c7&t=6a089267&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "longitude": 0,
+                "width": 2100,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=400ecec1e53d50bdb9ce94efd4a4c0c7&t=6a089267&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=400ecec1e53d50bdb9ce94efd4a4c0c7&t=6a089267&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=400ecec1e53d50bdb9ce94efd4a4c0c7&t=6a089267&src=A"
+                },
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=400ecec1e53d50bdb9ce94efd4a4c0c7&t=6a089267&src=A",
+                "original": "https://sns-i11.rednotecdn.com/1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=400ecec1e53d50bdb9ce94efd4a4c0c7&t=6a089267&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 2800,
+                "text_intention": 2,
+                "trace_id": "1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo",
+                "file_id_trans": "cloudrender-translate/d5e34e61-ce9a-4ab8-b16d-72d020aa0d83.jpg",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/d5e34e61-ce9a-4ab8-b16d-72d020aa0d83.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=4c8cbd6ad9061c3f0f9c2fb4985cf2a7&t=6a089267&src=A"
+              }
+            ],
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Share your thoughts...",
+              "forbidden_cmt_type": 0
+            },
+            "may_have_red_packet": false,
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "cooperate_binds": [],
+            "view_count": 0,
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": true
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1733917647,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "is_star": false,
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false
+            },
+            "collected_count": 21341,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "share_title": "@梓茉职场学姐 发了一篇超赞的笔记，快点来看！",
+              "title": "@梓茉职场学姐 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/67597bcf000000000603bd37?xsec_source=app_share&xsec_token=CBnYxSQDCumZJalorCY9GN1ai18ng3mvwblkKyc2UocQ8=",
+              "thumb": "http://sns-img-hw.xhscdn.com/1040g2sg31b92jejc6mdg5p1v84m51v4sdp9vjbo?imageView2/2/w/540/format/jpg/q/75",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=67597bcf000000000603bd37&type=normal&xsec_token=CBnYxSQDCumZJalorCY9GN1ai18ng3mvwblkKyc2UocQ8=",
+              "desc": "你好，我是梓茉，一个在职场摸爬滚打多年的职场大姐姐 . 作为一个典型的 INTJ，在职场的前几年，我真的是非常不擅长、也"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"643f412c000000001400fc9c\",\"author_name\":\"梓茉职场学姐\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "red_official_verified": false,
+          "id": "643f412c000000001400fc9c",
+          "fstatus": "none",
+          "userid": "643f412c000000001400fc9c",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30o17i4plho6g5p1v84m51v4srbbai1o?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "nickname": "梓茉职场学姐",
+          "red_id": "5567136071",
+          "name": "梓茉职场学姐"
+        }
+      }
+    ],
+    "msg": "成功"
+  }
+}

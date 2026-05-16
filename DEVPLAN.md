@@ -40,7 +40,7 @@
 
 **当前阶段**：Phase 3 — 体验打磨
 **当前任务**：3.3 飞书深度集成调优 + v2 专项回测
-**最近一次更新**：2026-05-16 22:40（Phase 3.2 完成：/list /patterns /config /sync）
+**最近一次更新**：2026-05-17（流水线扶正补丁：4 步手动重蒸流水线文档化为 `/distill`，引入 `patterns_reference.md`）
 
 ### Phase 0：准备工作（用户侧）
 - [x] 0.1 收集环境变量与外部账号
@@ -54,6 +54,7 @@
 
 ### Phase 2：蒸馏能力（v2 重写）
 - [x] 2.1 金词提取（按 8 功能位 + 标题/封面分开 + vibe_score）
+  - 2026-05-17 补丁：批量重蒸流水线扶正为 `/distill` 命令，详见 `.claude/commands/distill.md` 与 CLAUDE.md §4.1。`prompts/patterns_reference.md` 提供 15 个抽象句式骨架作为蒸馏参考
 - [x] 2.2 趋势追踪（tracker.py，金词 + 句式双路）
 - [x] 2.3 简报 + 周报（含元认知反思 + 业务规范回写）+ /feed + /add
 

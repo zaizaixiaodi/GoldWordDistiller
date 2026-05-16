@@ -1,0 +1,309 @@
+{
+  "_batch_label": "搞钱_第2批",
+  "gold_words": [
+    {
+      "word": "居家办公",
+      "aliases": "",
+      "category": "when",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "超个体",
+      "aliases": "超级个体时代",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "掏心窝子",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "开窍",
+      "aliases": "女生一旦开窍",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "黑马属性",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "低能量",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 2,
+      "domain": "搞钱"
+    },
+    {
+      "word": "低耗能",
+      "aliases": "低耗能的方式",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 2,
+      "domain": "搞钱"
+    },
+    {
+      "word": "生存系统",
+      "aliases": "个人生存系统",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "双线搞钱",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "避坑",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "下半年的财运",
+      "aliases": "下半年你会很有钱",
+      "category": "when",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "男性思维",
+      "aliases": "",
+      "category": "who",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "搞玄学",
+      "aliases": "搞钱可以这么玄学",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "10亿女总裁",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "钱生钱",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "没天赋但上月赚5w",
+      "aliases": "没有自媒体天赋但上个月赚了5w",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "喂饭版",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "月薪2k到上海首付",
+      "aliases": "从月薪2k到存下上海首付",
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "05女大搞钱",
+      "aliases": "05女大",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "搞米",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "不上班5年",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "自救指南",
+      "aliases": "gap期如何养活自己",
+      "category": "pain",
+      "source_field": "desc",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "第一个100W",
+      "aliases": "赚到第一个100W",
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "FIRE",
+      "aliases": "FIRE生活路线",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 2,
+      "domain": "搞钱"
+    },
+    {
+      "word": "提前退休",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "赚钱渠道",
+      "aliases": "",
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 4,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "下班2小时副业",
+      "aliases": "下班2小时可以做的7种副业",
+      "category": "when",
+      "source_field": "cover",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "不求一夜暴富",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "desc",
+      "vibe_score": 5,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "宝妈求带",
+      "aliases": "",
+      "category": "pain",
+      "source_field": "desc",
+      "vibe_score": 5,
+      "frequency": 1,
+      "domain": "搞钱"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "X的人，要用Y的方式Z",
+      "category": "递进",
+      "examples": [
+        "低能量的人，要用低耗能的方式赚钱",
+        "低能量的人，更适合做低能耗的副业"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "从X到Y，Z的W思路",
+      "category": "对比",
+      "examples": [
+        "从月薪2k到存下上海首付，普通女生搞钱思路"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "女生一旦X，Y藏不住",
+      "category": "悬念",
+      "examples": [
+        "女生一旦开窍，黑马属性藏不住"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "N种X路线，Y都能用",
+      "category": "清单",
+      "examples": [
+        "五种FIRE生活路线，月薪3千-5万都能用的上"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "没有X，但Y",
+      "category": "对比",
+      "examples": [
+        "没有自媒体天赋，但上个月赚了5w"
+      ],
+      "from_post_ids": []
+    }
+  ]
+}

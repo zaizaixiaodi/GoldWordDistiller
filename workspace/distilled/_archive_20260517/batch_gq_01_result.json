@@ -1,0 +1,324 @@
+{
+  "_batch_label": "搞钱_第1批",
+  "gold_words": [
+    {
+      "word": "裸辞",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "闷声搞",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 3,
+      "domain": "搞钱"
+    },
+    {
+      "word": "死磕",
+      "aliases": "狠下心来死磕",
+      "category": "do",
+      "source_field": "both",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "无痛搞钱",
+      "aliases": "无痛搞钱有存款",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 9,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "女高",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "学校不教",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 2,
+      "domain": "搞钱"
+    },
+    {
+      "word": "信息差",
+      "aliases": "搞钱信息差",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "太牛了",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "女大",
+      "aliases": "女大搞钱",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 2,
+      "domain": "搞钱"
+    },
+    {
+      "word": "卖钱的技能",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "外企人",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "真的很缺钱",
+      "aliases": "",
+      "category": "pain",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "社恐",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 2,
+      "domain": "搞钱"
+    },
+    {
+      "word": "复旦退学",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 10,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "摆摊",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "人生转机",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 2,
+      "domain": "搞钱"
+    },
+    {
+      "word": "不上班赚钱",
+      "aliases": "不上班也能赚钱",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 2,
+      "domain": "搞钱"
+    },
+    {
+      "word": "拼命写",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "野路子",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 2,
+      "domain": "搞钱"
+    },
+    {
+      "word": "长脑子了",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "在办公室搞副业",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "很变态",
+      "aliases": "变态",
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 2,
+      "domain": "搞钱"
+    },
+    {
+      "word": "强女思维",
+      "aliases": "强女",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "陌生化",
+      "aliases": "把内容陌生化",
+      "category": "twist",
+      "source_field": "both",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "好狡猾",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "偷偷用",
+      "aliases": "",
+      "category": "do",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "不上班",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 5,
+      "domain": "搞钱"
+    },
+    {
+      "word": "小收入",
+      "aliases": "9个小外快",
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "转机",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 3,
+      "domain": "搞钱"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "如果你不X，也许这就是Y",
+      "category": "悬念",
+      "examples": [
+        "如果你不开心又不敢裸辞，也许这就是转机"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "X的N大Y，闷声Z",
+      "category": "清单",
+      "examples": [
+        "适合女生搞钱的6大副业，闷声搞"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "X才是Y的救赎",
+      "category": "递进",
+      "examples": [
+        "副业才是普通女孩的救赎"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "一个很X，但能Y的方法",
+      "category": "悬念",
+      "examples": [
+        "一个很变态，但能写小说赚到钱的方法"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "很多人的X，是从Y开始的",
+      "category": "递进",
+      "examples": [
+        "很多人的人生转机，是从不上班开始的"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "发现X最快的方式：Y",
+      "category": "悬念",
+      "examples": [
+        "发现自媒体起号最快的方式：把内容陌生化"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "因为不想X，所以我要Y",
+      "category": "递进",
+      "examples": [
+        "因为不想上班，所以我要拼命写小说"
+      ],
+      "from_post_ids": []
+    }
+  ]
+}

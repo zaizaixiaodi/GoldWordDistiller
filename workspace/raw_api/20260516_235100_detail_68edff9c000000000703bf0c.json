@@ -1,0 +1,377 @@
+{
+  "code": 200,
+  "request_id": "cd96610a-4e99-47f0-abcc-e64369fbc112",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:51:01",
+  "time_stamp": 1778946661,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/cd96610a-4e99-47f0-abcc-e64369fbc112?sign=0b63664af2cc145c62e5ce4a4a479ae3f10cb31008e6c5049a643134b967dc1c",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "68edff9c000000000703bf0c"
+  },
+  "data": {
+    "code": 0,
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "Beijing",
+            "user": {
+              "id": "5d651b0d00000000010194e5",
+              "red_official_verified": false,
+              "fstatus": "none",
+              "userid": "5d651b0d00000000010194e5",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/645e245ee3d5fde50d2ee075.jpg?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "red_id": "ggdyybj",
+              "nickname": "刚哥的手写笔记",
+              "name": "刚哥的手写笔记"
+            },
+            "liked": false,
+            "id": "68edff9c000000000703bf0c",
+            "last_update_time": 0,
+            "has_related_goods": false,
+            "comments_count": 134,
+            "collected": false,
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 16297,
+            "head_tags": [],
+            "title": "工作汇报的核心结构",
+            "share_info": {
+              "content": "工作汇报的本质，领导并不是单纯想听你都干了啥，而是想听干这些事背后的逻辑和思考。所以，工作汇报，要秀脑子而不是秀汗水",
+              "show_wechat_tag": false,
+              "title": "工作汇报的核心结构",
+              "image": "http://sns-img-bd.xhscdn.com/notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20?imageView2/2/w/360/format/jpg/q/75",
+              "link": "https://www.xiaohongshu.com/discovery/item/68edff9c000000000703bf0c?app_platform=ios&app_version=9.31&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBNxF0-1bYXfJmDILqK4wbVAVxnlO69q6IKTpEtFlGqq4=&author_share=1",
+              "is_star": false,
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "wechat_share_desc": "@刚哥的手写笔记's note\n765 Shares",
+              "guide_audited": true
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5da57b49000000000103f5f2",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5da57b4961ba6f0001c3d9b0&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "name": "工作汇报",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "68edff9c0000000025035936",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=68edff9c025d000000000001&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "工作汇报的结构"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5ce4c313000000000e01585b",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5ce4c3136a0d9e00012ec5a4&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "职场进阶指南"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "633aa429000000000100a9ce",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=633aa4299939430001b8b249&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "刚哥的运营笔记"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5cd7d963000000000f018b70",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5cd7d9636849230001aae7af&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "职场干货"
+              },
+              {
+                "record_count": 0,
+                "id": "5ff02ef7000000000100210a",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5ff02ef758af050001117683&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "三分钟简历急救",
+                "current_score": 0
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "5da57b49000000000103f5f2",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/5da57b4961ba6f0001c3d9b0?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "工作汇报"
+              }
+            ],
+            "desc": "工作汇报的本质，领导并不是单纯想听你都干了啥，而是想听干这些事背后的逻辑和思考。所以，工作汇报，要秀脑子而不是秀汗水。\n#工作汇报[话题]# #工作汇报的结构[话题]# #职场进阶指南[话题]# #刚哥的运营笔记[话题]# #职场干货[话题]###三分钟简历急救[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "use_water_color": false,
+            "mini_program_info": {
+              "share_title": "@刚哥的手写笔记 发了一篇笔记，快点来看吧！",
+              "title": "@刚哥的手写笔记 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/68edff9c000000000703bf0c?xsec_source=app_share&xsec_token=CBNxF0-1bYXfJmDILqK4wbVAVxnlO69q6IKTpEtFlGqq4=",
+              "thumb": "http://sns-img-bd.xhscdn.com/notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20?imageView2/2/w/540/format/jpg/q/75",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D68edff9c000000000703bf0c%26type%3Dnormal%26xsec_token%3DCBNxF0-1bYXfJmDILqK4wbVAVxnlO69q6IKTpEtFlGqq4%3D",
+              "desc": "工作汇报的本质，领导并不是单纯想听你都干了啥，而是想听干这些事背后的逻辑和思考。所以，工作汇报，要秀脑子而不是秀汗水"
+            },
+            "in_censor": false,
+            "enable_brand_lottery": false,
+            "api_upgrade": -1,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%2268edff9c000000000703bf0c%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 765,
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20",
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=fdf5698bcba08abafb6cffe83c05050a&t=6a089264&src=A",
+                "scale_to_large": 4,
+                "width": 1920,
+                "longitude": 0,
+                "latitude": 0,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=fdf5698bcba08abafb6cffe83c05050a&t=6a089264&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=fdf5698bcba08abafb6cffe83c05050a&t=6a089264&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=fdf5698bcba08abafb6cffe83c05050a&t=6a089264&src=A"
+                },
+                "url": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=fdf5698bcba08abafb6cffe83c05050a&t=6a089264&src=A",
+                "original": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=fdf5698bcba08abafb6cffe83c05050a&t=6a089264&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1920,
+                  "size": 0,
+                  "height": 2560
+                },
+                "height": 2560,
+                "trace_id": "notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20",
+                "text_intention": 2,
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/d3e8cc97-7c0d-4002-b0a8-3e380b87dcc5.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=3924cae0b63f5d21f9a820dcc26b995c&t=6a089264&src=A",
+                "file_id_trans": "cloudrender-translate/d3e8cc97-7c0d-4002-b0a8-3e380b87dcc5.jpg"
+              }
+            ],
+            "may_have_red_packet": false,
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Share your thoughts...",
+              "forbidden_cmt_type": 0
+            },
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "view_count": 0,
+            "cooperate_binds": [],
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": false,
+                "reason": "Download disabled by author"
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1760446800,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "is_star": false,
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false
+            },
+            "collected_count": 13426,
+            "note_text_press_options": [],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "share_title": "@刚哥的手写笔记 发了一篇超赞的笔记，快点来看！",
+              "title": "@刚哥的手写笔记 发了一篇超赞的笔记，快点来看！",
+              "thumb": "http://sns-img-bd.xhscdn.com/notes_pre_post/1040g3k031nk3i0sv52005nb53c6gb575mt8un20?imageView2/2/w/540/format/jpg/q/75",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/68edff9c000000000703bf0c?xsec_source=app_share&xsec_token=CBNxF0-1bYXfJmDILqK4wbVAVxnlO69q6IKTpEtFlGqq4=",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=68edff9c000000000703bf0c&type=normal&xsec_token=CBNxF0-1bYXfJmDILqK4wbVAVxnlO69q6IKTpEtFlGqq4=",
+              "desc": "工作汇报的本质，领导并不是单纯想听你都干了啥，而是想听干这些事背后的逻辑和思考。所以，工作汇报，要秀脑子而不是秀汗水"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"5d651b0d00000000010194e5\",\"author_name\":\"刚哥的手写笔记\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "id": "5d651b0d00000000010194e5",
+          "red_official_verified": false,
+          "fstatus": "none",
+          "userid": "5d651b0d00000000010194e5",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/645e245ee3d5fde50d2ee075.jpg?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "nickname": "刚哥的手写笔记",
+          "red_id": "ggdyybj",
+          "name": "刚哥的手写笔记"
+        }
+      }
+    ],
+    "msg": "成功"
+  }
+}

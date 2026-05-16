@@ -1,0 +1,355 @@
+{
+  "code": 200,
+  "request_id": "27ac22cb-9f57-4b39-8814-505378c9968b",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:58:29",
+  "time_stamp": 1778947109,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/27ac22cb-9f57-4b39-8814-505378c9968b?sign=0017953976d78a991e7a919e7fc80f4437b202963301182b1fad728c6201d7d7",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "68b55834000000021d025ce6"
+  },
+  "data": {
+    "code": 0,
+    "data": [
+      {
+        "comment_list": [],
+        "note_list": [
+          {
+            "ip_location": "Beijing",
+            "user": {
+              "id": "68247e0c000000000e02ce08",
+              "red_official_verified": false,
+              "fstatus": "none",
+              "userid": "68247e0c000000000e02ce08",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pi5pqim4k505q14fo63ljg8rcq1170?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "nickname": "今夕何夕",
+              "red_id": "jinxihexiyan",
+              "name": "今夕何夕"
+            },
+            "liked": false,
+            "id": "68b55834000000001d02d9dc",
+            "last_update_time": 1756715861,
+            "comments_count": 4,
+            "has_related_goods": false,
+            "collected": false,
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 150,
+            "head_tags": [],
+            "title": "把一件事讲清楚是一项非常重要的技能",
+            "share_info": {
+              "content": "1. 明确目标与对象（Before You Start） 我为什么要说这个？是为了告知信息、说服对方、请求帮助，还是解释",
+              "show_wechat_tag": false,
+              "title": "把一件事讲清楚是一项非常重要的技能",
+              "image": "http://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o?imageView2/2/w/360/format/jpg/q/75",
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "wechat_share_desc": "@今夕何夕's note\n17 Shares",
+              "link": "https://www.xiaohongshu.com/discovery/item/68b55834000000001d02d9dc?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBOt-0HvqtdrHqKa1qinIU4Vrtm7qw9cr6K7MVjwc9OM0=&author_share=1",
+              "is_star": false,
+              "guide_audited": true
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "6130b3470000000001009c71",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=6130b347941e390001d8a1b9&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "工作效率大大提高"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "66a21518000000002303215e",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=66a215185be6d1000116beba&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "职场技能提升",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "618f1ccc0000000001000ce7",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=618f1ccc78e06e000153016e&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "职场后的学习"
+              },
+              {
+                "record_count": 0,
+                "id": "5ff91f3f0000000001000380",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5ff91f3fc4fc0f0001890040&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "永远保持学习能力",
+                "current_score": 0
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "6130b3470000000001009c71",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/6130b347941e390001d8a1b9?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "工作效率大大提高"
+              }
+            ],
+            "desc": "1. 明确目标与对象（Before You Start）\n我为什么要说这个？是为了告知信息、说服对方、请求帮助，还是解释原理？目标不同，讲述的重点和方式也会完全不同。\n对方是谁？ 他对这个主题的了解程度如何？他最关心什么？用什么语言（专业术语或大白话）他最能理解？站在对方的视角准备内容，是成功的一半。\n2. 构建清晰的内容结构（The Framework）\n这是最关键的一步，推荐使用经典的 “总-分-总”结构。\n总（开头）：结论先行，抛出核心观点。\n千万不要从琐碎的细节开始。一开始就要抓住对方的注意力。\n模板：“关于XX事，我的核心观点/结论是XXX。” 或者 “我简单汇报三件事，一…二…三…”\n例子：“王总，关于新产品的推广方案，我建议将重点从线下转到线上，主要有三个理由。”\n分（主体）：逻辑展开，提供论据。\n使用时间顺序、重要性顺序、逻辑推演顺序等来组织你的论据。\n每个要点最好只讲一件事，并用事实、数据或例子来支撑。 技巧：\n数字编号： “一、二、三…”\n连接词：“首先…然后…接着…最后…”、“之所以…是因为…”、“另一方面…”\n总（结尾）：总结升华，明确行动。\n重申核心结论，加深印象。\n如果有需要，明确下一步的行动计划（Who do What by When）。\n3. 使用简洁精准的语言（The Language）\n说人话：避免不必要的行话和术语，除非你确定对方能听懂。\n简短句：长句很容易让人迷失主干。多用短句，一是一，二是二。\n具象化：多用比喻、类比和例子。“它很大”不如说“它有一个篮球场那么大”。\n4. 借助工具辅助表达（The Tools）\n口头表达时：注意语速和停顿，用重音强调关键点。配合适当的手势和表情。\n书面表达时：\n用段落和空格：大段的文字让人窒息。\n用小标题和列表：就像这篇文章一样，让结构一目了然。\n重点加粗：突出最核心的信息。\n--\n记住，一个万能公式：5W1H\n在准备阶段，用5W1H checklist 梳理信息，能确保你没有遗漏关键要素：\nWho:涉及谁？谁做的？\nWhat:发生了什么事？是什么？\nWhen: 什么时候发生的？\nWhere:在哪里发生的？\nWhy:为什么会发生？原因是什么？（这是最核心也最容易被忽略的一点）\nHow:它是如何进行的？结果怎样？\n--\n先思考，再开口，多模仿和学习，另外，清晰的表达源于清晰的思考。如果你觉得自己讲不清楚，很多时候问题不在于嘴巴，而在于大脑里的思路还没有理顺。\n所以，一定要脑子先清楚。\n#工作效率大大提高[话题]# #职场技能提升[话题]# #职场后的学习[话题]# #永远保持学习能力[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "enable_brand_lottery": false,
+            "api_upgrade": -1,
+            "in_censor": false,
+            "mini_program_info": {
+              "title": "@今夕何夕 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/68b55834000000001d02d9dc?xsec_source=app_share&xsec_token=CBOt-0HvqtdrHqKa1qinIU4Vrtm7qw9cr6K7MVjwc9OM0=",
+              "thumb": "http://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@今夕何夕 发了一篇笔记，快点来看吧！",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D68b55834000000001d02d9dc%26type%3Dnormal%26xsec_token%3DCBOt-0HvqtdrHqKa1qinIU4Vrtm7qw9cr6K7MVjwc9OM0%3D",
+              "desc": "1. 明确目标与对象（Before You Start） 我为什么要说这个？是为了告知信息、说服对方、请求帮助，还是解释"
+            },
+            "use_water_color": false,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%2268b55834000000001d02d9dc%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 17,
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o",
+                "url_size_large": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=68102963f8257c12ffbd27bb83503d7e&t=6a089424&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "width": 1920,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=68102963f8257c12ffbd27bb83503d7e&t=6a089424&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=68102963f8257c12ffbd27bb83503d7e&t=6a089424&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=68102963f8257c12ffbd27bb83503d7e&t=6a089424&src=A"
+                },
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=68102963f8257c12ffbd27bb83503d7e&t=6a089424&src=A",
+                "original": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=68102963f8257c12ffbd27bb83503d7e&t=6a089424&src=A",
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1920,
+                  "size": 0,
+                  "height": 2560
+                },
+                "height": 2560,
+                "text_intention": 0,
+                "trace_id": "notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o"
+              }
+            ],
+            "may_have_red_packet": false,
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Say something...",
+              "forbidden_cmt_type": 0
+            },
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "view_count": 0,
+            "cooperate_binds": [],
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": true
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1756715060,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false,
+              "is_star": false,
+              "block_private_msg": false
+            },
+            "collected_count": 136,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "share_title": "@今夕何夕 发了一篇超赞的笔记，快点来看！",
+              "title": "@今夕何夕 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/68b55834000000001d02d9dc?xsec_source=app_share&xsec_token=CBOt-0HvqtdrHqKa1qinIU4Vrtm7qw9cr6K7MVjwc9OM0=",
+              "thumb": "http://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k031lsgsvl6le3g5q14fo63ljg8bodn82o?imageView2/2/w/540/format/jpg/q/75",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=68b55834000000001d02d9dc&type=normal&xsec_token=CBOt-0HvqtdrHqKa1qinIU4Vrtm7qw9cr6K7MVjwc9OM0=",
+              "desc": "1. 明确目标与对象（Before You Start） 我为什么要说这个？是为了告知信息、说服对方、请求帮助，还是解释"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"68247e0c000000000e02ce08\",\"author_name\":\"今夕何夕\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "red_official_verified": false,
+          "id": "68247e0c000000000e02ce08",
+          "fstatus": "none",
+          "userid": "68247e0c000000000e02ce08",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pi5pqim4k505q14fo63ljg8rcq1170?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "red_id": "jinxihexiyan",
+          "nickname": "今夕何夕",
+          "name": "今夕何夕"
+        }
+      }
+    ],
+    "success": true,
+    "msg": "成功"
+  }
+}

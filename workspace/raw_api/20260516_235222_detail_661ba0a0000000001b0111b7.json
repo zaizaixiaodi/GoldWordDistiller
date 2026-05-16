@@ -1,0 +1,355 @@
+{
+  "code": 200,
+  "request_id": "8d122b60-1af8-49c4-9040-358663d7c645",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:52:22",
+  "time_stamp": 1778946742,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/8d122b60-1af8-49c4-9040-358663d7c645?sign=8a9820ebeded07b298f3a4aff2ec0b6afd4bba594315e697d078c9385afe5fe3",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "661ba0a0000000001b0111b7"
+  },
+  "data": {
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "Guangdong",
+            "user": {
+              "red_official_verified": false,
+              "id": "62dac9c7000000001501b32d",
+              "fstatus": "none",
+              "userid": "62dac9c7000000001501b32d",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nor8f4qg65g5omqp73lbcpdtthlt1g?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "red_id": "6224752868",
+              "nickname": "MOMO",
+              "name": "MOMO"
+            },
+            "id": "661ba0a0000000001b0111b7",
+            "liked": false,
+            "last_update_time": 0,
+            "comments_count": 1099,
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "has_related_goods": false,
+            "collected": false,
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 7833,
+            "head_tags": [],
+            "title": "汇报是小组作业里最简单的",
+            "share_info": {
+              "content": "每次汇报都没人想抢 搞得我每次主动去汇报都特别心虚 觉得自己水得要命 4人小组就算了，我还能分到一点找资料 6-10人小",
+              "show_wechat_tag": false,
+              "title": "汇报是小组作业里最简单的",
+              "image": "http://sns-img-qc.xhscdn.com/1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0?imageView2/2/w/360/format/jpg/q/75",
+              "link": "https://www.xiaohongshu.com/discovery/item/661ba0a0000000001b0111b7?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CB2bY5b8oXA5N1kkR1Nw0Ce1mLAWyTnZLzSxNDCUJdWLs=&author_share=1",
+              "block_private_msg": false,
+              "guide_audited": true,
+              "wechat_share_desc": "@MOMO's note\n166 Shares",
+              "is_star": false,
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ]
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5fda2f5a0000000001001360",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5fda2f5aead3580001ca97a4&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "小组作业",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "54732ccbd6e4a91ff69524ec",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5be92ad0ad62ea00010c7095&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "水",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "61970d0a000000000100164b",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=61970d0a30fcd8000108d1d4&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "小组作业划水人"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "661ba097000000001b03cbe7",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=661ba097d8ac1d0001f34f39&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "小组作业分工"
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "5fda2f5a0000000001001360",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/5fda2f5aead3580001ca97a4?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "小组作业"
+              }
+            ],
+            "desc": "每次汇报都没人想抢\n搞得我每次主动去汇报都特别心虚\n觉得自己水得要命\n4人小组就算了，我还能分到一点找资料\n6-10人小组小组的时候，她们这么多个人ppt都要两个人来做，我这个纯种汇报人每次都贼心虚\n而且自从我主动汇报以后\n每次分小组，她们都知道我会选汇报\n然后分工的时候自动不给我分\n我超级心虚\n但是问起她们的时候，她们又说\n有我这个天选汇报人是她们的福报\n整得我一边心虚一边骄傲的\n然后小组群里所有文件我都打开来看一遍\n表示我个人积极参与的心#小组作业[话题]# #水[话题]# #小组作业划水人[话题]# #小组作业分工[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "enable_brand_lottery": false,
+            "mini_program_info": {
+              "share_title": "@MOMO 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/661ba0a0000000001b0111b7?xsec_source=app_share&xsec_token=CB2bY5b8oXA5N1kkR1Nw0Ce1mLAWyTnZLzSxNDCUJdWLs=",
+              "thumb": "http://sns-img-qc.xhscdn.com/1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0?imageView2/2/w/540/format/jpg/q/75",
+              "title": "@MOMO 发了一篇笔记，快点来看吧！",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D661ba0a0000000001b0111b7%26type%3Dnormal%26xsec_token%3DCB2bY5b8oXA5N1kkR1Nw0Ce1mLAWyTnZLzSxNDCUJdWLs%3D",
+              "desc": "每次汇报都没人想抢 搞得我每次主动去汇报都特别心虚 觉得自己水得要命 4人小组就算了，我还能分到一点找资料 6-10人小"
+            },
+            "in_censor": false,
+            "api_upgrade": -1,
+            "use_water_color": false,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%22661ba0a0000000001b0111b7%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_weibo_cover": false,
+              "disable_watermark": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 166,
+            "images_list": [
+              {
+                "fileid": "1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=d112b3ead7793e16512191714e776466&t=6a0892b5&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "longitude": 0,
+                "width": 1170,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d112b3ead7793e16512191714e776466&t=6a0892b5&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d112b3ead7793e16512191714e776466&t=6a0892b5&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d112b3ead7793e16512191714e776466&t=6a0892b5&src=A"
+                },
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d112b3ead7793e16512191714e776466&t=6a0892b5&src=A",
+                "original": "https://sns-i11.rednotecdn.com/1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=d112b3ead7793e16512191714e776466&t=6a0892b5&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 1357,
+                "trace_id": "1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0",
+                "text_intention": 0
+              }
+            ],
+            "may_have_red_packet": false,
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Say something...",
+              "forbidden_cmt_type": 0
+            },
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "cooperate_binds": [],
+            "view_count": 0,
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": true
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1713086624,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "is_star": false,
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false
+            },
+            "collected_count": 1025,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "title": "@MOMO 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/661ba0a0000000001b0111b7?xsec_source=app_share&xsec_token=CB2bY5b8oXA5N1kkR1Nw0Ce1mLAWyTnZLzSxNDCUJdWLs=",
+              "thumb": "http://sns-img-qc.xhscdn.com/1040g2sg311ilj53t6q6g5omqp73lbcpd0dbvvf0?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@MOMO 发了一篇超赞的笔记，快点来看！",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=661ba0a0000000001b0111b7&type=normal&xsec_token=CB2bY5b8oXA5N1kkR1Nw0Ce1mLAWyTnZLzSxNDCUJdWLs=",
+              "desc": "每次汇报都没人想抢 搞得我每次主动去汇报都特别心虚 觉得自己水得要命 4人小组就算了，我还能分到一点找资料 6-10人小"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"62dac9c7000000001501b32d\",\"author_name\":\"MOMO\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "red_official_verified": false,
+          "id": "62dac9c7000000001501b32d",
+          "fstatus": "none",
+          "userid": "62dac9c7000000001501b32d",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nor8f4qg65g5omqp73lbcpdtthlt1g?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "red_id": "6224752868",
+          "nickname": "MOMO",
+          "name": "MOMO"
+        }
+      }
+    ],
+    "code": 0,
+    "msg": "成功"
+  }
+}

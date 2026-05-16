@@ -15,6 +15,8 @@
 | 开发日志 | `DEVLOG.md` | 按时间倒序，每次 `/done` 追加 |
 | **数据 & 产物入口** | `workspace/README.md` | raw_api / harvest_backups / distilled / reports 四个抽屉的说明 |
 | 蒸馏 prompt | `prompts/distill.md` | 标题/封面双路 prompt |
+| 句式抽象参考 | `prompts/patterns_reference.md` | 15 个抽象骨架样例，蒸馏 patterns 时对齐抽象度 |
+| **批量重蒸流水线** | `.claude/commands/distill.md` | 4 步手动流水线（export → format_batch → AI 蒸馏 → write_distill）|
 | 业务规范回写 | `prompts/observations.md` | 周报元认知反思的沉淀 |
 
 **新会话第一步**：
@@ -139,6 +141,29 @@ goldword-distiller/
 - 每完成一个 Phase 子任务就调 `/done`：自动追加 DEVLOG → 勾选 DEVPLAN → `git add` + commit + push
 - commit message 格式：`[phase X.Y] <简要描述>`
 - 不要绕过 `/done`，所有改动必须留痕
+
+### 4.1 批量重蒸流水线（非 distiller.py）
+
+**触发场景**：用户说"重新蒸馏全量帖子"/"对某领域重做蒸馏"/"把飞书帖子再过一遍金词"等。注意区分：
+- `/harvest` —— 从 TikHub 采集新帖 + 蒸馏新一批，是「**进**」
+- `/distill` —— **不**调 TikHub，只对飞书已有的热贴重做蒸馏，是「**回炉**」
+
+**4 步流水线**（详见 `.claude/commands/distill.md`）：
+
+| 步 | 命令 | 产物 |
+|---|------|------|
+| 1 | `python scripts/export_posts.py` | `workspace/distilled/posts_for_redistill.json` |
+| 2 | `python scripts/format_batch.py <domain> [start] [limit]` | stdout → AI 存为 `batch_<标签>_input.txt` |
+| 3 | AI 读 `prompts/distill.md` + `prompts/patterns_reference.md` 蒸馏 | `batch_<标签>_result.json` |
+| 4 | `python scripts/write_distill.py --input <result.json>` | 写入飞书金词库 + 句式库 |
+
+**辅助脚本**：`python scripts/check_posts.py` 看各 domain 帖子数量分布，规划批次。
+
+**为什么不写 `goldword/distiller.py`**：DEVPLAN §2.1 明确蒸馏由 Claude 直接做（读内容→理解→打标是模型强项），Python 脚本只做 IO 助手。本流水线就是这个原则的落地。
+
+**踩坑挂账**（来自 DEVLOG 2026-05-16）：
+- `aliases` 必须输出**字符串**（多个用 `, ` 连接），不能是数组 → 否则飞书 TextFieldConvFail（tracker 加了类型防御兜底，但 prompt 应该输出对的）
+- 必须显式带 `domain` 字段，否则 tracker 写飞书时 domain 会落空
 
 ---
 

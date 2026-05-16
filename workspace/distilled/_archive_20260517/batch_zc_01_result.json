@@ -1,0 +1,262 @@
+{
+  "_batch_label": "职场_第1批",
+  "gold_words": [
+    {
+      "word": "恭喜此女已成小领导",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "学会捧臭脚",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "狠角色女生",
+      "aliases": "能给自己安全感的女生都是狠角色",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "工作留痕",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "提拔成中层是毁掉一个人",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "desc",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "升职加薪像弯腰一样简单",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "不想晋升",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "打工后开始长脑子了",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "会干的不如会说的",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "秀脑子不是秀汗水",
+      "aliases": "工作汇报要秀脑子而不是秀汗水",
+      "category": "twist",
+      "source_field": "desc",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "人不笨但嘴笨",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "一开口就赢麻了",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "向上汇报",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 2,
+      "domain": "职场"
+    },
+    {
+      "word": "习惯性反问",
+      "aliases": "",
+      "category": "pain",
+      "source_field": "cover",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "反应慢不会聊天接话",
+      "aliases": "",
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "结构化汇报",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "社会化指南",
+      "aliases": "社会化生存法则",
+      "category": "picture",
+      "source_field": "desc",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "让别人知道你干了多少活",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "先干为敬后发制人",
+      "aliases": "做了好事要留名",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "混乱世界清晰是唯一的超能力",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "反应慢嘴笨6招",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "外企年薪百万路径",
+      "aliases": "",
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    },
+    {
+      "word": "快速涨工资的都是狠角色",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "职场"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "恭喜X已成Y",
+      "category": "召唤",
+      "examples": [
+        "恭喜此女已成小领导"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "会X的不如会Y的",
+      "category": "对比",
+      "examples": [
+        "会干的不如会说的"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "千万不要幻想自己X",
+      "category": "警告",
+      "examples": [
+        "千万不要幻想自己比别人优秀"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "X是毁掉一个人的开始",
+      "category": "警告",
+      "examples": [
+        "提拔成中层是毁掉一个人的开始"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "向上汇报的关键，根本不在于你X",
+      "category": "悬念",
+      "examples": [
+        "向上汇报的关键，根本不在于你讲什么"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "致不想X的你",
+      "category": "悬念",
+      "examples": [
+        "致不想晋升的你"
+      ],
+      "from_post_ids": []
+    }
+  ]
+}

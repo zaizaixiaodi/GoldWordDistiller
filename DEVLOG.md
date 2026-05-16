@@ -4,6 +4,434 @@
 
 ---
 
+## [2026-05-17] `_list_records` 默认拉全量 + 修隐藏 bug
+
+收口第二轮冒烟暴露的坑 #5 根因。
+
+### 修改
+
+**`goldword/feishu.py`**：
+- `_list_records(table_id, limit: int | None = None, page_size: int = 100)`，**limit=None 表示拉全量**（直到 `has_more=False`）。传 int 仍按上限截断
+- `query_posts / query_words / query_patterns / query_config` 默认 `limit=None`
+
+**下游统一去掉 `limit=500/10000` 等显式上限**（金词库/句式库会持续增长，写死上限会逐渐失准）：
+- `goldword/tracker.py`：`_build_word_index` / `_build_pattern_index` / `refresh_trends`（4 处）
+- `goldword/reporter.py`：`generate_brief` / `generate_weekly_report`（4 处）
+- `goldword/cli.py`：`list_words` / `list_patterns` / `sync_status`（5 处）
+- `goldword/harvester.py`：`harvest_all` 内去重查询；`backfill_covers` 改为直接 `_list_records(...)`
+- `scripts/export_posts.py` / `scripts/probe/probe_one_keyword.py`：去掉 `limit=10000`
+
+### 顺手修隐藏 bug
+
+`goldword/harvester.py:backfill_covers` 原代码：
+```python
+page = _list_records(FEISHU_HOTPOSTS_TABLE_ID, limit=200, offset=offset)
+```
+但 `_list_records` 从来没有 `offset` 参数 —— 这一行**只要被触发就会 `TypeError`**。因 `backfill_covers` 没人跑过，bug 一直潜伏。现在改为：
+```python
+all_records = _list_records(FEISHU_HOTPOSTS_TABLE_ID)  # 内部自动翻页拉全量
+```
+
+### 验证
+
+| 测试 | 期望 | 实测 |
+|---|---|---|
+| `_list_records(HOTPOSTS)` 拉全量 | 500 条 | 500 ✓ |
+| `page_size=50`（强制翻 10 页） | 500 条 | 500 ✓（9.4s）|
+| `limit=100 page_size=30`（截断+翻 4 页） | 100 条 | 100 ✓ |
+| tracker `_build_word_index` 全量 | ≥ 220 | 220 ✓（221 中 1 条 category 空被过滤）|
+| `track_words(['死磕', ...])` 命中已有 | 死磕→上升 | 上升 ✓ |
+
+### 影响 / 性能
+
+| 场景 | 改前 | 改后 |
+|---|---|---|
+| 金词库 221 条 → 拉全量 | 5 次请求（500 上限被截，未来会失准） | 3 次（满足 has_more=False）|
+| 热贴库 500 条 → 拉全量 | 5 次（上限正好够，但若超 500 会失准） | 5 次（has_more=False）|
+
+性能没有明显变差。最大收益是**未来扩张时不会再出现"新数据被截尾"的隐式 bug**。
+
+### 留给后续
+
+`tests/test_tracker*.py` 和 `scripts/probe/probe_feishu.py` 里的 `limit=5/3` 是有意的小数据集测试，保留。
+
+---
+
+## [2026-05-17] 流水线第二轮冒烟 — FIRE × 3 video 验证 + 又踩 2 个坑
+
+按用户要求"再跑一遍验证 100% 顺利"，做 FIRE × 3 video。流水线整体可跑通，但又暴露 2 个问题（1 个工程级、1 个业务级，工程级当场修复）。
+
+### 流程结果
+
+- probe 跑通：3/3 写入飞书 + 3/3 封面上传成功（坑 #1 修复后第一次跑就 OK，不需要回放）
+- export 数量正确：搞钱 153 → 156
+- format_batch `--rids` 命中 3/3（但初次跑命中 0/3，定位到坑 #5 修复后再跑）
+- 蒸馏：**0 金词 + 0 句式 + 3 全跳过**
+- write_distill 对空输入正常处理（追踪 0 + 0，无 error）
+
+### 坑 #4（业务级）：FIRE 配置词召回质量极差
+
+**现象**：小红书搜 "FIRE"（按热度排序）的 TOP video 全是"火鸡面接力挑战"（榜上 200w 点赞美食梗），完全跟"搞钱/财务自由"无关。
+
+| # | 标题 | 点赞 | 实际内容 |
+|---|---|---|---|
+| 1 | 和好朋友玩玩感情升温小游戏 | 405k | 火鸡面接力挑战（封面：火鸡面接力 / 加料挑战）|
+| 2 | 街头偶遇芝士蛋包火鸡面🥹 | 161k | 美食探店 |
+| 3 | 火鸡面接力第四弹，地域特色版 | 131k | 网络挑战 |
+
+**根因**：小红书把英文 `FIRE` 谐音 / 字符 fuzzy 匹配到了"**火鸡面**"。3 字面英文词在中文社区天生有歧义风险。
+
+**修复路线（建议而非本次执行）**：
+- 配置表 `tbl7nJSXfjTkreFM` 把 "FIRE" 改为 "FIRE生活" / "财务自由" / "提前退休"
+- 或者在 distill prompt 里加一条强规则："帖子与所在 domain 在语义上明显无关时整条跳过，写入 _skipped_posts"（本次手工执行了，应固化进 prompt）
+- 长期：考虑给配置表加 `expected_signals` 字段（如 "财务/退休/年金/被动收入"），把搜索结果与信号词做相关性过滤再入库
+
+**本次决策**：3 条偏题帖子已写入飞书但 0 蒸馏，**保留**而不删除（避免误碰生产数据），后续随其他维护一起清理。
+
+### 坑 #5（工程级）：`query_posts(limit=500)` 截断 — 飞书总量 > 500 时新帖丢失
+
+**现象**：`export_posts.py` 跑完，搞钱 153 条（应该是 156），新写入的 3 条 FIRE 帖子根本没出现在导出 JSON 里。`format_batch --rids` 命中 0/3。
+
+**根因**：飞书热贴库总记录数 503+（496 历史 + 4 汇报 + 3 FIRE）。`feishu.query_posts(limit=500)` 翻页拉到 500 就停。新写入的 3 条 in tail 被截掉。`_list_records` 的 `limit` 参数含义是"上限"而非"想要多少"，但所有调用方都默认传 500（半年前总量还远 < 500）。
+
+**修复**：
+- `scripts/export_posts.py`：`query_posts(limit=500)` → `query_posts(limit=10000)`
+- `scripts/probe/probe_one_keyword.py` 去重的 query 同改 `limit=10000`
+- 修后 export 立即正确显示 搞钱 156
+
+**根因级 TODO**：`_list_records` 应该提供"自动拉到 has_more=False"模式，或者让 `query_posts/query_words/query_patterns` 默认不传 limit 拉全量。**本次只做了局部修，避免改 tracker 等下游语义**。
+
+### 流水线对零金词输入的鲁棒性 ✅
+
+`write_distill.py` 对 `gold_words=[]` + `patterns=[]` 正常处理：
+- `track_words([])` 返回 `[]`，跳过 upsert
+- 同样跳过 patterns
+- `refresh_trends()` 照常跑
+- 退出 code 0
+
+说明：未来 AI 蒸馏时如果发现一整批帖子都跟领域无关，可以放心输出全 `_skipped_posts` 的 result.json，不会让 write_distill 崩。
+
+### 修改的文件
+
+| 文件 | 改动 |
+|---|---|
+| `scripts/export_posts.py` | limit=500 → 10000 |
+| `scripts/probe/probe_one_keyword.py` | limit=500 → 10000；加 `--type video/normal/both`；加搜索结果本地备份；加失败明细 |
+
+### 留给后续的待办
+
+1. **【高】**配置表 `FIRE` 搜索词修正（或加 `expected_signals` 过滤）
+2. **【中】**distill prompt 加"与 domain 无关跳过"硬规则，把本次手工判断固化下来
+3. **【中】**`_list_records` 提供"拉全量"模式，下游 query_* 默认拉全
+4. **【低】**评估 3 条 FIRE 偏题帖子的处置（保留 / 删除 / 标 `domain=未分类`）
+
+### 给后续 AI 的话
+
+- 流水线 4 步本身工作正常 — 即使在配置词召回质量差 / 飞书规模超 500 的情况下，全程**没有任何崩溃**，蒸馏阶段也对垃圾输入做了正确判断
+- 两个新坑（#4 业务级、#5 工程级）已记录修复方案，#5 已实修
+- 下次跑 `/distill` 流水线前推荐先 `python scripts/export_posts.py && python scripts/check_posts.py` 校验导出条数是否合理
+
+---
+
+## [2026-05-17] 流水线冒烟测试 — 搜"汇报" TOP5 端到端
+
+亲自跑一遍流程，验证上午刚扶正的 4 步流水线。中间踩到 3 个坑，全部修了。
+
+### 任务
+
+小红书搜 `汇报` → 取 TOP 5（按点赞排序）→ 写飞书热贴库 → 上传封面 → 等豆包识图 → 蒸馏 → 写回金词库 + 句式库。
+
+### 流程结果
+
+- 搜到 20 条原始结果；按点赞排序 TOP5 中 4 条入库（1 条已存在）
+- 4 条 record_id：`recvjNBgsPfaMd`（向上管理）/ `recvjNBgsPvxdf`（宠物托运）/ `recvjNBgsPWS1u`（思想汇报）/ `recvjNBgsPfVGF`（年终汇报）
+- 4 张封面下载先失败后修复，第二次全部 OK
+
+### 坑 1：小红书 CDN 拒绝无 UA / Referer 的下载请求
+
+**现象**：`download_cover` 拿到合法 cover_url 后请求 `*.xhscdn.com`，全部返回 `ConnectionResetError(10054)` 或 ReadTimeout。
+
+**根因**：原 `download_cover`（`goldword/feishu.py:235`）裸调 `requests.get(url)`，无 User-Agent / Referer。小红书图床有反爬。
+
+**修复**：`goldword/feishu.py`
+- 加 `_COVER_HEADERS` 常量：浏览器 UA + `Referer: https://www.xiaohongshu.com/` + Accept
+- `download_cover` 加 `retries=3` 指数退避（2/4/6 秒）
+- 4 张封面修复后**第一次重试就全部成功**
+
+### 坑 2：cover_url 易失效 — 不能依赖二次搜索找回
+
+**现象**：第一次 probe 跑失败后想补上传，重新 `search_with_detail('汇报')` 拿 cover_url。结果第二次搜索返回的 20 个 post_id 跟第一次完全不重合（小红书排序波动 / 时段差异 / 个性化推荐）。
+
+**根因**：小红书搜索结果**非确定性**。`harvester.search_notes` 没有持久化 cover_url，单跑 `batch_insert_posts` 后再下载就晚了。
+
+**应急修复**：`workspace/raw_api/` 里有 `harvester._save_raw` 落盘的全部原始 API 返回 JSON，从这里反查 post_id → cover_url 映射。所有 3 个时段的 search_汇报 dump 合并后凑齐 56 个映射，4 个目标 record 全部找到 cover_url。
+
+**根因级修复（待办）**：让 `probe_one_keyword.py` / `harvest_all` 在 `batch_insert_posts` 之前**先下载好本地封面**，再走"上传封面"流程；或者飞书热贴库新增 `cover_url_snapshot` 文本字段，把搜索时的原始 URL 持久化（cdn URL 即使过期，也至少可追溯）。
+
+### 坑 3：`format_batch.py` 不支持按 record_id 精确选
+
+**现象**：本次只想蒸馏刚写入的 4 条，但 `format_batch.py 职场 0 5` 会从 posts_for_redistill.json 拿"职场"域前 5 条 —— 那是历史 60 条里的，不是新写入的。
+
+**根因**：当前流水线设计是"按 domain 批量重蒸"，没有"按特定 record_id 增量蒸"的入口。
+
+**修复**：`scripts/format_batch.py` 加 `--rids rid1,rid2,...` 可选过滤参数（见下方"流水线增强"小节）。
+
+### 流水线增强（本次新加）
+
+| 文件 | 增强 |
+|---|---|
+| `goldword/feishu.py:download_cover` | 加 UA / Referer / 重试 |
+| `scripts/format_batch.py` | 加 `--rids` 过滤（按 record_id 精确选） |
+| `scripts/probe/probe_one_keyword.py` | 新建：端到端冒烟测试单关键词流程 |
+
+### 后续真正要做的（暂未做）
+
+- `harvest_all` 内部 cover_url 下载提前到 `batch_insert_posts` 之前，避免依赖事后回溯
+- 是否给热贴库加 `cover_url_snapshot` 字段 —— 待评估
+
+### 蒸馏结果
+
+`workspace/distilled/batch_huibao_01_result.json`，由我（Opus 4.7）按 prompt 直接输出。
+
+**7 金词 + 2 句式 全部 insert 成功，0 error**：
+
+| 金词 | category | source | vibe | 备注 |
+|---|---|---|---|---|
+| 向上管理 | picture | title | 7 | 职场学概念已成网感词 |
+| 微习惯 | picture | cover | 6 | 自我提升赛道流行术语 |
+| 亲测有效 | feel | cover | 5 | UGC 背书话术 |
+| 让领导知道 | pain | both | 5 | 典型职场欲望 |
+| 听下属汇报 | twist | both | 7 | 视角反转 |
+| 年终汇报 | picture | both | 5 | 具象场景 |
+| 梓茉备忘录 | picture | cover | 3 | PRD §11 第 9 类工具/IP 待回测样本 |
+
+| 句式骨架 | 类型 | 例句 |
+|---|---|---|
+| 让 A 觉得你 B 的 N 个 C | 承诺 | 让领导觉得你干了很多活的微习惯 |
+| 当我 A 时，我在 B | 悬念 | 当我听下属年终汇报时，我在听什么？ |
+
+后者是 `patterns_reference.md` 15 条之外的新骨架（视角反转悬念），属于"允许新增"分支。
+
+### 跳过的 2 条
+
+- `recvjNBgsPvxdf` "宠物托运中途换狗汇报进度" — 事件性爆款，跟"汇报"语义有歧义（汇报进度 vs 工作汇报）。说明配置词"汇报"在小红书搜索结果会混入大量噪声，未来可考虑改"工作汇报"或加 `--filter-noise`
+- `recvjNBgsPWS1u` "思想汇报" — 党课心得正文，文体名无金词可提
+
+### 流水线验证总结
+
+| 步骤 | 工具 | 结果 |
+|---|---|---|
+| 0. probe 搜索 + 写飞书 | `scripts/probe/probe_one_keyword.py` | 4/5 入库（1 重复）；封面初下失败，修了 UA / Referer 后第二次全成 |
+| 1. 等飞书识图 | sleep 35s | 全部识图返回（事件性帖封面文案就是事件描述，非爆款话术，预期行为）|
+| 2. export | `scripts/export_posts.py` | 职场 60 → 64 |
+| 3. format_batch | `scripts/format_batch.py --rids ...` | 4/4 命中（新加 --rids 增强） |
+| 4. AI 蒸馏 | Opus 4.7 按 `prompts/distill.md` + `patterns_reference.md` | 7 金词 + 2 句式 + 2 跳过 |
+| 5. write_distill | `scripts/write_distill.py` | 7+2 全 insert，0 error |
+| 6. 飞书核对 | `goldword.feishu.query_words/query_patterns` | 7/7 + 2/2 字段全对 |
+
+流水线一把走通。
+
+### 经验沉淀（写入观察）
+
+后续 `prompts/observations.md` 应记录：
+1. **`picture` 类边界**：职场学概念（"向上管理""微习惯"）算 picture（隐喻具象的概念词）。需要在 distill.md 加例子细化标准
+2. **个人 IP 命名（"梓茉备忘录"）**：典型第 9 类样本，标记 picture + vibe 3 作为待回测占位
+3. **关键词的语义歧义**：单字关键词"汇报"会拉到"思想汇报""换狗汇报进度"等无关帖。未来 `/harvest --filter <regex>` 或 prompt 加"如帖子与领域/关键词语义无关，整条跳过"
+
+---
+
+## [2026-05-17] 流水线扶正补丁 — 4 步手动蒸馏流水线 + 句式抽象参考 + 权限放开
+
+修复上一条 DEVLOG「问题 3」遗留缺口。
+
+### 背景
+
+上一轮（2026-05-16）全量重蒸 496 条帖子时，被迫手工切批次产生 5 个临时脚本，归档时被我（Opus）建议删除，结果下一会话另一个 AI 不得不重写。流程本身工作，但从未被文档化、脚本未升正名，每个新会话都要重新摸索。
+
+用户额外反馈：飞书句式库里骨架太具体（"女生下班后狠下心来死磕这10种技能"被原样录入），缺少抽象度，无法复用。另外 bash/powershell 反复弹权限确认很烦。
+
+### 修改清单
+
+**A. 流水线脚本扶正**
+
+| 操作 | 文件 |
+|---|---|
+| 改名（去 `_` 前缀） | `scripts/_format_batch.py` → `scripts/format_batch.py` |
+| 改名（去 `_` 前缀） | `scripts/_check_posts.py` → `scripts/check_posts.py` |
+| 删除（band-aid） | `scripts/_fix_aliases.py` |
+| 加 docstring | `scripts/{export_posts,format_batch,check_posts,write_distill}.py` — 头部说明在 4 步流水线中的位置 |
+| 类型防御 | `goldword/tracker.py:upsert_words` — aliases 入参若是 list 自动 `, `.join，是 None 转 ""，兜底 prompt 输出错误 |
+
+**B. 句式抽象参考**
+
+- 新建 `prompts/patterns_reference.md` — 把 `workspace/distilled/abstract_skeletons.json` 的 15 条抽象骨架升级为 Markdown 表格（骨架/类型/示例/推荐功能位），顶部明确标注「参考样例，非硬性枚举」
+- 改 `prompts/distill.md`：
+  - "句式骨架识别"小节加入对 `patterns_reference.md` 的引用，强调抽象度对齐
+  - `aliases` 输出格式从数组 `["..."]` 改为字符串 `"..., ..."`（防 TextFieldConvFail）
+  - 字段说明里明确「aliases 必须是字符串」
+
+**C. 新建 `/distill` 命令**
+
+`.claude/commands/distill.md` 文档化 4 步手动流水线：
+1. `python scripts/export_posts.py` → `posts_for_redistill.json`
+2. `python scripts/format_batch.py <domain> [start] [limit]` → stdout → AI 存为 `batch_<标签>_input.txt`
+3. AI 按 `distill.md` + `patterns_reference.md` 蒸馏 → `batch_<标签>_result.json`
+4. `python scripts/write_distill.py --input <result.json>` → tracker upsert 到飞书
+
+支持无参/单 domain/`--all` 三种模式。批次标签约定 `gq/ai/gr/rswx/zc/mt/wfl` 七个拼音简写。
+
+**D. 文档同步**
+
+- `CLAUDE.md` §0 导航补 `/distill` 和 `patterns_reference.md` 两个入口
+- `CLAUDE.md` 新增 §4.1「批量重蒸流水线」小节，含 4 步表格 + 与 `/harvest` 的区别 + 踩坑挂账
+- `DEVPLAN.md` 状态总览时间戳更新；Phase 2.1 末尾追加 2026-05-17 补丁说明
+- `.claude/settings.json` `allow` 收敛为 `Bash(*)` / `PowerShell(*)` / 项目目录读写三条 —— 权限对外放开
+
+### 验证
+
+- `python scripts/format_batch.py 搞钱 0 3` 应能正常打印（脚本改名后仍可跑）
+- 类型防御：手写一份含 `aliases: ["x", "y"]` 的最小 result.json 跑 `write_distill.py`，应不再触发 TextFieldConvFail
+- CLAUDE.md §0 导航第一行能跳到 `/distill` 入口
+
+### 留待后续
+
+1. **飞书句式库历史数据清洗**：现有句式库里大量具体形式的句式（如"女生一旦开窍黑马属性藏不住"原样录入）需要按 `patterns_reference.md` 风格抽象化或归并。需用户先决定 "改写 vs 删除重蒸" 再动手 —— **本次未做**。
+2. **`workspace/distilled/batch_*_input.txt|result.json`（19 个文件）**：飞书已是权威源，是否归档到 `_archive/` 待用户拍板。
+3. **`workspace/distilled/abstract_skeletons.json`**：内容已迁移到 `prompts/patterns_reference.md`，原 JSON 是否保留作为机读版本，待定。
+
+### 经验
+
+DEVLOG「问题 3」当时只写了诊断没收尾，本次补完。原则：**只要某个脚本被另一会话证明会被再次需要，就不再用 `_` 前缀标"临时"，直接升正名 + 写 docstring + 文档导航三件套**。否则下次清理时又会被误判。
+
+---
+
+## [2026-05-16 ~ 2026-05-17] 全量重新蒸馏 + 问题发现 — 暴露流程设计缺口
+
+### 背景
+
+用户验收 Phase 2.3 后指出三个问题：
+1. 量化锚/身份标签记录太多无聊的词（"36种""24岁""普通人"等）
+2. 全部金词 `domain="搞钱"`（硬编码 bug）
+3. 周报没有实际内容（因为词同质化）
+
+修复后对飞书 496 条帖子（6 领域）全量重新蒸馏，过程中暴露了流程设计的根本缺口。
+
+### 问题 1：domain 硬编码
+
+**现象**：飞书金词库 180 条记录的 `domain` 字段全是"搞钱"。
+
+**根因**：`goldword/tracker.py` line 134 写入金词时 `"domain": t.get("domain", "搞钱")`，默认值用了"搞钱"而非空字符串。由于早期数据不从 JSON 传 domain，所有记录都落了这个默认值。
+
+**修复**：`goldword/tracker.py:134` `"搞钱"` → `""`
+
+**业务影响**：domain 字段对金词按赛道筛选至关重要，默认值不应该假定任何赛道。
+
+### 问题 2：distill.md 缺少 number/who 硬性过滤
+
+**现象**：量化锚收了"36种""5步""16个"等纯数量词，身份标签收了"24岁""大学生""女生"等泛人群词。
+
+**根因**：`prompts/distill.md` 的 vibe_score 规则对 number 和 who 类过于宽松，只说了 3-6 分区间，没有列出"什么情况给 < 3 丢弃"。
+
+**修复**：`prompts/distill.md` 新增《硬性过滤：number 和 who 的入库门槛》，明确列出：
+- number 丢弃：纯数量/种类、纯时间跨度、只有数字没有故事
+- who 丢弃：泛人群词、纯年龄段
+
+### 问题 3（核心）：没有自动化的批量蒸馏工具 — distiller.py 不存在
+
+**这是本次暴露的最严重的流程设计缺口。**
+
+**现状**：`CLAUDE.md` 目录结构声明了 `goldword/distiller.py`，但 `DEVPLAN` §2.1 明确写"不写 distiller.py；蒸馏由 Claude 直接从飞书读帖子做"。这意味着每次蒸馏都需要 Claude Code agent 手动：
+1. 从飞书读取帖子
+2. 对照 `distill.md` prompt 规则逐条分析
+3. 手动编写 JSON 输出
+4. 调用 `write_distill.py` 写入飞书
+
+当帖子数量大时（496 条），这个流程完全不可持续。本次不得不把 496 条帖子手动分成 10 个 batch，逐批分析，产生了大量临时文件。
+
+#### 临时脚本清单（`scripts/_*.py`，一次性，需删除）
+
+| 文件 | 用途 | 为什么需要 |
+|------|------|-----------|
+| `_fix_aliases.py` | 修复 JSON 中 `aliases` 字段是数组而非字符串的问题 | distill.md 定义 aliases 为数组，但飞书文本字段不接受；正常流程应有类型校验+自动转换步骤 |
+| `_format_batch.py` | 从 `posts_for_redistill.json` 切分 batch，格式化为 distill prompt 输入格式 | 没有按批切分+格式化输出的标准化工具，每次手动建 |
+| `_check_posts.py` | 统计各领域帖子数 | 只有导出时有意义的一次性统计，说明没有"查看数据分布"的子命令 |
+
+#### 临时输入文件（`workspace/distilled/batch_*_input.txt` 共 9 个）
+
+每次 batch 分析时，把格式化后的帖子文本喂给 agent 做蒸馏。如果 distiller.py 存在，这一步应该是脚本自动完成。
+
+#### 中间产物（`workspace/distilled/batch_*_result.json` 共 10 个）
+
+| 文件 | 金词 | 句式 | 领域 |
+|------|------|------|------|
+| batch_gq_01_result.json | 29 | 7 | 搞钱 |
+| batch_gq_02_result.json | 29 | 5 | 搞钱 |
+| batch_gq_03_result.json | 20 | 5 | 搞钱 |
+| batch_ai_01_result.json | 25 | 6 | AI 应用 |
+| batch_ai_02_result.json | 18 | 4 | AI 应用 |
+| batch_gr_01_result.json | 26 | 5 | 个人成长 |
+| batch_rswx_01_result.json | 19 | 4 | 人生务虚 |
+| batch_zc_01_result.json | 23 | 6 | 职场 |
+| batch_mt_01_result.json | 16 | 4 | 自媒体 |
+| batch_wfl_01_result.json | 13 | 4 | 未分类 |
+| **合计** | **~224** | **~50** | |
+
+#### distill.md aliases 格式不匹配
+
+**问题**：`prompts/distill.md` 的 JSON 输出格式示例中 `aliases` 定义为数组 `["狠下心来死磕"]`，但飞书 `aliases` 字段是纯文本字段（type 1 Multiline Text），不接受数组。
+
+**后果**：第一批写入时 27/29 条金词因 `TextFieldConvFail`（错误码 1254060）写入失败。
+
+**建议修法**：二选一
+1. 改 `prompts/distill.md` 输出格式为 `"aliases": "text1, text2"`（字符串）
+2. 或改 `tracker.py` 的 `upsert_words()` 中加类型防御：`if isinstance(aliases, list): aliases = ", ".join(aliases)`
+
+### 问题 4：PowerShell 中文编码
+
+**现象**：PowerShell 运行含 emoji（`❤️`）的 Python print 时报 `UnicodeEncodeError`：
+```
+'charmap' codec can't encode character '❤'
+```
+
+**根因**：Windows 控制台默认编码 GBK。Python subprocess 从 PowerShell 启动时，stdout 用 GBK 解码。
+
+**解决**：Python 脚本头部加：
+```python
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+```
+
+### 全量蒸馏执行统计
+
+| 领域 | 帖子数 | 金词 | 句式 |
+|------|--------|------|------|
+| 搞钱 | 153 | 78 | 17 |
+| AI 应用 | 79 | 43 | 10 |
+| 个人成长 | 59 | 26 | 5 |
+| 人生务虚 | 60 | 19 | 4 |
+| 职场 | 60 | 23 | 6 |
+| 自媒体 | 38 | 16 | 4 |
+| 未分类 | 47 | 13 | 4 |
+| **合计** | **496** | **~224** | **~50** |
+
+### 留给后续 AI 的修复清单
+
+1. **最高优先级：建立自动批量蒸馏工具 `goldword/distiller.py`**：
+   - `batch_distill(domain, posts, batch_size=50)`：切分 + 格式化 prompt + 调 LLM + 输出校验
+   - 可复用 `scripts/write_distill.py` 的写入逻辑（已通过 `tracker.py` 对接飞书）
+   - 方案 A：写成 Python 脚本（可集成 CI）
+   - 方案 B：写成 `.claude/commands/distill.md` slash command（无需 Python，但依赖 session 中 agent 能力）
+
+2. **修复类型不匹配**：统一 `aliases` 在 distill.md 和 tracker.py 之间的类型约定
+
+3. **删除临时文件**：
+   - `scripts/_fix_aliases.py`
+   - `scripts/_check_posts.py`
+   - `scripts/_format_batch.py`
+   - `workspace/distilled/batch_*_input.txt`（9 个）
+   - `workspace/distilled/batch_*_result.json`（10 个，如果飞书已是权威数据源）
+
+---
+
 ## [2026-05-16 22:40] Phase 3.2 — 管理命令 /list /patterns /config /sync
 
 ### 完成内容
@@ -649,3 +1077,4 @@ MSYS_NO_PATHCONV=1 lark-cli api GET "/open-apis/bitable/v1/apps/..."
 
 - PRD v1.1 初版完成，定义了三层词汇模型、四个数据入口、飞书多维表结构、蒸馏流程
 - DEVPLAN v1 初版完成，按 PRD 拆解为 Phase 0-3 共 12 个任务，每个任务含 DoD 和产物文件
+

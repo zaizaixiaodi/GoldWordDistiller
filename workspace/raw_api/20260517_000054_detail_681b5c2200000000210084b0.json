@@ -1,0 +1,560 @@
+{
+  "code": 200,
+  "request_id": "55aacb00-9b66-4c22-8945-a256de121b0e",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 09:00:54",
+  "time_stamp": 1778947254,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/55aacb00-9b66-4c22-8945-a256de121b0e?sign=a1c8d3fe1c126b2effc2c2b4c5ca61a26a4982a4e0a4da38deb8730709b011e3",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "681b5c2200000000210084b0"
+  },
+  "data": {
+    "code": 0,
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "Hubei",
+            "user": {
+              "red_official_verified": false,
+              "id": "639de17d0000000027029d82",
+              "fstatus": "none",
+              "userid": "639de17d0000000027029d82",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31gkbc79l3q705osts5upt7c2889v7vg?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "red_id": "5320088879",
+              "nickname": "小蛋糕🍰",
+              "name": "小蛋糕🍰"
+            },
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "liked": false,
+            "last_update_time": 0,
+            "has_related_goods": false,
+            "comments_count": 852,
+            "collected": false,
+            "id": "681b5c2200000000210084b0",
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 20619,
+            "head_tags": [],
+            "title": "",
+            "share_info": {
+              "content": "开题答辩不小心拿了小组第一🙊 答辩时的高频问题：为什么会选择这个课题？ . 这道题就是\"开题答辩\"里面的\"家常便饭",
+              "show_wechat_tag": false,
+              "title": "开题答辩不小心拿了小组第一🙊 答辩时的高频问题：为什么会选择这个课题？ . 这道",
+              "image": "http://sns-img-bd.xhscdn.com/notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88?imageView2/2/w/360/format/jpg/q/75",
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "guide_audited": true,
+              "is_star": false,
+              "block_private_msg": false,
+              "wechat_share_desc": "@小蛋糕🍰's note\n1342 Shares",
+              "link": "https://www.xiaohongshu.com/discovery/item/681b5c2200000000210084b0?app_platform=ios&app_version=9.29&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBX14BTOdM7nAT-bLxIjTtEoOEp-87aGR_gWqGgrRAOxU=&author_share=1"
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "id": "617fba370000000001005f07",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=617fba37d14bc50001af4f62&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "文献综述模版",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "5e84001e000000000100215b",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5e84001e58bb7a000138012e&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "论文初稿",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "618f504800000000010046d5",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=618f504801813d00013db91d&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "name": "硕士开题报告",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5d3673ec000000001801384d",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5d3673ec5651970001a08e75&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "开题"
+              },
+              {
+                "record_count": 0,
+                "id": "5c25bdce000000000803bfd1",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c25bdce672fbd000197fccb&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "文献综述",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5c3b5a38000000000e02bc97",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c3b5a380230470001f0a888&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "name": "毕业答辩",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "6221c82a000000000101cc36",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=6221c82a5a6cdb000149a6fa&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "开题报告PPT"
+              },
+              {
+                "record_count": 0,
+                "id": "62658c1900000000010042f3",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=62658c19256d3b00015ce8f3&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "只要导师选的好"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5e8155310000000001009da1",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5e8155311f390d0001b5225c&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "答辩PPT",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "627bb350000000000101db4f",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=627bb350363d660001bd3757&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "答辩"
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "617fba370000000001005f07",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/617fba37d14bc50001af4f62?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "文献综述模版"
+              }
+            ],
+            "desc": "开题答辩不小心拿了小组第一🙊\n答辩时的高频问题：为什么会选择这个课题？ . 这道题就是\"开题答辩\"里面的\"家常便饭\" . • 这个问题的回答思路就是：自身原因＋外部因素＝选择的原因，把选择的原因放大，从多角度回答。 • 回答参考：在大学学习期间我就一直对该课题比较关注，我觉得该课题下的研究虽然已经很多了，但是在xx 方面的研究还并不是特别深入，而且xx 方面的研究在当下还是非常有价值的，与我们的日常生活联系紧密，有很强的现实意义，所以我选择了这个课题。 .\n开题答辩准备☂️\n在答辩前，还要注意以下几点：\n🔅熟悉论文内容：特别是方法、结论等，同时要对研究领域有一定了解。提前准备回答：预测可能的问题，避免仓促回答，保持沉稳自信。\n🔅精简PPT内容：清晰简洁的布局更容易引起评委的关注。#文献综述模版[话题]# #论文初稿[话题]# #硕士开题报告[话题]# #开题[话题]# #文献综述[话题]# #毕业答辩[话题]# #开题报告PPT[话题]# 论文辅导 #只要导师选的好[话题]# #答辩PPT[话题]# #答辩[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "enable_brand_lottery": false,
+            "api_upgrade": -1,
+            "in_censor": false,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%22681b5c2200000000210084b0%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "mini_program_info": {
+              "title": "@小蛋糕🍰 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/681b5c2200000000210084b0?xsec_source=app_share&xsec_token=CBX14BTOdM7nAT-bLxIjTtEoOEp-87aGR_gWqGgrRAOxU=",
+              "thumb": "http://sns-img-bd.xhscdn.com/notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@小蛋糕🍰 发了一篇笔记，快点来看吧！",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D681b5c2200000000210084b0%26type%3Dnormal%26xsec_token%3DCBX14BTOdM7nAT-bLxIjTtEoOEp-87aGR_gWqGgrRAOxU%3D",
+              "desc": "开题答辩不小心拿了小组第一🙊 答辩时的高频问题：为什么会选择这个课题？ . 这道题就是\"开题答辩\"里面的\"家常便饭"
+            },
+            "use_water_color": false,
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 1342,
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88",
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=cc207038487db543dfe8f59ea2128c80&t=6a0894b5&src=A",
+                "scale_to_large": 4,
+                "longitude": 0,
+                "width": 1263,
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=cc207038487db543dfe8f59ea2128c80&t=6a0894b5&src=A",
+                "original": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=cc207038487db543dfe8f59ea2128c80&t=6a0894b5&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=cc207038487db543dfe8f59ea2128c80&t=6a0894b5&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=cc207038487db543dfe8f59ea2128c80&t=6a0894b5&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=cc207038487db543dfe8f59ea2128c80&t=6a0894b5&src=A"
+                },
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1263,
+                  "size": 0,
+                  "height": 1673
+                },
+                "height": 1673,
+                "text_intention": 2,
+                "trace_id": "notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88",
+                "file_id_trans": "cloudrender-translate/950ec71f-d384-4e1b-bf36-5ab622ce7cda.jpg",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/950ec71f-d384-4e1b-bf36-5ab622ce7cda.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=d7244a727e58322b955554ff4b623a1c&t=6a0894b5&src=A"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k031h6d7bvbji9g5osts5upt7c2caa2iio",
+                "url_size_large": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbji9g5osts5upt7c2caa2iio?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=7f309ba51e37f1231936fa5863fd8434&t=6a0894b5&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbji9g5osts5upt7c2caa2iio?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7f309ba51e37f1231936fa5863fd8434&t=6a0894b5&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbji9g5osts5upt7c2caa2iio?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7f309ba51e37f1231936fa5863fd8434&t=6a0894b5&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbji9g5osts5upt7c2caa2iio?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7f309ba51e37f1231936fa5863fd8434&t=6a0894b5&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbji9g5osts5upt7c2caa2iio?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7f309ba51e37f1231936fa5863fd8434&t=6a0894b5&src=A"
+                },
+                "width": 1263,
+                "original": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbji9g5osts5upt7c2caa2iio?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=7f309ba51e37f1231936fa5863fd8434&t=6a0894b5&src=A",
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1263,
+                  "size": 0,
+                  "height": 1678
+                },
+                "height": 1678,
+                "text_intention": 2,
+                "trace_id": "notes_pre_post/1040g3k031h6d7bvbji9g5osts5upt7c2caa2iio",
+                "file_id_trans": "cloudrender-translate/8eee6039-7e6f-46b1-93e1-b20664c0480c.jpg",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/8eee6039-7e6f-46b1-93e1-b20664c0480c.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=523a3e1162bb8f78e2104b16c8005d20&t=6a0894b5&src=A"
+              },
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjic05osts5upt7c289autjg?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=7f043334c4bf2ba7f8c0e89d88b1e4a5&t=6a0894b5&src=A",
+                "fileid": "notes_pre_post/1040g3k031h6d7bvbjic05osts5upt7c289autjg",
+                "scale_to_large": 4,
+                "width": 1264,
+                "original": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjic05osts5upt7c289autjg?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=7f043334c4bf2ba7f8c0e89d88b1e4a5&t=6a0894b5&src=A",
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjic05osts5upt7c289autjg?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7f043334c4bf2ba7f8c0e89d88b1e4a5&t=6a0894b5&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjic05osts5upt7c289autjg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7f043334c4bf2ba7f8c0e89d88b1e4a5&t=6a0894b5&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjic05osts5upt7c289autjg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7f043334c4bf2ba7f8c0e89d88b1e4a5&t=6a0894b5&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjic05osts5upt7c289autjg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7f043334c4bf2ba7f8c0e89d88b1e4a5&t=6a0894b5&src=A"
+                },
+                "longitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1264,
+                  "size": 0,
+                  "height": 1676
+                },
+                "height": 1676,
+                "trace_id": "notes_pre_post/1040g3k031h6d7bvbjic05osts5upt7c289autjg",
+                "text_intention": 0
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k031h6d7bvbjiag5osts5upt7c2ijugoeo",
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjiag5osts5upt7c2ijugoeo?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=82dfac8c682ee295c5184ea3113705cd&t=6a0894b5&src=A",
+                "scale_to_large": 4,
+                "width": 1263,
+                "url": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjiag5osts5upt7c2ijugoeo?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=82dfac8c682ee295c5184ea3113705cd&t=6a0894b5&src=A",
+                "original": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjiag5osts5upt7c2ijugoeo?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=82dfac8c682ee295c5184ea3113705cd&t=6a0894b5&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjiag5osts5upt7c2ijugoeo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=82dfac8c682ee295c5184ea3113705cd&t=6a0894b5&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjiag5osts5upt7c2ijugoeo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=82dfac8c682ee295c5184ea3113705cd&t=6a0894b5&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjiag5osts5upt7c2ijugoeo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=82dfac8c682ee295c5184ea3113705cd&t=6a0894b5&src=A"
+                },
+                "longitude": 0,
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1263,
+                  "size": 0,
+                  "height": 1627
+                },
+                "height": 1627,
+                "text_intention": 0,
+                "trace_id": "notes_pre_post/1040g3k031h6d7bvbjiag5osts5upt7c2ijugoeo"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k031h6d7bvbjibg5osts5upt7c23tonf10",
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjibg5osts5upt7c23tonf10?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=415520f5a3df2aa729d46516c8fe10a5&t=6a0894b5&src=A",
+                "scale_to_large": 4,
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjibg5osts5upt7c23tonf10?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=415520f5a3df2aa729d46516c8fe10a5&t=6a0894b5&src=A",
+                "width": 1264,
+                "original": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjibg5osts5upt7c23tonf10?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=415520f5a3df2aa729d46516c8fe10a5&t=6a0894b5&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjibg5osts5upt7c23tonf10?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=415520f5a3df2aa729d46516c8fe10a5&t=6a0894b5&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjibg5osts5upt7c23tonf10?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=415520f5a3df2aa729d46516c8fe10a5&t=6a0894b5&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjibg5osts5upt7c23tonf10?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=415520f5a3df2aa729d46516c8fe10a5&t=6a0894b5&src=A"
+                },
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1264,
+                  "size": 0,
+                  "height": 1647
+                },
+                "height": 1647,
+                "text_intention": 2,
+                "trace_id": "notes_pre_post/1040g3k031h6d7bvbjibg5osts5upt7c23tonf10",
+                "file_id_trans": "cloudrender-translate/7c4c25f8-9c5c-4e6c-8a62-6774c7f418c6.jpg",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/7c4c25f8-9c5c-4e6c-8a62-6774c7f418c6.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=d0b1eeb9e13be40ba438d711bbc296c5&t=6a0894b5&src=A"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k031h6d7bvbjib05osts5upt7c2m2a2208",
+                "url_size_large": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjib05osts5upt7c2m2a2208?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=e12346dc4c995b5a8cecd952ebad3b89&t=6a0894b5&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjib05osts5upt7c2m2a2208?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=e12346dc4c995b5a8cecd952ebad3b89&t=6a0894b5&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjib05osts5upt7c2m2a2208?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=e12346dc4c995b5a8cecd952ebad3b89&t=6a0894b5&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjib05osts5upt7c2m2a2208?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=e12346dc4c995b5a8cecd952ebad3b89&t=6a0894b5&src=A"
+                },
+                "url": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjib05osts5upt7c2m2a2208?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=e12346dc4c995b5a8cecd952ebad3b89&t=6a0894b5&src=A",
+                "longitude": 0,
+                "width": 1208,
+                "original": "https://sns-i11.rednotecdn.com/notes_pre_post/1040g3k031h6d7bvbjib05osts5upt7c2m2a2208?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=e12346dc4c995b5a8cecd952ebad3b89&t=6a0894b5&src=A",
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1208,
+                  "size": 0,
+                  "height": 1588
+                },
+                "height": 1588,
+                "text_intention": 2,
+                "trace_id": "notes_pre_post/1040g3k031h6d7bvbjib05osts5upt7c2m2a2208",
+                "file_id_trans": "cloudrender-translate/d9da2c66-c338-4c90-b04f-03339b6bd972.jpg",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/d9da2c66-c338-4c90-b04f-03339b6bd972.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=4ddbee0eecb7e0c40ef982da1ef953b3&t=6a0894b5&src=A"
+              }
+            ],
+            "may_have_red_packet": false,
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Drop a comment...",
+              "forbidden_cmt_type": 0
+            },
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "view_count": 0,
+            "cooperate_binds": [],
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": true
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1746623522,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false,
+              "is_star": false
+            },
+            "collected_count": 16861,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "share_title": "@小蛋糕🍰 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/681b5c2200000000210084b0?xsec_source=app_share&xsec_token=CBX14BTOdM7nAT-bLxIjTtEoOEp-87aGR_gWqGgrRAOxU=",
+              "thumb": "http://sns-img-bd.xhscdn.com/notes_pre_post/1040g3k031h6d7bvbjicg5osts5upt7c2qqo7e88?imageView2/2/w/540/format/jpg/q/75",
+              "title": "@小蛋糕🍰 发了一篇超赞的笔记，快点来看！",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=681b5c2200000000210084b0&type=normal&xsec_token=CBX14BTOdM7nAT-bLxIjTtEoOEp-87aGR_gWqGgrRAOxU=",
+              "desc": "开题答辩不小心拿了小组第一🙊 答辩时的高频问题：为什么会选择这个课题？ . 这道题就是\"开题答辩\"里面的\"家常便饭"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"639de17d0000000027029d82\",\"author_name\":\"小蛋糕🍰\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "id": "639de17d0000000027029d82",
+          "red_official_verified": false,
+          "fstatus": "none",
+          "userid": "639de17d0000000027029d82",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31gkbc79l3q705osts5upt7c2889v7vg?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "red_id": "5320088879",
+          "nickname": "小蛋糕🍰",
+          "name": "小蛋糕🍰"
+        }
+      }
+    ],
+    "msg": "成功"
+  }
+}

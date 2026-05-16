@@ -1,0 +1,227 @@
+{
+  "_batch_label": "搞钱_第3批",
+  "gold_words": [
+    {
+      "word": "逆天改命",
+      "aliases": "凭商业逻辑逆天改命",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "拿到结果",
+      "aliases": "30岁之前拿到结果",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "信息生态位",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "财富天花板",
+      "aliases": "决定一个人的财富天花板",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "上桌",
+      "aliases": "真正的上桌第一课",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "自身商业化",
+      "aliases": "完成自身商业化",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "练一个赚钱的脑子",
+      "aliases": "去练一个赚钱的脑子",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "小生意",
+      "aliases": "尽早开始做一个小生意",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "避免一辈子打工",
+      "aliases": "如何避免一辈子打工",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "资本家思路",
+      "aliases": "从我妈身上学到的资本家思路",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "滋养一辈子",
+      "aliases": "做什么生意能滋养你一辈子",
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "赚钱的底层逻辑",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "cover",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "不想上班的准备",
+      "aliases": "不想上班的话需要做哪些准备",
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "FIRE三年",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "挣大钱的女人",
+      "aliases": "",
+      "category": "who",
+      "source_field": "cover",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "普通人要小心",
+      "aliases": "未来三年普通人一定要小心",
+      "category": "pain",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "人性生意",
+      "aliases": "答案就是人性",
+      "category": "twist",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "认知上限就是财富上限",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "经商头脑",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "搞钱"
+    },
+    {
+      "word": "停止打工",
+      "aliases": "赚钱第一步首先是停止打工",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "搞钱"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "赚钱第一步：首先是X",
+      "category": "递进",
+      "examples": [
+        "赚钱第一步：首先是停止打工"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "从X身上学到的Y思路",
+      "category": "悬念",
+      "examples": [
+        "从我妈身上学到的资本家思路"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "X决定一个人的Y",
+      "category": "递进",
+      "examples": [
+        "信息生态位决定一个人的财富天花板"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "什么都不会的X，如何Y",
+      "category": "悬念",
+      "examples": [
+        "什么都不会的普通女生，如何避免一辈子打工"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "建议年轻人尽早X",
+      "category": "召唤",
+      "examples": [
+        "建议年轻人尽早开始做一个小生意"
+      ],
+      "from_post_ids": []
+    }
+  ]
+}

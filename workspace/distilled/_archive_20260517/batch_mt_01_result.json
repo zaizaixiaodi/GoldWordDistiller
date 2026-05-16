@@ -1,0 +1,183 @@
+{
+  "_batch_label": "自媒体_第1批",
+  "gold_words": [
+    {
+      "word": "流量密码",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "不露脸图文",
+      "aliases": "不露脸自媒体",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "万赞封面",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "起号",
+      "aliases": "新号起号",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 2,
+      "domain": "自媒体"
+    },
+    {
+      "word": "死磕自媒体",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "自媒体邪修",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "先天流量圣体",
+      "aliases": "",
+      "category": "who",
+      "source_field": "desc",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "每篇都是爆款",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "裸辞勇闯自媒体",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "快速起号",
+      "aliases": "快速起号的方法",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "普通人吃自媒体这碗饭",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "所有人都有机会做自媒体",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "不讲究根正苗红",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "爆款选题",
+      "aliases": "10类爆款选题",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "新手起号不能做的事",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "自媒体"
+    },
+    {
+      "word": "博主进阶",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "domain": "自媒体"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "普通人怎么快速吃上X这碗饭",
+      "category": "悬念",
+      "examples": [
+        "普通人怎么快速吃上自媒体这碗饭"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "X第一步：Y",
+      "category": "递进",
+      "examples": [
+        "自媒体第一步：万赞封面"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "做X进步最猛的方式（Y版）",
+      "category": "递进",
+      "examples": [
+        "本人认为做自媒体进步最猛的方式（起飞版）"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "发现一个很X的Y方法",
+      "category": "悬念",
+      "examples": [
+        "发现一个很牛的选题方法"
+      ],
+      "from_post_ids": []
+    }
+  ]
+}

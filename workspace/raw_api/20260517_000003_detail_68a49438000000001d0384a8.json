@@ -1,0 +1,520 @@
+{
+  "code": 200,
+  "request_id": "33d9b19b-a587-402a-bc58-68bb1a6b51da",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:59:58",
+  "time_stamp": 1778947198,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/33d9b19b-a587-402a-bc58-68bb1a6b51da?sign=a1ffbf48a995f48095844c3af32626ab4f11cdcceca695e06e5c05a1d22198f2",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "68a49438000000001d0384a8"
+  },
+  "data": {
+    "code": 0,
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "Guangdong",
+            "user": {
+              "red_official_verified": false,
+              "id": "684f9ca2000000001b01a898",
+              "fstatus": "none",
+              "userid": "684f9ca2000000001b01a898",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31iqeup4gha005q2fjih6ra4oi6htm3g?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "red_id": "49656819423",
+              "nickname": "兰亭约稿",
+              "name": "兰亭约稿"
+            },
+            "id": "68a49438000000001d0384a8",
+            "liked": false,
+            "last_update_time": 1756166937,
+            "comments_count": 1041,
+            "has_related_goods": false,
+            "collected": false,
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 79599,
+            "head_tags": [],
+            "title": "五分钟临时发言，给我背‼️",
+            "share_info": {
+              "content": "#临时发言  #讲话稿  #发言稿",
+              "show_wechat_tag": false,
+              "title": "五分钟临时发言，给我背",
+              "image": "http://sns-img-bd.xhscdn.com/1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto?imageView2/2/w/360/format/jpg/q/75",
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "link": "https://www.xiaohongshu.com/discovery/item/68a49438000000001d0384a8?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBz-2fsGEcI9jTxD6qw92zftisvY0C7lnhlYVhIuxbAME=&author_share=1",
+              "is_star": false,
+              "block_private_msg": false,
+              "guide_audited": true,
+              "wechat_share_desc": "@兰亭约稿's note\n7845 Shares"
+            },
+            "note_statement": {
+              "origin_info": {
+                "origin_link": "https://fe.xiaohongshu.com/ditto/vincent/11a968bc7d524612a67f24dc46fac6c7?naviHidden=yes&fullscreen=true&source=xhsfabu",
+                "origin_text": "Originality declared"
+              }
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "id": "61890a26000000000100176d",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=61890a26a7f428000183d513&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "临时发言",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "5e7f27430000000001004a4f",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5e7f2743f36b0b0001e99f96&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "讲话稿"
+              },
+              {
+                "record_count": 0,
+                "id": "5c1e3fc80000000003011530",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c1e3fc8a861e1000181dfdc&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "发言稿"
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "61890a26000000000100176d",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/61890a26a7f428000183d513?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "临时发言"
+              }
+            ],
+            "desc": "#临时发言[话题]# #讲话稿[话题]# #发言稿[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "enable_brand_lottery": false,
+            "api_upgrade": -1,
+            "in_censor": false,
+            "use_water_color": false,
+            "mini_program_info": {
+              "title": "@兰亭约稿 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/68a49438000000001d0384a8?xsec_source=app_share&xsec_token=CBz-2fsGEcI9jTxD6qw92zftisvY0C7lnhlYVhIuxbAME=",
+              "thumb": "http://sns-img-bd.xhscdn.com/1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@兰亭约稿 发了一篇笔记，快点来看吧！",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D68a49438000000001d0384a8%26type%3Dnormal%26xsec_token%3DCBz-2fsGEcI9jTxD6qw92zftisvY0C7lnhlYVhIuxbAME%3D",
+              "desc": "#临时发言  #讲话稿  #发言稿"
+            },
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": false,
+            "red_envelope_note": false,
+            "shared_count": 7845,
+            "images_list": [
+              {
+                "fileid": "1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=db31a62fc796d7ef470b10ccff533282&t=6a08947e&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=db31a62fc796d7ef470b10ccff533282&t=6a08947e&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=db31a62fc796d7ef470b10ccff533282&t=6a08947e&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=db31a62fc796d7ef470b10ccff533282&t=6a08947e&src=A"
+                },
+                "original": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=db31a62fc796d7ef470b10ccff533282&t=6a08947e&src=A",
+                "live_photo_file_id": "livephoto/1040g39031lkjnr5qle0g5q2fjih6ra4oldrpf2g",
+                "latitude": 0,
+                "width": 3024,
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=db31a62fc796d7ef470b10ccff533282&t=6a08947e&src=A",
+                "origin_img": {
+                  "width": 3024,
+                  "size": 0,
+                  "height": 4032
+                },
+                "need_load_original_image": true,
+                "height": 4032,
+                "text_intention": 2,
+                "trace_id": "1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto",
+                "file_id_trans": "cloudrender-translate/16da70cc-043b-4b89-ac62-0083ce08d2d6.jpg",
+                "live_photo": {
+                  "capa": {
+                    "duration": 0,
+                    "is_user_select": false,
+                    "is_upload": false,
+                    "frame_ts": 0,
+                    "is_ai_tab": false
+                  },
+                  "consumer": {
+                    "can_super_resolution": false
+                  },
+                  "image": {
+                    "first_frame": ""
+                  },
+                  "media": {
+                    "user_level": 0,
+                    "video": {
+                      "biz_id": "281655933220127912",
+                      "height": 1920,
+                      "stream_types": [
+                        66
+                      ],
+                      "bound": [
+                        {
+                          "y": 0,
+                          "w": 1440,
+                          "x": 0,
+                          "h": 1920
+                        }
+                      ],
+                      "width": 1440,
+                      "duration": 3,
+                      "opaque1": {
+                        "domestic": "0",
+                        "livephoto_flag": "1",
+                        "amend_mobile": "40",
+                        "amend": "30"
+                      },
+                      "biz_name": 10,
+                      "drm_type": 0,
+                      "hdr_type": 0
+                    },
+                    "stream": {
+                      "h265": [
+                        {
+                          "audio_bitrate": 59820,
+                          "stream_type": 66,
+                          "master_url": "http://sns-v8.rednotecdn.com/stream/1/10/66/01e8acfb12b7445f0100500198e3b4fe3d_66.mp4",
+                          "weight": 66,
+                          "volume": 0,
+                          "video_duration": 2142,
+                          "duration": 2143,
+                          "vmaf": -1,
+                          "psnr": 42.93600082397461,
+                          "video_codec": "hevc",
+                          "audio_channels": 2,
+                          "default_stream": 1,
+                          "backup_urls": [
+                            "http://sns-v10.rednotecdn.com/stream/1/10/66/01e8acfb12b7445f0100500198e3b4fe3d_66.mp4"
+                          ],
+                          "video_bitrate": 1389105,
+                          "fps": 29,
+                          "opaque1": {
+                            "didLoudnorm": "false",
+                            "amend": "0",
+                            "has_soundtrack": "1",
+                            "pcdn_302_flag": "false",
+                            "use_pcdn": "0",
+                            "pcdn_supplier": ""
+                          },
+                          "size": 391429,
+                          "audio_codec": "aac",
+                          "rotate": 0,
+                          "format": "mp4",
+                          "sr": 0,
+                          "stream_desc": "livephoto_r256_1080p_66_ios",
+                          "height": 1440,
+                          "width": 1080,
+                          "audio_duration": 2140,
+                          "quality_type": "FHD",
+                          "avg_bitrate": 1461237,
+                          "hdr_type": 0,
+                          "ssim": 0
+                        }
+                      ],
+                      "h266": [],
+                      "h264": [],
+                      "av1": []
+                    },
+                    "video_id": "137549982985569375"
+                  }
+                },
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/16da70cc-043b-4b89-ac62-0083ce08d2d6.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=52343859e7fd49f46706e683ee882c25&t=6a08947e&src=A"
+              },
+              {
+                "fileid": "1040g2sg31lkjnr5l5i3g5q2fjih6ra4ofibl8k0",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i3g5q2fjih6ra4ofibl8k0?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=b883546604b5b749ef25b09ecd39d78b&t=6a08947e&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "width": 3174,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i3g5q2fjih6ra4ofibl8k0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b883546604b5b749ef25b09ecd39d78b&t=6a08947e&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i3g5q2fjih6ra4ofibl8k0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b883546604b5b749ef25b09ecd39d78b&t=6a08947e&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i3g5q2fjih6ra4ofibl8k0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b883546604b5b749ef25b09ecd39d78b&t=6a08947e&src=A"
+                },
+                "longitude": 0,
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i3g5q2fjih6ra4ofibl8k0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b883546604b5b749ef25b09ecd39d78b&t=6a08947e&src=A",
+                "original": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i3g5q2fjih6ra4ofibl8k0?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=b883546604b5b749ef25b09ecd39d78b&t=6a08947e&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 3174,
+                  "size": 0,
+                  "height": 4490
+                },
+                "height": 4490,
+                "text_intention": 2,
+                "trace_id": "1040g2sg31lkjnr5l5i3g5q2fjih6ra4ofibl8k0",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/1a4188b2-e362-4722-98c5-1e1d8a363eda.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=2355a765ef15af45143f18b621ec0b2e&t=6a08947e&src=A",
+                "file_id_trans": "cloudrender-translate/1a4188b2-e362-4722-98c5-1e1d8a363eda.jpg"
+              },
+              {
+                "fileid": "1040g2sg31lkjnr5l5i4g5q2fjih6ra4oslnlln8",
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i4g5q2fjih6ra4oslnlln8?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=250d958e1aeecd0413191edea64789e1&t=6a08947e&src=A",
+                "scale_to_large": 4,
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i4g5q2fjih6ra4oslnlln8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=250d958e1aeecd0413191edea64789e1&t=6a08947e&src=A",
+                "latitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i4g5q2fjih6ra4oslnlln8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=250d958e1aeecd0413191edea64789e1&t=6a08947e&src=A",
+                "width": 3174,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i4g5q2fjih6ra4oslnlln8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=250d958e1aeecd0413191edea64789e1&t=6a08947e&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i4g5q2fjih6ra4oslnlln8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=250d958e1aeecd0413191edea64789e1&t=6a08947e&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i4g5q2fjih6ra4oslnlln8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=250d958e1aeecd0413191edea64789e1&t=6a08947e&src=A"
+                },
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 3174,
+                  "size": 0,
+                  "height": 4490
+                },
+                "height": 4490,
+                "trace_id": "1040g2sg31lkjnr5l5i4g5q2fjih6ra4oslnlln8",
+                "text_intention": 2,
+                "file_id_trans": "cloudrender-translate/cf0b759f-fca0-4d1c-afd5-e498b23b1e1b.jpg",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/cf0b759f-fca0-4d1c-afd5-e498b23b1e1b.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=d177dfc81ed30d5bd9a46a7f7e257503&t=6a08947e&src=A"
+              },
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i405q2fjih6ra4oojueq28?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=6758dd858fd3ef0c488472915e3284cb&t=6a08947e&src=A",
+                "fileid": "1040g2sg31lkjnr5l5i405q2fjih6ra4oojueq28",
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i405q2fjih6ra4oojueq28?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=6758dd858fd3ef0c488472915e3284cb&t=6a08947e&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i405q2fjih6ra4oojueq28?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=6758dd858fd3ef0c488472915e3284cb&t=6a08947e&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i405q2fjih6ra4oojueq28?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=6758dd858fd3ef0c488472915e3284cb&t=6a08947e&src=A"
+                },
+                "original": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i405q2fjih6ra4oojueq28?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=6758dd858fd3ef0c488472915e3284cb&t=6a08947e&src=A",
+                "longitude": 0,
+                "latitude": 0,
+                "width": 3174,
+                "url": "https://sns-i11.rednotecdn.com/1040g2sg31lkjnr5l5i405q2fjih6ra4oojueq28?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=6758dd858fd3ef0c488472915e3284cb&t=6a08947e&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 3174,
+                  "size": 0,
+                  "height": 4490
+                },
+                "height": 4490,
+                "trace_id": "1040g2sg31lkjnr5l5i405q2fjih6ra4oojueq28",
+                "text_intention": 2,
+                "file_id_trans": "cloudrender-translate/5465bea3-c78e-4bbf-9bca-f259f01bf537.jpg",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/5465bea3-c78e-4bbf-9bca-f259f01bf537.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=486cf97b10f7744882bf01e36b681dd3&t=6a08947e&src=A"
+              }
+            ],
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Drop a comment...",
+              "forbidden_cmt_type": 0
+            },
+            "may_have_red_packet": false,
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "cooperate_binds": [],
+            "view_count": 0,
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": false,
+                "reason": "Download disabled by author"
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1755616312,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "guide_audited": false,
+              "is_star": false,
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ]
+            },
+            "collected_count": 75246,
+            "note_text_press_options": [],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "share_title": "@兰亭约稿 发了一篇超赞的笔记，快点来看！",
+              "title": "@兰亭约稿 发了一篇超赞的笔记，快点来看！",
+              "thumb": "http://sns-img-bd.xhscdn.com/1040g2sg31lkjnr5l5i305q2fjih6ra4oge61cto?imageView2/2/w/540/format/jpg/q/75",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/68a49438000000001d0384a8?xsec_source=app_share&xsec_token=CBz-2fsGEcI9jTxD6qw92zftisvY0C7lnhlYVhIuxbAME=",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=68a49438000000001d0384a8&type=normal&xsec_token=CBz-2fsGEcI9jTxD6qw92zftisvY0C7lnhlYVhIuxbAME=",
+              "desc": "#临时发言  #讲话稿  #发言稿"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"684f9ca2000000001b01a898\",\"author_name\":\"兰亭约稿\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "red_official_verified": false,
+          "id": "684f9ca2000000001b01a898",
+          "fstatus": "none",
+          "userid": "684f9ca2000000001b01a898",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31iqeup4gha005q2fjih6ra4oi6htm3g?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "nickname": "兰亭约稿",
+          "red_id": "49656819423",
+          "name": "兰亭约稿"
+        }
+      }
+    ],
+    "msg": "成功"
+  }
+}

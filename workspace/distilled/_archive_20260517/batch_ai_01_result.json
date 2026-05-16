@@ -1,0 +1,282 @@
+{
+  "_batch_label": "AI应用_第1批",
+  "gold_words": [
+    {
+      "word": "替你上班",
+      "aliases": "AI工具替你上班",
+      "category": "twist",
+      "source_field": "both",
+      "vibe_score": 8,
+      "frequency": 3,
+      "domain": "AI应用"
+    },
+    {
+      "word": "提前下班",
+      "aliases": "提前下班3小时",
+      "category": "pain",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 2,
+      "domain": "AI应用"
+    },
+    {
+      "word": "卷疯同事",
+      "aliases": "卷疯同事早下班2小时",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 2,
+      "domain": "AI应用"
+    },
+    {
+      "word": "王炸技能",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "快乐摸鱼",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "摸鱼神器",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "AI作弊",
+      "aliases": "AI作弊大全",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "第二大脑",
+      "aliases": "自己的第二大脑",
+      "category": "picture",
+      "source_field": "desc",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "成为前10%",
+      "aliases": "成为任何领域的前10%",
+      "category": "twist",
+      "source_field": "both",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "超神",
+      "aliases": "AI工作流超神",
+      "category": "feel",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "3分钟干完3天活",
+      "aliases": "",
+      "category": "number",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "假装AI",
+      "aliases": "真人假扮AI",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "降AI率",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "手搓",
+      "aliases": "手搓成功",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "脑子交给AI",
+      "aliases": "把你的脑子交给AI",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "任何领域的神",
+      "aliases": "成为任何领域的神",
+      "category": "who",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "偷偷学",
+      "aliases": "偷偷学AI神器",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "闭眼入",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "免费白嫖",
+      "aliases": "",
+      "category": "do",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "AI替班",
+      "aliases": "AI替我上班",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 2,
+      "domain": "AI应用"
+    },
+    {
+      "word": "提效神器",
+      "aliases": "职场提效神器",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "避坑须知",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 5,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "保姆级教程",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "cover",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "个人知识库",
+      "aliases": "自己的个人知识库",
+      "category": "picture",
+      "source_field": "desc",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "AI应用"
+    },
+    {
+      "word": "免费AI",
+      "aliases": "你花钱买的AI这里全免费",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "AI应用"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "学会X，轻松Y",
+      "category": "递进",
+      "examples": [
+        "学会这些AI工具，轻松替你上班",
+        "学会这些AI工具，轻松替你上班"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "别用X去Y",
+      "category": "警告",
+      "examples": [
+        "千万不要用AI软件去算命"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "把X交给AI，Y又Z",
+      "category": "递进",
+      "examples": [
+        "把你的脑子交给AI，轻松快乐又节能"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "X神器，让Y",
+      "category": "清单",
+      "examples": [
+        "悄悄作弊，让这4个AI神器替你打工"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "N分钟干完N天活",
+      "category": "对比",
+      "examples": [
+        "3分钟干完3天活"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "你可以成为任何领域的X",
+      "category": "承诺",
+      "examples": [
+        "你可以成为任何领域的前10%",
+        "你可以成为任何领域的神"
+      ],
+      "from_post_ids": []
+    }
+  ]
+}

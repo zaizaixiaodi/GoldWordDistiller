@@ -1,0 +1,318 @@
+{
+  "code": 200,
+  "request_id": "9003d831-7ec8-4fa5-a282-937a2b449683",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:50:58",
+  "time_stamp": 1778946658,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/9003d831-7ec8-4fa5-a282-937a2b449683?sign=c18ccc83a96a299c686b0054154263c2be8ec2aa1f6df55b33f9fdfa9d3ba0e5",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "616319da0000000001029593"
+  },
+  "data": {
+    "code": 0,
+    "data": [
+      {
+        "comment_list": [],
+        "note_list": [
+          {
+            "ip_location": "",
+            "user": {
+              "id": "5c376588000000000603eefd",
+              "red_official_verified": false,
+              "fstatus": "none",
+              "userid": "5c376588000000000603eefd",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ke5rs40k8005n1ncm41nrntb4uo7io?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "red_id": "L27620",
+              "nickname": "七号兔兔",
+              "name": "七号兔兔"
+            },
+            "liked": false,
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "last_update_time": 0,
+            "comments_count": 102,
+            "has_related_goods": false,
+            "collected": false,
+            "id": "616319da0000000001029593",
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 18124,
+            "head_tags": [],
+            "title": "思想汇报",
+            "share_info": {
+              "content": "肝了几个凌晨的思想汇报！终于写完了 太难了呜呜",
+              "show_wechat_tag": false,
+              "title": "思想汇报",
+              "image": "http://sns-img-bd.xhscdn.com/8d5e3f0e-098a-37c0-bf06-9c29e0f300e9?imageView2/2/w/360/format/jpg/q/75",
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "link": "https://www.xiaohongshu.com/discovery/item/616319da0000000001029593?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBroGKS1P8xx06LXs87FN41d5SsieUipZzh31kykhqPsU=&author_share=1",
+              "is_star": false,
+              "guide_audited": true,
+              "wechat_share_desc": "@七号兔兔's note\n489 Shares",
+              "block_private_msg": false
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "60b8a945000000000100af7a",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=60b8a945f8b5b000019d6d98&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "积极分子思想汇报",
+                "current_score": 0
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "60b8a945000000000100af7a",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/60b8a945f8b5b000019d6d98?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "积极分子思想汇报"
+              }
+            ],
+            "desc": "肝了几个凌晨的思想汇报！终于写完了 太难了呜呜\n#积极分子思想汇报[话题]# ",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "use_water_color": false,
+            "api_upgrade": -1,
+            "in_censor": false,
+            "mini_program_info": {
+              "title": "@七号兔兔 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/616319da0000000001029593?xsec_source=app_share&xsec_token=CBroGKS1P8xx06LXs87FN41d5SsieUipZzh31kykhqPsU=",
+              "thumb": "http://sns-img-bd.xhscdn.com/8d5e3f0e-098a-37c0-bf06-9c29e0f300e9?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@七号兔兔 发了一篇笔记，快点来看吧！",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D616319da0000000001029593%26type%3Dnormal%26xsec_token%3DCBroGKS1P8xx06LXs87FN41d5SsieUipZzh31kykhqPsU%3D",
+              "user_name": "gh_52be748ce5b7",
+              "desc": "肝了几个凌晨的思想汇报！终于写完了 太难了呜呜"
+            },
+            "enable_brand_lottery": false,
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_watermark": false,
+              "disable_weibo_cover": false,
+              "disable_save": false
+            },
+            "enable_co_produce": false,
+            "red_envelope_note": false,
+            "shared_count": 489,
+            "images_list": [
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/8d5e3f0e-098a-37c0-bf06-9c29e0f300e9?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=c12b9c9e70fe7f136e5cac81531f8abd&t=6a089262&src=A",
+                "fileid": "8d5e3f0e-098a-37c0-bf06-9c29e0f300e9",
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/8d5e3f0e-098a-37c0-bf06-9c29e0f300e9?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c12b9c9e70fe7f136e5cac81531f8abd&t=6a089262&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/8d5e3f0e-098a-37c0-bf06-9c29e0f300e9?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c12b9c9e70fe7f136e5cac81531f8abd&t=6a089262&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/8d5e3f0e-098a-37c0-bf06-9c29e0f300e9?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c12b9c9e70fe7f136e5cac81531f8abd&t=6a089262&src=A"
+                },
+                "longitude": 0,
+                "width": 1279,
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/8d5e3f0e-098a-37c0-bf06-9c29e0f300e9?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c12b9c9e70fe7f136e5cac81531f8abd&t=6a089262&src=A",
+                "original": "https://sns-i11.rednotecdn.com/8d5e3f0e-098a-37c0-bf06-9c29e0f300e9?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=c12b9c9e70fe7f136e5cac81531f8abd&t=6a089262&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 1705,
+                "trace_id": "8d5e3f0e-098a-37c0-bf06-9c29e0f300e9",
+                "text_intention": 0
+              }
+            ],
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Share your thoughts...",
+              "forbidden_cmt_type": 0
+            },
+            "may_have_red_packet": false,
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "view_count": 0,
+            "cooperate_binds": [],
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": true
+              },
+              {
+                "enable": true,
+                "type": "quote_note"
+              }
+            ],
+            "time": 1633884634,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "is_star": false,
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false
+            },
+            "collected_count": 7742,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "title": "@七号兔兔 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/616319da0000000001029593?xsec_source=app_share&xsec_token=CBroGKS1P8xx06LXs87FN41d5SsieUipZzh31kykhqPsU=",
+              "thumb": "http://sns-img-bd.xhscdn.com/8d5e3f0e-098a-37c0-bf06-9c29e0f300e9?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@七号兔兔 发了一篇超赞的笔记，快点来看！",
+              "path": "pages/main/note/index?xsec_source=app_share&id=616319da0000000001029593&type=normal&xsec_token=CBroGKS1P8xx06LXs87FN41d5SsieUipZzh31kykhqPsU=",
+              "user_name": "gh_66c53d495417",
+              "desc": "肝了几个凌晨的思想汇报！终于写完了 太难了呜呜"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"5c376588000000000603eefd\",\"author_name\":\"七号兔兔\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "id": "5c376588000000000603eefd",
+          "red_official_verified": false,
+          "fstatus": "none",
+          "userid": "5c376588000000000603eefd",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ke5rs40k8005n1ncm41nrntb4uo7io?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "red_id": "L27620",
+          "nickname": "七号兔兔",
+          "name": "七号兔兔"
+        }
+      }
+    ],
+    "success": true,
+    "msg": "成功"
+  }
+}

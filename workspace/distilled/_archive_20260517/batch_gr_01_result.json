@@ -1,0 +1,282 @@
+{
+  "_batch_label": "个人成长_第1批",
+  "gold_words": [
+    {
+      "word": "人生蜕变",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "自律不是五点起床",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "野心家女生",
+      "aliases": "",
+      "category": "who",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "姐是自己的女娲",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "自律比放纵更自由",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "戒掉手机",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "吃的贵才能长的贵",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "偷偷学习惊艳所有人",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "微行动骗大脑",
+      "aliases": "用微行动欺骗大脑",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "把清晰的脑子养回来",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "认知翻盘",
+      "aliases": "普通女孩认知翻盘",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "强者思维",
+      "aliases": "",
+      "category": "who",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "思维韧性",
+      "aliases": "强化你的思维韧性",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "执行力差是因为维持人设",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "cover",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "不做事维持可能性自我",
+      "aliases": "拖延是用不做事维持可能性自我的快感",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "深度思考能力",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "第一性原理",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "desc",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "创造价值不是出卖时间",
+      "aliases": "赚钱的第一性原理是创造价值不是出卖时间",
+      "category": "twist",
+      "source_field": "both",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "杠杆思维",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "认知觉醒",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "高认知",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "大格局女生",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "养脑",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "人生开挂",
+      "aliases": "自律逆袭人生开挂",
+      "category": "feel",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "悄悄超越同龄人",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "个人成长"
+    },
+    {
+      "word": "逆袭",
+      "aliases": "自律逆袭",
+      "category": "do",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "个人成长"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "X的N个层面，弄明白了你就是Y",
+      "category": "递进",
+      "examples": [
+        "学习的9个层次，弄明白了你就是学霸"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "X比Y更Z",
+      "category": "对比",
+      "examples": [
+        "自律比放纵更自由"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "X的第一性原理是Y，不是Z",
+      "category": "递进",
+      "examples": [
+        "赚钱的第一性原理是创造价值，不是出卖时间",
+        "创造价值的第一性原理是解决问题，不是提供劳动"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "如何找回曾经那个X的自己",
+      "category": "悬念",
+      "examples": [
+        "如何找回曾经那个专注的自己"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "刷到就是上天在提醒了",
+      "category": "悬念",
+      "examples": [
+        "如何成为大格局女生，刷到就是上天在提醒了"
+      ],
+      "from_post_ids": []
+    }
+  ]
+}

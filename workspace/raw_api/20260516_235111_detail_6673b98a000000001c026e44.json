@@ -1,0 +1,435 @@
+{
+  "code": 200,
+  "request_id": "d2d1ccfe-0d1b-4de8-8839-d1c701a3b515",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:51:11",
+  "time_stamp": 1778946671,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/d2d1ccfe-0d1b-4de8-8839-d1c701a3b515?sign=820534dc9fc848257ef9245f57206804f78a1cf451c86c295ae1ed19965f291a",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "6673b98a000000001c026e44"
+  },
+  "data": {
+    "success": true,
+    "data": [
+      {
+        "comment_list": [],
+        "note_list": [
+          {
+            "ip_location": "Shandong",
+            "user": {
+              "red_official_verified": false,
+              "id": "63bf4dab000000002702a19d",
+              "fstatus": "none",
+              "userid": "63bf4dab000000002702a19d",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30ns6f2ea10005otv9mlpt8cthf53628?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "red_id": "5373573555",
+              "nickname": "碗",
+              "name": "碗"
+            },
+            "liked": false,
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "last_update_time": 0,
+            "comments_count": 141,
+            "has_related_goods": false,
+            "id": "6673b98a000000001c026e44",
+            "collected": false,
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 13545,
+            "head_tags": [],
+            "title": "公务员试用期满转正述职报告",
+            "share_info": {
+              "content": "完整版的来啦[doge] 原谅我打了这么多厚厚的码，不然真的发不出来的[捂脸R] 工作总结和存在问题都是比较具体的写了我",
+              "show_wechat_tag": false,
+              "title": "公务员试用期满转正述职报告",
+              "image": "http://sns-img-hw.xhscdn.com/1040g0083148mkgtvls005otv9mlpt8ct70mk9q8?imageView2/2/w/360/format/jpg/q/75",
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "wechat_share_desc": "@碗's note\n2924 Shares",
+              "link": "https://www.xiaohongshu.com/discovery/item/6673b98a000000001c026e44?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBAaTjO3L-mhwL438FhJgjuXfLeaCP7-nfQjHsg18726Y=&author_share=1",
+              "is_star": false,
+              "guide_audited": true
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "id": "61c04cf80000000001006433",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=61c04cf8355a4c000131ce46&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "述职报告"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5c3eadc1000000000d03ff1a",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c3eadc1caaf8300014ea98f&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "name": "工作总结",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "5d84f2e600000000020002d4",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5d84f2e6d77d9b000196cd14&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "体制内",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5be55b1d1109950001da6bd4",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5be55b1d0940ad00014a028f&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "公务员",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "5f37bf6f00000000010041b9",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5f37bf6ffe9f0300017299a6&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "转正",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5c05debd64a83b0001d9280d",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c05debdd3982f0001949acd&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "上岸",
+                "current_score": 0
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "61c04cf80000000001006433",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/61c04cf8355a4c000131ce46?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "述职报告"
+              }
+            ],
+            "desc": "完整版的来啦[doge]\n\t\n原谅我打了这么多厚厚的码，不然真的发不出来的[捂脸R]\n\t\n工作总结和存在问题都是比较具体的写了我个人的情况\n\t\n下步打算这部分借鉴了我之前的入职培训总结\n高情商：通用性比较强，可以用在好多地方✔️\n低情商：言之无物，假大空❌\n\t\n其实还是建议大家结合自身工作实际去写好自己的材料\n\t\n#述职报告[话题]# #工作总结[话题]# #体制内[话题]# 体制内工作日常 体制内打工人 #公务员[话题]# #转正[话题]# #上岸[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "enable_brand_lottery": false,
+            "api_upgrade": -1,
+            "in_censor": false,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%226673b98a000000001c026e44%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "mini_program_info": {
+              "share_title": "@碗 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/6673b98a000000001c026e44?xsec_source=app_share&xsec_token=CBAaTjO3L-mhwL438FhJgjuXfLeaCP7-nfQjHsg18726Y=",
+              "thumb": "http://sns-img-hw.xhscdn.com/1040g0083148mkgtvls005otv9mlpt8ct70mk9q8?imageView2/2/w/540/format/jpg/q/75",
+              "title": "@碗 发了一篇笔记，快点来看吧！",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D6673b98a000000001c026e44%26type%3Dnormal%26xsec_token%3DCBAaTjO3L-mhwL438FhJgjuXfLeaCP7-nfQjHsg18726Y%3D",
+              "desc": "完整版的来啦[doge] 原谅我打了这么多厚厚的码，不然真的发不出来的[捂脸R] 工作总结和存在问题都是比较具体的写了我"
+            },
+            "use_water_color": false,
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 2924,
+            "images_list": [
+              {
+                "fileid": "1040g0083148mkgtvls005otv9mlpt8ct70mk9q8",
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls005otv9mlpt8ct70mk9q8?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=d3a8db2b1a4837844807e8fc4625ff89&t=6a08926e&src=A",
+                "scale_to_large": 4,
+                "width": 1810,
+                "original": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls005otv9mlpt8ct70mk9q8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=d3a8db2b1a4837844807e8fc4625ff89&t=6a08926e&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls005otv9mlpt8ct70mk9q8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d3a8db2b1a4837844807e8fc4625ff89&t=6a08926e&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls005otv9mlpt8ct70mk9q8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d3a8db2b1a4837844807e8fc4625ff89&t=6a08926e&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls005otv9mlpt8ct70mk9q8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d3a8db2b1a4837844807e8fc4625ff89&t=6a08926e&src=A"
+                },
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls005otv9mlpt8ct70mk9q8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=d3a8db2b1a4837844807e8fc4625ff89&t=6a08926e&src=A",
+                "longitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 2560,
+                "text_intention": 1,
+                "trace_id": "1040g0083148mkgtvls005otv9mlpt8ct70mk9q8",
+                "file_id_trans": "cloudrender-translate/61e72168-6b15-4af5-b5ea-b5e89fdac9fd.jpg",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/61e72168-6b15-4af5-b5ea-b5e89fdac9fd.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=fc0ca8847519d368e322fd37e601bbff&t=6a08926e&src=A"
+              },
+              {
+                "index": 0,
+                "fileid": "1040g0083148mkgtvls0g5otv9mlpt8ctqqj9ero",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls0g5otv9mlpt8ctqqj9ero?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=59dae0427c471c802448b56f8e68a6b6&t=6a08926e&src=A",
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls0g5otv9mlpt8ctqqj9ero?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=59dae0427c471c802448b56f8e68a6b6&t=6a08926e&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls0g5otv9mlpt8ctqqj9ero?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=59dae0427c471c802448b56f8e68a6b6&t=6a08926e&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls0g5otv9mlpt8ctqqj9ero?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=59dae0427c471c802448b56f8e68a6b6&t=6a08926e&src=A"
+                },
+                "url": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls0g5otv9mlpt8ctqqj9ero?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=59dae0427c471c802448b56f8e68a6b6&t=6a08926e&src=A",
+                "original": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls0g5otv9mlpt8ctqqj9ero?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=59dae0427c471c802448b56f8e68a6b6&t=6a08926e&src=A",
+                "width": 1810,
+                "longitude": 0,
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 2560,
+                "text_intention": 1,
+                "trace_id": "1040g0083148mkgtvls0g5otv9mlpt8ctqqj9ero",
+                "file_id_trans": "cloudrender-translate/fe36296e-ae72-4786-8924-c2af9a424ff9.jpg",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/fe36296e-ae72-4786-8924-c2af9a424ff9.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=4c9b4a2e00b19880985d5dcc9316edc5&t=6a08926e&src=A"
+              },
+              {
+                "fileid": "1040g0083148mkgtvls105otv9mlpt8cts13j9qo",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls105otv9mlpt8cts13j9qo?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=c0979ddabc76a89eb18899a8cf8304d8&t=6a08926e&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls105otv9mlpt8cts13j9qo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c0979ddabc76a89eb18899a8cf8304d8&t=6a08926e&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls105otv9mlpt8cts13j9qo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c0979ddabc76a89eb18899a8cf8304d8&t=6a08926e&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls105otv9mlpt8cts13j9qo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c0979ddabc76a89eb18899a8cf8304d8&t=6a08926e&src=A"
+                },
+                "original": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls105otv9mlpt8cts13j9qo?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=c0979ddabc76a89eb18899a8cf8304d8&t=6a08926e&src=A",
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g0083148mkgtvls105otv9mlpt8cts13j9qo?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=c0979ddabc76a89eb18899a8cf8304d8&t=6a08926e&src=A",
+                "latitude": 0,
+                "width": 1810,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 2560,
+                "trace_id": "1040g0083148mkgtvls105otv9mlpt8cts13j9qo",
+                "text_intention": 1,
+                "file_id_trans": "cloudrender-translate/61ef7f59-031e-4b05-9212-08985beabc69.jpg",
+                "url_trans": "https://sns-translate-i11.rednotecdn.com/cloudrender-translate/61ef7f59-031e-4b05-9212-08985beabc69.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=802bb64f22ba9c3c8fa0584a5b6792c0&t=6a08926e&src=A"
+              }
+            ],
+            "may_have_red_packet": false,
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Share your thoughts...",
+              "forbidden_cmt_type": 0
+            },
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "view_count": 0,
+            "cooperate_binds": [],
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": true
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1718861943,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false,
+              "is_star": false
+            },
+            "collected_count": 19360,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "share_title": "@碗 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/6673b98a000000001c026e44?xsec_source=app_share&xsec_token=CBAaTjO3L-mhwL438FhJgjuXfLeaCP7-nfQjHsg18726Y=",
+              "thumb": "http://sns-img-hw.xhscdn.com/1040g0083148mkgtvls005otv9mlpt8ct70mk9q8?imageView2/2/w/540/format/jpg/q/75",
+              "title": "@碗 发了一篇超赞的笔记，快点来看！",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=6673b98a000000001c026e44&type=normal&xsec_token=CBAaTjO3L-mhwL438FhJgjuXfLeaCP7-nfQjHsg18726Y=",
+              "desc": "完整版的来啦[doge] 原谅我打了这么多厚厚的码，不然真的发不出来的[捂脸R] 工作总结和存在问题都是比较具体的写了我"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"63bf4dab000000002702a19d\",\"author_name\":\"碗\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "id": "63bf4dab000000002702a19d",
+          "red_official_verified": false,
+          "fstatus": "none",
+          "userid": "63bf4dab000000002702a19d",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30ns6f2ea10005otv9mlpt8cthf53628?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "red_id": "5373573555",
+          "nickname": "碗",
+          "name": "碗"
+        }
+      }
+    ],
+    "code": 0,
+    "msg": "成功"
+  }
+}

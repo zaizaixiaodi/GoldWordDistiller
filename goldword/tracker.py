@@ -31,7 +31,7 @@ def _unwrap(val: Any) -> Any:
 
 def _build_word_index() -> dict[tuple[str, str], dict]:
     """从飞书金词库构建 (category, word_lower) → 记录索引。"""
-    records = feishu.query_words(limit=500)
+    records = feishu.query_words()
     index: dict[tuple[str, str], dict] = {}
     for rec in records:
         fields = rec.get("fields", {})
@@ -124,11 +124,19 @@ def upsert_words(tracked: list[dict]) -> dict[str, int]:
 
     for t in tracked:
         try:
+            aliases_raw = t.get("aliases", "")
+            if isinstance(aliases_raw, list):
+                aliases_str = ", ".join(str(a).strip() for a in aliases_raw if a)
+            elif aliases_raw is None:
+                aliases_str = ""
+            else:
+                aliases_str = str(aliases_raw)
+
             if t["is_new"]:
                 feishu.insert_word({
                     "word": t["word"],
-                    "aliases": t.get("aliases", ""),
-                    "domain": t.get("domain", "搞钱"),
+                    "aliases": aliases_str,
+                    "domain": t.get("domain", ""),
                     "category": t["category"],
                     "source_field": t.get("source_field", "title"),
                     "vibe_score": t.get("vibe_score", 5),
@@ -159,7 +167,7 @@ def upsert_words(tracked: list[dict]) -> dict[str, int]:
 
 def _build_pattern_index() -> dict[str, dict]:
     """从飞书句式库构建 skeleton → 记录索引。"""
-    records = feishu.query_patterns(limit=500)
+    records = feishu.query_patterns()
     index: dict[str, dict] = {}
     for rec in records:
         fields = rec.get("fields", {})
@@ -273,7 +281,7 @@ def refresh_trends() -> dict[str, int]:
     patterns_decay = 0
 
     # 金词：上升 → 平稳
-    word_records = feishu.query_words(limit=500)
+    word_records = feishu.query_words()
     for rec in word_records:
         fields = rec.get("fields", {})
         if fields.get("trend") == "上升":
@@ -281,7 +289,7 @@ def refresh_trends() -> dict[str, int]:
             words_decay += 1
 
     # 句式：上升 → 平稳
-    pattern_records = feishu.query_patterns(limit=500)
+    pattern_records = feishu.query_patterns()
     for rec in pattern_records:
         fields = rec.get("fields", {})
         if fields.get("trend") == "上升":

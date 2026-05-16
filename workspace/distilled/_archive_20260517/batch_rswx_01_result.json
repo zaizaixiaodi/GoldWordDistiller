@@ -1,0 +1,210 @@
+{
+  "_batch_label": "人生务虚_第1批",
+  "gold_words": [
+    {
+      "word": "醍醐灌顶",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "人生就是乱试",
+      "aliases": "人生就是瞎乱试",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "拒绝内耗",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 3,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "卷飞同龄人",
+      "aliases": "3招卷飞同龄人",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "反内卷",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "身弱之人",
+      "aliases": "",
+      "category": "who",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "身弱之人不要努力",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "不被大风吹倒",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "内卷内耗之间憋成内伤",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "title",
+      "vibe_score": 8,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "不要努力",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "邪修学习法",
+      "aliases": "",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "宁可累死自己也要卷死同学",
+      "aliases": "",
+      "category": "do",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "重新养自己一遍",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "人生只活一次",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "被主流叙事裹挟",
+      "aliases": "不再被主流叙事裹挟着走",
+      "category": "pain",
+      "source_field": "cover",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "优绩主义陷阱",
+      "aliases": "",
+      "category": "pain",
+      "source_field": "desc",
+      "vibe_score": 6,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "人哪有不发癫的",
+      "aliases": "",
+      "category": "feel",
+      "source_field": "desc",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "感知当下",
+      "aliases": "",
+      "category": "do",
+      "source_field": "desc",
+      "vibe_score": 5,
+      "frequency": 1,
+      "domain": "人生务虚"
+    },
+    {
+      "word": "不被外界评价绑架",
+      "aliases": "成长是不再主动走入任何评价体系里",
+      "category": "twist",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "domain": "人生务虚"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "身弱之人，不要X",
+      "category": "对比",
+      "examples": [
+        "身弱之人，不要努力"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "在内卷和内耗之间，Y",
+      "category": "悬念",
+      "examples": [
+        "在内卷和内耗之间，憋成了内伤"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "XX的人，Y",
+      "category": "递进",
+      "examples": [
+        "身弱之人，不要努力"
+      ],
+      "from_post_ids": []
+    },
+    {
+      "skeleton": "人生就是X",
+      "category": "悬念",
+      "examples": [
+        "人生就是瞎乱试"
+      ],
+      "from_post_ids": []
+    }
+  ]
+}

@@ -50,7 +50,7 @@ def list_words(
     limit: int = 50,
 ) -> None:
     """查询金词库并格式化输出。"""
-    records = feishu.query_words(limit=500)
+    records = feishu.query_words()
 
     # 过滤
     filtered = []
@@ -101,7 +101,7 @@ def list_words(
 
 def list_patterns() -> None:
     """列出句式库，按 trend 分组。"""
-    records = feishu.query_patterns(limit=500)
+    records = feishu.query_patterns()
 
     trend_groups: dict[str, list[dict]] = {}
     for rec in records:
@@ -169,9 +169,9 @@ def show_config() -> None:
 
 def sync_status() -> None:
     """显示飞书各表状态概览。"""
-    posts = feishu.query_posts(limit=500)
-    words = feishu.query_words(limit=500)
-    patterns = feishu.query_patterns(limit=500)
+    posts = feishu.query_posts()
+    words = feishu.query_words()
+    patterns = feishu.query_patterns()
     config = feishu.query_config()
 
     print("  飞书多维表状态\n")

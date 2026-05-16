@@ -1,0 +1,355 @@
+{
+  "code": 200,
+  "request_id": "c731bed3-e7cb-4a4e-9396-244246d5ec6c",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:58:25",
+  "time_stamp": 1778947105,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/c731bed3-e7cb-4a4e-9396-244246d5ec6c?sign=3170e546db2fb5910afc4a159b1d2c8668acacaaf3628d62124a49904a1b88bc",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "68f458180000000207007b84"
+  },
+  "data": {
+    "code": 0,
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "Jiangxi",
+            "user": {
+              "id": "67f789c20000000008015f06",
+              "red_official_verified": false,
+              "fstatus": "none",
+              "userid": "67f789c20000000008015f06",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nducg804q705pvnh7122no6oebu950?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "nickname": "波波成长笔记",
+              "red_id": "26761362922",
+              "name": "波波成长笔记"
+            },
+            "id": "68f45818000000000700febe",
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "last_update_time": 0,
+            "comments_count": 0,
+            "has_related_goods": false,
+            "liked": false,
+            "collected": false,
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 501,
+            "head_tags": [],
+            "title": "怎么才能滔滔不绝地讲出逻辑清晰的话？",
+            "share_info": {
+              "content": "昨天和一个朋友聊天，他说每次开会发言都紧张，想法很多但一开口就乱套，逻辑混乱让人听不懂重点。 其实这个问题我之前也有，后",
+              "show_wechat_tag": false,
+              "title": "怎么才能滔滔不绝地讲出逻辑清晰的话",
+              "image": "http://sns-img-qc.xhscdn.com/1040g00831nq9vt104s6g5pvnh7122no60d62cl8?imageView2/2/w/360/format/jpg/q/75",
+              "link": "https://www.xiaohongshu.com/discovery/item/68f45818000000000700febe?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBcQyPIi192yHjKcvcvlHqB73Y-CsQOGvb4SOHbAZV9ek=&author_share=1",
+              "block_private_msg": false,
+              "is_star": false,
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "guide_audited": true,
+              "wechat_share_desc": "@波波成长笔记's note\n23 Shares"
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "57ee65c9faa05212bb083f8f",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5bff57eb9c9f3400019700ae&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "逻辑思维"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5d35909f000000000e02b9e2",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5d35909f062cf400014a4802&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "表达能力"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "6710bf94000000000301a007",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=6710bf94e75fb30001ea11ef&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "职场沟通"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5f57296c000000000100361e",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5f57296c99992f0001f6efe5&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "自我提升"
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "57ee65c9faa05212bb083f8f",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/5bff57eb9c9f3400019700ae?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "逻辑思维"
+              }
+            ],
+            "desc": "昨天和一个朋友聊天，他说每次开会发言都紧张，想法很多但一开口就乱套，逻辑混乱让人听不懂重点。\n\t\n其实这个问题我之前也有，后来发现会说话的人都有一套固定模式。\n\t\n你要明白一个道理：逻辑清晰的表达不是天赋，是有方法的。\n\t\n先说框架，再填内容\n\t\n很多人一开口就想把所有想法都说出来，结果越说越乱。高手都是先搭框架。\n\t\n什么意思？就是用\"总分总\"结构：\n\t\n- 先说结论：我认为这个项目值得投资\n- 再说原因：第一...第二...第三...\n- 最后总结：所以我建议立即启动\n\t\n举个例子，同事问你周末计划，别说\"我想去看电影，但是天气不好，可能在家，或者去逛街...\"\n\t\n而是说：\"我周末有三个选择，第一是在家休息充电，第二是去商场购物，第三是看场电影放松。综合考虑天气和心情，我倾向于第一个。\"\n\t\n看出区别了吗？后者让人一听就懂你的思路。\n\t\n用数字让逻辑更清晰\n\t\n人的大脑天生喜欢有序的信息。你说话时多用\"第一、第二、第三\"，\"有三个原因\"，\"分两个层面\"。\n\t\n比如汇报工作进度：\n\t\n\"项目进展分三块：第一，技术开发已完成80%；第二，市场调研发现了两个新机会；第三，预算控制在合理范围内。\"\n\t\n这样说，领导一听就知道你思路清晰，工作有条理。\n\t\n学会使用连接词\n\t\n\"因为...所以...\"\n\"不仅...而且...\"\n\"虽然...但是...\"\n\"首先...其次...最后...\"\n\t\n这些连接词就像路标，告诉听众你的思路走向。\n\t\n练习方法很简单\n\t\n每天晚上回顾一下今天发生的事，用\"总分总\"结构重新组织一遍。\n\t\n比如今天工作总结：\n\t\n总：今天工作效率很高\n分：完成了三个重要任务，解决了一个技术难题，还优化了工作流程\n总：明天继续保持这个节奏\n\t\n坚持一个月，你会发现自己说话越来越有条理。\n\t\n还有一个秘诀\n\t\n说话前先问自己三个问题：\n\t\n1. 我要表达的核心观点是什么？\n2. 我有几个支撑理由？\n3. 我希望对方做什么？\n\t\n想清楚再开口，你的表达自然就清晰了。\n\t\n记住这句话：好的表达不是说得多，而是说得对。框架清晰比内容丰富更重要。\n\t\n从今晚开始，每次说话前先在心里搭个框架，一个月后你就是那个逻辑清晰、表达有力的人。\n\t\n2025是一人公司时代，会表达的人更有竞争力，期待与你一起进化。\n#逻辑思维[话题]# #表达能力[话题]# #职场沟通[话题]# #自我提升[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "use_water_color": false,
+            "api_upgrade": -1,
+            "enable_brand_lottery": false,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%2268f45818000000000700febe%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "mini_program_info": {
+              "share_title": "@波波成长笔记 发了一篇笔记，快点来看吧！",
+              "title": "@波波成长笔记 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/68f45818000000000700febe?xsec_source=app_share&xsec_token=CBcQyPIi192yHjKcvcvlHqB73Y-CsQOGvb4SOHbAZV9ek=",
+              "thumb": "http://sns-img-qc.xhscdn.com/1040g00831nq9vt104s6g5pvnh7122no60d62cl8?imageView2/2/w/540/format/jpg/q/75",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D68f45818000000000700febe%26type%3Dnormal%26xsec_token%3DCBcQyPIi192yHjKcvcvlHqB73Y-CsQOGvb4SOHbAZV9ek%3D",
+              "desc": "昨天和一个朋友聊天，他说每次开会发言都紧张，想法很多但一开口就乱套，逻辑混乱让人听不懂重点。 其实这个问题我之前也有，后"
+            },
+            "in_censor": false,
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 23,
+            "images_list": [
+              {
+                "fileid": "1040g00831nq9vt104s6g5pvnh7122no60d62cl8",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g00831nq9vt104s6g5pvnh7122no60d62cl8?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=39887000eb98af6c7257e075f3915090&t=6a089420&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "width": 1200,
+                "url": "https://sns-i11.rednotecdn.com/1040g00831nq9vt104s6g5pvnh7122no60d62cl8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=39887000eb98af6c7257e075f3915090&t=6a089420&src=A",
+                "latitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/1040g00831nq9vt104s6g5pvnh7122no60d62cl8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=39887000eb98af6c7257e075f3915090&t=6a089420&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g00831nq9vt104s6g5pvnh7122no60d62cl8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=39887000eb98af6c7257e075f3915090&t=6a089420&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g00831nq9vt104s6g5pvnh7122no60d62cl8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=39887000eb98af6c7257e075f3915090&t=6a089420&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g00831nq9vt104s6g5pvnh7122no60d62cl8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=39887000eb98af6c7257e075f3915090&t=6a089420&src=A"
+                },
+                "longitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1200,
+                  "size": 0,
+                  "height": 1600
+                },
+                "height": 1600,
+                "trace_id": "1040g00831nq9vt104s6g5pvnh7122no60d62cl8",
+                "text_intention": 0
+              }
+            ],
+            "may_have_red_packet": false,
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Share your thoughts...",
+              "forbidden_cmt_type": 0
+            },
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "view_count": 0,
+            "cooperate_binds": [],
+            "function_switch": [
+              {
+                "enable": true,
+                "type": "image_download"
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1760843800,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false,
+              "is_star": false,
+              "block_private_msg": false
+            },
+            "collected_count": 323,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "title": "@波波成长笔记 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/68f45818000000000700febe?xsec_source=app_share&xsec_token=CBcQyPIi192yHjKcvcvlHqB73Y-CsQOGvb4SOHbAZV9ek=",
+              "thumb": "http://sns-img-qc.xhscdn.com/1040g00831nq9vt104s6g5pvnh7122no60d62cl8?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@波波成长笔记 发了一篇超赞的笔记，快点来看！",
+              "path": "pages/main/note/index?xsec_source=app_share&id=68f45818000000000700febe&type=normal&xsec_token=CBcQyPIi192yHjKcvcvlHqB73Y-CsQOGvb4SOHbAZV9ek=",
+              "user_name": "gh_66c53d495417",
+              "desc": "昨天和一个朋友聊天，他说每次开会发言都紧张，想法很多但一开口就乱套，逻辑混乱让人听不懂重点。 其实这个问题我之前也有，后"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"67f789c20000000008015f06\",\"author_name\":\"波波成长笔记\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "id": "67f789c20000000008015f06",
+          "red_official_verified": false,
+          "fstatus": "none",
+          "userid": "67f789c20000000008015f06",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nducg804q705pvnh7122no6oebu950?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "red_id": "26761362922",
+          "nickname": "波波成长笔记",
+          "name": "波波成长笔记"
+        }
+      }
+    ],
+    "msg": "成功"
+  }
+}

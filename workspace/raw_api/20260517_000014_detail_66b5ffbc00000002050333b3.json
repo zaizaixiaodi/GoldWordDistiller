@@ -1,0 +1,518 @@
+{
+  "code": 200,
+  "request_id": "a831e09c-cabe-4f06-aad9-1d60adcada45",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 09:00:10",
+  "time_stamp": 1778947210,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/a831e09c-cabe-4f06-aad9-1d60adcada45?sign=d6ea8b048e25d35bbf59ef19d574af1656f2bc5466b16fe3a7e42884e4e87484",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "66b5ffbc00000002050333b3"
+  },
+  "data": {
+    "code": 0,
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "United States",
+            "user": {
+              "id": "584e0f4b50c4b44adb988861",
+              "red_official_verified": false,
+              "fstatus": "none",
+              "userid": "584e0f4b50c4b44adb988861",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/61e0d9ffd6785fba00816937.jpg?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "red_id": "Yyyy98418",
+              "nickname": "小梁同学",
+              "name": "小梁同学"
+            },
+            "id": "66b5ffbc000000000503b689",
+            "liked": false,
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "comments_count": 511,
+            "last_update_time": 0,
+            "collected": false,
+            "has_related_goods": false,
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 50482,
+            "head_tags": [],
+            "title": "officelady高智感✨8套正式场合穿搭分享",
+            "share_info": {
+              "content": "#即兴演讲  #穿搭  #通勤穿搭",
+              "show_wechat_tag": false,
+              "title": "officelady高智感✨8套正式场合穿搭分享",
+              "image": "http://sns-img-bd.xhscdn.com/1040g0083169dml1l1a0048v1gm7kn231pv6vtrg?imageView2/2/w/360/format/jpg/q/75",
+              "link": "https://www.xiaohongshu.com/discovery/item/66b5ffbc000000000503b689?app_platform=ios&app_version=9.29&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBXSVgz5TQqRl6YKsZDQal88NKHBoUdPe_UJze60xtLok=&author_share=1",
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "wechat_share_desc": "@小梁同学's note\n2068 Shares",
+              "guide_audited": true,
+              "is_star": false,
+              "block_private_msg": false
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "id": "5cdd90a00000000006026fe3",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5cdd90a01c952b00019a6bbf&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "即兴演讲",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "541e81e7b4c4d631976a1c2e",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5be3955236f3000001f58fe1&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "穿搭"
+              },
+              {
+                "record_count": 0,
+                "id": "5836b9f5f64b3d7b81a41f0e",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5bf5689f270334000100c995&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "name": "通勤穿搭",
+                "current_score": 0
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "5cdd90a00000000006026fe3",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/5cdd90a01c952b00019a6bbf?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "即兴演讲"
+              }
+            ],
+            "desc": "#即兴演讲[话题]# #穿搭[话题]# #通勤穿搭[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "use_water_color": false,
+            "api_upgrade": -1,
+            "in_censor": false,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%2266b5ffbc000000000503b689%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "mini_program_info": {
+              "share_title": "@小梁同学 发了一篇笔记，快点来看吧！",
+              "title": "@小梁同学 发了一篇笔记，快点来看吧！",
+              "thumb": "http://sns-img-bd.xhscdn.com/1040g0083169dml1l1a0048v1gm7kn231pv6vtrg?imageView2/2/w/540/format/jpg/q/75",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/66b5ffbc000000000503b689?xsec_source=app_share&xsec_token=CBXSVgz5TQqRl6YKsZDQal88NKHBoUdPe_UJze60xtLok=",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D66b5ffbc000000000503b689%26type%3Dnormal%26xsec_token%3DCBXSVgz5TQqRl6YKsZDQal88NKHBoUdPe_UJze60xtLok%3D",
+              "desc": "#即兴演讲  #穿搭  #通勤穿搭"
+            },
+            "enable_brand_lottery": false,
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 2068,
+            "images_list": [
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0048v1gm7kn231pv6vtrg?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=3ea68ceeeb34121b6ae6f989b3a774ae&t=6a089489&src=A",
+                "fileid": "1040g0083169dml1l1a0048v1gm7kn231pv6vtrg",
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0048v1gm7kn231pv6vtrg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=3ea68ceeeb34121b6ae6f989b3a774ae&t=6a089489&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0048v1gm7kn231pv6vtrg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=3ea68ceeeb34121b6ae6f989b3a774ae&t=6a089489&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0048v1gm7kn231pv6vtrg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=3ea68ceeeb34121b6ae6f989b3a774ae&t=6a089489&src=A"
+                },
+                "url": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0048v1gm7kn231pv6vtrg?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=3ea68ceeeb34121b6ae6f989b3a774ae&t=6a089489&src=A",
+                "latitude": 0,
+                "longitude": 0,
+                "width": 750,
+                "original": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0048v1gm7kn231pv6vtrg?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=3ea68ceeeb34121b6ae6f989b3a774ae&t=6a089489&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 939,
+                "trace_id": "1040g0083169dml1l1a0048v1gm7kn231pv6vtrg",
+                "text_intention": 0
+              },
+              {
+                "fileid": "1040g0083169dml1l1a0g48v1gm7kn231mumrdh0",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0g48v1gm7kn231mumrdh0?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=f160785017202ba5c21408b1d019ec5a&t=6a089489&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0g48v1gm7kn231mumrdh0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=f160785017202ba5c21408b1d019ec5a&t=6a089489&src=A",
+                "original": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0g48v1gm7kn231mumrdh0?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=f160785017202ba5c21408b1d019ec5a&t=6a089489&src=A",
+                "width": 1172,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0g48v1gm7kn231mumrdh0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=f160785017202ba5c21408b1d019ec5a&t=6a089489&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0g48v1gm7kn231mumrdh0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=f160785017202ba5c21408b1d019ec5a&t=6a089489&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a0g48v1gm7kn231mumrdh0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=f160785017202ba5c21408b1d019ec5a&t=6a089489&src=A"
+                },
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 1920,
+                "trace_id": "1040g0083169dml1l1a0g48v1gm7kn231mumrdh0",
+                "text_intention": 0
+              },
+              {
+                "fileid": "1040g0083169dml1l1a1048v1gm7kn231iucp2c0",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1048v1gm7kn231iucp2c0?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=7df66d5010ce2757caecec81ca3493cf&t=6a089489&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "width": 1575,
+                "url": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1048v1gm7kn231iucp2c0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7df66d5010ce2757caecec81ca3493cf&t=6a089489&src=A",
+                "latitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1048v1gm7kn231iucp2c0?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=7df66d5010ce2757caecec81ca3493cf&t=6a089489&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1048v1gm7kn231iucp2c0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7df66d5010ce2757caecec81ca3493cf&t=6a089489&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1048v1gm7kn231iucp2c0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7df66d5010ce2757caecec81ca3493cf&t=6a089489&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1048v1gm7kn231iucp2c0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=7df66d5010ce2757caecec81ca3493cf&t=6a089489&src=A"
+                },
+                "longitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 2517,
+                "text_intention": 0,
+                "trace_id": "1040g0083169dml1l1a1048v1gm7kn231iucp2c0"
+              },
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1g48v1gm7kn231f9ofkoo?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=32d9539d58e989eb18e035eb6d9c6241&t=6a089489&src=A",
+                "fileid": "1040g0083169dml1l1a1g48v1gm7kn231f9ofkoo",
+                "scale_to_large": 4,
+                "width": 2364,
+                "url": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1g48v1gm7kn231f9ofkoo?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=32d9539d58e989eb18e035eb6d9c6241&t=6a089489&src=A",
+                "original": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1g48v1gm7kn231f9ofkoo?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=32d9539d58e989eb18e035eb6d9c6241&t=6a089489&src=A",
+                "longitude": 0,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1g48v1gm7kn231f9ofkoo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=32d9539d58e989eb18e035eb6d9c6241&t=6a089489&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1g48v1gm7kn231f9ofkoo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=32d9539d58e989eb18e035eb6d9c6241&t=6a089489&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a1g48v1gm7kn231f9ofkoo?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=32d9539d58e989eb18e035eb6d9c6241&t=6a089489&src=A"
+                },
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 3243,
+                "trace_id": "1040g0083169dml1l1a1g48v1gm7kn231f9ofkoo",
+                "text_intention": 0
+              },
+              {
+                "fileid": "1040g0083169dml1l1a2048v1gm7kn231qr96f70",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2048v1gm7kn231qr96f70?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=792e4da350b4917bb8741291d5a676d7&t=6a089489&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "longitude": 0,
+                "width": 1965,
+                "original": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2048v1gm7kn231qr96f70?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=792e4da350b4917bb8741291d5a676d7&t=6a089489&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2048v1gm7kn231qr96f70?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=792e4da350b4917bb8741291d5a676d7&t=6a089489&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2048v1gm7kn231qr96f70?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=792e4da350b4917bb8741291d5a676d7&t=6a089489&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2048v1gm7kn231qr96f70?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=792e4da350b4917bb8741291d5a676d7&t=6a089489&src=A"
+                },
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2048v1gm7kn231qr96f70?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=792e4da350b4917bb8741291d5a676d7&t=6a089489&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 3024,
+                "text_intention": 0,
+                "trace_id": "1040g0083169dml1l1a2048v1gm7kn231qr96f70"
+              },
+              {
+                "index": 0,
+                "fileid": "1040g0083169dml1l1a2g48v1gm7kn231dbgvd2g",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2g48v1gm7kn231dbgvd2g?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=b347ef1a83f8cbeb0d096c8734c0c33b&t=6a089489&src=A",
+                "scale_to_large": 4,
+                "longitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2g48v1gm7kn231dbgvd2g?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=b347ef1a83f8cbeb0d096c8734c0c33b&t=6a089489&src=A",
+                "width": 2199,
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2g48v1gm7kn231dbgvd2g?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b347ef1a83f8cbeb0d096c8734c0c33b&t=6a089489&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2g48v1gm7kn231dbgvd2g?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b347ef1a83f8cbeb0d096c8734c0c33b&t=6a089489&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2g48v1gm7kn231dbgvd2g?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b347ef1a83f8cbeb0d096c8734c0c33b&t=6a089489&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a2g48v1gm7kn231dbgvd2g?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b347ef1a83f8cbeb0d096c8734c0c33b&t=6a089489&src=A"
+                },
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 2932,
+                "trace_id": "1040g0083169dml1l1a2g48v1gm7kn231dbgvd2g",
+                "text_intention": 0
+              },
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3048v1gm7kn2317iqg83g?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=0c659fa855eeaee795039ebbc73cd98c&t=6a089489&src=A",
+                "fileid": "1040g0083169dml1l1a3048v1gm7kn2317iqg83g",
+                "scale_to_large": 4,
+                "longitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3048v1gm7kn2317iqg83g?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=0c659fa855eeaee795039ebbc73cd98c&t=6a089489&src=A",
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3048v1gm7kn2317iqg83g?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=0c659fa855eeaee795039ebbc73cd98c&t=6a089489&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3048v1gm7kn2317iqg83g?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=0c659fa855eeaee795039ebbc73cd98c&t=6a089489&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3048v1gm7kn2317iqg83g?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=0c659fa855eeaee795039ebbc73cd98c&t=6a089489&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3048v1gm7kn2317iqg83g?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=0c659fa855eeaee795039ebbc73cd98c&t=6a089489&src=A"
+                },
+                "width": 3024,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 4032,
+                "trace_id": "1040g0083169dml1l1a3048v1gm7kn2317iqg83g",
+                "text_intention": 0
+              },
+              {
+                "index": 0,
+                "fileid": "1040g0083169dml1l1a3g48v1gm7kn231sjubegg",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3g48v1gm7kn231sjubegg?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=b59a6421bdd9ca231603b3a2e8e95e32&t=6a089489&src=A",
+                "scale_to_large": 4,
+                "width": 1440,
+                "url": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3g48v1gm7kn231sjubegg?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b59a6421bdd9ca231603b3a2e8e95e32&t=6a089489&src=A",
+                "original": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3g48v1gm7kn231sjubegg?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=b59a6421bdd9ca231603b3a2e8e95e32&t=6a089489&src=A",
+                "latitude": 0,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3g48v1gm7kn231sjubegg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b59a6421bdd9ca231603b3a2e8e95e32&t=6a089489&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3g48v1gm7kn231sjubegg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b59a6421bdd9ca231603b3a2e8e95e32&t=6a089489&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g0083169dml1l1a3g48v1gm7kn231sjubegg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b59a6421bdd9ca231603b3a2e8e95e32&t=6a089489&src=A"
+                },
+                "longitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 0,
+                  "size": 0,
+                  "height": 0
+                },
+                "height": 1920,
+                "trace_id": "1040g0083169dml1l1a3g48v1gm7kn231sjubegg",
+                "text_intention": 0
+              }
+            ],
+            "comment_prompt_config": {
+              "placeholder_long": "Share your thoughts...",
+              "placeholder_short": "Say something...",
+              "forbidden_cmt_type": 0
+            },
+            "may_have_red_packet": false,
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "view_count": 0,
+            "cooperate_binds": [],
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": true
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1723203516,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "is_star": false,
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false
+            },
+            "collected_count": 27693,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "share_title": "@小梁同学 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/66b5ffbc000000000503b689?xsec_source=app_share&xsec_token=CBXSVgz5TQqRl6YKsZDQal88NKHBoUdPe_UJze60xtLok=",
+              "thumb": "http://sns-img-bd.xhscdn.com/1040g0083169dml1l1a0048v1gm7kn231pv6vtrg?imageView2/2/w/540/format/jpg/q/75",
+              "title": "@小梁同学 发了一篇超赞的笔记，快点来看！",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=66b5ffbc000000000503b689&type=normal&xsec_token=CBXSVgz5TQqRl6YKsZDQal88NKHBoUdPe_UJze60xtLok=",
+              "desc": "#即兴演讲  #穿搭  #通勤穿搭"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"584e0f4b50c4b44adb988861\",\"author_name\":\"小梁同学\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "id": "584e0f4b50c4b44adb988861",
+          "red_official_verified": false,
+          "fstatus": "none",
+          "userid": "584e0f4b50c4b44adb988861",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/61e0d9ffd6785fba00816937.jpg?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "red_id": "Yyyy98418",
+          "nickname": "小梁同学",
+          "name": "小梁同学"
+        }
+      }
+    ],
+    "msg": "成功"
+  }
+}

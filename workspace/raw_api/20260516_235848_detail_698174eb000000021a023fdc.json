@@ -1,0 +1,507 @@
+{
+  "code": 200,
+  "request_id": "aa6dcc5b-a287-4ef5-8047-f2d3bb612761",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:58:43",
+  "time_stamp": 1778947123,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/aa6dcc5b-a287-4ef5-8047-f2d3bb612761?sign=b88b94419d8ae64f19f770527f01257a2ce0d1582f6605811de52fb1a4eb0913",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "698174eb000000021a023fdc"
+  },
+  "data": {
+    "code": 0,
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "Zhejiang",
+            "user": {
+              "red_official_verified": false,
+              "id": "60254f890000000001009a51",
+              "fstatus": "none",
+              "userid": "60254f890000000001009a51",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31eksjqnp0s005o159u4g96ih9cvna20?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "nickname": "Wave",
+              "red_id": "4279236261",
+              "name": "Wave"
+            },
+            "id": "698174eb000000001a02bae6",
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "last_update_time": 1770098723,
+            "has_related_goods": false,
+            "comments_count": 11,
+            "collected": false,
+            "liked": false,
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 86,
+            "head_tags": [],
+            "title": "第一段产品实习结束✨4条干货复盘新人速码住",
+            "share_info": {
+              "content": "📢转眼实习就到Last Day了，第一段产品实习结束啦！ 🔍回看这段实习，有做得不错的地方，也踩过一些坑，趁现在复盘一下",
+              "show_wechat_tag": false,
+              "title": "第一段产品实习结束✨4条干货复盘新人速码住",
+              "image": "http://sns-img-hw.xhscdn.com/1040g00831s43jonvm8105o159u4g96ih32mjqqg?imageView2/2/w/360/format/jpg/q/75",
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "guide_audited": true,
+              "wechat_share_desc": "📢转眼实习就到Last Day了，第一段产品实习结束啦！ 🔍回看这段实习，有做得不错的地方，也踩过一些坑，趁现在复盘一下",
+              "link": "https://www.xiaohongshu.com/discovery/item/698174eb000000001a02bae6?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBv0zT-sDEtDELcZzQ0fsKOU7tw8lEF4rQk58UyPm85qw=&author_share=1",
+              "is_star": false
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "id": "5fd62942000000000100036d",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/immersive?id=5fd6294229953b00018acffa&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "互联网大厂"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "62133658000000000101d093",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=6213365842ea890001f90745&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "产品经理"
+              },
+              {
+                "record_count": 0,
+                "id": "5cfa9524000000000f036d68",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5cfa9524de05f100019a05d3&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "实习日记",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5c08e5789346b10001dcd676",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c08e578307fb40001aa1480&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "current_score": 0,
+                "name": "实习"
+              },
+              {
+                "record_count": 0,
+                "id": "5c4344d9000000000f03c09b",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c4344d9973c080001b362da&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "离职",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5632220cf5a2630ca6e33989",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5bf41eb414ef4800011ab004&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "name": "干货分享",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "5f4744380000000001008cb5",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5f4744387e17b60001aa86cf&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "产品实习"
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "60e4109300000000010019bc",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=60e41093204cb30001d6bdb7&page_source=note_feed.click_new_big",
+                "record_unit": "",
+                "type": "topic",
+                "name": "lastday",
+                "current_score": 0
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "5fd62942000000000100036d",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/5fd6294229953b00018acffa?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "互联网大厂"
+              }
+            ],
+            "desc": "📢转眼实习就到Last Day了，第一段产品实习结束啦！\n\t\n🔍回看这段实习，有做得不错的地方，也踩过一些坑，趁现在复盘一下，总结经验教训，下一段实习做得更好！\n\t\n如果你也在准备做产品，希望这篇笔记能对你有帮助🙌🏻\n\t\n1️⃣ 趁实习尽量多尝试不同类型的工作\n虽说产品的核心工作是需求迭代，但我强推在实习阶段多尝试不同类型的工作！\n因为在正式工作时肯定会时不时来些没做过的活，不可能永远都在熟悉的领域，所以灰常有必要掌握多方面技能，以及快速学习新事物的能力💪🏻\n这段实习里，除了日常迭代，我还做过用户调研问卷设计&分析，洗数据建模搭看板，单看每件事都不算复杂，但组合在一起，对产品理解和能力提升很有用！\n👉🏻实习阶段不用局限，能接触的都试试\n\t\n2️⃣ 看起来dirty的活，或许最补产品基本功\n我一开始还觉得写产品使用手册、更新日志的活蛮dirty，但做下来才发现真香\n因为我做的是数据平台产品，技术复杂度蛮高，写手册反倒让我快速建立对整个平台功能和逻辑的认知，还能从用户视角挖痛点转需求；写日志则让我清楚感知每一轮迭代“新上线了什么，改了什么”\n👉🏻别轻视基础工作，它们或许是理解产品高效路径\n\t\n3️⃣ 产品不是接了任务就埋头干，定期汇报很重要\n这是最容易踩的坑！接任务千万别只埋头库库干，要定期主动向mentor同步进度，这样做有三个好处👇🏻\n▫️确保全程方向不跑偏，避免白忙活\n▫️及时暴露卡点，让mentor协调资源，不一个人硬扛\n▫️让整体节奏可控，风险可预期\n👉🏻产品的价值不是干完，而是把事情稳妥地推进\n\t\n4️⃣ 技术不懂没关系，但别假装懂\n作为产品，技术不是强项很正常\n我在搭看板时，很多字段一开始都看不懂，如果只自己埋头查，会非常慢，容易拖进度\n后来更高效的方式是涉及技术问题就主动拉研发沟通，快速对齐、快速解决。\n👉🏻产品不需要精通技术，但要知道什么时候该自己想，什么时候该找对的人一起解决\n\t\n🏃🏻‍♂️这段实习真的解锁超多新技能，从产品小白一路打怪升级，慢慢成为一个更成熟的产品人了✨\n\t\n马上就要开始下一段实习了，希望能在最后一段日常实习中，进化成能达到正式工水准的pm吧！⛽️\n\t\n#互联网大厂[话题]# #产品经理[话题]# #实习日记[话题]# #实习[话题]# #离职[话题]# #干货分享[话题]# #产品实习[话题]# #lastday[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "use_water_color": false,
+            "api_upgrade": -1,
+            "in_censor": false,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%22698174eb000000001a02bae6%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "mini_program_info": {
+              "title": "@Wave 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/698174eb000000001a02bae6?xsec_source=app_share&xsec_token=CBv0zT-sDEtDELcZzQ0fsKOU7tw8lEF4rQk58UyPm85qw=",
+              "thumb": "http://sns-img-hw.xhscdn.com/1040g00831s43jonvm8105o159u4g96ih32mjqqg?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@Wave 发了一篇笔记，快点来看吧！",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D698174eb000000001a02bae6%26type%3Dnormal%26xsec_token%3DCBv0zT-sDEtDELcZzQ0fsKOU7tw8lEF4rQk58UyPm85qw%3D",
+              "desc": "📢转眼实习就到Last Day了，第一段产品实习结束啦！ 🔍回看这段实习，有做得不错的地方，也踩过一些坑，趁现在复盘一下"
+            },
+            "enable_brand_lottery": false,
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 5,
+            "images_list": [
+              {
+                "index": 0,
+                "fileid": "1040g00831s43jonvm8105o159u4g96ih32mjqqg",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8105o159u4g96ih32mjqqg?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=171e21b9a9144fbb68785749af7fede2&t=6a089433&src=A",
+                "scale_to_large": 4,
+                "longitude": 0,
+                "width": 1920,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8105o159u4g96ih32mjqqg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=171e21b9a9144fbb68785749af7fede2&t=6a089433&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8105o159u4g96ih32mjqqg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=171e21b9a9144fbb68785749af7fede2&t=6a089433&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8105o159u4g96ih32mjqqg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=171e21b9a9144fbb68785749af7fede2&t=6a089433&src=A"
+                },
+                "original": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8105o159u4g96ih32mjqqg?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=171e21b9a9144fbb68785749af7fede2&t=6a089433&src=A",
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8105o159u4g96ih32mjqqg?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=171e21b9a9144fbb68785749af7fede2&t=6a089433&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1920,
+                  "size": 0,
+                  "height": 2560
+                },
+                "height": 2560,
+                "trace_id": "1040g00831s43jonvm8105o159u4g96ih32mjqqg",
+                "text_intention": 0
+              },
+              {
+                "fileid": "1040g00831s43jonvm81g5o159u4g96ihg6k0fi8",
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm81g5o159u4g96ihg6k0fi8?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=9572c286f48d2b097b3ec2b91524d784&t=6a089433&src=A",
+                "scale_to_large": 4,
+                "width": 1920,
+                "original": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm81g5o159u4g96ihg6k0fi8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=9572c286f48d2b097b3ec2b91524d784&t=6a089433&src=A",
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm81g5o159u4g96ihg6k0fi8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=9572c286f48d2b097b3ec2b91524d784&t=6a089433&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm81g5o159u4g96ihg6k0fi8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=9572c286f48d2b097b3ec2b91524d784&t=6a089433&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm81g5o159u4g96ihg6k0fi8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=9572c286f48d2b097b3ec2b91524d784&t=6a089433&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm81g5o159u4g96ihg6k0fi8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=9572c286f48d2b097b3ec2b91524d784&t=6a089433&src=A"
+                },
+                "longitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1920,
+                  "size": 0,
+                  "height": 2560
+                },
+                "height": 2560,
+                "trace_id": "1040g00831s43jonvm81g5o159u4g96ihg6k0fi8",
+                "text_intention": 0
+              },
+              {
+                "fileid": "1040g00831s47292t5k005o159u4g96ihf7gf1jg",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g00831s47292t5k005o159u4g96ihf7gf1jg?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=09fd73e250ee0d22e7edb6a85de97c6e&t=6a089433&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "width": 1683,
+                "original": "https://sns-i11.rednotecdn.com/1040g00831s47292t5k005o159u4g96ihf7gf1jg?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=09fd73e250ee0d22e7edb6a85de97c6e&t=6a089433&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g00831s47292t5k005o159u4g96ihf7gf1jg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=09fd73e250ee0d22e7edb6a85de97c6e&t=6a089433&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g00831s47292t5k005o159u4g96ihf7gf1jg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=09fd73e250ee0d22e7edb6a85de97c6e&t=6a089433&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g00831s47292t5k005o159u4g96ihf7gf1jg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=09fd73e250ee0d22e7edb6a85de97c6e&t=6a089433&src=A"
+                },
+                "url": "https://sns-i11.rednotecdn.com/1040g00831s47292t5k005o159u4g96ihf7gf1jg?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=09fd73e250ee0d22e7edb6a85de97c6e&t=6a089433&src=A",
+                "longitude": 0,
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1683,
+                  "size": 0,
+                  "height": 2243
+                },
+                "height": 2243,
+                "text_intention": 0,
+                "trace_id": "1040g00831s47292t5k005o159u4g96ihf7gf1jg"
+              },
+              {
+                "fileid": "1040g00831s43jonvm8205o159u4g96ihtkeosl8",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8205o159u4g96ihtkeosl8?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=ba019b0f31ab71adb28dce95eda07145&t=6a089433&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "width": 1919,
+                "original": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8205o159u4g96ihtkeosl8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=ba019b0f31ab71adb28dce95eda07145&t=6a089433&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8205o159u4g96ihtkeosl8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=ba019b0f31ab71adb28dce95eda07145&t=6a089433&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8205o159u4g96ihtkeosl8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=ba019b0f31ab71adb28dce95eda07145&t=6a089433&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8205o159u4g96ihtkeosl8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=ba019b0f31ab71adb28dce95eda07145&t=6a089433&src=A"
+                },
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm8205o159u4g96ihtkeosl8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=ba019b0f31ab71adb28dce95eda07145&t=6a089433&src=A",
+                "latitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1919,
+                  "size": 0,
+                  "height": 2560
+                },
+                "height": 2560,
+                "trace_id": "1040g00831s43jonvm8205o159u4g96ihtkeosl8",
+                "text_intention": 2,
+                "file_id_trans": "cloudrender-translate/3b4ad07e-c6a5-4446-96fa-ef13e0118652.jpg",
+                "url_trans": "https://sns-translate-i10.rednotecdn.com/cloudrender-translate/3b4ad07e-c6a5-4446-96fa-ef13e0118652.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=a9faf9427a312fe78aaf6c66820ca876&t=6a089433&src=A"
+              },
+              {
+                "fileid": "1040g00831s43jonvm80g5o159u4g96ih3a8me9g",
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm80g5o159u4g96ih3a8me9g?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=b81c37971e84397b7be7cf254a860501&t=6a089433&src=A",
+                "scale_to_large": 4,
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm80g5o159u4g96ih3a8me9g?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b81c37971e84397b7be7cf254a860501&t=6a089433&src=A",
+                "original": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm80g5o159u4g96ih3a8me9g?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=b81c37971e84397b7be7cf254a860501&t=6a089433&src=A",
+                "latitude": 0,
+                "width": 1920,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm80g5o159u4g96ih3a8me9g?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b81c37971e84397b7be7cf254a860501&t=6a089433&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm80g5o159u4g96ih3a8me9g?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b81c37971e84397b7be7cf254a860501&t=6a089433&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g00831s43jonvm80g5o159u4g96ih3a8me9g?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=b81c37971e84397b7be7cf254a860501&t=6a089433&src=A"
+                },
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1920,
+                  "size": 0,
+                  "height": 2560
+                },
+                "height": 2560,
+                "text_intention": 2,
+                "trace_id": "1040g00831s43jonvm80g5o159u4g96ih3a8me9g",
+                "file_id_trans": "cloudrender-translate/e4a51793-e2ad-4c88-a6e1-728d7cb3f309.jpg",
+                "url_trans": "https://sns-translate-i10.rednotecdn.com/cloudrender-translate/e4a51793-e2ad-4c88-a6e1-728d7cb3f309.jpg?imageView2/2/w/1440/format/webp&ap=25&sc=DETAIL&sign=3eadb1e61ba36b2dac636c50fcc47023&t=6a089433&src=A"
+              }
+            ],
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Share your thoughts...",
+              "forbidden_cmt_type": 0
+            },
+            "may_have_red_packet": false,
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "cooperate_binds": [],
+            "view_count": 0,
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": true
+              },
+              {
+                "enable": true,
+                "type": "quote_note"
+              }
+            ],
+            "time": 1770091755,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false,
+              "is_star": false
+            },
+            "collected_count": 28,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "share_title": "@Wave 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/698174eb000000001a02bae6?xsec_source=app_share&xsec_token=CBv0zT-sDEtDELcZzQ0fsKOU7tw8lEF4rQk58UyPm85qw=",
+              "thumb": "http://sns-img-hw.xhscdn.com/1040g00831s43jonvm8105o159u4g96ih32mjqqg?imageView2/2/w/540/format/jpg/q/75",
+              "title": "@Wave 发了一篇超赞的笔记，快点来看！",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=698174eb000000001a02bae6&type=normal&xsec_token=CBv0zT-sDEtDELcZzQ0fsKOU7tw8lEF4rQk58UyPm85qw=",
+              "desc": "📢转眼实习就到Last Day了，第一段产品实习结束啦！ 🔍回看这段实习，有做得不错的地方，也踩过一些坑，趁现在复盘一下"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"60254f890000000001009a51\",\"author_name\":\"Wave\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "id": "60254f890000000001009a51",
+          "red_official_verified": false,
+          "fstatus": "none",
+          "userid": "60254f890000000001009a51",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31eksjqnp0s005o159u4g96ih9cvna20?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "red_id": "4279236261",
+          "nickname": "Wave",
+          "name": "Wave"
+        }
+      }
+    ],
+    "msg": "成功"
+  }
+}

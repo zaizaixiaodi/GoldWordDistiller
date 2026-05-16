@@ -1,0 +1,116 @@
+{
+  "_batch_label": "huibao_01",
+  "_batch_meta": {
+    "keyword": "汇报",
+    "domain": "职场",
+    "post_count": 4,
+    "record_ids": ["recvjNBgsPfaMd", "recvjNBgsPvxdf", "recvjNBgsPWS1u", "recvjNBgsPfVGF"],
+    "distilled_at": "2026-05-17",
+    "distilled_by": "Opus 4.7"
+  },
+  "gold_words": [
+    {
+      "word": "向上管理",
+      "aliases": "向上管理（1）",
+      "category": "picture",
+      "source_field": "title",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjNBgsPfaMd"],
+      "vibe_reason": "职场学概念已成网感词，有画面感、易识别",
+      "domain": "职场"
+    },
+    {
+      "word": "微习惯",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "cover",
+      "vibe_score": 6,
+      "frequency": 1,
+      "related_post_ids": ["recvjNBgsPfaMd"],
+      "vibe_reason": "概念化的小颗粒动作词，自我提升赛道流行术语",
+      "domain": "职场"
+    },
+    {
+      "word": "亲测有效",
+      "aliases": "实操版",
+      "category": "feel",
+      "source_field": "cover",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjNBgsPfaMd"],
+      "vibe_reason": "典型 UGC 背书话术，传递真实感",
+      "domain": "职场"
+    },
+    {
+      "word": "让领导知道",
+      "aliases": "让领导觉得",
+      "category": "pain",
+      "source_field": "both",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjNBgsPfaMd"],
+      "vibe_reason": "典型职场欲望——被领导看见，搜索意图非常明确",
+      "domain": "职场"
+    },
+    {
+      "word": "听下属汇报",
+      "aliases": "我在听什么",
+      "category": "twist",
+      "source_field": "both",
+      "vibe_score": 7,
+      "frequency": 1,
+      "related_post_ids": ["recvjNBgsPfVGF"],
+      "vibe_reason": "视角反转：从'怎么汇报'变成'听汇报时关心什么'，反预期",
+      "domain": "职场"
+    },
+    {
+      "word": "年终汇报",
+      "aliases": "年终述职",
+      "category": "picture",
+      "source_field": "both",
+      "vibe_score": 5,
+      "frequency": 1,
+      "related_post_ids": ["recvjNBgsPfVGF"],
+      "vibe_reason": "具象职场场景词，自带时间锚和场景锚",
+      "domain": "职场"
+    },
+    {
+      "word": "梓茉备忘录",
+      "aliases": "",
+      "category": "picture",
+      "source_field": "cover",
+      "vibe_score": 3,
+      "frequency": 1,
+      "related_post_ids": ["recvjNBgsPfVGF"],
+      "vibe_reason": "个人 IP + 备忘录格式，有辨识度但属个人 IP（PRD v2 §11 第9类待回测样本）",
+      "domain": "职场"
+    }
+  ],
+  "patterns": [
+    {
+      "skeleton": "让 A 觉得你 B 的 N 个 C",
+      "category": "承诺",
+      "examples": ["让领导觉得你干了很多活的微习惯"],
+      "from_post_ids": ["recvjNBgsPfaMd"]
+    },
+    {
+      "skeleton": "当我 A 时，我在 B",
+      "category": "悬念",
+      "examples": ["当我听下属年终汇报时，我在听什么？"],
+      "from_post_ids": ["recvjNBgsPfVGF"]
+    }
+  ],
+  "_skipped_posts": [
+    {
+      "record_id": "recvjNBgsPvxdf",
+      "title": "宠物托运中途换狗汇报进度",
+      "reason": "事件性爆款（具体的换狗事件），不构成可复用的'汇报'金词。视角与配置词'汇报'有歧义（汇报进度 vs 工作汇报）"
+    },
+    {
+      "record_id": "recvjNBgsPWS1u",
+      "title": "思想汇报",
+      "reason": "封面是党课心得正文，'思想汇报'本身仅是文体名，无爆款话术金词可提"
+    }
+  ]
+}

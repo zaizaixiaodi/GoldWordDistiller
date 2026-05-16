@@ -64,21 +64,34 @@ def _unwrap_scalar_list(val: Any) -> Any:
     return val
 
 
-def _list_records(table_id: str, limit: int = 500, page_size: int = 100) -> list[dict]:
+def _list_records(
+    table_id: str, limit: int | None = None, page_size: int = 100
+) -> list[dict]:
     """读取记录，自动分页直到取完或达到 limit。
 
     Args:
-        limit: 最多读取的条数（默认 500，向后兼容）。要取所有数据传一个足够大的值。
-        page_size: 单次请求的页大小，飞书最大支持 500，默认 100 保守。
+        limit: 最多读取的条数。**默认 None 表示拉全量**（直到 has_more=False）。
+               传 int 时仍按上限截断。
+        page_size: 单次请求的页大小，飞书最大 500，默认 100 保守。
 
     Returns:
         [{record_id, fields: {name: value}}]，single-select 字段已在源头 unwrap 为标量。
+
+    Note:
+        历史上本函数默认 limit=500，多个调用点显式传 500。随着飞书数据量超 500，
+        多处出现"新数据被截尾"的 bug（DEVLOG 2026-05-17 坑 #5）。现统一改默认拉全量。
     """
     records: list[dict] = []
     offset = 0
-    while len(records) < limit:
-        remaining = limit - len(records)
-        req_size = min(page_size, remaining)
+    while True:
+        if limit is not None:
+            remaining = limit - len(records)
+            if remaining <= 0:
+                break
+            req_size = min(page_size, remaining)
+        else:
+            req_size = page_size
+
         cmd = (
             f"lark-cli base +record-list "
             f"--base-token {FEISHU_BITABLE_APP_TOKEN} "
@@ -136,14 +149,24 @@ def batch_insert_posts(records: list[dict]) -> list[str]:
     return [r["record_id"] for r in resp.get("data", {}).get("records", [])]
 
 
-def query_posts(limit: int = 100) -> list[dict]:
-    """查询热贴库。"""
+def query_posts(limit: int | None = None) -> list[dict]:
+    """查询热贴库。默认拉全量（见 _list_records）。"""
     return _list_records(FEISHU_HOTPOSTS_TABLE_ID, limit=limit)
 
 
 def update_post(record_id: str, fields: dict) -> None:
     """更新热贴库一条记录。"""
     _api("PUT", _base_path(FEISHU_HOTPOSTS_TABLE_ID, f"/records/{record_id}"), {"fields": fields})
+
+
+def delete_post(record_id: str) -> None:
+    """删除热贴库一条记录。"""
+    _api("DELETE", _base_path(FEISHU_HOTPOSTS_TABLE_ID, f"/records/{record_id}"))
+
+
+def update_config(record_id: str, fields: dict) -> None:
+    """更新配置表一条记录。"""
+    _api("PUT", _base_path(FEISHU_CONFIG_TABLE_ID, f"/records/{record_id}"), {"fields": fields})
 
 
 # ── 金词库 ─────────────────────────────────────────────────────────────
@@ -172,7 +195,7 @@ def update_word(record_id: str, fields: dict) -> None:
     _api("PUT", _base_path(FEISHU_GOLDWORDS_TABLE_ID, f"/records/{record_id}"), {"fields": fields})
 
 
-def query_words(limit: int = 500) -> list[dict]:
+def query_words(limit: int | None = None) -> list[dict]:
     """查询金词库。"""
     return _list_records(FEISHU_GOLDWORDS_TABLE_ID, limit=limit)
 
@@ -193,7 +216,7 @@ def update_pattern(record_id: str, fields: dict) -> None:
     _api("PUT", _base_path(FEISHU_PATTERNS_TABLE_ID, f"/records/{record_id}"), {"fields": fields})
 
 
-def query_patterns(limit: int = 500) -> list[dict]:
+def query_patterns(limit: int | None = None) -> list[dict]:
     """查询句式库。"""
     return _list_records(FEISHU_PATTERNS_TABLE_ID, limit=limit)
 
@@ -201,8 +224,8 @@ def query_patterns(limit: int = 500) -> list[dict]:
 # ── 配置表 ─────────────────────────────────────────────────────────────
 
 def query_config() -> list[dict]:
-    """读取配置表。"""
-    return _list_records(FEISHU_CONFIG_TABLE_ID, limit=100)
+    """读取配置表。默认拉全量。"""
+    return _list_records(FEISHU_CONFIG_TABLE_ID)
 
 
 def insert_config(domain_word: str, search_keyword: str, is_active: bool = True,
@@ -232,8 +255,23 @@ _COVER_DIR = str(Path(tempfile.gettempdir()) / "feishu_covers")
 Path(_COVER_DIR).mkdir(exist_ok=True)
 
 
-def download_cover(url: str, record_id: str) -> str | None:
-    """下载封面图到临时目录，返回本地路径。失败返回 None。"""
+_COVER_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Referer": "https://www.xiaohongshu.com/",
+    "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+}
+
+
+def download_cover(url: str, record_id: str, retries: int = 3) -> str | None:
+    """下载封面图到临时目录，返回本地路径。失败返回 None。
+
+    小红书 CDN 对无 UA / Referer 的请求会重置连接，需带浏览器 UA。
+    重试 retries 次（默认 3），每次失败间隔 2/4/6 秒。
+    """
+    import time as _time
     import requests as _req
 
     # 推断扩展名
@@ -247,17 +285,20 @@ def download_cover(url: str, record_id: str) -> str | None:
     if filepath.exists():
         return str(filepath)  # 已下载，跳过
 
-    try:
-        resp = _req.get(url, timeout=30, stream=True)
-        if resp.status_code == 200:
-            filepath.write_bytes(resp.content)
-            return str(filepath)
-        else:
-            print(f"    下载封面失败 HTTP {resp.status_code}: {url[:80]}")
-            return None
-    except Exception as e:
-        print(f"    下载封面异常: {e}")
-        return None
+    last_err = None
+    for attempt in range(1, retries + 1):
+        try:
+            resp = _req.get(url, headers=_COVER_HEADERS, timeout=30, stream=True)
+            if resp.status_code == 200:
+                filepath.write_bytes(resp.content)
+                return str(filepath)
+            last_err = f"HTTP {resp.status_code}"
+        except Exception as e:
+            last_err = str(e)
+        if attempt < retries:
+            _time.sleep(attempt * 2)
+    print(f"    下载封面失败（{retries} 次重试后）: {last_err} | url: {url[:80]}")
+    return None
 
 
 def upload_cover(filepath: str) -> str | None:

@@ -1,0 +1,481 @@
+{
+  "code": 200,
+  "request_id": "0d0ce977-af80-457b-abb4-bb29ce9618f0",
+  "message": "Request successful. This request will incur a charge.",
+  "message_zh": "请求成功，本次请求将被计费。",
+  "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+  "time": "2026-05-16 08:51:29",
+  "time_stamp": 1778946689,
+  "time_zone": "America/Los_Angeles",
+  "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/get_image_note_detail_api_v1_xiaohongshu_app_v2_get_image_note_detail_get",
+  "cache_message": "This request will be cached. You can access the cached result directly using the URL below, valid for 24 hours. Accessing the cache will not incur additional charges.",
+  "cache_message_zh": "本次请求将被缓存，你可以使用下面的 URL 直接访问缓存结果，有效期为 24 小时，访问缓存不会产生额外费用。",
+  "cache_url": "https://cache.tikhub.io/api/v1/cache/public/0d0ce977-af80-457b-abb4-bb29ce9618f0?sign=9b68f73f52d6a6b00e5b3965fc25ebf545b19f4358dd531c089b75dfee600c1e",
+  "router": "/api/v1/xiaohongshu/app_v2/get_image_note_detail",
+  "params": {
+    "note_id": "69e60846000000002202592b"
+  },
+  "data": {
+    "code": 0,
+    "success": true,
+    "data": [
+      {
+        "note_list": [
+          {
+            "ip_location": "Shanghai",
+            "user": {
+              "red_official_verified": false,
+              "id": "5f314572000000000101f262",
+              "fstatus": "none",
+              "userid": "5f314572000000000101f262",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "level": {
+                "image": ""
+              },
+              "image": "https://sns-avatar-qc.xhscdn.com/avatar/63e9ad07e493503f5c4486dc.jpg?imageView2/2/w/120/format/jpg",
+              "followed": false,
+              "red_id": "329634023",
+              "nickname": "THANK",
+              "name": "THANK"
+            },
+            "feedback_info": {
+              "dislike_status": 0
+            },
+            "id": "69e60846000000002202592b",
+            "last_update_time": 1777434081,
+            "has_related_goods": false,
+            "comments_count": 348,
+            "collected": false,
+            "liked": false,
+            "foot_tags": [],
+            "share_code_flag": 0,
+            "biz_map": {},
+            "liked_count": 9146,
+            "head_tags": [],
+            "title": "你不能只在自己表现好的时候才喜欢自己",
+            "share_info": {
+              "content": "组会汇报被导师表扬了，阳光明媚，自己真棒 实验数据崩了，论文被拒稿，仿真跑不出来，觉得自己一无是处，是个废物 你对自己的",
+              "show_wechat_tag": false,
+              "title": "你不能只在自己表现好的时候才喜欢自己",
+              "image": "http://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8?imageView2/2/w/360/format/jpg/q/75",
+              "function_entries": [
+                {
+                  "type": "generate_image"
+                },
+                {
+                  "type": "quote_note"
+                },
+                {
+                  "type": "copy_link"
+                },
+                {
+                  "type": "heat_for_author"
+                },
+                {
+                  "type": "dislike"
+                },
+                {
+                  "type": "report"
+                }
+              ],
+              "link": "https://www.xiaohongshu.com/discovery/item/69e60846000000002202592b?app_platform=ios&app_version=9.28.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBetISjGzoukIAxS8F5BDT2uu9mLLYx3abevhkw10lUzg=&author_share=1",
+              "wechat_share_desc": "@THANK's note\n1702 Shares",
+              "block_private_msg": false,
+              "is_star": false,
+              "guide_audited": true
+            },
+            "sticky": false,
+            "seeded_count": 0,
+            "need_next_step": false,
+            "content_trans_info": {
+              "strategy": 9
+            },
+            "hash_tag": [
+              {
+                "record_count": 0,
+                "id": "5c76513c000000000d0098a8",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c76513caa0120000100ee78&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "读研",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "id": "5be635a9d111a50001a4436e",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5be635a9c342190001d6d4ac&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "科研",
+                "current_score": 0
+              },
+              {
+                "record_count": 0,
+                "tag_hint": "",
+                "id": "5be45f267fce360001a1ccfa",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5be45f26f7766400013fa593&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "current_score": 0,
+                "name": "研究生"
+              },
+              {
+                "record_count": 0,
+                "id": "5c03148e6b4d3800013027ec",
+                "tag_hint": "",
+                "bizId": "",
+                "record_emoji": "",
+                "link": "xhsdiscover://rn/sns-discover/topic/normal?id=5c03148e67ccd700015eeba5&page_source=note_feed.click_new_big",
+                "type": "topic",
+                "record_unit": "",
+                "name": "研究生生活",
+                "current_score": 0
+              }
+            ],
+            "text_language_code": "zh-Hans",
+            "type": "normal",
+            "topics": [
+              {
+                "style": 0,
+                "id": "5c76513c000000000d0098a8",
+                "activity_online": false,
+                "image": "http://ci.xiaohongshu.com/fd75707a-37f8-45ad-b7a7-0feaf36e9cad@r_120w_120h.jpg",
+                "link": "xhsdiscover://topic/v2/5c76513caa0120000100ee78?page_source=note_feed.click_new_big",
+                "business_type": 0,
+                "discuss_num": 0,
+                "name": "读研"
+              }
+            ],
+            "desc": "组会汇报被导师表扬了，阳光明媚，自己真棒\n实验数据崩了，论文被拒稿，仿真跑不出来，觉得自己一无是处，是个废物\n你对自己的喜欢程度的弹性系数，比实验误差还大\n.\n仔细回忆一下\n你最爱自己的时候，是不是都是在自己表现好的时候\n只有当我发了论文、做出了数据、得到了夸奖时，我才配得上拥有好心情和平和的心态\n而一旦这种“蜜月期”过去之后，你好像又变回了那个不够好的自己\n.\n于是你开始自我审视\n今天效率好像不高，不行，我怎么又这样\n文献看了一下午还没看懂，我太差了\n师兄又发了新论文，我又被落下了\n又开始自我厌恶\n.\n更可怕的是，你的快乐阈值好像变得越来越高\n你对“好”的定义，越来越苛刻\n以前觉得数据跑出显著性就谢天谢地，现在觉得p值不够漂亮都不好意思截图\n以前觉得导师说一句“不错”就是肯定，现在觉得他没说“非常好”就是在委婉批评\n.\n你在不断丈量自己配不配被喜欢\n你逐渐忘记了那些习以为常，却弥足珍贵的东西\n.\n你是个还算善良的人\n看到路边的小猫会停下来，蹲下去喵两声\n师弟师妹问你问题，嘴上说着“这个很简单你自己查”，最后还是把文献链接发过去\n.\n你有点共情能力\n刷到别人毕业致谢里写爷爷奶奶的那段，你会鼻子一酸，想起家人\n组里谁今天话特别少，你是第一个注意到的\n师妹被导师喷了，你会替她难受\n.\n你对世界依然保持好奇\n虽然文献看得头疼，但偶然刷到一个有意思的科普视频你还是会点进去看完\n虽然实验做不出来\n但看到别人发了一篇漂亮的论文，你会说好酷\n你偶尔抬头看云，觉得今天的云形状很怪，然后拍下来发给朋友\n.\n你今天依然起床，洗了脸，穿上干净的衣服去上工\n在你觉得自己“表现很差”的日子里，你一件事情都没落下\n你没有因为觉得自己是个废物就开摆\n你没有因为被拒稿就砸掉电脑\n你还没有放弃\n你嘴上说着“我完蛋了”“我不想读了”，但你还在改论文\n你的眼睛还盯着屏幕上的代码\n你的脑子还在想到底是哪里出了问题\n.\n你忘了自己是个还算善良的人，忘了自己有点共情能力，忘了自己对世界还有好奇，忘了自己身上那些东西一直都在运转，忘了自己还没有放弃\n.\n你把这些都忘了\n因为在你的评价体系里，这些都不算分\n你对自己太刻薄太坏了\n那些你习以为常的东西，从来不是理所当然的\n你不需要只在领奖台上才拥抱自己\n你摔进泥里的时候，更需要那个拥抱\n#读研[话题]# #科研[话题]# #研究生[话题]# #研究生生活[话题]#",
+            "countdown": 0,
+            "ats": [],
+            "widgets_groups": [
+              [
+                "guos_test",
+                "note_next_step",
+                "second_jump_bar",
+                "cooperate_binds",
+                "note_collection",
+                "rec_next_infos",
+                "image_stickers",
+                "image_filters",
+                "product_review",
+                "related_search",
+                "cooperate_comment_component",
+                "image_goods_cards",
+                "ads_goods_cards",
+                "ads_comment_component",
+                "goods_card_v2",
+                "image_template",
+                "buyable_goods_card_v2",
+                "ads_engage_bar",
+                "challenge_card",
+                "cooperate_engage_bar",
+                "guide_post",
+                "pgy_comment_component",
+                "pgy_engage_bar",
+                "bar_below_image",
+                "aigc_collection",
+                "co_produce",
+                "widgets_ndb",
+                "next_note_guide",
+                "pgy_bbc_exp",
+                "async_group",
+                "super_activity",
+                "widgets_enhance",
+                "music_player",
+                "soundtrack_player"
+              ],
+              [
+                "guos_test",
+                "vote_stickers",
+                "bullet_comment_lead",
+                "note_search_box",
+                "interact_pk",
+                "interact_vote",
+                "guide_heuristic",
+                "share_to_msg",
+                "follow_guide",
+                "note_share_prompt_v1",
+                "sync_group",
+                "group_share",
+                "share_guide_bubble",
+                "widgets_share",
+                "guide_navigator"
+              ]
+            ],
+            "enable_brand_lottery": false,
+            "api_upgrade": -1,
+            "use_water_color": false,
+            "mini_program_info": {
+              "share_title": "@THANK 发了一篇笔记，快点来看吧！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/69e60846000000002202592b?xsec_source=app_share&xsec_token=CBetISjGzoukIAxS8F5BDT2uu9mLLYx3abevhkw10lUzg=",
+              "thumb": "http://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8?imageView2/2/w/540/format/jpg/q/75",
+              "title": "@THANK 发了一篇笔记，快点来看吧！",
+              "user_name": "gh_52be748ce5b7",
+              "path": "pages/main/home/index?redirect_path=%2Fpages%2Fmain%2Fnote%2Findex%3Fxsec_source%3Dapp_share%26id%3D69e60846000000002202592b%26type%3Dnormal%26xsec_token%3DCBetISjGzoukIAxS8F5BDT2uu9mLLYx3abevhkw10lUzg%3D",
+              "desc": "组会汇报被导师表扬了，阳光明媚，自己真棒 实验数据崩了，论文被拒稿，仿真跑不出来，觉得自己一无是处，是个废物 你对自己的"
+            },
+            "in_censor": false,
+            "co_produce_link": "xhsdiscover://post_new_note?source=%7B%22type%22%3A%22together_post%22%2C%22extraInfo%22%3A%7B%22subType%22%3A%22together_post_halfspace%22%2C%22track_id%22%3A%2269e60846000000002202592b%22%7D%7D&page=%7B%22page_type%22%3A%22image_co_produce_album%22%7D",
+            "need_product_review": false,
+            "media_save_config": {
+              "disable_save": false,
+              "disable_watermark": false,
+              "disable_weibo_cover": false
+            },
+            "enable_co_produce": true,
+            "red_envelope_note": false,
+            "shared_count": 1702,
+            "images_list": [
+              {
+                "fileid": "note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8",
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=8c35516975b2f2800ac1c7abe2b2defb&t=6a089281&src=A",
+                "scale_to_large": 4,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=8c35516975b2f2800ac1c7abe2b2defb&t=6a089281&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=8c35516975b2f2800ac1c7abe2b2defb&t=6a089281&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=8c35516975b2f2800ac1c7abe2b2defb&t=6a089281&src=A"
+                },
+                "longitude": 0,
+                "width": 4284,
+                "original": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=8c35516975b2f2800ac1c7abe2b2defb&t=6a089281&src=A",
+                "latitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=8c35516975b2f2800ac1c7abe2b2defb&t=6a089281&src=A",
+                "need_load_original_image": true,
+                "url_8k": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=PAINTER&sign=8c35516975b2f2800ac1c7abe2b2defb&t=6a089281&src=A",
+                "origin_img": {
+                  "width": 4284,
+                  "size": 0,
+                  "height": 5712
+                },
+                "height": 5712,
+                "text_intention": 0,
+                "trace_id": "note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8"
+              },
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g905nph8lp0bsj2k63t668?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=fabaab8afb8b1008dc073b18b6958b32&t=6a089281&src=A",
+                "fileid": "note_pre_post_uhdr/1040g3r831vhgr3k32g905nph8lp0bsj2k63t668",
+                "scale_to_large": 4,
+                "width": 3024,
+                "longitude": 0,
+                "latitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g905nph8lp0bsj2k63t668?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=fabaab8afb8b1008dc073b18b6958b32&t=6a089281&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g905nph8lp0bsj2k63t668?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=fabaab8afb8b1008dc073b18b6958b32&t=6a089281&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g905nph8lp0bsj2k63t668?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=fabaab8afb8b1008dc073b18b6958b32&t=6a089281&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g905nph8lp0bsj2k63t668?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=fabaab8afb8b1008dc073b18b6958b32&t=6a089281&src=A"
+                },
+                "url": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g905nph8lp0bsj2k63t668?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=fabaab8afb8b1008dc073b18b6958b32&t=6a089281&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 3024,
+                  "size": 0,
+                  "height": 4032
+                },
+                "height": 4032,
+                "text_intention": 0,
+                "trace_id": "note_pre_post_uhdr/1040g3r831vhgr3k32g905nph8lp0bsj2k63t668"
+              },
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g9g5nph8lp0bsj2171l9a0?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=22a48525c62dcbae5497713ecdb17387&t=6a089281&src=A",
+                "fileid": "note_pre_post_uhdr/1040g3r831vhgr3k32g9g5nph8lp0bsj2171l9a0",
+                "scale_to_large": 4,
+                "longitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g9g5nph8lp0bsj2171l9a0?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=22a48525c62dcbae5497713ecdb17387&t=6a089281&src=A",
+                "latitude": 0,
+                "width": 3024,
+                "url": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g9g5nph8lp0bsj2171l9a0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=22a48525c62dcbae5497713ecdb17387&t=6a089281&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g9g5nph8lp0bsj2171l9a0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=22a48525c62dcbae5497713ecdb17387&t=6a089281&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g9g5nph8lp0bsj2171l9a0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=22a48525c62dcbae5497713ecdb17387&t=6a089281&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g9g5nph8lp0bsj2171l9a0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=22a48525c62dcbae5497713ecdb17387&t=6a089281&src=A"
+                },
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 3024,
+                  "size": 0,
+                  "height": 4032
+                },
+                "height": 4032,
+                "text_intention": 0,
+                "trace_id": "note_pre_post_uhdr/1040g3r831vhgr3k32g9g5nph8lp0bsj2171l9a0"
+              },
+              {
+                "index": 0,
+                "url_size_large": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32ga05nph8lp0bsj2sru71s0?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=a05ff7a7d9230639ac32eaba6d8409d2&t=6a089281&src=A",
+                "fileid": "note_pre_post_uhdr/1040g3r831vhgr3k32ga05nph8lp0bsj2sru71s0",
+                "scale_to_large": 4,
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32ga05nph8lp0bsj2sru71s0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=a05ff7a7d9230639ac32eaba6d8409d2&t=6a089281&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32ga05nph8lp0bsj2sru71s0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=a05ff7a7d9230639ac32eaba6d8409d2&t=6a089281&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32ga05nph8lp0bsj2sru71s0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=a05ff7a7d9230639ac32eaba6d8409d2&t=6a089281&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32ga05nph8lp0bsj2sru71s0?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=a05ff7a7d9230639ac32eaba6d8409d2&t=6a089281&src=A"
+                },
+                "latitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32ga05nph8lp0bsj2sru71s0?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=a05ff7a7d9230639ac32eaba6d8409d2&t=6a089281&src=A",
+                "width": 3024,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 3024,
+                  "size": 0,
+                  "height": 4032
+                },
+                "height": 4032,
+                "trace_id": "note_pre_post_uhdr/1040g3r831vhgr3k32ga05nph8lp0bsj2sru71s0",
+                "text_intention": 0
+              },
+              {
+                "fileid": "note_pre_post_uhdr/1040g3r831vhgr3k32gag5nph8lp0bsj23fn8ilg",
+                "url_size_large": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32gag5nph8lp0bsj23fn8ilg?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=81d6fbd8d98b7d215cca287aa0a25c59&t=6a089281&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "width": 3024,
+                "original": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32gag5nph8lp0bsj23fn8ilg?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=81d6fbd8d98b7d215cca287aa0a25c59&t=6a089281&src=A",
+                "latitude": 0,
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32gag5nph8lp0bsj23fn8ilg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=81d6fbd8d98b7d215cca287aa0a25c59&t=6a089281&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32gag5nph8lp0bsj23fn8ilg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=81d6fbd8d98b7d215cca287aa0a25c59&t=6a089281&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32gag5nph8lp0bsj23fn8ilg?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=81d6fbd8d98b7d215cca287aa0a25c59&t=6a089281&src=A"
+                },
+                "longitude": 0,
+                "url": "https://sns-i11.rednotecdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32gag5nph8lp0bsj23fn8ilg?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=81d6fbd8d98b7d215cca287aa0a25c59&t=6a089281&src=A",
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 3024,
+                  "size": 0,
+                  "height": 4032
+                },
+                "height": 4032,
+                "text_intention": 0,
+                "trace_id": "note_pre_post_uhdr/1040g3r831vhgr3k32gag5nph8lp0bsj23fn8ilg"
+              },
+              {
+                "fileid": "1040g00831v6d8gp62q105nph8lp0bsj2e1d35t8",
+                "url_size_large": "https://sns-i11.rednotecdn.com/1040g00831v6d8gp62q105nph8lp0bsj2e1d35t8?imageView2/2/w/1440/format/webp&ap=1&sc=DETAIL&sign=20875162325ae2068548c0dd4426610b&t=6a089281&src=A",
+                "index": 0,
+                "scale_to_large": 4,
+                "width": 1180,
+                "url": "https://sns-i11.rednotecdn.com/1040g00831v6d8gp62q105nph8lp0bsj2e1d35t8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=20875162325ae2068548c0dd4426610b&t=6a089281&src=A",
+                "url_multi_level": {
+                  "low": "https://sns-i11.rednotecdn.com/1040g00831v6d8gp62q105nph8lp0bsj2e1d35t8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=20875162325ae2068548c0dd4426610b&t=6a089281&src=A",
+                  "high": "https://sns-i11.rednotecdn.com/1040g00831v6d8gp62q105nph8lp0bsj2e1d35t8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=20875162325ae2068548c0dd4426610b&t=6a089281&src=A",
+                  "medium": "https://sns-i11.rednotecdn.com/1040g00831v6d8gp62q105nph8lp0bsj2e1d35t8?imageView2/2/w/576/format/webp/q/75%7CimageMogr2/strip&redImage/frame/0&ap=1&sc=PREVIEW&sign=20875162325ae2068548c0dd4426610b&t=6a089281&src=A"
+                },
+                "latitude": 0,
+                "original": "https://sns-i11.rednotecdn.com/1040g00831v6d8gp62q105nph8lp0bsj2e1d35t8?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=1&sc=ORIGINAL&sign=20875162325ae2068548c0dd4426610b&t=6a089281&src=A",
+                "longitude": 0,
+                "need_load_original_image": true,
+                "origin_img": {
+                  "width": 1180,
+                  "size": 0,
+                  "height": 1572
+                },
+                "height": 1572,
+                "text_intention": 0,
+                "trace_id": "1040g00831v6d8gp62q105nph8lp0bsj2e1d35t8"
+              }
+            ],
+            "may_have_red_packet": false,
+            "comment_prompt_config": {
+              "placeholder_short": "Say something...",
+              "placeholder_long": "Share your thoughts...",
+              "forbidden_cmt_type": 0
+            },
+            "has_music": false,
+            "enable_fls_bridge_cards": false,
+            "model_type": "note",
+            "seeded": false,
+            "goods_info": {},
+            "view_count": 0,
+            "cooperate_binds": [],
+            "function_switch": [
+              {
+                "type": "image_download",
+                "enable": true
+              },
+              {
+                "type": "quote_note",
+                "enable": true
+              }
+            ],
+            "time": 1776683078,
+            "has_co_produce": false,
+            "long_press_share_info": {
+              "content": "",
+              "show_wechat_tag": false,
+              "title": "",
+              "is_star": false,
+              "block_private_msg": false,
+              "function_entries": [
+                {
+                  "type": "image_download"
+                }
+              ],
+              "guide_audited": false
+            },
+            "collected_count": 2660,
+            "note_text_press_options": [
+              {
+                "key": "copy",
+                "extra": ""
+              }
+            ],
+            "privacy": {
+              "type": 0,
+              "show_tips": false,
+              "nick_names": ""
+            },
+            "enable_fls_related_cards": false,
+            "qq_mini_program_info": {
+              "title": "@THANK 发了一篇超赞的笔记，快点来看！",
+              "webpage_url": "https://www.xiaohongshu.com/discovery/item/69e60846000000002202592b?xsec_source=app_share&xsec_token=CBetISjGzoukIAxS8F5BDT2uu9mLLYx3abevhkw10lUzg=",
+              "thumb": "http://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r831vhgr3k32g8g5nph8lp0bsj2od3cbd8?imageView2/2/w/540/format/jpg/q/75",
+              "share_title": "@THANK 发了一篇超赞的笔记，快点来看！",
+              "user_name": "gh_66c53d495417",
+              "path": "pages/main/note/index?xsec_source=app_share&id=69e60846000000002202592b&type=normal&xsec_token=CBetISjGzoukIAxS8F5BDT2uu9mLLYx3abevhkw10lUzg=",
+              "desc": "组会汇报被导师表扬了，阳光明媚，自己真棒 实验数据崩了，论文被拒稿，仿真跑不出来，觉得自己一无是处，是个废物 你对自己的"
+            },
+            "widgets_context": "{\"origin_video_key\":\"\",\"flags\":{},\"author_id\":\"5f314572000000000101f262\",\"author_name\":\"THANK\",\"q_task_id\":\"\",\"video_rec_bar_info\":\"\"}",
+            "liked_users": []
+          }
+        ],
+        "comment_list": [],
+        "model_type": "note",
+        "track_id": "",
+        "user": {
+          "id": "5f314572000000000101f262",
+          "red_official_verified": false,
+          "fstatus": "none",
+          "userid": "5f314572000000000101f262",
+          "show_red_official_verify_icon": false,
+          "red_official_verify_type": 0,
+          "track_duration": 0,
+          "level": {
+            "image": ""
+          },
+          "image": "https://sns-avatar-qc.xhscdn.com/avatar/63e9ad07e493503f5c4486dc.jpg?imageView2/2/w/120/format/jpg",
+          "followed": false,
+          "red_id": "329634023",
+          "nickname": "THANK",
+          "name": "THANK"
+        }
+      }
+    ],
+    "msg": "成功"
+  }
+}

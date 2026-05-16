@@ -36,8 +36,8 @@ def generate_brief() -> str:
     """生成实时简报（PRD v2 §8.1），从飞书读取最近一批数据。"""
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-    words = feishu.query_words(limit=500)
-    patterns = feishu.query_patterns(limit=500)
+    words = feishu.query_words()
+    patterns = feishu.query_patterns()
 
     new_words = [
         w["fields"] for w in words
@@ -133,12 +133,29 @@ def _to_ms(dt: datetime) -> int:
     return int(dt.timestamp() * 1000)
 
 
+def _to_ms_any(val: Any) -> int:
+    """飞书 date 字段可能是 ms 数字或 'YYYY-MM-DD HH:MM:SS' 字符串，统一转 ms。"""
+    val = _unwrap(val)
+    if isinstance(val, (int, float)) and val > 0:
+        return int(val)
+    if isinstance(val, str) and val.strip():
+        try:
+            return int(datetime.fromisoformat(val.strip()).timestamp() * 1000)
+        except (ValueError, OSError):
+            return 0
+    return 0
+
+
 def _filter_week(records: list[dict], start_ms: int, end_ms: int) -> list[dict]:
-    """筛选 last_seen 在范围内的记录，返回 fields 列表。"""
+    """筛选 first_seen 在范围内的记录，返回 fields 列表。
+
+    注意：用 first_seen 而非 last_seen 才符合"本周**新增**"语义；
+    last_seen 会随 update 漂移，导致老词被误算成"本周新增"。
+    """
     result = []
     for rec in records:
         fields = rec.get("fields", {})
-        ts = _safe_int(fields.get("last_seen", 0))
+        ts = _to_ms_any(fields.get("first_seen", 0))
         if start_ms <= ts <= end_ms:
             result.append(fields)
     return result
@@ -156,8 +173,8 @@ def generate_weekly_report(week: str | None = None) -> str:
     start_ms, end_ms = _to_ms(start), _to_ms(end + timedelta(hours=23, minutes=59, seconds=59))
     date_range = f"{start.strftime('%m-%d')} ~ {end.strftime('%m-%d')}"
 
-    all_word_recs = feishu.query_words(limit=500)
-    all_pat_recs = feishu.query_patterns(limit=500)
+    all_word_recs = feishu.query_words()
+    all_pat_recs = feishu.query_patterns()
     week_words = _filter_week(all_word_recs, start_ms, end_ms)
     week_pats = _filter_week(all_pat_recs, start_ms, end_ms)
 
