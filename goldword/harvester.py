@@ -288,6 +288,7 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
 
     # 3. 遍历搜索词
     all_new_posts: list[dict] = []
+    cover_urls: list[str] = []  # 与 all_new_posts 平行，存每条记录的封面 URL
 
     for cfg in configs:
         keyword = cfg["search_keyword"]
@@ -303,6 +304,7 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
                 result.total_duplicates += 1
                 continue
             record = p.to_dict()
+            cover_urls.append(p.cover_url)  # 保存供后续上传
             # 飞书表字段名映射：cover_url 不走飞书（封面是附件字段）
             record.pop("cover_url", None)
             record["domain"] = domain
@@ -322,6 +324,7 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
             result.total_duplicates += 1
             continue
         record = p.to_dict()
+        cover_urls.append(p.cover_url)
         record.pop("cover_url", None)
         all_new_posts.append(record)
         existing_ids.add(p.post_id)
@@ -329,19 +332,137 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
     result.total_hotlist = len(hot_posts)
     print(f"  热榜 {len(hot_posts)} 条，新增 {new_hot} 条")
 
-    # 5. 批量写入飞书（每批最多 10 条）
+    # 5. 本地备份（写入飞书前先存档，防止数据丢失）
     if all_new_posts:
-        print(f"\n[harvest] 写入飞书热贴库 ({len(all_new_posts)} 条) ...")
+        import json as _json
+        from pathlib import Path as _Path
+        _backup_dir = _Path(__file__).resolve().parent.parent / "scripts" / "samples"
+        _backup_dir.mkdir(parents=True, exist_ok=True)
+        _ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        _backup_file = _backup_dir / f"harvest_{_ts}.json"
+        _backup_file.write_text(
+            _json.dumps(all_new_posts, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        print(f"\n[harvest] 本地备份: {_backup_file} ({len(all_new_posts)} 条)")
+
+    # 6. 批量写入飞书 + 收集封面对任务
+    cover_tasks: list[tuple[str, str]] = []  # (record_id, cover_url)
+
+    if all_new_posts:
+        print(f"[harvest] 写入飞书热贴库 ({len(all_new_posts)} 条) ...")
         batch_size = 10
         for i in range(0, len(all_new_posts), batch_size):
             batch = all_new_posts[i : i + batch_size]
             ids = batch_insert_posts(batch)
             result.total_inserted += len(ids)
+            # 收集对应封面 URL（从 cover_urls 平行列表取）
+            for j, rid in enumerate(ids):
+                idx = i + j
+                if idx < len(cover_urls) and cover_urls[idx]:
+                    cover_tasks.append((rid, cover_urls[idx]))
             print(f"  批次 {i // batch_size + 1}: 写入 {len(ids)} 条")
     else:
         print("\n[harvest] 无新数据需要写入")
 
+    # 7. 上传封面图
+    if cover_tasks:
+        from goldword.feishu import download_cover, upload_cover, update_cover_attachment
+
+        print(f"\n[harvest] 上传封面图 ({len(cover_tasks)} 张) ...")
+        ok = 0
+        for idx, (rid, cover_url) in enumerate(cover_tasks):
+            local_path = download_cover(cover_url, rid)
+            if not local_path:
+                continue
+            file_token = upload_cover(local_path)
+            if not file_token:
+                continue
+            if update_cover_attachment(rid, file_token):
+                ok += 1
+            # 进度提示
+            if (idx + 1) % 20 == 0:
+                print(f"  封面进度: {idx + 1}/{len(cover_tasks)} ({ok} OK)")
+        result.cover_parsed = ok
+        result.cover_failed = len(cover_tasks) - ok
+        print(f"  封面上传完成: {ok} 成功 / {result.cover_failed} 失败")
+
     return result
+
+# ── 封面对回填 ───────────────────────────────────────────────────────────
+
+def backfill_covers(dry_run: bool = False) -> int:
+    """回填已有热贴库记录的封面图：搜索关键词 → 匹配 post_id → 下载+上传。
+
+    只搜索不调详情 API，cover_url 在搜索结果中直接返回，成本低。
+    """
+    from goldword.config import FEISHU_HOTPOSTS_TABLE_ID, load_search_config
+    from goldword.feishu import (
+        _list_records,
+        download_cover,
+        update_cover_attachment,
+        upload_cover,
+    )
+
+    print("[backfill] 读取热贴库记录 ...")
+    all_records = []
+    offset = 0
+    while True:
+        page = _list_records(FEISHU_HOTPOSTS_TABLE_ID, limit=200, offset=offset)
+        if not page:
+            break
+        all_records.extend(page)
+        offset += 200
+        if len(page) < 200:
+            break
+    print(f"  共 {len(all_records)} 条记录")
+    no_cover = {}  # post_id → record_id
+    has_cover = 0
+    for rec in all_records:
+        fields = rec.get("fields", {})
+        pid = fields.get("post_id", "")
+        if not pid:
+            continue
+        existing = fields.get("封面", [])
+        if existing and isinstance(existing, list) and len(existing) > 0:
+            has_cover += 1
+        else:
+            no_cover[pid] = rec["record_id"]
+    print(f"  已有封面: {has_cover}, 待回填: {len(no_cover)}")
+
+    if not no_cover:
+        return 0
+    if dry_run:
+        print(f"[backfill --dry-run] 将回填 {len(no_cover)} 条")
+        return 0
+
+    configs = load_search_config()
+    done = 0
+    for cfg in configs:
+        keyword = cfg["search_keyword"]
+        print(f"\n[backfill] 搜索: {keyword} ...")
+        posts = search_notes(keyword)
+        matched = 0
+        for p in posts:
+            if p.post_id not in no_cover or not p.cover_url:
+                continue
+            rid = no_cover[p.post_id]
+            print(f"  匹配: {p.post_id} → {rid}")
+            local = download_cover(p.cover_url, rid)
+            if not local:
+                continue
+            ft = upload_cover(local)
+            if not ft:
+                continue
+            if update_cover_attachment(rid, ft):
+                done += 1
+                matched += 1
+            if done % 10 == 0:
+                print(f"  回填进度: {done}/{len(no_cover)}")
+        print(f"  {keyword}: 匹配 {matched}, 累计 {done}")
+    print(f"\n[backfill] 完成: {done} 成功, {len(no_cover) - done} 未匹配")
+    return done
+
 
 if __name__ == "__main__":
     import sys

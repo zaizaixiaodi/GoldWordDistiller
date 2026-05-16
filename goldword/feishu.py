@@ -1,6 +1,6 @@
 """飞书多维表薄封装层 — 基于 lark-cli。
 
-提供热贴库、金词库、句式库、配置表的 CRUD 和识图轮询。
+提供热贴库、金词库、句式库、配置表的 CRUD 和识图轮询，以及封面图下载+上传。
 读取走 lark-cli base +record-list（bash -c），写入走 lark-cli api（shell=True）。
 """
 
@@ -199,6 +199,99 @@ def insert_config(domain_word: str, search_keyword: str, is_active: bool = True,
 def delete_config(record_id: str) -> None:
     """删除配置表一条记录。"""
     _api("DELETE", _base_path(FEISHU_CONFIG_TABLE_ID, f"/records/{record_id}"))
+
+
+# ── 封面上传 ──────────────────────────────────────────────────────────
+
+_COVER_DIR = str(Path(tempfile.gettempdir()) / "feishu_covers")
+Path(_COVER_DIR).mkdir(exist_ok=True)
+
+
+def download_cover(url: str, record_id: str) -> str | None:
+    """下载封面图到临时目录，返回本地路径。失败返回 None。"""
+    import requests as _req
+
+    # 推断扩展名
+    ext = ".jpg"
+    if "webp" in url:
+        ext = ".webp"
+    elif "png" in url:
+        ext = ".png"
+
+    filepath = Path(_COVER_DIR) / f"{record_id}{ext}"
+    if filepath.exists():
+        return str(filepath)  # 已下载，跳过
+
+    try:
+        resp = _req.get(url, timeout=30, stream=True)
+        if resp.status_code == 200:
+            filepath.write_bytes(resp.content)
+            return str(filepath)
+        else:
+            print(f"    下载封面失败 HTTP {resp.status_code}: {url[:80]}")
+            return None
+    except Exception as e:
+        print(f"    下载封面异常: {e}")
+        return None
+
+
+def upload_cover(filepath: str) -> str | None:
+    """上传封面图到飞书 Drive，返回 file_token。失败返回 None。
+
+    必须用 --as user（tenant token 无 drive:file:upload 权限）。
+    """
+    fpath = Path(filepath)
+    size = fpath.stat().st_size
+    stem = fpath.stem
+
+    # 复制到 _CWD 并重命名为纯 ASCII 名，方便 lark-cli --file 引用
+    upload_name = f"{stem[:30]}.jpg"
+    tmp_img = Path(_CWD) / upload_name
+    _shutil_copy(filepath, str(tmp_img))
+
+    req_json = {
+        "file_name": upload_name,
+        "parent_type": "bitable_image",
+        "parent_node": FEISHU_BITABLE_APP_TOKEN,
+        "size": str(size),
+    }
+    req_name = f"_upload_{stem[:20]}.json"
+    _write_json(req_name, req_json)
+
+    cmd = (
+        f"lark-cli api POST /open-apis/drive/v1/medias/upload_all "
+        f"--as user --data @{req_name} --file file={upload_name}"
+    )
+    r = subprocess.run(cmd, capture_output=True, cwd=_CWD, shell=True)
+    out = r.stdout.decode("utf-8", errors="replace")
+
+    try:
+        data = json.loads(out)
+    except (json.JSONDecodeError, ValueError):
+        print(f"    upload_cover parse error: {out[:200]}")
+        return None
+
+    if data.get("code") != 0:
+        print(f"    upload_cover fail: {out[:200]}")
+        return None
+    return data["data"]["file_token"]
+
+
+def update_cover_attachment(record_id: str, file_token: str) -> bool:
+    """把 file_token 写入热贴库记录的"封面"附件字段。"""
+    data_ref = _write_json("_upd_cover.json", {"fields": {"封面": [{"file_token": file_token}]}})
+    try:
+        _api("PUT", _base_path(FEISHU_HOTPOSTS_TABLE_ID, f"/records/{record_id}"),
+             {"fields": {"封面": [{"file_token": file_token}]}})
+        return True
+    except Exception as e:
+        print(f"    update_cover_attachment fail: {e}")
+        return False
+
+
+def _shutil_copy(src: str, dst: str) -> None:
+    import shutil
+    shutil.copy2(src, dst)
 
 
 # ── 识图轮询 ──────────────────────────────────────────────────────────
