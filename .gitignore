@@ -22,11 +22,9 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Phase 1.2++ 封面上传过程产物（临时下载图 + 上传请求体 JSON，不入版本库）
-scripts/covers/*.webp
-scripts/covers/*.json
-scripts/samples/batch_create.json
-
-# 原始 API 返回 + 采集备份 = 数据资产，应跟踪入库
-# scripts/samples/raw/  ← 不入 gitignore
-# scripts/samples/harvest_*.json  ← 不入 gitignore
+# workspace/ 是数据资产 + 业务产物的家
+#   raw_api/           = TikHub 原始 API 返回（跟踪入库，回测/重蒸馏用）
+#   harvest_backups/   = 每次 /harvest 写飞书前的全量备份（跟踪入库）
+#   distilled/         = 蒸馏中间产物（跟踪入库）
+#   reports/           = 周报 / 简报（跟踪入库）
+# 默认全部跟踪，未来若有临时产物再按需 ignore。

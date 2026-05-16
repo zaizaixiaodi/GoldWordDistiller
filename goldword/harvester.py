@@ -16,7 +16,7 @@ BASE = "https://api.tikhub.io"
 HEADERS = {"Authorization": f"Bearer {TIKHUB_API_KEY}"}
 
 # 原始 API 返回落盘目录（永久存档，避免重复查询）
-_raw_dir = Path(__file__).resolve().parent.parent / "scripts" / "samples" / "raw"
+_raw_dir = Path(__file__).resolve().parent.parent / "workspace" / "raw_api"
 _raw_dir.mkdir(parents=True, exist_ok=True)
 _batch_ts: str = ""  # 由 harvest_all 设置，同批次共享时间戳
 
@@ -350,7 +350,7 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
 
     # 5. 本地备份（写入飞书前先存档，防止数据丢失）
     if all_new_posts:
-        _backup_dir = Path(__file__).resolve().parent.parent / "scripts" / "samples"
+        _backup_dir = Path(__file__).resolve().parent.parent / "workspace" / "harvest_backups"
         _backup_dir.mkdir(parents=True, exist_ok=True)
         _ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         _backup_file = _backup_dir / f"harvest_{_ts}.json"

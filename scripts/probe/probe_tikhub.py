@@ -11,7 +11,7 @@ from goldword.config import TIKHUB_API_KEY
 
 BASE = "https://api.tikhub.io"
 HEADERS = {"Authorization": f"Bearer {TIKHUB_API_KEY}"}
-SAMPLES_DIR = os.path.join(os.path.dirname(__file__), "samples")
+SAMPLES_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "workspace", "raw_api")
 os.makedirs(SAMPLES_DIR, exist_ok=True)
 
 
@@ -63,4 +63,4 @@ if __name__ == "__main__":
     print(f"Probing TikHub with keyword={keyword!r} ...")
     probe_search(keyword)
     probe_hotlist()
-    print("Done. Check scripts/samples/ for raw JSON.")
+    print("Done. Check workspace/raw_api/ for raw JSON.")

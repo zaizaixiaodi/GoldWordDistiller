@@ -4,6 +4,54 @@
 
 ---
 
+## [2026-05-17 16:00] Phase 2.2 收尾 — feishu.py 隐患修复 + 目录重组
+
+### 完成内容
+
+**1. feishu.py 三处隐患全清（DEVLOG 挂账项）**
+
+- 删 `import platform` 死代码
+- `_list_records` 在源头 unwrap single-select：长度 1 且元素为标量的 list 取首元素（附件/关联字段是 list of dict 不动）。tracker.py 的 `_unwrap` 退化为兼容层
+- `_list_records` 自动分页：内部循环按 `has_more` + `offset` 翻页，直到取完或达到 `limit`
+- 验证：`tests/test_tracker.py` 全过，179 条金词索引（>page_size=100，证明翻页生效），category 直接是标量 `'twist'`
+
+**2. 目录重组：workspace/ 上线，scripts/ 精简**
+
+- 新建 `workspace/{raw_api,harvest_backups,distilled,reports}/` + `README.md`
+- 数据资产迁移：`scripts/samples/raw/` (20 个 API dump, 4.4MB) → `workspace/raw_api/`；6 个蒸馏中间产物 → `workspace/distilled/`
+- 一次性脚本归档到 `scripts/_archive/`：`insert_*` / `merge_*` / `upload_covers*` / `batch_upload_*`（共 7 个）
+- 联调脚本进 `scripts/probe/`（`probe_tikhub.py` / `probe_feishu.py`）
+- 测试脚本进 `tests/`（`test_tracker.py` / `test_tracker_upsert.py`）
+- 删 9 个调试期临时 JSON dump（`search_notes.json` 240KB、`all_hotposts.json` 91KB 等）
+- 业务代码路径同步：`harvester.py` 的 `_raw_dir` / `_backup_dir` 改指 `workspace/`；`probe_tikhub.py` 同步
+- `.gitignore` 重写说明、`CLAUDE.md §2` 目录结构重写
+
+### 关键决策
+
+- **`workspace/` 命名**：用户在 vs `data/` vs `warehouse/` 中选了 workspace。理由：能同时装下原始数据 + 业务产物 + 报告，不偏向某一类
+- **分页 API 签名**：保留 `limit` 入参（向后兼容 `query_words(limit=500)`），新增内部 `page_size=100`。`limit` 语义为「最多取多少条」而非「单页大小」
+- **临时 JSON 删而不归档**：调试随手落的，git log 能查到旧 commit，保留 4.4MB 不值得
+- **`skill` 化暂不做**：`prompts/distill.md` 是 prompt 资产不是工作流；`scripts/probe_*` 是开发期低频；`.claude/commands/*.md` 已是轻量 slash command。skill 是为「跨项目复用」准备，金词挖掘机耦合飞书自建表 + TikHub key，复用面 ≈ 0
+- **DEVPLAN 历史引用保留**：Phase 1.2/1.3 已完成任务的描述里仍写 `scripts/samples`，那是当时事实，不改
+
+### 踩坑
+
+- **git mv 多步 rename 失败识别**：先 `git mv raw → raw_api_tmp` 再用 Python rename 到 `raw_api/`，git 第二步丢失，状态变 `RD`（rename + deleted）。修法：`git add workspace/raw_api/` 让 git 自动检测 rename，再 `git reset HEAD workspace/raw_api_tmp/` 清掉幻影暂存
+- **`git rm --cached <file>` 在 batch_create.json 上失败**（文件已不在工作区也不在索引规范状态），改用 `git update-index --remove` 强制清
+
+### 产物文件
+
+- `goldword/feishu.py`（三处隐患修复）
+- `goldword/harvester.py`（路径切到 `workspace/`）
+- `scripts/probe/probe_tikhub.py`（同步路径）
+- `workspace/README.md`（新增）
+- `workspace/raw_api/` / `workspace/distilled/`（迁入）
+- `scripts/_archive/`（归档 7 个脚本）
+- `tests/test_tracker*.py`（从 scripts/ 迁入）
+- `CLAUDE.md §2` / `.gitignore`（同步）
+
+---
+
 ## [2026-05-17 15:00] Phase 2.2 — tracker.py 趋势追踪实现
 
 ### 完成内容

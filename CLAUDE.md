@@ -89,7 +89,7 @@ goldword-distiller/
 │       ├── config.md               # /config — 查看编辑配置
 │       ├── sync.md                 # /sync — 手动飞书同步
 │       └── schedule.md             # /schedule — 定时任务
-├── goldword/
+├── goldword/                       # 业务代码
 │   ├── config.py                   # 配置管理（环境变量、飞表 ID）
 │   ├── harvester.py                # 平台直出：TikHub 搜索 + 表层数据采集 + 封面下载
 │   ├── hotlist.py                  # 官方榜单：热榜采集
@@ -98,16 +98,19 @@ goldword-distiller/
 │   ├── tracker.py                  # 趋势追踪（金词 + 句式双路）
 │   ├── reporter.py                 # 简报 + 周报（含元认知反思）
 │   └── feishu.py                   # 飞书多维表薄封装层（基于 lark-cli）
-├── prompts/
+├── prompts/                        # prompt 资产
 │   ├── distill.md                  # 蒸馏 prompt 模板（标题路 + 封面路）
 │   └── observations.md             # 业务规范回写文档（人审周报沉淀）
-├── reports/                        # 本地周报存档（reports/weekly_YYYY-WNN.md）
-├── scripts/
-│   ├── probe_tikhub.py             # TikHub 联调脚本
-│   ├── probe_feishu.py             # 飞书联调脚本
-│   ├── covers/                     # 封面图临时下载与上传脚本
-│   └── samples/                    # API 原始返回样本 + 候选金词/句式 dump
-└── tests/                          # 单元测试
+├── workspace/                      # ★ 数据资产 + 业务产物（人和 agent 都看这里）
+│   ├── README.md                   # 子目录说明
+│   ├── raw_api/                    # TikHub 原始 API 返回（harvester._save_raw 落盘）
+│   ├── harvest_backups/            # 每次 /harvest 写飞书前的全量备份
+│   ├── distilled/                  # 蒸馏中间产物（候选金词/句式/摘要骨架）
+│   └── reports/                    # 周报 / 简报（reporter.py 生成）
+├── scripts/                        # dev tooling（非业务代码）
+│   ├── probe/                      # 开发期联调脚本（probe_tikhub.py / probe_feishu.py）
+│   └── _archive/                   # 已用完的一次性脚本（insert_* / merge_* / upload_*）
+└── tests/                          # 单元测试 + tracker 验证脚本
 ```
 
 ---
