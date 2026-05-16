@@ -13,10 +13,14 @@
 | 历史版本 | `项目需求和参考/金词蒸馏器_PRD_v1.md` | 已废弃，仅供溯源 |
 | **开发计划** | `DEVPLAN.md` | 进度看这里，按未勾选任务顺序推进 |
 | 开发日志 | `DEVLOG.md` | 按时间倒序，每次 `/done` 追加 |
+| **数据 & 产物入口** | `workspace/README.md` | raw_api / harvest_backups / distilled / reports 四个抽屉的说明 |
 | 蒸馏 prompt | `prompts/distill.md` | 标题/封面双路 prompt |
 | 业务规范回写 | `prompts/observations.md` | 周报元认知反思的沉淀 |
 
-**新会话第一步**：读 `DEVPLAN.md §1 状态总览`，找到第一个未勾选 `[ ]` 的任务执行。
+**新会话第一步**：
+1. 读 `DEVPLAN.md §1 状态总览`，找到第一个未勾选 `[ ]` 的任务执行
+2. 任何涉及读/写数据资产或业务产物的任务，先看 `workspace/README.md` 确认落盘位置
+3. `scripts/_archive/` 里都是已完成使命的一次性脚本，仅供溯源，不要二次执行
 
 ---
 
