@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import json as _json
 import time
 from dataclasses import dataclass, field
 from datetime import datetime
+from pathlib import Path
 
 import requests
 
@@ -12,6 +14,18 @@ from goldword.config import TIKHUB_API_KEY
 
 BASE = "https://api.tikhub.io"
 HEADERS = {"Authorization": f"Bearer {TIKHUB_API_KEY}"}
+
+# 原始 API 返回落盘目录（永久存档，避免重复查询）
+_raw_dir = Path(__file__).resolve().parent.parent / "scripts" / "samples" / "raw"
+_raw_dir.mkdir(parents=True, exist_ok=True)
+_batch_ts: str = ""  # 由 harvest_all 设置，同批次共享时间戳
+
+
+def _save_raw(name: str, data: dict) -> None:
+    """保存原始 API 返回 JSON，永久存档。"""
+    ts = _batch_ts or datetime.now().strftime("%Y%m%d_%H%M%S")
+    fname = _raw_dir / f"{ts}_{name}.json"
+    fname.write_text(_json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 @dataclass
@@ -93,6 +107,7 @@ def search_notes(
     data = _api_get("/api/v1/xiaohongshu/app_v2/search_notes", params)
     if not data:
         return []
+    _save_raw(f"search_{keyword}_p{page}", data)
 
     items = data.get("data", {}).get("data", {}).get("items", [])
     posts: list[RawPost] = []
@@ -150,6 +165,7 @@ def fetch_note_detail(post: RawPost) -> RawPost:
     data = _api_get(endpoint, {"note_id": note_id})
     if not data:
         return post
+    _save_raw(f"detail_{note_id}", data)
 
     # data.data 是 list → 取第一个元素 → note_list → 取第一条
     outer = data.get("data", {}).get("data", [])
@@ -175,6 +191,7 @@ def fetch_hotlist() -> list[RawPost]:
     data = _api_get("/api/v1/xiaohongshu/web_v2/fetch_hot_list")
     if not data:
         return []
+    _save_raw("hotlist", data)
 
     items = data.get("data", {}).get("data", {}).get("items", [])
     posts: list[RawPost] = []
@@ -254,6 +271,9 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
 
     不蒸馏，只沉淀数据。dry_run=True 时只打印计划不实际执行。
     """
+    global _batch_ts
+    _batch_ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+
     from goldword.config import load_search_config
     from goldword.feishu import batch_insert_posts, query_posts
 
@@ -288,7 +308,6 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
 
     # 3. 遍历搜索词
     all_new_posts: list[dict] = []
-    cover_urls: list[str] = []  # 与 all_new_posts 平行，存每条记录的封面 URL
 
     for cfg in configs:
         keyword = cfg["search_keyword"]
@@ -304,9 +323,7 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
                 result.total_duplicates += 1
                 continue
             record = p.to_dict()
-            cover_urls.append(p.cover_url)  # 保存供后续上传
-            # 飞书表字段名映射：cover_url 不走飞书（封面是附件字段）
-            record.pop("cover_url", None)
+            record["_cover_url"] = p.cover_url  # 保留在备份中，写飞书时剔除
             record["domain"] = domain
             all_new_posts.append(record)
             existing_ids.add(p.post_id)
@@ -324,8 +341,7 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
             result.total_duplicates += 1
             continue
         record = p.to_dict()
-        cover_urls.append(p.cover_url)
-        record.pop("cover_url", None)
+        record["_cover_url"] = p.cover_url
         all_new_posts.append(record)
         existing_ids.add(p.post_id)
         new_hot += 1
@@ -334,9 +350,7 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
 
     # 5. 本地备份（写入飞书前先存档，防止数据丢失）
     if all_new_posts:
-        import json as _json
-        from pathlib import Path as _Path
-        _backup_dir = _Path(__file__).resolve().parent.parent / "scripts" / "samples"
+        _backup_dir = Path(__file__).resolve().parent.parent / "scripts" / "samples"
         _backup_dir.mkdir(parents=True, exist_ok=True)
         _ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         _backup_file = _backup_dir / f"harvest_{_ts}.json"
@@ -346,21 +360,23 @@ def harvest_all(dry_run: bool = False) -> HarvestResult:
         )
         print(f"\n[harvest] 本地备份: {_backup_file} ({len(all_new_posts)} 条)")
 
-    # 6. 批量写入飞书 + 收集封面对任务
-    cover_tasks: list[tuple[str, str]] = []  # (record_id, cover_url)
-
+    # 6. 批量写入飞书（每批最多 10 条）
     if all_new_posts:
         print(f"[harvest] 写入飞书热贴库 ({len(all_new_posts)} 条) ...")
         batch_size = 10
         for i in range(0, len(all_new_posts), batch_size):
             batch = all_new_posts[i : i + batch_size]
-            ids = batch_insert_posts(batch)
+            # 提取封面 URL 后剔除（飞书表无此字段）
+            batch_covers = [r.pop("_cover_url", "") for r in batch]
+            # 本地备份保留 _cover_url，写飞书的副本去掉
+            feishu_batch = [{k: v for k, v in r.items() if k not in ("cover_url",)}
+                           for r in batch]
+            ids = batch_insert_posts(feishu_batch)
             result.total_inserted += len(ids)
-            # 收集对应封面 URL（从 cover_urls 平行列表取）
+            # 记录 (record_id, cover_url) 用于上传
             for j, rid in enumerate(ids):
-                idx = i + j
-                if idx < len(cover_urls) and cover_urls[idx]:
-                    cover_tasks.append((rid, cover_urls[idx]))
+                if batch_covers[j]:
+                    cover_tasks.append((rid, batch_covers[j]))
             print(f"  批次 {i // batch_size + 1}: 写入 {len(ids)} 条")
     else:
         print("\n[harvest] 无新数据需要写入")
