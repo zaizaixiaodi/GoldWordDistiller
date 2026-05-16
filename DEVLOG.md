@@ -4,6 +4,32 @@
 
 ---
 
+## [2026-05-17 01:30] Phase 1.4+++ — 封面图本地备份 + 回填上传
+
+### 完成内容
+
+- **本地 JSON 备份**：harvest_all 写入飞书前自动 dump 到 `scripts/samples/harvest_YYYYMMDD_HHMMSS.json`，防止数据丢失
+- **封面上传集成**：harvest_all 新增步骤 7，写入后自动下载封面→上传飞书 Drive→写回"封面"附件字段，不消耗 LLM token
+- **封面对回填**：`backfill_covers()` 搜索 20 词匹配已存在的 496 条记录 post_id，成功回填 87 张封面，398 条未匹配（搜索结果是实时的，昨天的帖今天可能不在 top 20）
+- **feishu.py 新增**：download_cover / upload_cover / update_cover_attachment
+- **热贴库现状**：496 条记录，96 条有封面附件（9 + 87），400 条待后续 /harvest 积累
+
+### 关键决策
+
+- 封面上传不消耗 LLM token，纯本地 subprocess + HTTP
+- 回填只调搜索 API（$0.01/次），不留详情 API——cover_url 在搜索结果中免费返回
+- 未匹配的 398 条不单独追，后续每次 /harvest 自动补齐新帖封面
+
+### 存量覆盖情况
+
+| 状态 | 数量 |
+|------|------|
+| 有封面 | 96 条 |
+| 待回填（搜索结果未匹配） | 400 条 |
+| 总计 | 496 条 |
+
+---
+
 ## [2026-05-16 23:00] Phase 1.3 — 飞书四表建好 + feishu.py 封装 + CRUD 联调
 
 ### 完成内容
