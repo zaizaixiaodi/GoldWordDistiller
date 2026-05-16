@@ -4,6 +4,25 @@
 
 ---
 
+## [2026-05-16 22:40] Phase 3.2 — 管理命令 /list /patterns /config /sync
+
+### 完成内容
+
+- `goldword/cli.py`：CLI 工具模块，包含 `list_words()`（6 维过滤：category/field/trend/status/domain/min-vibe）、`list_patterns()`（按 trend 分组）、`show_config()`（按领域分组）、`sync_status()`（四表概览+状态分布）
+- 命令文件：`.claude/commands/{list,patterns,config,sync}.md`
+- 支持 `python -m goldword.cli` 命令行直接调用
+
+### 验证结果
+
+- `--category twist --min-vibe 8` → 21 条反常识金词（vibe 8-10）
+- `--field cover` → 20 条封面金词（含 both）
+- `patterns` → 15 条句式（14 新句式 + 1 上升），按类型展示例句
+- `config` → 5 领域 20 搜索词，按领域分组
+
+### 关键决策
+
+- 3.1 定时任务暂时跳过（用户选择），留待后续决定方案
+
 ## [2026-05-16 22:20] Phase 2.3 — 简报 + 周报 + /feed + /add
 
 ### 完成内容

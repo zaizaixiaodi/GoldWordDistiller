@@ -39,8 +39,8 @@
 ## 1. 状态总览（每次 /done 后更新）
 
 **当前阶段**：Phase 3 — 体验打磨
-**当前任务**：3.1 定时任务（cron + /schedule）
-**最近一次更新**：2026-05-16 22:20（Phase 2.3 完成：reporter + feeder + /report /feed /add）
+**当前任务**：3.3 飞书深度集成调优 + v2 专项回测
+**最近一次更新**：2026-05-16 22:40（Phase 3.2 完成：/list /patterns /config /sync）
 
 ### Phase 0：准备工作（用户侧）
 - [x] 0.1 收集环境变量与外部账号
@@ -59,7 +59,7 @@
 
 ### Phase 3：体验打磨
 - [ ] 3.1 定时任务（cron + /schedule）
-- [ ] 3.2 管理命令（/list、/config、/patterns）
+- [x] 3.2 管理命令（/list、/config、/patterns）
 - [ ] 3.3 飞书深度集成调优 + **v2 专项回测**（必填/加分位分级、第 9 类工具/IP）
 
 ---
